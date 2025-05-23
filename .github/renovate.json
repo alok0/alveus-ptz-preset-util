@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "configMigration": true,
+  "rebaseWhen": "behind-base-branch",
+  "timezone": "America/New_York",
+  "postUpdateOptions": ["yarnDedupeHighest"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "deps",
+      "matchPackageNames": ["!/^typescript$/"]
+    }
+  ]
+}
