@@ -28,8 +28,8 @@ export const Welcome = () => {
           </p>
           <h3 className="font-semibold">Caveats</h3>
           <ul className="list-inside list-disc">
-            <li>Not all the reference panoramas have been made yet</li>
             <li>The preset data is out of date</li>
+            <li>The images suck</li>
           </ul>
         </div>
       </div>
