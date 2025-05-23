@@ -14,7 +14,9 @@
     "lint": "eslint src"
   },
   "dependencies": {
+    "@fontsource-variable/jetbrains-mono": "5.2.5",
     "daisyui": "5.0.37",
+    "ol": "10.5.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "tailwindcss": "4.1.7"
