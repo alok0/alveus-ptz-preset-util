@@ -72,33 +72,18 @@ export const Map = () => {
     });
     const backgroundImage = getImage(cam);
     if (backgroundImage) {
-      background.getLayers().push(
-        new ImageLayer({
-          source: new Static({
-            url: backgroundImage,
-            imageExtent: [-180, -80, 180, 80],
-            interpolate: true,
+      [0, 1, -1, 2, -2, 3, -3].forEach((world) => {
+        const worldOffset = 360 * world;
+        background.getLayers().push(
+          new ImageLayer({
+            source: new Static({
+              url: backgroundImage,
+              imageExtent: [-180 + worldOffset, -80, 180 + worldOffset, 80],
+              interpolate: true,
+            }),
           }),
-        }),
-      );
-      background.getLayers().push(
-        new ImageLayer({
-          source: new Static({
-            url: backgroundImage,
-            imageExtent: [180, -80, 540, 80],
-            interpolate: true,
-          }),
-        }),
-      );
-      background.getLayers().push(
-        new ImageLayer({
-          source: new Static({
-            url: backgroundImage,
-            imageExtent: [-540, -80, -180, 80],
-            interpolate: true,
-          }),
-        }),
-      );
+        );
+      });
     }
 
     map.setLayers([
