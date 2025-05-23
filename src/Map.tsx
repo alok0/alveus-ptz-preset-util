@@ -90,6 +90,15 @@ export const Map = () => {
           }),
         }),
       );
+      background.getLayers().push(
+        new ImageLayer({
+          source: new Static({
+            url: backgroundImage,
+            imageExtent: [-540, -80, -180, 80],
+            interpolate: true,
+          }),
+        }),
+      );
     }
 
     map.setLayers([
