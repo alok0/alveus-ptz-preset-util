@@ -46,17 +46,21 @@ export const Map = () => {
 
     const layerStyle = (f: FeatureLike) => {
       const zoom: unknown = f.get("zoom");
+      const scaledZoom =
+        100 -
+        Math.round(typeof zoom === "number" && zoom < 900 ? zoom / 10 : 90);
 
       return new Style({
+        zIndex: scaledZoom,
         text: new TextStyle({
           text: String(f.get("name") || ""),
           font: 'bold 12px "JetBrains Mono Variable",monospace',
           fill: new Fill({
-            color: "black",
+            color: "#000",
           }),
           stroke: new Stroke({
-            color: typeof zoom === "number" && zoom < 1000 ? "#ffc" : "#fff",
-            width: 3,
+            color: `hsl(285 ${scaledZoom}% 80%)`,
+            width: 3 + (3 * scaledZoom) / 100,
           }),
         }),
       });
