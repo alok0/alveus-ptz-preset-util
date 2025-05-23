@@ -17,9 +17,10 @@ import { useEffect, useState } from "react";
 import { cams, CamType } from "./cams";
 import database from "./database.json";
 import { getImage } from "./images";
+import { Link } from "wouter";
+import clsx from "clsx";
 
-export const Map = () => {
-  const [cam, setCam] = useState<CamType>("pasture");
+export const Map = ({ cam }: { cam: CamType }) => {
   const [ref, setRef] = useState<HTMLElement | null>(null);
   const [map] = useState(
     () =>
@@ -140,15 +141,13 @@ export const Map = () => {
     >
       <div className="tabs tabs-border">
         {cams.map((c) => (
-          <input
+          <Link
             key={c}
-            type="radio"
-            name={c}
-            className="tab"
-            aria-label={c}
-            checked={cam === c}
-            onClick={() => setCam(c)}
-          />
+            className={clsx("tab", { "tab-active": cam === c })}
+            href={`/${c}`}
+          >
+            {c}
+          </Link>
         ))}
       </div>
 
