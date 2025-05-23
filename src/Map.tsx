@@ -146,7 +146,7 @@ export const Map = () => {
 
   return (
     <div
-      className="absolute inset-0 bg-base-300 text-base-content p-8 grid gap-2"
+      className="absolute inset-0 bg-base-300 text-base-content p-2 md:p-4 grid gap-2"
       style={{ gridTemplateRows: "auto 1fr" }}
     >
       <div className="tabs tabs-border">
