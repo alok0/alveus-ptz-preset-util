@@ -2638,6 +2638,15 @@
         "autofocus": "on",
         "autoiris": "on"
       },
+      "pump": {
+        "pan": 58.99,
+        "tilt": -13.46,
+        "zoom": 265,
+        "focus": 2419,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
       "river": {
         "pan": 90.45,
         "tilt": -9.66,
