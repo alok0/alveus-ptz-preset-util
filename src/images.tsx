@@ -22,8 +22,8 @@ const images: Record<string, string> = {
   parrot: parrot_pano,
   marmoset: marm_pano,
   marmosetindoor: marmin_pano,
-  crow: crowin_pano,
-  crowoutdoor: crowout_pano,
+  crowindoor: crowin_pano,
+  crow: crowout_pano,
   chicken: chicken_pano,
 };
 

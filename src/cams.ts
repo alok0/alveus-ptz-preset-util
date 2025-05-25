@@ -7,7 +7,7 @@ export const cams = [
   "fox",
   "parrot",
   "crow",
-  "crowoutdoor",
+  "crowindoor",
   "marmoset",
   "marmosetindoor",
   "chicken",
