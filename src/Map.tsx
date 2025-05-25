@@ -19,6 +19,7 @@ import database from "./database.json";
 import { getImage } from "./images";
 import { Link } from "wouter";
 import clsx from "clsx";
+import { CamData } from "./Preset";
 
 export const Map = ({ cam }: { cam: CamType }) => {
   const [ref, setRef] = useState<HTMLElement | null>(null);
@@ -34,12 +35,12 @@ export const Map = ({ cam }: { cam: CamType }) => {
   );
 
   useEffect(() => {
-    const features = Object.entries(database[cam].presets).map(
+    const features = Object.entries(CamData.parse(database[cam]).presets).map(
       ([name, data]) =>
         new Feature({
-          geometry: new Point([Number(data.pan), Number(data.tilt)]),
+          geometry: new Point([data.pan, data.tilt]),
           name,
-          zoom: Number(data.zoom),
+          zoom: data.zoom,
         }),
     );
 
