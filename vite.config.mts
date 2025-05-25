@@ -7,11 +7,11 @@ const dirname = new URL(".", import.meta.url).pathname;
 export default defineConfig(() => {
   return defineConfig({
     root: "src",
-    base: "./",
+    base: "/",
     publicDir: false,
     clearScreen: false,
     esbuild: {
-      legalComments: "none",
+      legalComments: "eof",
       jsx: "automatic",
     },
     build: {
@@ -30,13 +30,8 @@ export default defineConfig(() => {
         },
       },
     },
-
     server: {
       allowedHosts: true,
-      headers: {
-        "Cross-Origin-Opener-Policy": "same-origin",
-        "Cross-Origin-Embedder-Policy": "credentialless",
-      },
     },
     plugins: [tailwindcssPlugin()],
   });
