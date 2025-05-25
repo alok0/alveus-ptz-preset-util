@@ -10,6 +10,7 @@ import wolf_pano from "./wolf_pano.webp";
 import wolfcorner_pano from "./wolfcorner_pano.webp";
 import wolfindoor_pano from "./wolfindoor_pano.webp";
 import wolfswitch_pano from "./wolfswitch_pano.webp";
+import chicken_pano from "./chicken_pano.webp";
 
 const images: Record<string, string> = {
   fox: fox_pano,
@@ -23,6 +24,7 @@ const images: Record<string, string> = {
   marmosetindoor: marmin_pano,
   crow: crowin_pano,
   crowoutdoor: crowout_pano,
+  chicken: chicken_pano,
 };
 
 export const getImage = (name: CamType) => {

@@ -1,4 +1,107 @@
 {
+  "chicken": {
+    "presets": {
+      "backright": {
+        "pan": -43.56,
+        "tilt": -6.13,
+        "zoom": 1112,
+        "focus": 6925,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "barrels": {
+        "pan": -37.12,
+        "tilt": -13.97,
+        "zoom": 1986,
+        "focus": 6878,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "down": {
+        "pan": -23.23,
+        "tilt": -67.07,
+        "zoom": 1,
+        "focus": 5005,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "downright": {
+        "pan": -9.36,
+        "tilt": -43.51,
+        "zoom": 1,
+        "focus": 8122,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "food": {
+        "pan": -29.61,
+        "tilt": -10.6,
+        "zoom": 2709,
+        "focus": 6913,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "home": {
+        "pan": -40,
+        "tilt": -16.42,
+        "zoom": 1,
+        "focus": 3993,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "left": {
+        "pan": -43.51,
+        "tilt": -23.77,
+        "zoom": 1,
+        "focus": 6006,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "nuggetsleep": {
+        "pan": -43.56,
+        "tilt": -3.13,
+        "zoom": 3386,
+        "focus": 7371,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "oliversleep": {
+        "pan": -17.18,
+        "tilt": -14.38,
+        "zoom": 783,
+        "focus": 4692,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "right": {
+        "pan": -7.35,
+        "tilt": -25.84,
+        "zoom": 1,
+        "focus": 8122,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "window": {
+        "pan": -26.59,
+        "tilt": -0.01,
+        "zoom": 1922,
+        "focus": 4962,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      }
+    }
+  },
   "pasture": {
     "presets": {
       "insidebarn": {

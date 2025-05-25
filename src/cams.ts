@@ -10,5 +10,6 @@ export const cams = [
   "crowoutdoor",
   "marmoset",
   "marmosetindoor",
+  "chicken",
 ] as const;
 export type CamType = (typeof cams)[number];
