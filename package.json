@@ -16,11 +16,9 @@
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "5.2.5",
     "clsx": "2.1.1",
-    "daisyui": "5.0.37",
     "ol": "10.5.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "tailwindcss": "4.1.7",
     "wouter": "3.7.0"
   },
   "devDependencies": {
@@ -33,6 +31,7 @@
     "@types/node": "22.15.21",
     "@types/react": "19.1.5",
     "@types/react-dom": "19.1.5",
+    "daisyui": "5.0.37",
     "eslint": "9.27.0",
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-jsx-a11y": "6.10.2",
@@ -41,6 +40,7 @@
     "husky": "9.1.7",
     "lint-staged": "16.0.0",
     "prettier": "3.5.3",
+    "tailwindcss": "4.1.7",
     "typescript": "5.8.3",
     "typescript-eslint": "8.32.1",
     "vite": "6.3.5"
