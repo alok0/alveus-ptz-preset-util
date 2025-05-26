@@ -1,4 +1,4 @@
-import { CamType } from "./cams";
+import type { CamType } from "./cams";
 import chicken_pano from "./chicken_pano.webp";
 import crowin_pano from "./crowin_pano.webp";
 import crowout_pano from "./crowout_pano.webp";

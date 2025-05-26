@@ -917,10 +917,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/vite-react@npm:3.4.0":
-  version: 3.4.0
-  resolution: "@tsconfig/vite-react@npm:3.4.0"
-  checksum: 10c0/9bd1516f1553903a231d3d4fa06c4f6d28998f50b80d16dd54c05ed8440221a5b1c2d521ab60020ead0b5d98f8be8e1285883292f68d4bb5c2bf9771d8aba4b1
+"@tsconfig/vite-react@npm:6.3.5":
+  version: 6.3.5
+  resolution: "@tsconfig/vite-react@npm:6.3.5"
+  checksum: 10c0/7c6edf6171464934a57a908181199da36b55542bd0b21c405c752733f14d575954ad18df83c1b428d7c27ea9fe7026cef8fa28f8a72aa417261038e24956aecc
   languageName: node
   linkType: hard
 
@@ -1181,7 +1181,7 @@ __metadata:
     "@fontsource-variable/jetbrains-mono": "npm:5.2.5"
     "@tailwindcss/vite": "npm:4.1.7"
     "@tsconfig/strictest": "npm:2.0.5"
-    "@tsconfig/vite-react": "npm:3.4.0"
+    "@tsconfig/vite-react": "npm:6.3.5"
     "@types/eslint-plugin-jsx-a11y": "npm:6.10.0"
     "@types/node": "npm:22.15.21"
     "@types/react": "npm:19.1.5"

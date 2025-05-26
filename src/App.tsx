@@ -5,7 +5,7 @@ import { Route, useLocation, useRoute } from "wouter";
 import { cams } from "./cams";
 import { useHashLocation } from "wouter/use-hash-location";
 import { Router } from "wouter";
-import { ErrorBoundary, FallbackProps } from "react-error-boundary";
+import { ErrorBoundary, type FallbackProps } from "react-error-boundary";
 
 export const AppMain = () => {
   const [match, params] = useRoute("/cam/:cam");
