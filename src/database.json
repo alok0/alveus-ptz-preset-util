@@ -3492,6 +3492,15 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
+      },
+      "den2shadel": {
+        "pan": -8.31,
+        "tilt": -17.43,
+        "zoom": 500,
+        "focus": 5321,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
       }
     },
     "isRoaming": false,
