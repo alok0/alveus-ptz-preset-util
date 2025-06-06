@@ -372,15 +372,6 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "littlesbridge": {
-        "pan": 72.48,
-        "tilt": -2.96,
-        "zoom": 664,
-        "focus": 5255,
-        "brightness": 5000,
-        "autofocus": "on",
-        "autoiris": "on"
-      },
       "door": {
         "pan": 56.03,
         "tilt": -9.16,
@@ -641,6 +632,15 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
+      },
+      "littlesbridge": {
+        "pan": 72.48,
+        "tilt": -2.96,
+        "zoom": 664,
+        "focus": 5255,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
       }
     },
     "isRoaming": false,
@@ -765,10 +765,10 @@
         "autoiris": "on"
       },
       "closebranch": {
-        "pan": -38.66,
-        "tilt": -32.68,
+        "pan": -53.82,
+        "tilt": -32.67,
         "zoom": 1,
-        "focus": 7148,
+        "focus": 7773,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
@@ -1182,10 +1182,10 @@
         "autoiris": "on"
       },
       "stickz": {
-        "pan": -128.9,
-        "tilt": -36.14,
+        "pan": -136.17,
+        "tilt": -32.89,
         "zoom": 4598,
-        "focus": 8307,
+        "focus": 8456,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
@@ -1687,12 +1687,12 @@
   "timeRestrictionDisabled": false,
   "foxden": { "presets": {}, "isRoaming": false },
   "customcam": [
+    "fullcampasturefeeder",
+    "fullcammarmoset",
     "fullcamfox",
-    "fullcampatchy",
-    "fullcamparrot",
-    "fullcamwolfcorner",
-    "fullcammarmosetindoor",
-    "fullcampasture"
+    "fullcamcrowindoor",
+    "fullcampasture",
+    "fullcamwolfcorner"
   ],
   "customcambig": true,
   "hankcorner": { "presets": {}, "isRoaming": false },
@@ -2314,12 +2314,12 @@
     },
     "this": {
       "list": [
+        "fullcammarmosetindoor",
+        "fullcamfox",
         "fullcamchicken",
-        "fullcamchin",
-        "fullcamcrow",
-        "fullcamparrot",
-        "fullcampasture",
-        "fullcamfox"
+        "fullcamwolf",
+        "fullcamcrowindoor",
+        "fullcampasture"
       ],
       "command": "customcamsbig"
     },
@@ -2634,15 +2634,6 @@
         "tilt": -10.22,
         "zoom": 1,
         "focus": 1920,
-        "brightness": 5000,
-        "autofocus": "on",
-        "autoiris": "on"
-      },
-      "pump": {
-        "pan": 58.99,
-        "tilt": -13.46,
-        "zoom": 265,
-        "focus": 2419,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
@@ -3087,6 +3078,24 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
+      },
+      "pump": {
+        "pan": 58.99,
+        "tilt": -13.46,
+        "zoom": 265,
+        "focus": 2419,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "temp": {
+        "pan": 144.93,
+        "tilt": 0.08,
+        "zoom": 6740,
+        "focus": 7959,
+        "brightness": 5000,
+        "autofocus": "off",
+        "autoiris": "on"
       }
     },
     "isRoaming": false,
@@ -3508,7 +3517,7 @@
   },
   "wolfden2": {
     "presets": {
-      "bottomright": { "pan": 0, "tilt": 0, "zoom": 1 },
+      "bottomright": { "pan": 68.06, "tilt": -67, "zoom": 5455, "focus": 1 },
       "home": { "pan": 0, "tilt": 0, "zoom": 1, "focus": 1 },
       "rightcorner": { "pan": 65.06, "tilt": -19.83, "zoom": 5000 },
       "leftcorner": { "pan": 0, "tilt": 82.5, "zoom": 5000 },
@@ -3574,8 +3583,8 @@
         "autoiris": "on"
       },
       "right": {
-        "pan": -101.98,
-        "tilt": -26.91,
+        "pan": -82.16,
+        "tilt": -24.73,
         "zoom": 1,
         "focus": 1,
         "brightness": 5000,
@@ -3601,19 +3610,19 @@
         "autoiris": "on"
       },
       "downright": {
-        "pan": -88.4,
-        "tilt": -53.37,
+        "pan": -78.98,
+        "tilt": -43.22,
         "zoom": 1,
-        "focus": 5005,
+        "focus": 1,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
       },
       "down": {
-        "pan": -124.14,
-        "tilt": -35.76,
+        "pan": -101.2,
+        "tilt": -60.46,
         "zoom": 1,
-        "focus": 8122,
+        "focus": 5005,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
@@ -3635,33 +3644,6 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      },
-      "leftcorner": {
-        "pan": -146.16,
-        "tilt": -13.96,
-        "zoom": 206,
-        "focus": 5506,
-        "brightness": 5000,
-        "autofocus": "on",
-        "autoiris": "on"
-      },
-      "downleft": {
-        "pan": -138.52,
-        "tilt": -63.97,
-        "zoom": 1,
-        "focus": 5005,
-        "brightness": 5000,
-        "autofocus": "on",
-        "autoiris": "on"
-      },
-      "water": {
-        "pan": -131.72,
-        "tilt": -23.21,
-        "zoom": 172,
-        "focus": 6006,
-        "brightness": 5000,
-        "autofocus": "on",
-        "autoiris": "on"
       }
     },
     "isRoaming": false,
@@ -3672,52 +3654,45 @@
   "patchy": {
     "presets": {
       "home": {
-        "pan": -16.41,
-        "tilt": -22.68,
+        "pan": -24.52,
+        "tilt": -29.58,
         "zoom": 1,
-        "focus": 4221,
+        "focus": 6933,
         "autofocus": "on"
       },
       "water": {
-        "pan": -30.82,
-        "tilt": -26.54,
-        "zoom": 5000,
-        "focus": 5184,
+        "pan": -41.39,
+        "tilt": -30.6,
+        "zoom": 3001,
+        "focus": 4430,
         "autofocus": "on"
       },
       "farbranches": {
-        "pan": -26.75,
-        "tilt": -10.08,
-        "zoom": 3125,
-        "focus": 5214,
+        "pan": -42.66,
+        "tilt": -10.53,
+        "zoom": 2000,
+        "focus": 6269,
         "autofocus": "on"
       },
       "closebranches": {
-        "pan": 37.71,
-        "tilt": -41.21,
+        "pan": 17.97,
+        "tilt": -38.88,
         "zoom": 1,
-        "focus": 2150,
+        "focus": 4579,
         "autofocus": "on"
       },
       "down": {
-        "pan": 28.33,
-        "tilt": -81.52,
-        "zoom": 876,
-        "focus": 3720,
+        "pan": 9.32,
+        "tilt": -77.39,
+        "zoom": 1,
+        "focus": 4043,
         "autofocus": "on"
       },
       "groundm": {
-        "pan": -19.67,
-        "tilt": -42.07,
-        "zoom": 742,
-        "focus": 3714,
-        "autofocus": "on"
-      },
-      "pjeweb": {
-        "pan": -82.78,
-        "tilt": -23.96,
-        "zoom": 12239,
-        "focus": 5609,
+        "pan": -36.71,
+        "tilt": -45.41,
+        "zoom": 2000,
+        "focus": 5020,
         "autofocus": "on"
       }
     },
@@ -3788,11 +3763,11 @@
         "focus": 5068,
         "autofocus": "on"
       },
-      "pjeweb": {
-        "pan": 3.62,
-        "tilt": -47.47,
+      "closerock": {
+        "pan": -11.5,
+        "tilt": -23.13,
         "zoom": 1,
-        "focus": 7314,
+        "focus": 7060,
         "autofocus": "on"
       }
     },
@@ -4301,18 +4276,18 @@
       },
       "ramp": {
         "pan": -29.41,
-        "tilt": -9.5,
+        "tilt": -9.51,
         "zoom": 736,
-        "focus": 7484,
+        "focus": 7061,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
       },
       "backleft": {
         "pan": -61.62,
-        "tilt": -8.97,
+        "tilt": -8.98,
         "zoom": 736,
-        "focus": 7167,
+        "focus": 7061,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
@@ -4329,8 +4304,8 @@
       "water": {
         "pan": -43.7,
         "tilt": -12,
-        "zoom": 1401,
-        "focus": 7855,
+        "zoom": 1402,
+        "focus": 6815,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
@@ -4338,7 +4313,7 @@
       "backlb": {
         "pan": -63.16,
         "tilt": -6.3,
-        "zoom": 2570,
+        "zoom": 2571,
         "focus": 7496,
         "brightness": 5000,
         "autofocus": "on",
@@ -4354,17 +4329,17 @@
         "autoiris": "on"
       },
       "rightcorner": {
-        "pan": 11.4,
+        "pan": 11.41,
         "tilt": -17.95,
-        "zoom": 481,
-        "focus": 6006,
+        "zoom": 482,
+        "focus": 5607,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
       },
       "center": {
         "pan": -25.81,
-        "tilt": -26.04,
+        "tilt": -26.05,
         "zoom": 1,
         "focus": 8122,
         "brightness": 5000,
@@ -4375,7 +4350,7 @@
         "pan": -56.12,
         "tilt": -20.57,
         "zoom": 505,
-        "focus": 5406,
+        "focus": 6374,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
@@ -4483,10 +4458,37 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
+      },
+      "perches": {
+        "pan": -93.51,
+        "tilt": 0,
+        "zoom": 1,
+        "focus": 9751,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "downmiddle": {
+        "pan": -64.85,
+        "tilt": -29.54,
+        "zoom": 1,
+        "focus": 9981,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
       }
     },
     "isRoaming": false
   },
   "blockedUsers": {},
-  "enabledSubs": true
+  "enabledSubs": true,
+  "lockoutCams": {},
+  "lockoutPTZ": {},
+  "pasturefeeder": {
+    "presets": {
+      "home": { "pan": 65.42, "tilt": 18.8, "zoom": 3865 },
+      "stompy": { "pan": 0, "tilt": 0, "zoom": 1 }
+    },
+    "isRoaming": false
+  }
 }

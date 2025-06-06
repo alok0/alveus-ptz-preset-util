@@ -36,14 +36,16 @@ export const Map = ({ cam }: { cam: CamType }) => {
   );
 
   useEffect(() => {
-    const features = Object.entries(CamData.parse(database[cam]).presets).map(
-      ([name, data]) =>
-        new Feature({
-          geometry: new Point([data.pan, data.tilt]),
-          name,
-          zoom: data.zoom,
-        }),
-    );
+    const features = Object.entries(CamData.parse(database[cam]).presets)
+      .filter(([name]) => name !== "temp" && name !== "tmp")
+      .map(
+        ([name, data]) =>
+          new Feature({
+            geometry: new Point([data.pan, data.tilt]),
+            name,
+            zoom: data.zoom,
+          }),
+      );
 
     const vectorSource = new VectorSource({ features });
 
