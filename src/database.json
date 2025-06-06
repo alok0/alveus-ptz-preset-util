@@ -3583,8 +3583,8 @@
         "autoiris": "on"
       },
       "right": {
-        "pan": -82.16,
-        "tilt": -24.73,
+        "pan": -101.98,
+        "tilt": -26.91,
         "zoom": 1,
         "focus": 1,
         "brightness": 5000,
@@ -3610,19 +3610,19 @@
         "autoiris": "on"
       },
       "downright": {
-        "pan": -78.98,
-        "tilt": -43.22,
+        "pan": -88.4,
+        "tilt": -53.37,
         "zoom": 1,
-        "focus": 1,
+        "focus": 5005,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
       },
       "down": {
-        "pan": -101.2,
-        "tilt": -60.46,
+        "pan": -124.14,
+        "tilt": -35.76,
         "zoom": 1,
-        "focus": 5005,
+        "focus": 8122,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
@@ -3641,6 +3641,33 @@
         "tilt": -19.41,
         "zoom": 1,
         "focus": 5005,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "leftcorner": {
+        "pan": -146.16,
+        "tilt": -13.96,
+        "zoom": 206,
+        "focus": 5506,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "downleft": {
+        "pan": -138.52,
+        "tilt": -63.97,
+        "zoom": 1,
+        "focus": 5005,
+        "brightness": 5000,
+        "autofocus": "on",
+        "autoiris": "on"
+      },
+      "water": {
+        "pan": -131.72,
+        "tilt": -23.21,
+        "zoom": 172,
+        "focus": 6006,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
