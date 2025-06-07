@@ -708,6 +708,13 @@
         "zoom": 3982,
         "focus": 3570,
         "autofocus": "on"
+      },
+      "far": {
+        "pan": 48.62,
+        "tilt": -8.96,
+        "zoom": 10181,
+        "focus": 4814,
+        "autofocus": "on"
       }
     },
     "isRoaming": false,
