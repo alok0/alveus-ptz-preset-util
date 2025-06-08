@@ -1586,10 +1586,10 @@
         "autoiris": "on"
       },
       "belowplatformz": {
-        "pan": -31.96,
-        "tilt": -15.17,
+        "pan": -32.2,
+        "tilt": -16.07,
         "zoom": 10076,
-        "focus": 8950,
+        "focus": 8921,
         "brightness": 6000,
         "autofocus": "on",
         "autoiris": "on"
