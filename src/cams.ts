@@ -11,6 +11,7 @@ export const cams = [
   "marmoset",
   "marmosetindoor",
   "chicken",
+  "chickenindoor",
   "pushpop",
   "pushpopindoor",
   "georgie",

@@ -1,5 +1,6 @@
 import type { CamType } from "./cams";
 import chicken_pano from "./chicken_pano.webp";
+import chickenin_pano from "./chickenin_pano.webp";
 import crowin_pano from "./crowin_pano.webp";
 import crowout_pano from "./crowout_pano.webp";
 import fox_pano from "./fox_pano.webp";
@@ -28,6 +29,7 @@ const images: Record<string, string> = {
   crowindoor: crowin_pano,
   crow: crowout_pano,
   chicken: chicken_pano,
+  chickenindoor: chickenin_pano,
   pushpop: pushout_pano,
   pushpopindoor: pushin_pano,
   georgie: georgie_pano,
