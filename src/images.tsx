@@ -7,7 +7,6 @@ import fox_pano from "./fox_pano.webp";
 import georgie_pano from "./georgie_pano.webp";
 import marm_pano from "./marm_pano.webp";
 import marmin_pano from "./marmin_pano.webp";
-import parrot_pano from "./parrot_pano.webp";
 import pasture_pano from "./pasture_pano.webp";
 import pushin_pano from "./pushin_pano.webp";
 import pushout_pano from "./pushout_pano.webp";
@@ -23,7 +22,6 @@ const images: Record<string, string> = {
   wolfswitch: wolfswitch_pano,
   wolfindoor: wolfindoor_pano,
   pasture: pasture_pano,
-  parrot: parrot_pano,
   marmoset: marm_pano,
   marmosetindoor: marmin_pano,
   crowindoor: crowin_pano,

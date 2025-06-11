@@ -5,7 +5,6 @@ export const cams = [
   "wolfswitch",
   "wolfindoor",
   "fox",
-  "parrot",
   "crow",
   "crowindoor",
   "marmoset",
