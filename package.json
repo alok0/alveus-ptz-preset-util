@@ -11,7 +11,8 @@
     "prepare": "husky",
     "build": "vite build",
     "start": "vite serve",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "update-preset": "yarn node ./scripts/update-preset.mjs"
   },
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "5.2.6",
