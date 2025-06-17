@@ -4388,6 +4388,12 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
+      },
+      "nuggethide": {
+        "pan": -65.37,
+        "tilt": -2.04,
+        "zoom": 10047,
+        "focus": 6897
       }
     },
     "isRoaming": false
