@@ -3474,10 +3474,10 @@
         "autoiris": "on"
       },
       "switchpen": {
-        "pan": -23.23,
-        "tilt": -2.43,
+        "pan": -23.77,
+        "tilt": -2.63,
         "zoom": 4494,
-        "focus": 8066,
+        "focus": 8049,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
@@ -3517,7 +3517,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "den2r": { "pan": 58.21, "tilt": -31.09, "zoom": 692, "focus": 6015 }
     },
     "isRoaming": false,
     "speed": "50"
