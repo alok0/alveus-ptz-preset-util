@@ -3966,7 +3966,10 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "farleft": { "pan": -107.14, "tilt": -6.77, "zoom": 874, "focus": 5924 },
+      "farcenter": { "pan": -98.54, "tilt": -6.62, "zoom": 874, "focus": 6006 },
+      "farright": { "pan": -88.26, "tilt": -6.47, "zoom": 874, "focus": 6092 }
     },
     "isRoaming": false,
     "speed": "50"
