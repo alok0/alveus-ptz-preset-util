@@ -17,35 +17,35 @@
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "5.2.6",
     "clsx": "2.1.1",
-    "ol": "10.5.0",
+    "ol": "10.6.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-error-boundary": "6.0.0",
     "wouter": "3.7.1",
-    "zod": "3.25.64"
+    "zod": "3.25.67"
   },
   "devDependencies": {
     "@eslint-react/eslint-plugin": "1.52.2",
-    "@eslint/js": "9.28.0",
+    "@eslint/js": "9.29.0",
     "@tailwindcss/vite": "4.1.10",
     "@tsconfig/strictest": "2.0.5",
-    "@tsconfig/vite-react": "6.3.5",
+    "@tsconfig/vite-react": "6.3.6",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
-    "@types/node": "22.15.31",
+    "@types/node": "22.15.32",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
     "daisyui": "5.0.43",
-    "eslint": "9.28.0",
+    "eslint": "9.29.0",
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "5.2.0",
     "husky": "9.1.7",
-    "lint-staged": "16.1.0",
+    "lint-staged": "16.1.2",
     "prettier": "3.5.3",
     "tailwindcss": "4.1.10",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.34.0",
+    "typescript-eslint": "8.34.1",
     "vite": "6.3.5"
   }
 }
