@@ -351,7 +351,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "barn2z": { "pan": -69.12, "tilt": -5.64, "zoom": 3979, "focus": 6867 }
     },
     "isRoaming": false,
     "roamTime": "12",
