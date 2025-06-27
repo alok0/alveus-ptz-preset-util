@@ -29,7 +29,6 @@ export default defineConfig(() => {
               return "2";
             }
             if (f.includes("/src/")) {
-              console.log(f);
               return "1";
             }
 
