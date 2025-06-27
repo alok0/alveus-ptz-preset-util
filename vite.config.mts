@@ -25,10 +25,15 @@ export default defineConfig(() => {
       rollupOptions: {
         output: {
           manualChunks: (f) => {
-            if (f.includes("src/database")) {
-              return "db";
+            if (f.includes("node_modules")) {
+              return "2";
             }
-            return "";
+            if (f.includes("/src/")) {
+              console.log(f);
+              return "1";
+            }
+
+            return null;
           },
           entryFileNames: "[hash].js",
           assetFileNames: "[hash][extname]",
