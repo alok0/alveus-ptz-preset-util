@@ -15,7 +15,7 @@ import Style from "ol/style/Style";
 import TextStyle from "ol/style/Text";
 import { useEffect, useState } from "react";
 import { cams, type CamType } from "./cams";
-import database from "./database.json";
+import database from "./database";
 import { getImage } from "./images";
 import { Link } from "wouter";
 import clsx from "clsx";
@@ -159,3 +159,5 @@ export const Map = ({ cam }: { cam: CamType }) => {
     </div>
   );
 };
+
+export default Map;

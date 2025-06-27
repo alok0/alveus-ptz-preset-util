@@ -24,6 +24,12 @@ export default defineConfig(() => {
       modulePreload: { polyfill: false },
       rollupOptions: {
         output: {
+          manualChunks: (f) => {
+            if (f.includes("src/database")) {
+              return "db";
+            }
+            return "";
+          },
           entryFileNames: "[hash].js",
           assetFileNames: "[hash][extname]",
           chunkFileNames: "[hash].js",

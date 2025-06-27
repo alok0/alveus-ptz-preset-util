@@ -1,0 +1,36 @@
+import type { CamType } from "./cams";
+import {
+  pasture,
+  wolfcorner,
+  wolf,
+  wolfswitch,
+  wolfindoor,
+  fox,
+  crow,
+  crowindoor,
+  marmoset,
+  marmosetindoor,
+  chicken,
+  chickenindoor,
+  pushpop,
+  pushpopindoor,
+  georgie,
+} from "./database.json";
+
+export default {
+  pasture,
+  wolfcorner,
+  wolf,
+  wolfswitch,
+  wolfindoor,
+  fox,
+  crow,
+  crowindoor,
+  marmoset,
+  marmosetindoor,
+  chicken,
+  chickenindoor,
+  pushpop,
+  pushpopindoor,
+  georgie,
+} satisfies Record<CamType, unknown>;
