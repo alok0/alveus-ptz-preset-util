@@ -2057,7 +2057,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "domelt": { "pan": 90.03, "tilt": -3.12, "zoom": 10789, "focus": 8759 }
     },
     "isRoaming": false,
     "speed": "84"
