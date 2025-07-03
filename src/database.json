@@ -3417,7 +3417,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "log": { "pan": 99.66, "tilt": -27.91, "zoom": 359, "focus": 4133 }
     },
     "isRoaming": false,
     "speed": "50"
