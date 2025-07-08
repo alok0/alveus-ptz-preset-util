@@ -3418,7 +3418,13 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "log": { "pan": 99.66, "tilt": -27.91, "zoom": 359, "focus": 4133 }
+      "log": { "pan": 99.66, "tilt": -27.91, "zoom": 359, "focus": 4133 },
+      "awasleeptmp": {
+        "pan": -5.77,
+        "tilt": -12.75,
+        "zoom": 1546,
+        "focus": 7081
+      }
     },
     "isRoaming": false,
     "speed": "50"
