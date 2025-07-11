@@ -1,5 +1,6 @@
 export const cams = [
   "pasture",
+  "garden",
   "wolfcorner",
   "wolf",
   "wolfswitch",

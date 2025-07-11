@@ -1,6 +1,7 @@
 import type { CamType } from "./cams";
 import {
   pasture,
+  garden,
   wolfcorner,
   wolf,
   wolfswitch,
@@ -19,6 +20,7 @@ import {
 
 export default {
   pasture,
+  garden,
   wolfcorner,
   wolf,
   wolfswitch,
