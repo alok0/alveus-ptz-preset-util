@@ -3710,7 +3710,8 @@
         "zoom": 1,
         "focus": 7060,
         "autofocus": "on"
-      }
+      },
+      "tunnel": { "pan": -58.16, "tilt": -31.64, "zoom": 2897, "focus": 5844 }
     },
     "isRoaming": false,
     "speed": "50"
