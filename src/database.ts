@@ -16,6 +16,7 @@ import {
   pushpop,
   pushpopindoor,
   georgie,
+  toast,
 } from "./database.json";
 
 export default {
@@ -35,4 +36,5 @@ export default {
   pushpop,
   pushpopindoor,
   georgie,
+  toast,
 } satisfies Record<CamType, unknown>;

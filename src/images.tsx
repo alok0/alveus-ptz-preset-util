@@ -11,6 +11,7 @@ import marmin_pano from "./marmin_pano.webp";
 import pasture_pano from "./pasture_pano.webp";
 import pushin_pano from "./pushin_pano.webp";
 import pushout_pano from "./pushout_pano.webp";
+import toast_pano from "./toast_pano.webp";
 import wolf_pano from "./wolf_pano.webp";
 import wolfcorner_pano from "./wolfcorner_pano.webp";
 import wolfindoor_pano from "./wolfindoor_pano.webp";
@@ -29,6 +30,7 @@ const images: Record<CamType, string | null> = {
   pasture: pasture_pano,
   pushpop: pushout_pano,
   pushpopindoor: pushin_pano,
+  toast: toast_pano,
   wolf: wolf_pano,
   wolfcorner: wolfcorner_pano,
   wolfindoor: wolfindoor_pano,
