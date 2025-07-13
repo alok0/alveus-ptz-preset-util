@@ -26,7 +26,7 @@ void (async () => {
   console.log(JSON.stringify(info));
 
   const match = info.match(
-    /\((?<cam>\S+)\): (?<pan>\S+)p \|(?<tilt>\S+)t \|(?<zoom>\S+)z \|af on \|(?<focus>\S+)f/,
+    /\((?<cam>\S+)\): (?<pan>\S+)p \|(?<tilt>\S+)t \|(?<zoom>\S+)z \|af (off|on) \|(?<focus>\S+)f/,
   );
   if (!match) {
     throw new Error("input does not match expected pattern");
