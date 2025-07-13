@@ -1700,7 +1700,8 @@
         "brightness": 6000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "denfl": { "pan": 38.64, "tilt": -26.84, "zoom": 375, "focus": 9662 }
     },
     "isRoaming": false,
     "roamTime": "10",
