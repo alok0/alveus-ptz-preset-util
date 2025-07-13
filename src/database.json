@@ -2994,7 +2994,8 @@
         "brightness": 5000,
         "autofocus": "off",
         "autoiris": "on"
-      }
+      },
+      "den1feed": { "pan": 71.67, "tilt": -6.11, "zoom": 1878, "focus": 7268 }
     },
     "isRoaming": false,
     "speed": "65",
