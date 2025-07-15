@@ -3760,12 +3760,7 @@
         "zoom": 193,
         "focus": 4122
       },
-      "pastureright": {
-        "pan": -75.58,
-        "tilt": -12.39,
-        "zoom": 1,
-        "focus": 2945
-      },
+      "pastureright": { "pan": -78, "tilt": -9.59, "zoom": 1, "focus": 2945 },
       "pasturewater": {
         "pan": -100.08,
         "tilt": -18.64,
@@ -3782,7 +3777,13 @@
       "tcleft": { "pan": 15.24, "tilt": -7.75, "zoom": 1, "focus": 4084 },
       "tccenter": { "pan": 54.6, "tilt": -12.93, "zoom": 1, "focus": 4084 },
       "tcright": { "pan": 107.81, "tilt": -6.35, "zoom": 154, "focus": 2234 },
-      "bughotel2": { "pan": 158.68, "tilt": -9.03, "zoom": 6726, "focus": 7694 }
+      "bughotel2": {
+        "pan": 158.68,
+        "tilt": -9.03,
+        "zoom": 6726,
+        "focus": 7694
+      },
+      "pasturepole": { "pan": -89.6, "tilt": -9.48, "zoom": 590, "focus": 7153 }
     },
     "isRoaming": false,
     "roamTime": "25",
