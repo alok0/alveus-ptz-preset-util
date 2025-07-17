@@ -4167,7 +4167,13 @@
         "focus": 6598,
         "autofocus": "on"
       },
-      "heatlamp": { "pan": 115.25, "tilt": -23.66, "zoom": 1, "focus": 7770 }
+      "heatlamp": { "pan": 115.25, "tilt": -23.66, "zoom": 1, "focus": 7770 },
+      "farcornerz": {
+        "pan": 69.41,
+        "tilt": -5.81,
+        "zoom": 10442,
+        "focus": 6414
+      }
     },
     "isRoaming": false,
     "speed": "60"
