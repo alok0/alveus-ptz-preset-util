@@ -35,6 +35,11 @@ const images: Record<CamType, string | null> = {
   wolfcorner: wolfcorner_pano,
   wolfindoor: wolfindoor_pano,
   wolfswitch: wolfswitch_pano,
+
+  noodle: null,
+  roach: null,
+  marty: null,
+  patchy: null,
 };
 
 export const getImage = (name: CamType) => {

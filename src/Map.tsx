@@ -14,7 +14,7 @@ import Stroke from "ol/style/Stroke";
 import Style from "ol/style/Style";
 import TextStyle from "ol/style/Text";
 import { useEffect, useState } from "react";
-import { cams, type CamType } from "./cams";
+import { cams, isCamHidden, type CamType } from "./cams";
 import database from "./database";
 import { getImage } from "./images";
 import { Link } from "wouter";
@@ -144,15 +144,17 @@ export const Map = ({ cam }: { cam: CamType }) => {
       style={{ gridTemplateRows: "auto 1fr" }}
     >
       <div className="tabs tabs-border">
-        {cams.map((c) => (
-          <Link
-            key={c}
-            className={clsx("tab", { "tab-active": cam === c })}
-            href={`/${c}`}
-          >
-            {c}
-          </Link>
-        ))}
+        {cams
+          .filter((c) => !(isCamHidden(c) && cam !== c))
+          .map((c) => (
+            <Link
+              key={c}
+              className={clsx("tab", { "tab-active": cam === c })}
+              href={`/${c}`}
+            >
+              {c}
+            </Link>
+          ))}
       </div>
 
       <div className="bg-base-100 border-base-300" ref={setRef}></div>
