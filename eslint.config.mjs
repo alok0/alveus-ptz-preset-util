@@ -7,8 +7,9 @@ import eslintReactUnified from "@eslint-react/eslint-plugin";
 import reactPlugin from "eslint-plugin-react";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import prettierConfigs from "eslint-config-prettier";
+import path from "node:path";
 
-const dirname = new URL(".", import.meta.url).pathname;
+const dirname = path.resolve(new URL(".", import.meta.url).pathname);
 
 /**
  * @template T
