@@ -1675,10 +1675,10 @@
         "autoiris": "on"
       },
       "bed": {
-        "pan": -2.96,
-        "tilt": -14.92,
-        "zoom": 2798,
-        "focus": 9134,
+        "pan": 74.27,
+        "tilt": -19.43,
+        "zoom": 4793,
+        "focus": 8987,
         "brightness": 6000,
         "autofocus": "on",
         "autoiris": "on"
