@@ -2832,10 +2832,10 @@
         "autoiris": "on"
       },
       "insidedoor": {
-        "pan": -21.25,
-        "tilt": -61.06,
+        "pan": -31.11,
+        "tilt": -30.41,
         "zoom": 1,
-        "focus": 2213,
+        "focus": 2945,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
