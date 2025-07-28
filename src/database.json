@@ -3960,7 +3960,9 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "cubbyr": { "pan": 96.3, "tilt": -27.14, "zoom": 561, "focus": 675 },
+      "cubbyl": { "pan": 70.35, "tilt": -30.54, "zoom": 561, "focus": 3510 }
     },
     "isRoaming": false,
     "speed": "50"
