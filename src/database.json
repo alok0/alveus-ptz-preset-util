@@ -4008,10 +4008,10 @@
         "autoiris": "on"
       },
       "downleft": {
-        "pan": -112.47,
-        "tilt": -31.27,
+        "pan": -99.82,
+        "tilt": -55.47,
         "zoom": 1,
-        "focus": 6256,
+        "focus": 7818,
         "brightness": 5099,
         "autofocus": "on",
         "autoiris": "on"
@@ -4105,7 +4105,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "leftcorner": { "pan": -112.41, "tilt": -31.24, "zoom": 1, "focus": 7818 }
     },
     "isRoaming": false,
     "speed": "60"
