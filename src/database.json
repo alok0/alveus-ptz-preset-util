@@ -1258,7 +1258,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "stickl": { "pan": -146.22, "tilt": -30.62, "zoom": 4598, "focus": 8407 }
     },
     "isRoaming": false
   },
