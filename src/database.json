@@ -2074,7 +2074,8 @@
         "zoom": 7702,
         "focus": 8840
       },
-      "topshelfc": { "pan": 93.74, "tilt": -1.9, "zoom": 3704, "focus": 9051 }
+      "topshelfc": { "pan": 93.74, "tilt": -1.9, "zoom": 3704, "focus": 9051 },
+      "frontropes": { "pan": 101.4, "tilt": -20.68, "zoom": 197, "focus": 9857 }
     },
     "isRoaming": false,
     "speed": "84"
