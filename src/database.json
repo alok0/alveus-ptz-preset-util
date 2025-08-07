@@ -2062,12 +2062,6 @@
         "autoiris": "on"
       },
       "domelt": { "pan": 90.03, "tilt": -3.12, "zoom": 10789, "focus": 8759 },
-      "groundmirror": {
-        "pan": 93.27,
-        "tilt": -30.66,
-        "zoom": 4127,
-        "focus": 8985
-      },
       "bottomshelfc": {
         "pan": 95.74,
         "tilt": -11.89,
