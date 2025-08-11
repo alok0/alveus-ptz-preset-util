@@ -1703,7 +1703,8 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "denfl": { "pan": 38.64, "tilt": -26.84, "zoom": 375, "focus": 9662 }
+      "denfl": { "pan": 38.64, "tilt": -26.84, "zoom": 375, "focus": 9662 },
+      "pool": { "pan": -43.73, "tilt": -33.36, "zoom": 1612, "focus": 9539 }
     },
     "isRoaming": false,
     "roamTime": "10",
