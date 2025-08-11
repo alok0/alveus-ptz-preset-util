@@ -3615,7 +3615,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "fencel": { "pan": -112.45, "tilt": -8.69, "zoom": 1, "focus": 2503 }
     },
     "isRoaming": false,
     "speed": "50"
