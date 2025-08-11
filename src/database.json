@@ -1242,10 +1242,10 @@
         "autoiris": "on"
       },
       "groundl": {
-        "pan": 174.18,
-        "tilt": -36.78,
+        "pan": -168.19,
+        "tilt": -36.84,
         "zoom": 1,
-        "focus": 9716,
+        "focus": 9574,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
