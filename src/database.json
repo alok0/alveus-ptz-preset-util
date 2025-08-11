@@ -3742,7 +3742,8 @@
         "focus": 7060,
         "autofocus": "on"
       },
-      "tunnel": { "pan": -58.16, "tilt": -31.64, "zoom": 2897, "focus": 5844 }
+      "tunnel": { "pan": -58.16, "tilt": -31.64, "zoom": 2897, "focus": 5844 },
+      "toastsleep": { "pan": -38.22, "tilt": -51.11, "zoom": 1, "focus": 7542 }
     },
     "isRoaming": false,
     "speed": "50"
