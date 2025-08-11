@@ -3215,10 +3215,10 @@
         "autoiris": "on"
       },
       "downleft": {
-        "pan": 14.77,
-        "tilt": -54.29,
+        "pan": -1.59,
+        "tilt": -33.78,
         "zoom": 1,
-        "focus": 2945,
+        "focus": 1920,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
