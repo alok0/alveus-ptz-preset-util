@@ -4207,7 +4207,8 @@
         "tilt": -5.81,
         "zoom": 10442,
         "focus": 6414
-      }
+      },
+      "nearcorner": { "pan": 167.16, "tilt": -72.48, "zoom": 1, "focus": 7897 }
     },
     "isRoaming": false,
     "speed": "60"
