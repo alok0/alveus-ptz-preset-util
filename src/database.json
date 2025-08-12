@@ -2076,13 +2076,13 @@
         "zoom": 197,
         "focus": 9857
       },
-      "roundmirror": {
+      "leftpostfloor": {
         "pan": 79.21,
         "tilt": -31.85,
         "zoom": 2708,
         "focus": 9450
       },
-      "cornermirror": {
+      "leftcorner": {
         "pan": 55.92,
         "tilt": -28.09,
         "zoom": 3137,
