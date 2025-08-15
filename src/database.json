@@ -3667,6 +3667,14 @@
         "zoom": 2000,
         "focus": 5020,
         "autofocus": "on"
+      },
+      "cave": { "pan": 29.47, "tilt": -60.41, "zoom": 5171, "focus": 3192 },
+      "log": { "pan": -24.51, "tilt": -70.91, "zoom": 2000, "focus": 1697 },
+      "rightcorner": {
+        "pan": 25.76,
+        "tilt": -59.21,
+        "zoom": 2104,
+        "focus": 2898
       }
     },
     "isRoaming": false
