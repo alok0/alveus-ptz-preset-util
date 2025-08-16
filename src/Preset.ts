@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 const CoercedNumber = z
   .union([z.string(), z.number()])
