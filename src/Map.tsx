@@ -183,7 +183,7 @@ export const Map = ({ cam }: { cam: CamType }) => {
       </div>
       {!!coordDisplay && (
         <div
-          className="absolute z-10 pointer-events-none bottom-4 left-4 p-1 rounded-tr-md bg-base-300 text-base-content overflow-hidden"
+          className="absolute z-10 pointer-events-none bottom-2 left-2 md:bottom-4 md:left-4 p-1 rounded-tr-md bg-base-300 text-base-content overflow-hidden"
           style={{
             fontSize: "0.75rem",
             fontFamily: `"JetBrains Mono Variable",monospace`,
