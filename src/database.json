@@ -3455,7 +3455,8 @@
         "tilt": -12.75,
         "zoom": 1546,
         "focus": 7081
-      }
+      },
+      "treesl": { "pan": -24.82, "tilt": -5.32, "zoom": 646, "focus": 6243 }
     },
     "isRoaming": false,
     "speed": "50"
