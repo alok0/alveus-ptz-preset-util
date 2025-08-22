@@ -3026,7 +3026,8 @@
         "autofocus": "off",
         "autoiris": "on"
       },
-      "den1feed": { "pan": 71.67, "tilt": -6.11, "zoom": 1878, "focus": 7268 }
+      "den1feed": { "pan": 71.67, "tilt": -6.11, "zoom": 1878, "focus": 7268 },
+      "neargrassr": { "pan": 148.94, "tilt": -3.58, "zoom": 682, "focus": 6303 }
     },
     "isRoaming": false,
     "speed": "65",
