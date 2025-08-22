@@ -6,7 +6,7 @@ export const ObjectWithPixel = z.object({
 });
 
 export const multiworldWrap = (pan: number | undefined | null) => {
-  if (!pan || !Number.isFinite(pan)) {
+  if (typeof pan !== "number" || !Number.isFinite(pan)) {
     return undefined;
   }
 

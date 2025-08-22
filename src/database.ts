@@ -22,6 +22,7 @@ import {
   wolfindoor,
   wolfswitch,
 } from "./database.json";
+import type { CamDataInputType } from "./Preset";
 
 export default {
   chicken,
@@ -45,4 +46,4 @@ export default {
   wolfcorner,
   wolfindoor,
   wolfswitch,
-} satisfies Record<CamType, unknown>;
+} satisfies Record<CamType, CamDataInputType>;

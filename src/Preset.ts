@@ -15,3 +15,5 @@ const Preset = z.object({
 export const CamData = z.object({
   presets: z.record(z.string(), Preset),
 });
+
+export type CamDataInputType = z.input<typeof CamData>;
