@@ -377,7 +377,8 @@
         "zoom": 1197,
         "focus": 7321
       },
-      "groundr": { "pan": -19.98, "tilt": -25.16, "zoom": 1, "focus": 7499 }
+      "groundr": { "pan": -19.98, "tilt": -25.16, "zoom": 1, "focus": 7499 },
+      "grovel": { "pan": -59.64, "tilt": -4.21, "zoom": 1296, "focus": 7002 }
     },
     "isRoaming": false,
     "roamTime": "12",
