@@ -2089,7 +2089,13 @@
         "zoom": 3137,
         "focus": 9230
       },
-      "ground": { "pan": 99.71, "tilt": -31.91, "zoom": 984, "focus": 9892 }
+      "ground": { "pan": 99.71, "tilt": -31.91, "zoom": 984, "focus": 9892 },
+      "rightshelvesm": {
+        "pan": 126.34,
+        "tilt": -4.83,
+        "zoom": 5131,
+        "focus": 8852
+      }
     },
     "isRoaming": false,
     "speed": "84"
