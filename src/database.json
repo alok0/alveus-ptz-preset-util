@@ -2096,7 +2096,8 @@
         "tilt": -4.83,
         "zoom": 5131,
         "focus": 8852
-      }
+      },
+      "domeswide": { "pan": 93.64, "tilt": -6.82, "zoom": 1760, "focus": 9609 }
     },
     "isRoaming": false,
     "speed": "84"
