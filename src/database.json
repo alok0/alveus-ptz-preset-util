@@ -2337,6 +2337,12 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
+      },
+      "domeleftshelf": {
+        "pan": -83.11,
+        "tilt": -18.64,
+        "zoom": 2877,
+        "focus": 8244
       }
     },
     "isRoaming": false,
