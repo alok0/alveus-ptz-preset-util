@@ -1706,7 +1706,13 @@
       },
       "denfl": { "pan": 38.64, "tilt": -26.84, "zoom": 375, "focus": 9662 },
       "pool": { "pan": -43.73, "tilt": -33.36, "zoom": 1612, "focus": 9539 },
-      "treer": { "pan": -31.32, "tilt": -15.63, "zoom": 9081, "focus": 8929 }
+      "treer": { "pan": -31.32, "tilt": -15.63, "zoom": 9081, "focus": 8929 },
+      "leftcorner": {
+        "pan": -60.97,
+        "tilt": -15.13,
+        "zoom": 3858,
+        "focus": 9125
+      }
     },
     "isRoaming": false,
     "roamTime": "10",
