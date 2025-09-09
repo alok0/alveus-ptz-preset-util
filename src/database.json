@@ -3845,7 +3845,13 @@
         "zoom": 6726,
         "focus": 7694
       },
-      "pasturepole": { "pan": -89.6, "tilt": -9.48, "zoom": 590, "focus": 7153 }
+      "pasturepole": {
+        "pan": -89.6,
+        "tilt": -9.48,
+        "zoom": 590,
+        "focus": 7153
+      },
+      "sunrise": { "pan": -150.16, "tilt": 1.03, "zoom": 1, "focus": 2945 }
     },
     "isRoaming": false,
     "roamTime": "25",
