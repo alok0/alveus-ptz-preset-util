@@ -2356,6 +2356,12 @@
         "tilt": -18.64,
         "zoom": 2877,
         "focus": 8244
+      },
+      "domerighttop": {
+        "pan": -31.55,
+        "tilt": -20.06,
+        "zoom": 3222,
+        "focus": 8088
       }
     },
     "isRoaming": false,
