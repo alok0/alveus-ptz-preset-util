@@ -379,7 +379,8 @@
       },
       "groundr": { "pan": -19.98, "tilt": -25.16, "zoom": 1, "focus": 7499 },
       "grovel": { "pan": -59.64, "tilt": -4.21, "zoom": 1296, "focus": 7002 },
-      "barn2w": { "pan": -65.39, "tilt": -5.08, "zoom": 794, "focus": 7097 }
+      "barn2w": { "pan": -65.39, "tilt": -5.08, "zoom": 794, "focus": 7097 },
+      "grovefl": { "pan": -61.55, "tilt": -5.6, "zoom": 1924, "focus": 7002 }
     },
     "isRoaming": false,
     "roamTime": "12",
