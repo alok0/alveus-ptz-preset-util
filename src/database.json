@@ -826,6 +826,12 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
+      },
+      "closebranchr": {
+        "pan": -19.65,
+        "tilt": -27.26,
+        "zoom": 1,
+        "focus": 9521
       }
     },
     "isRoaming": false,
