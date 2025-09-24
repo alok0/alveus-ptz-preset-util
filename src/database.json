@@ -4265,7 +4265,13 @@
         "zoom": 10442,
         "focus": 6414
       },
-      "nearcorner": { "pan": 167.16, "tilt": -72.48, "zoom": 1, "focus": 7897 }
+      "nearcorner": { "pan": 167.16, "tilt": -72.48, "zoom": 1, "focus": 7897 },
+      "rightcornerz": {
+        "pan": 113.78,
+        "tilt": -10.57,
+        "zoom": 9083,
+        "focus": 6159
+      }
     },
     "isRoaming": false,
     "speed": "60"
