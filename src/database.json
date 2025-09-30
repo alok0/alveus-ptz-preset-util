@@ -4628,5 +4628,17 @@
     },
     "isRoaming": false
   },
-  "tarantula": { "presets": {}, "isRoaming": false }
+  "tarantula": { "presets": {}, "isRoaming": false },
+  "emu": {
+    "presets": {
+      "foodleft": { "pan": -2.06, "tilt": -15.14, "zoom": 498, "focus": 773 },
+      "foodright": { "pan": 92.46, "tilt": -9.56, "zoom": 572, "focus": 5292 },
+      "gate": { "pan": -60.85, "tilt": -1.48, "zoom": 1, "focus": 2503 },
+      "marmgate": { "pan": 152.34, "tilt": -1.81, "zoom": 1, "focus": 1252 },
+      "pen2left": { "pan": -18.26, "tilt": -5.03, "zoom": 1, "focus": 8122 },
+      "pen2right": { "pan": 99.53, "tilt": -3.01, "zoom": 1, "focus": 1252 },
+      "pen2water": { "pan": -1.37, "tilt": -3.62, "zoom": 1669, "focus": 4683 }
+    },
+    "isRoaming": false
+  }
 }

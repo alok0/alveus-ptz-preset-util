@@ -20,6 +20,7 @@ export const cams = [
   "roach",
   "marty",
   "patchy",
+  "emu",
 ] as const;
 export type CamType = (typeof cams)[number];
 

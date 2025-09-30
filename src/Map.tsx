@@ -129,7 +129,12 @@ export const Map = ({ cam }: { cam: CamType }) => {
       findPoint("center") ||
       findPoint("middle") ||
       findPoint("left") ||
-      findPoint("right");
+      findPoint("right") ||
+      vectorSource
+        .getFeatures()
+        .map((f) => f.getGeometry()?.getExtent())
+        .find(Boolean);
+
     if (home) {
       map.getView().fit(home, { maxZoom: 5 });
     }

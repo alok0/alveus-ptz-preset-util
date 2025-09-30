@@ -3,6 +3,7 @@ import chicken_pano from "./chicken_pano.webp";
 import chickenin_pano from "./chickenin_pano.webp";
 import crowin_pano from "./crowin_pano.webp";
 import crowout_pano from "./crowout_pano.webp";
+import emu_pano from "./emu_pano.webp";
 import fox_pano from "./fox_pano.webp";
 import garden_pano from "./garden_pano.webp";
 import georgie_pano from "./georgie_pano.webp";
@@ -35,6 +36,7 @@ const images: Record<CamType, string | null> = {
   wolfcorner: wolfcorner_pano,
   wolfindoor: wolfindoor_pano,
   wolfswitch: wolfswitch_pano,
+  emu: emu_pano,
 
   noodle: null,
   roach: null,
