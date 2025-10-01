@@ -4637,7 +4637,8 @@
       "marmgate": { "pan": 152.34, "tilt": -1.81, "zoom": 1, "focus": 1252 },
       "pen2left": { "pan": -18.26, "tilt": -5.03, "zoom": 1, "focus": 8122 },
       "pen2right": { "pan": 99.53, "tilt": -3.01, "zoom": 1, "focus": 1252 },
-      "pen2water": { "pan": -1.37, "tilt": -3.62, "zoom": 1669, "focus": 4683 }
+      "pen2water": { "pan": -1.37, "tilt": -3.62, "zoom": 1669, "focus": 4683 },
+      "pen1left": { "pan": 127.41, "tilt": -3.15, "zoom": 1, "focus": 8122 }
     },
     "isRoaming": false
   }
