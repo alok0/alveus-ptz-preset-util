@@ -4649,7 +4649,8 @@
         "focus": 8372
       },
       "home": { "pan": 99.52, "tilt": -3.01, "zoom": 103, "focus": 7997 },
-      "marmwindows": { "pan": 155.09, "tilt": 0, "zoom": 2671, "focus": 7496 }
+      "marmwindows": { "pan": 155.09, "tilt": 0, "zoom": 2671, "focus": 7496 },
+      "marmwin3": { "pan": 156.3, "tilt": 0, "zoom": 10840, "focus": 7296 }
     },
     "isRoaming": false
   }
