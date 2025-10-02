@@ -4648,7 +4648,8 @@
         "zoom": 1,
         "focus": 8372
       },
-      "home": { "pan": 99.52, "tilt": -3.01, "zoom": 103, "focus": 7997 }
+      "home": { "pan": 99.52, "tilt": -3.01, "zoom": 103, "focus": 7997 },
+      "marmwindows": { "pan": 155.09, "tilt": 0, "zoom": 2671, "focus": 7496 }
     },
     "isRoaming": false
   }
