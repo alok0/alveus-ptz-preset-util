@@ -4647,7 +4647,8 @@
         "tilt": -2.52,
         "zoom": 1,
         "focus": 8372
-      }
+      },
+      "home": { "pan": 99.52, "tilt": -3.01, "zoom": 103, "focus": 7997 }
     },
     "isRoaming": false
   }
