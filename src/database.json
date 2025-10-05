@@ -4637,7 +4637,6 @@
       "marmgate": { "pan": 152.34, "tilt": -1.81, "zoom": 1, "focus": 1252 },
       "pen2left": { "pan": -18.26, "tilt": -5.03, "zoom": 1, "focus": 8122 },
       "pen2right": { "pan": 99.53, "tilt": -3.01, "zoom": 1, "focus": 1252 },
-      "pen2water": { "pan": -1.37, "tilt": -3.62, "zoom": 1669, "focus": 4683 },
       "pen1left": { "pan": 127.41, "tilt": -3.15, "zoom": 1, "focus": 8122 },
       "pen1center": { "pan": -179.53, "tilt": -2.18, "zoom": 1, "focus": 8122 },
       "pen1right": { "pan": -122.96, "tilt": -2.52, "zoom": 1, "focus": 8122 },
@@ -4648,9 +4647,16 @@
         "zoom": 1,
         "focus": 8372
       },
-      "home": { "pan": 99.52, "tilt": -3.01, "zoom": 103, "focus": 7997 },
+      "home": { "pan": -122.67, "tilt": -4.79, "zoom": 1, "focus": 5005 },
       "marmwindows": { "pan": 155.09, "tilt": 0, "zoom": 2671, "focus": 7496 },
-      "marmwin3": { "pan": 156.3, "tilt": 0, "zoom": 10840, "focus": 7296 }
+      "marmwin3": { "pan": 156.3, "tilt": 0, "zoom": 10840, "focus": 7296 },
+      "pen2middleish": {
+        "pan": -1.54,
+        "tilt": -3.27,
+        "zoom": 584,
+        "focus": 5005
+      },
+      "pen1shelter": { "pan": 70.9, "tilt": -30.11, "zoom": 1, "focus": 5005 }
     },
     "isRoaming": false
   }
