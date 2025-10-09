@@ -15,7 +15,7 @@ import Fill from "ol/style/Fill";
 import Stroke from "ol/style/Stroke";
 import Style from "ol/style/Style";
 import TextStyle from "ol/style/Text";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useDebounceValue } from "usehooks-ts";
 import { Link } from "wouter";
 import { CamData } from "./Preset";
@@ -26,7 +26,7 @@ import { multiworldWrap, ObjectWithPixel } from "./openlayerTypeUtils";
 
 export const Map = ({ cam }: { cam: CamType }) => {
   const [ref, setRef] = useState<HTMLElement | null>(null);
-  const [map] = useState(
+  const map = useMemo(
     () =>
       new olMap({
         view: new View({
@@ -36,6 +36,7 @@ export const Map = ({ cam }: { cam: CamType }) => {
           constrainRotation: 1,
         }),
       }),
+    [],
   );
 
   useEffect(() => {
