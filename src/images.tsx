@@ -17,6 +17,7 @@ import wolf_pano from "./wolf_pano.webp";
 import wolfcorner_pano from "./wolfcorner_pano.webp";
 import wolfindoor_pano from "./wolfindoor_pano.webp";
 import wolfswitch_pano from "./wolfswitch_pano.webp";
+import parrot_pano from "./parrot_pano.webp";
 
 const images: Record<CamType, string | null> = {
   chicken: chicken_pano,
@@ -37,12 +38,12 @@ const images: Record<CamType, string | null> = {
   wolfindoor: wolfindoor_pano,
   wolfswitch: wolfswitch_pano,
   emu: emu_pano,
+  parrot: parrot_pano,
 
   noodle: null,
   roach: null,
   marty: null,
   patchy: null,
-  parrot: null,
   macaw: null,
 };
 
