@@ -391,7 +391,16 @@
     "speed": "40"
   },
   "parrot": {
-    "presets": {},
+    "presets": {
+      "left": { "pan": 119.59, "tilt": -12.56, "zoom": 1, "focus": 5005 },
+      "right": { "pan": 154.08, "tilt": -12.56, "zoom": 1, "focus": 5005 },
+      "water": { "pan": 139.77, "tilt": -21.99, "zoom": 574, "focus": 5292 },
+      "window": { "pan": 172.29, "tilt": -8.84, "zoom": 1152, "focus": 6322 },
+      "home": { "pan": 140.35, "tilt": -15.2, "zoom": 1, "focus": 5005 },
+      "leftb": { "pan": 119.36, "tilt": -35.42, "zoom": 1, "focus": 5005 },
+      "floorr": { "pan": 157.37, "tilt": -33.33, "zoom": 1, "focus": 5005 },
+      "down": { "pan": 131.91, "tilt": -59.98, "zoom": 1, "focus": 5005 }
+    },
     "isRoaming": false,
     "speed": "67",
     "roamTime": "30",
