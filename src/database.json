@@ -4381,6 +4381,11 @@
     "isRoaming": false
   },
   "macaw": {
-    "presets": {}
+    "presets": {
+      "water": { "pan": 145.18, "tilt": -26.72, "zoom": 165, "focus": 7507 },
+      "home": { "pan": 175.03, "tilt": -23.15, "zoom": 1, "focus": 8873 },
+      "right": { "pan": -146.31, "tilt": -24.14, "zoom": 1, "focus": 8372 },
+      "window": { "pan": 174.6, "tilt": -11.16, "zoom": 1689, "focus": 6628 }
+    }
   }
 }
