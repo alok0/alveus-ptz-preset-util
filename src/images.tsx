@@ -7,8 +7,10 @@ import emu_pano from "./emu_pano.webp";
 import fox_pano from "./fox_pano.webp";
 import garden_pano from "./garden_pano.webp";
 import georgie_pano from "./georgie_pano.webp";
+import macaw_pano from "./macaw_pano.webp";
 import marm_pano from "./marm_pano.webp";
 import marmin_pano from "./marmin_pano.webp";
+import parrot_pano from "./parrot_pano.webp";
 import pasture_pano from "./pasture_pano.webp";
 import pushin_pano from "./pushin_pano.webp";
 import pushout_pano from "./pushout_pano.webp";
@@ -17,7 +19,6 @@ import wolf_pano from "./wolf_pano.webp";
 import wolfcorner_pano from "./wolfcorner_pano.webp";
 import wolfindoor_pano from "./wolfindoor_pano.webp";
 import wolfswitch_pano from "./wolfswitch_pano.webp";
-import parrot_pano from "./parrot_pano.webp";
 
 const images: Record<CamType, string | null> = {
   chicken: chicken_pano,
@@ -39,12 +40,12 @@ const images: Record<CamType, string | null> = {
   wolfswitch: wolfswitch_pano,
   emu: emu_pano,
   parrot: parrot_pano,
+  macaw: macaw_pano,
 
   noodle: null,
   roach: null,
   marty: null,
   patchy: null,
-  macaw: null,
 };
 
 export const getImage = (name: CamType) => {
