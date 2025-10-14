@@ -399,7 +399,14 @@
       "home": { "pan": 140.35, "tilt": -15.2, "zoom": 1, "focus": 5005 },
       "leftb": { "pan": 119.36, "tilt": -35.42, "zoom": 1, "focus": 5005 },
       "floorr": { "pan": 157.37, "tilt": -33.33, "zoom": 1, "focus": 5005 },
-      "down": { "pan": 131.91, "tilt": -59.98, "zoom": 1, "focus": 5005 }
+      "down": { "pan": 131.91, "tilt": -59.98, "zoom": 1, "focus": 5005 },
+      "miasleep": { "pan": 154.92, "tilt": -7.44, "zoom": 1784, "focus": 5843 },
+      "sirensleep": {
+        "pan": 116.55,
+        "tilt": -13.99,
+        "zoom": 1066,
+        "focus": 5318
+      }
     },
     "isRoaming": false,
     "speed": "67",
