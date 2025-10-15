@@ -406,7 +406,11 @@
         "tilt": -13.99,
         "zoom": 1066,
         "focus": 5318
-      }
+      },
+      "bowlr": { "pan": 150.97, "tilt": -4.43, "zoom": 1219, "focus": 6006 },
+      "bowlm": { "pan": 150.75, "tilt": -12.71, "zoom": 768, "focus": 5339 },
+      "waterl": { "pan": 129.01, "tilt": -10.98, "zoom": 638, "focus": 5435 },
+      "bowll": { "pan": 128.06, "tilt": -24.85, "zoom": 428, "focus": 6209 }
     },
     "isRoaming": false,
     "speed": "67",
