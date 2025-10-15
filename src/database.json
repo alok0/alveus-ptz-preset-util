@@ -402,10 +402,10 @@
       "down": { "pan": 131.91, "tilt": -59.98, "zoom": 1, "focus": 5005 },
       "miasleep": { "pan": 154.92, "tilt": -7.44, "zoom": 1784, "focus": 5843 },
       "sirensleep": {
-        "pan": 116.55,
-        "tilt": -13.99,
-        "zoom": 1066,
-        "focus": 5318
+        "pan": -177.88,
+        "tilt": -1.6,
+        "zoom": 3261,
+        "focus": 4819
       },
       "bowlr": { "pan": 150.97, "tilt": -4.43, "zoom": 1219, "focus": 6006 },
       "bowlm": { "pan": 150.75, "tilt": -12.71, "zoom": 768, "focus": 5339 },
