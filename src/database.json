@@ -410,7 +410,8 @@
       "bowlr": { "pan": 150.97, "tilt": -4.43, "zoom": 1219, "focus": 6006 },
       "bowlm": { "pan": 150.75, "tilt": -12.71, "zoom": 768, "focus": 5339 },
       "waterl": { "pan": 129.01, "tilt": -10.98, "zoom": 638, "focus": 5435 },
-      "bowll": { "pan": 128.06, "tilt": -24.85, "zoom": 428, "focus": 6209 }
+      "bowll": { "pan": 128.06, "tilt": -24.85, "zoom": 428, "focus": 6209 },
+      "winl": { "pan": 164.23, "tilt": -6.2, "zoom": 327, "focus": 3754 }
     },
     "isRoaming": false,
     "speed": "67",
@@ -4407,7 +4408,10 @@
       "right": { "pan": -146.31, "tilt": -24.14, "zoom": 1, "focus": 8372 },
       "window": { "pan": 174.6, "tilt": -11.16, "zoom": 1689, "focus": 6628 },
       "bowlr": { "pan": -175.74, "tilt": -10.1, "zoom": 1905, "focus": 6784 },
-      "bowld": { "pan": -159.8, "tilt": -59.98, "zoom": 345, "focus": 4419 }
+      "bowld": { "pan": -159.8, "tilt": -59.98, "zoom": 345, "focus": 4419 },
+      "winl": { "pan": 170.97, "tilt": -14.9, "zoom": 768, "focus": 6307 },
+      "postmt": { "pan": 165.64, "tilt": -14.46, "zoom": 601, "focus": 6295 },
+      "postmb": { "pan": 165.63, "tilt": -22.03, "zoom": 601, "focus": 6006 }
     }
   }
 }
