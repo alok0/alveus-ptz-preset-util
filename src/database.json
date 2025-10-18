@@ -361,15 +361,6 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "mirrortemp": {
-        "pan": -4.67,
-        "tilt": -1.38,
-        "zoom": 1841,
-        "focus": 7036,
-        "brightness": 5000,
-        "autofocus": "on",
-        "autoiris": "on"
-      },
       "grove2r": { "pan": -30.67, "tilt": -3.22, "zoom": 1316, "focus": 7082 },
       "purplebasel": {
         "pan": -44.48,
@@ -380,7 +371,8 @@
       "groundr": { "pan": -19.98, "tilt": -25.16, "zoom": 1, "focus": 7499 },
       "grovel": { "pan": -59.64, "tilt": -4.21, "zoom": 1296, "focus": 7002 },
       "barn2w": { "pan": -65.39, "tilt": -5.08, "zoom": 794, "focus": 7097 },
-      "grovefl": { "pan": -61.55, "tilt": -5.6, "zoom": 1924, "focus": 7002 }
+      "grovefl": { "pan": -61.55, "tilt": -5.6, "zoom": 1924, "focus": 7002 },
+      "grove3": { "pan": -4.68, "tilt": -1.39, "zoom": 1840, "focus": 6832 }
     },
     "isRoaming": false,
     "roamTime": "12",
