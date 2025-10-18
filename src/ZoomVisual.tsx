@@ -16,11 +16,12 @@ const ZoomLevel: React.FC<{ level: number; rectClasses?: string }> = ({
         height={64}
         width={256}
       >
-        <div className="text-base-content text-4xl m-4">{level}</div>
+        <div className="text-base-content text-4xl mx-4 my-1">{level}</div>
       </foreignObject>
       <rect
         width={1920 / mult}
         height={1080 / mult}
+        rx={8}
         x={-1920 / mult / 2}
         y={-1080 / mult / 2}
         fillOpacity={0}
@@ -44,8 +45,10 @@ export const ZoomVisual: React.FC = () => {
             <ZoomLevel rectClasses="opacity-0" level={100} />
 
             <ZoomLevel level={50} />
-            <ZoomLevel level={60} />
-            <ZoomLevel level={75} />
+            <ZoomLevel level={67} />
+            <ZoomLevel level={80} />
+            <ZoomLevel level={90} />
+            <ZoomLevel level={110} />
             <ZoomLevel level={125} />
             <ZoomLevel level={150} />
             <ZoomLevel level={200} />
