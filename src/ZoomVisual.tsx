@@ -47,12 +47,9 @@ export const ZoomVisual: React.FC = () => {
             <ZoomLevel level={50} />
             <ZoomLevel level={67} />
             <ZoomLevel level={80} />
-            <ZoomLevel level={90} />
-            <ZoomLevel level={110} />
             <ZoomLevel level={125} />
             <ZoomLevel level={150} />
             <ZoomLevel level={200} />
-            <ZoomLevel level={300} />
             <ZoomLevel level={400} />
             <ZoomLevel level={800} />
           </svg>
