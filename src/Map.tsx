@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import { Feature, Graticule } from "ol";
 import type { FeatureLike } from "ol/Feature";
 import olMap from "ol/Map";
@@ -17,9 +16,9 @@ import Style from "ol/style/Style";
 import TextStyle from "ol/style/Text";
 import { useEffect, useMemo, useState } from "react";
 import { useDebounceValue } from "usehooks-ts";
-import { Link } from "wouter";
+import { Nav } from "./Nav";
 import { CamData } from "./Preset";
-import { cams, isCamHidden, type CamType } from "./cams";
+import { type CamType } from "./cams";
 import database from "./database";
 import { getImage } from "./images";
 import { multiworldWrap, ObjectWithPixel } from "./openlayerTypeUtils";
@@ -174,19 +173,7 @@ export const Map = ({ cam }: { cam: CamType }) => {
       className="absolute inset-0 bg-base-300 text-base-content p-2 md:p-4 grid gap-2"
       style={{ gridTemplateRows: "auto 1fr" }}
     >
-      <div className="tabs tabs-border">
-        {cams
-          .filter((c) => !(isCamHidden(c) && cam !== c))
-          .map((c) => (
-            <Link
-              key={c}
-              className={clsx("tab", { "tab-active": cam === c })}
-              href={`/${c}`}
-            >
-              {c}
-            </Link>
-          ))}
-      </div>
+      <Nav />
       {!!coordDisplay && (
         <div
           className="absolute z-10 pointer-events-none bottom-2 left-2 md:bottom-4 md:left-4 p-1 rounded-tr-md bg-base-300 text-base-content overflow-hidden"

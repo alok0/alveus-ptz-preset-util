@@ -1,11 +1,11 @@
 import { useEffect, useMemo } from "react";
+import { ErrorBoundary, type FallbackProps } from "react-error-boundary";
+import { Route, Router, Switch, useLocation, useRoute } from "wouter";
+import { useHashLocation } from "wouter/use-hash-location";
+import { cams } from "./cams";
 import { Map } from "./Map";
 import { Welcome } from "./Welcome";
-import { Route, useLocation, useRoute } from "wouter";
-import { cams } from "./cams";
-import { useHashLocation } from "wouter/use-hash-location";
-import { Router } from "wouter";
-import { ErrorBoundary, type FallbackProps } from "react-error-boundary";
+import { ZoomVisual } from "./ZoomVisual";
 
 export const AppMain = () => {
   const [match, params] = useRoute("/cam/:cam");
@@ -25,10 +25,7 @@ export const AppMain = () => {
 
   return (
     <>
-      <Route path="/cam" nest>
-        <Welcome />
-        <Map cam={cam} />
-      </Route>
+      <Map cam={cam} />
     </>
   );
 };
@@ -49,7 +46,15 @@ export const App = () => {
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Router hook={useHashLocation}>
-        <AppMain />
+        <Welcome />
+        <Switch>
+          <Route path="/cam" component={AppMain} />
+          <Route path="/zoom-visual" component={ZoomVisual} />
+          <Route>
+            {/* fallback */}
+            <AppMain />
+          </Route>
+        </Switch>
       </Router>
     </ErrorBoundary>
   );
