@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui" {
   themes: dark --default;
+  exclude: rootscrollgutter;
 }
 
 /* jetbrains-mono-latin-wght-normal */

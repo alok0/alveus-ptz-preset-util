@@ -4,7 +4,6 @@ import { Route, Router, Switch, useLocation, useRoute } from "wouter";
 import { useHashLocation } from "wouter/use-hash-location";
 import { cams } from "./cams";
 import { Map } from "./Map";
-import { Welcome } from "./Welcome";
 import { ZoomVisual } from "./ZoomVisual";
 
 export const AppMain = () => {
@@ -46,7 +45,6 @@ export const App = () => {
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Router hook={useHashLocation}>
-        <Welcome />
         <Switch>
           <Route path="/cam" component={AppMain} />
           <Route path="/zoom-visual" component={ZoomVisual} />
