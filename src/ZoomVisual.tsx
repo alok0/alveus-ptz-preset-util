@@ -25,7 +25,7 @@ const ZoomLevel: React.FC<{ level: number; rectClasses?: string }> = ({
         x={-1920 / mult / 2}
         y={-1080 / mult / 2}
         fillOpacity={0}
-        className={clsx("stroke-success", rectClasses)}
+        className={clsx("stroke-success stroke-3", rectClasses)}
       />
     </>
   );
