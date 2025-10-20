@@ -403,7 +403,8 @@
       "bowlm": { "pan": 150.75, "tilt": -12.71, "zoom": 768, "focus": 5339 },
       "waterl": { "pan": 129.01, "tilt": -10.98, "zoom": 638, "focus": 5435 },
       "bowll": { "pan": 128.06, "tilt": -24.85, "zoom": 428, "focus": 6209 },
-      "winl": { "pan": 164.23, "tilt": -6.2, "zoom": 327, "focus": 3754 }
+      "winl": { "pan": 164.23, "tilt": -6.2, "zoom": 327, "focus": 3754 },
+      "awning": { "pan": 165.75, "tilt": 0, "zoom": 150, "focus": 1252 }
     },
     "isRoaming": false,
     "speed": "67",
