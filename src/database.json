@@ -4397,7 +4397,8 @@
         "focus": 5005
       },
       "pen1shelter": { "pan": 70.9, "tilt": -30.11, "zoom": 1, "focus": 5005 },
-      "feeder": { "pan": 71.02, "tilt": -18.65, "zoom": 1, "focus": 5005 }
+      "feeder": { "pan": 71.02, "tilt": -18.65, "zoom": 1, "focus": 5005 },
+      "feedwide": { "pan": 85.54, "tilt": -12.82, "zoom": 1, "focus": 5005 }
     },
     "isRoaming": false
   },
