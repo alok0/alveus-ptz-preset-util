@@ -404,7 +404,8 @@
       "waterl": { "pan": 129.01, "tilt": -10.98, "zoom": 638, "focus": 5435 },
       "bowll": { "pan": 128.06, "tilt": -24.85, "zoom": 428, "focus": 6209 },
       "winl": { "pan": 164.23, "tilt": -6.2, "zoom": 327, "focus": 3754 },
-      "awning": { "pan": 165.75, "tilt": 0, "zoom": 150, "focus": 1252 }
+      "awning": { "pan": 165.75, "tilt": 0, "zoom": 150, "focus": 1252 },
+      "inside": { "pan": 173.04, "tilt": -8.16, "zoom": 1900, "focus": 6291 }
     },
     "isRoaming": false,
     "speed": "67",
