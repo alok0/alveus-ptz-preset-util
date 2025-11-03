@@ -3922,7 +3922,13 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "leftcorner": { "pan": -112.41, "tilt": -31.24, "zoom": 1, "focus": 7818 }
+      "leftcorner": {
+        "pan": -112.41,
+        "tilt": -31.24,
+        "zoom": 1,
+        "focus": 7818
+      },
+      "left": { "pan": -81.65, "tilt": -21.82, "zoom": 1, "focus": 1847 }
     },
     "isRoaming": false,
     "speed": "60"
