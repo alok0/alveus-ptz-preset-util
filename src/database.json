@@ -1541,7 +1541,18 @@
     "speed": "84"
   },
   "marmosetindoor": {
-    "presets": {},
+    "presets": {
+      "home": { "pan": 107.6, "tilt": -22.9, "zoom": 1, "focus": 5005 },
+      "win1": { "pan": 92.76, "tilt": -43.9, "zoom": 1289, "focus": 5963 },
+      "win2": { "pan": 122.75, "tilt": -24.74, "zoom": 786, "focus": 5005 },
+      "win3": { "pan": 140.58, "tilt": -25.29, "zoom": 1010, "focus": 4800 },
+      "win4": { "pan": 170.62, "tilt": -16.54, "zoom": 689, "focus": 3881 },
+      "right": { "pan": 155.6, "tilt": -18.79, "zoom": 1, "focus": 5005 },
+      "flaps": { "pan": 54.2, "tilt": -37.18, "zoom": 172, "focus": 2004 },
+      "left": { "pan": 52.07, "tilt": -26.89, "zoom": 1, "focus": 2503 },
+      "domel": { "pan": 87.4, "tilt": -15.32, "zoom": 689, "focus": 3129 },
+      "domer": { "pan": 132.57, "tilt": -14.34, "zoom": 1035, "focus": 3998 }
+    },
     "isRoaming": false,
     "speed": "80",
     "roamTime": "2",
