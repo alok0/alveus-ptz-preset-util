@@ -31,7 +31,6 @@ const HiddenCams = new Set([
   "roach",
   "marty",
   "patchy",
-  "marmoset",
   "marmosetindoor",
 ]);
 
