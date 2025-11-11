@@ -23,6 +23,21 @@ import database from "./database";
 import { getImage } from "./images";
 import { multiworldWrap, ObjectWithPixel } from "./openlayerTypeUtils";
 
+// console.log(
+//   JSON.stringify(
+//     Object.fromEntries(
+//       Object.entries(CamData.parse(database.pasture).presets).map(([k, p]) => [
+//         k,
+//         {
+//           ...p,
+//           pan: Number((p.pan + 41.13).toFixed(3)),
+//           tilt: Number((p.tilt - 1.25).toFixed(3)),
+//         },
+//       ]),
+//     ),
+//   ),
+// );
+
 export const Map = ({ cam }: { cam: CamType }) => {
   const [ref, setRef] = useState<HTMLElement | null>(null);
   const map = useMemo(
