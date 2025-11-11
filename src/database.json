@@ -1557,13 +1557,18 @@
         "focus": 748
       },
       "nearrightshelves": {
-        "pan": 176.23,
-        "tilt": -11.61,
+        "pan": 178.45,
+        "tilt": -10.16,
         "zoom": 332,
-        "focus": 748
+        "focus": 1860
       },
-      "farleftb": { "pan": 135.35, "tilt": -10.27, "zoom": 332, "focus": 2972 },
-      "farleftt": { "pan": 136.02, "tilt": 3.43, "zoom": 332, "focus": 1584 }
+      "farcornerb": {
+        "pan": 135.35,
+        "tilt": -10.27,
+        "zoom": 332,
+        "focus": 2972
+      },
+      "farcornert": { "pan": 136.02, "tilt": 3.43, "zoom": 332, "focus": 1584 }
     },
     "isRoaming": false,
     "speed": "84"
@@ -1593,7 +1598,22 @@
         "tilt": -14.16,
         "zoom": 689,
         "focus": 2386
-      }
+      },
+      "downleft": { "pan": 15.05, "tilt": -49.51, "zoom": 1, "focus": 1 },
+      "behind": { "pan": -92.08, "tilt": -56.33, "zoom": 1, "focus": 1 },
+      "nearrightshelf": {
+        "pan": -169.21,
+        "tilt": -26.32,
+        "zoom": 1,
+        "focus": 1
+      },
+      "floorbranch": {
+        "pan": 130.45,
+        "tilt": -37.86,
+        "zoom": 213,
+        "focus": 5506
+      },
+      "floor": { "pan": 117.85, "tilt": -63.48, "zoom": 1, "focus": 7006 }
     },
     "isRoaming": false,
     "speed": "80",
