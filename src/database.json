@@ -1579,7 +1579,21 @@
       "flaps": { "pan": 54.2, "tilt": -37.18, "zoom": 172, "focus": 2004 },
       "left": { "pan": 52.07, "tilt": -26.89, "zoom": 1, "focus": 2503 },
       "domel": { "pan": 87.4, "tilt": -15.32, "zoom": 689, "focus": 3129 },
-      "domer": { "pan": 132.57, "tilt": -14.34, "zoom": 1035, "focus": 3998 }
+      "domer": { "pan": 132.57, "tilt": -14.34, "zoom": 1035, "focus": 3998 },
+      "leftcornerb": { "pan": 79.9, "tilt": -36.26, "zoom": 1, "focus": 1 },
+      "leftcornert": { "pan": 74.45, "tilt": -1.24, "zoom": 1, "focus": 1 },
+      "hammock": { "pan": 95.53, "tilt": -4.6, "zoom": 345, "focus": 1477 },
+      "domelt": { "pan": 87.65, "tilt": -7.93, "zoom": 689, "focus": 1506 },
+      "table": { "pan": 115.86, "tilt": -31.87, "zoom": 689, "focus": 3881 },
+      "domert": { "pan": 135.11, "tilt": -7.96, "zoom": 689, "focus": 4135 },
+      "domerl": { "pan": 125.95, "tilt": -13.14, "zoom": 689, "focus": 3255 },
+      "domerr": { "pan": 142.32, "tilt": -16.47, "zoom": 689, "focus": 3255 },
+      "domelshelf": {
+        "pan": 103.69,
+        "tilt": -14.16,
+        "zoom": 689,
+        "focus": 2386
+      }
     },
     "isRoaming": false,
     "speed": "80",
