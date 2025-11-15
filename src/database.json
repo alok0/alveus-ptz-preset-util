@@ -2816,13 +2816,7 @@
         "zoom": 590,
         "focus": 7153
       },
-      "sunrise": { "pan": -150.16, "tilt": 1.03, "zoom": 1, "focus": 2945 },
-      "katydidbughunt": {
-        "pan": 122.78,
-        "tilt": -2.47,
-        "zoom": 9316,
-        "focus": 6628
-      }
+      "sunrise": { "pan": -150.16, "tilt": 1.03, "zoom": 1, "focus": 2945 }
     },
     "isRoaming": false,
     "roamTime": "25",
