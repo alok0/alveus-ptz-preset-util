@@ -1132,12 +1132,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:19.2.4":
-  version: 19.2.4
-  resolution: "@types/react@npm:19.2.4"
+"@types/react@npm:19.2.5":
+  version: 19.2.5
+  resolution: "@types/react@npm:19.2.5"
   dependencies:
     csstype: "npm:^3.0.2"
-  checksum: 10c0/c878262c4bce047e53a44ef644088fce359ebdfdca7060a4ac1717c8362563b9506a7ebae145977836e95d5948b8f8b426dcd516044c3a3c0563a6f1b60408ce
+  checksum: 10c0/1f9a92c73a5ea5b167f59cd0b5b9460fde65bd22b63b6d23bfaace8ad38537df127c97657418b4912a7a03a66e6451e82a41b84718d638ec1c8e4f0515d94793
   languageName: node
   linkType: hard
 
@@ -1335,10 +1335,10 @@ __metadata:
     "@tsconfig/vite-react": "npm:7.0.2"
     "@types/eslint-plugin-jsx-a11y": "npm:6.10.1"
     "@types/node": "npm:24.10.1"
-    "@types/react": "npm:19.2.4"
+    "@types/react": "npm:19.2.5"
     "@types/react-dom": "npm:19.2.3"
     clsx: "npm:2.1.1"
-    daisyui: "npm:5.5.3"
+    daisyui: "npm:5.5.5"
     eslint: "npm:9.39.1"
     eslint-config-prettier: "npm:10.1.8"
     eslint-plugin-jsx-a11y: "npm:6.10.2"
@@ -1785,10 +1785,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:5.5.3":
-  version: 5.5.3
-  resolution: "daisyui@npm:5.5.3"
-  checksum: 10c0/275f39d4784ea5b412b200b201d6daf75bf940866a4ab55f713154b1ef7eafb7babf72f705738b0060a2caab4a89737af21c8ce0a1fd8d995ff08ce6e1077002
+"daisyui@npm:5.5.5":
+  version: 5.5.5
+  resolution: "daisyui@npm:5.5.5"
+  checksum: 10c0/d199f9ca3699142d91e0716acf2d0c3c6cd4c840a21b431df8cd3b8b79b0b986c2888deffa89d83cc038fe39364467bd966a48b071754df08186ecb3e3905e41
   languageName: node
   linkType: hard
 
