@@ -1162,6 +1162,12 @@
         "tilt": -18.86,
         "zoom": 6087,
         "focus": 8928
+      },
+      "bedmirrortemp": {
+        "pan": 0.68,
+        "tilt": -17.06,
+        "zoom": 5041,
+        "focus": 9010
       }
     },
     "isRoaming": false,
