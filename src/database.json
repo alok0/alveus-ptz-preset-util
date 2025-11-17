@@ -1168,6 +1168,12 @@
         "tilt": -17.06,
         "zoom": 5041,
         "focus": 9010
+      },
+      "mirrortmp": {
+        "pan": -29.55,
+        "tilt": -32.11,
+        "zoom": 631,
+        "focus": 9662
       }
     },
     "isRoaming": false,
