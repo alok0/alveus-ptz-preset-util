@@ -71,9 +71,15 @@
       "groundr": { "pan": 21.15, "tilt": -26.41, "zoom": 1, "focus": 7499 },
       "grovel": { "pan": -18.5, "tilt": -5.46, "zoom": 2411, "focus": 7002 },
       "barn2w": { "pan": -24.25, "tilt": -6.33, "zoom": 1910, "focus": 7231 },
-      "downleft": { "pan": 83.89, "tilt": -6.61, "zoom": 2183, "focus": 5573 },
+      "insidebarnz": {
+        "pan": 83.89,
+        "tilt": -6.61,
+        "zoom": 2183,
+        "focus": 5573
+      },
       "grovefl": { "pan": -20.42, "tilt": -6.85, "zoom": 3039, "focus": 7002 },
-      "grove3": { "pan": 36.45, "tilt": -2.64, "zoom": 2955, "focus": 6832 }
+      "grove3": { "pan": 36.45, "tilt": -2.64, "zoom": 2955, "focus": 6832 },
+      "downleft": { "pan": -19.13, "tilt": -47.72, "zoom": 1, "focus": 3091 }
     },
     "isRoaming": false,
     "roamTime": "12",
@@ -1169,12 +1175,7 @@
         "zoom": 5041,
         "focus": 9010
       },
-      "mirrortmp": {
-        "pan": -29.55,
-        "tilt": -32.11,
-        "zoom": 631,
-        "focus": 9662
-      }
+      "mirrortmp": { "pan": -29.55, "tilt": -32.11, "zoom": 631, "focus": 9662 }
     },
     "isRoaming": false,
     "roamTime": "10",
