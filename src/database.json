@@ -113,7 +113,8 @@
       "winl": { "pan": 164.23, "tilt": -6.2, "zoom": 327, "focus": 3754 },
       "awning": { "pan": 165.75, "tilt": 0, "zoom": 150, "focus": 1252 },
       "inside": { "pan": 173.04, "tilt": -8.16, "zoom": 1900, "focus": 6291 },
-      "leftback": { "pan": 118.2, "tilt": -7.13, "zoom": 258, "focus": 3089 }
+      "leftback": { "pan": 118.2, "tilt": -7.13, "zoom": 258, "focus": 3089 },
+      "leftcorner": { "pan": 109.17, "tilt": -6.51, "zoom": 798, "focus": 6006 }
     },
     "isRoaming": false,
     "speed": "67",
