@@ -2621,7 +2621,13 @@
         "autoiris": "on"
       },
       "fencel": { "pan": -112.45, "tilt": -8.69, "zoom": 1, "focus": 2503 },
-      "reedtmp": { "pan": -59.6, "tilt": -33.09, "zoom": 689, "focus": 5005 }
+      "reedtmp": { "pan": -59.6, "tilt": -33.09, "zoom": 689, "focus": 5005 },
+      "platformlefttop": {
+        "pan": -133.52,
+        "tilt": -4.71,
+        "zoom": 923,
+        "focus": 6600
+      }
     },
     "isRoaming": false,
     "speed": "50"
