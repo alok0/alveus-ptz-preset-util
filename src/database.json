@@ -2620,7 +2620,8 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "fencel": { "pan": -112.45, "tilt": -8.69, "zoom": 1, "focus": 2503 }
+      "fencel": { "pan": -112.45, "tilt": -8.69, "zoom": 1, "focus": 2503 },
+      "reedtmp": { "pan": -59.6, "tilt": -33.09, "zoom": 689, "focus": 5005 }
     },
     "isRoaming": false,
     "speed": "50"
