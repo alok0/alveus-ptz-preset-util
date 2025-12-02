@@ -114,7 +114,18 @@
       "awning": { "pan": 165.75, "tilt": 0, "zoom": 150, "focus": 1252 },
       "inside": { "pan": 173.04, "tilt": -8.16, "zoom": 1900, "focus": 6291 },
       "leftback": { "pan": 118.2, "tilt": -7.13, "zoom": 258, "focus": 3089 },
-      "leftcorner": { "pan": 109.17, "tilt": -6.51, "zoom": 798, "focus": 6006 }
+      "leftcorner": {
+        "pan": 109.17,
+        "tilt": -6.51,
+        "zoom": 798,
+        "focus": 6006
+      },
+      "macawsinside": {
+        "pan": 139.55,
+        "tilt": -5.83,
+        "zoom": 1678,
+        "focus": 6936
+      }
     },
     "isRoaming": false,
     "speed": "67",
