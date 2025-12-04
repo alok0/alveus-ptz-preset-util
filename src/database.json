@@ -34,12 +34,7 @@
       "brushr": { "pan": -2.76, "tilt": -7.45, "zoom": 2296, "focus": 6971 },
       "stompyfood": { "pan": 95.1, "tilt": -9.25, "zoom": 1514, "focus": 6209 },
       "donksleep": { "pan": 17.63, "tilt": -5.08, "zoom": 4037, "focus": 6832 },
-      "saltlick": {
-        "pan": -25.22,
-        "tilt": -5.81,
-        "zoom": 10946,
-        "focus": 6753
-      },
+      "saltlick": { "pan": -24.56, "tilt": -5.58, "zoom": 9991, "focus": 8016 },
       "gate": { "pan": 61.6, "tilt": -31.9, "zoom": 1, "focus": 7321 },
       "barnfloor": { "pan": 99.51, "tilt": -52.83, "zoom": 1, "focus": 5573 },
       "fencel": { "pan": -26.7, "tilt": -11.16, "zoom": 1812, "focus": 7231 },
@@ -2850,7 +2845,8 @@
         "zoom": 590,
         "focus": 7153
       },
-      "sunrise": { "pan": -150.16, "tilt": 1.03, "zoom": 1, "focus": 2945 }
+      "sunrise": { "pan": -150.16, "tilt": 1.03, "zoom": 1, "focus": 2945 },
+      "sunriser": { "pan": -88.97, "tilt": 1.48, "zoom": 1, "focus": 748 }
     },
     "isRoaming": false,
     "roamTime": "25",
