@@ -33,7 +33,7 @@ jobs:
           echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
           echo "month=$(/bin/date -u "+%Y%m")" >> $GITHUB_OUTPUT
           echo "year=$(/bin/date -u "+%Y")" >> $GITHUB_OUTPUT
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         id: yarn-cache
         with:
           path: ${{ steps.cache-vars.outputs.dir }}
