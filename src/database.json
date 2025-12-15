@@ -821,7 +821,13 @@
       "rightramp": { "pan": -1.06, "tilt": -0.76, "zoom": 1, "focus": 1 },
       "river": { "pan": -42.21, "tilt": -3.64, "zoom": 1, "focus": 1 },
       "insideright": { "pan": 96.94, "tilt": -14.73, "zoom": 1, "focus": 9999 },
-      "insideleft": { "pan": 140.96, "tilt": -14.89, "zoom": 1, "focus": 9052 }
+      "insideleft": { "pan": 140.96, "tilt": -14.89, "zoom": 1, "focus": 9052 },
+      "leftplatformb": {
+        "pan": -112.3,
+        "tilt": -3.76,
+        "zoom": 588,
+        "focus": 8229
+      }
     },
     "isRoaming": false,
     "roamTime": "10",
