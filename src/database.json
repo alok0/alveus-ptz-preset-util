@@ -3299,7 +3299,8 @@
       "postmt": { "pan": 165.64, "tilt": -14.46, "zoom": 601, "focus": 6295 },
       "postmb": { "pan": 165.63, "tilt": -22.03, "zoom": 601, "focus": 6006 },
       "perchbr": { "pan": -145.77, "tilt": -9.13, "zoom": 345, "focus": 6006 },
-      "winr": { "pan": 179.41, "tilt": -10.84, "zoom": 718, "focus": 5896 }
+      "winr": { "pan": 179.41, "tilt": -10.84, "zoom": 718, "focus": 5896 },
+      "winrf": { "pan": 179.33, "tilt": -13.43, "zoom": 505, "focus": 4819 }
     }
   }
 }
