@@ -120,7 +120,8 @@
         "tilt": -5.83,
         "zoom": 1678,
         "focus": 6936
-      }
+      },
+      "door": { "pan": 156.88, "tilt": -6.47, "zoom": 137, "focus": 1 }
     },
     "isRoaming": false,
     "speed": "67",
