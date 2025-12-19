@@ -828,6 +828,12 @@
         "tilt": -3.76,
         "zoom": 588,
         "focus": 8229
+      },
+      "insideplatform": {
+        "pan": 153.76,
+        "tilt": -5.1,
+        "zoom": 1510,
+        "focus": 1915
       }
     },
     "isRoaming": false,
