@@ -834,7 +834,14 @@
         "tilt": -5.1,
         "zoom": 1510,
         "focus": 1915
-      }
+      },
+      "backleftcorner": {
+        "pan": -125.46,
+        "tilt": -3.93,
+        "zoom": 1589,
+        "focus": 8455
+      },
+      "stump": { "pan": -121.78, "tilt": -3.38, "zoom": 4014, "focus": 8296 }
     },
     "isRoaming": false,
     "roamTime": "10",
