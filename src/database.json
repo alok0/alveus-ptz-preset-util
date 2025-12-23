@@ -841,7 +841,13 @@
         "zoom": 1589,
         "focus": 8455
       },
-      "stump": { "pan": -121.78, "tilt": -3.38, "zoom": 4014, "focus": 8296 }
+      "stump": { "pan": -121.78, "tilt": -3.38, "zoom": 4014, "focus": 8296 },
+      "timbertree": {
+        "pan": -32.89,
+        "tilt": -0.65,
+        "zoom": 2237,
+        "focus": 8191
+      }
     },
     "isRoaming": false,
     "roamTime": "10",
