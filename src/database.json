@@ -956,7 +956,8 @@
         "zoom": 332,
         "focus": 2972
       },
-      "farcornert": { "pan": 136.02, "tilt": 3.43, "zoom": 332, "focus": 1584 }
+      "farcornert": { "pan": 136.02, "tilt": 3.43, "zoom": 332, "focus": 1584 },
+      "domelut": { "pan": 128.77, "tilt": 2.96, "zoom": 729, "focus": 4507 }
     },
     "isRoaming": false,
     "speed": "84"
