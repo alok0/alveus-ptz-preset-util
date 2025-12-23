@@ -848,7 +848,8 @@
         "zoom": 2237,
         "focus": 8191
       },
-      "farfencel": { "pan": -99.71, "tilt": -3.18, "zoom": 166, "focus": 5682 }
+      "farfencel": { "pan": -99.71, "tilt": -3.18, "zoom": 166, "focus": 5682 },
+      "backrightcorner": { "pan": 10.93, "tilt": 1, "zoom": 664, "focus": 9999 }
     },
     "isRoaming": false,
     "roamTime": "10",
