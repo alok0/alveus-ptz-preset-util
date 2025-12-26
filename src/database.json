@@ -855,7 +855,8 @@
         "zoom": 664,
         "focus": 9999
       },
-      "den1tr": { "pan": -87.25, "tilt": 0.6, "zoom": 5608, "focus": 8515 }
+      "den1tr": { "pan": -87.25, "tilt": 0.6, "zoom": 5608, "focus": 8515 },
+      "den1temp": { "pan": -88.16, "tilt": 0.67, "zoom": 8576, "focus": 8353 }
     },
     "isRoaming": false,
     "roamTime": "10",
