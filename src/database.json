@@ -75,7 +75,8 @@
       "grovefl": { "pan": -20.42, "tilt": -6.85, "zoom": 3039, "focus": 7002 },
       "grove3": { "pan": 36.45, "tilt": -2.64, "zoom": 2955, "focus": 6832 },
       "downleft": { "pan": -19.13, "tilt": -47.72, "zoom": 1, "focus": 3091 },
-      "grove3l": { "pan": 29.29, "tilt": -3.11, "zoom": 2278, "focus": 7935 }
+      "grove3l": { "pan": 29.29, "tilt": -3.11, "zoom": 2278, "focus": 7935 },
+      "brushl": { "pan": -15.36, "tilt": -7.34, "zoom": 530, "focus": 5896 }
     },
     "isRoaming": false,
     "roamTime": "12",
