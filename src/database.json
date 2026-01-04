@@ -124,7 +124,8 @@
         "zoom": 1678,
         "focus": 6936
       },
-      "door": { "pan": 156.88, "tilt": -6.47, "zoom": 137, "focus": 1 }
+      "door": { "pan": 156.88, "tilt": -6.47, "zoom": 137, "focus": 1 },
+      "wint": { "pan": 169.57, "tilt": -4.88, "zoom": 703, "focus": 4771 }
     },
     "isRoaming": false,
     "speed": "67",
@@ -858,7 +859,14 @@
         "focus": 9999
       },
       "den1tr": { "pan": -87.25, "tilt": 0.6, "zoom": 5608, "focus": 8515 },
-      "den1temp": { "pan": -88.16, "tilt": 0.67, "zoom": 8576, "focus": 8353 }
+      "den1temp": { "pan": -88.16, "tilt": 0.67, "zoom": 8576, "focus": 8353 },
+      "belowleftplatform": {
+        "pan": -110.48,
+        "tilt": -3.78,
+        "zoom": 4432,
+        "focus": 8170
+      },
+      "rightcorner": { "pan": 60.14, "tilt": -4.22, "zoom": 166, "focus": 9999 }
     },
     "isRoaming": false,
     "roamTime": "10",
@@ -970,7 +978,18 @@
       "rightpost": { "pan": 150.44, "tilt": -17.85, "zoom": 1, "focus": 1480 },
       "upleftbranch": { "pan": 121.07, "tilt": 4.68, "zoom": 1, "focus": 1480 },
       "flapsb": { "pan": 145.4, "tilt": -26.85, "zoom": 532, "focus": 5988 },
-      "lefthammock": { "pan": 116.1, "tilt": -18.9, "zoom": 415, "focus": 3275 }
+      "lefthammock": {
+        "pan": 116.1,
+        "tilt": -18.9,
+        "zoom": 415,
+        "focus": 3275
+      },
+      "uprightbranches": {
+        "pan": 153.83,
+        "tilt": 0.82,
+        "zoom": 174,
+        "focus": 938
+      }
     },
     "isRoaming": false,
     "speed": "84"
@@ -3334,7 +3353,8 @@
       "postmb": { "pan": 165.63, "tilt": -22.03, "zoom": 601, "focus": 6006 },
       "perchbr": { "pan": -145.77, "tilt": -9.13, "zoom": 345, "focus": 6006 },
       "winr": { "pan": 179.41, "tilt": -10.84, "zoom": 718, "focus": 5896 },
-      "winrf": { "pan": 179.33, "tilt": -13.43, "zoom": 505, "focus": 4819 }
+      "winrf": { "pan": 179.33, "tilt": -13.43, "zoom": 505, "focus": 4819 },
+      "closebranches": { "pan": -173.35, "tilt": -32.25, "zoom": 1, "focus": 1 }
     }
   }
 }
