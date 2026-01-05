@@ -16,12 +16,32 @@ import Style from "ol/style/Style";
 import TextStyle from "ol/style/Text";
 import { useEffect, useMemo, useState } from "react";
 import { useDebounceValue } from "usehooks-ts";
+import { z } from "zod";
 import { Nav } from "./Nav";
 import { CamData } from "./Preset";
 import { type CamType } from "./cams";
 import database from "./database";
 import { getImage } from "./images";
 import { multiworldWrap, ObjectWithPixel } from "./openlayerTypeUtils";
+
+const FeatureProperties = z.object({
+  pan: z.number(),
+  tilt: z.number(),
+  zoom: z.number(),
+  name: z.string().nonempty(),
+});
+
+const PresetTooltip = ({ feature }: { feature: FeatureLike }) => {
+  const result = FeatureProperties.safeParse(feature.getProperties());
+  if (!result.success) {
+    return <></>;
+  }
+  const properties = result.data;
+
+  return (
+    <p>{`${properties.name}: ${properties.pan.toFixed(2)}p ${properties.tilt.toFixed(2)}t ${properties.zoom.toFixed(0)}z`}</p>
+  );
+};
 
 export const Map = ({ cam }: { cam: CamType }) => {
   const [ref, setRef] = useState<HTMLElement | null>(null);
@@ -47,8 +67,11 @@ export const Map = ({ cam }: { cam: CamType }) => {
             geometry: new Point([data.pan, data.tilt]),
             name,
             zoom: data.zoom,
+            pan: data.pan,
+            tilt: data.tilt,
           }),
       );
+    features.forEach((f) => f.setId(window.crypto.randomUUID()));
 
     const vectorSource = new VectorSource({ features });
 
@@ -146,11 +169,37 @@ export const Map = ({ cam }: { cam: CamType }) => {
     }
   }, [map, ref]);
 
-  const [coordDisplay, setCoordDisplay] = useDebounceValue("", 64, {
-    maxWait: 32,
-    trailing: true,
-    leading: true,
-  });
+  const [coord, setCoord] = useDebounceValue<{
+    pan: number;
+    tilt: number;
+  } | null>(null, 64, { maxWait: 128 });
+
+  const coordDisplay = useMemo(
+    () =>
+      !coord ? "" : `${coord.pan?.toFixed(2)}p ${coord.tilt?.toFixed(2)}t`,
+    [coord],
+  );
+
+  const hoveredFeatures = useMemo(() => {
+    if (!coord) {
+      return [];
+    }
+
+    return map
+      .getFeaturesAtPixel(map.getPixelFromCoordinate([coord.pan, coord.tilt]), {
+        checkWrapped: true,
+        hitTolerance: 16,
+      })
+      .filter(
+        (f) =>
+          typeof f.get("zoom") === "number" &&
+          typeof f.get("pan") === "number" &&
+          typeof f.get("tilt") === "number" &&
+          typeof f.get("name") === "string",
+      )
+      .toSorted((a, b) => a.get("zoom") - b.get("zoom"))
+      .slice(0, 5);
+  }, [coord, map]);
 
   useEffect(() => {
     // openlayers typescript support sucks
@@ -159,14 +208,14 @@ export const Map = ({ cam }: { cam: CamType }) => {
       const pan = multiworldWrap(coord[0]);
       const tilt = coord[1];
 
-      setCoordDisplay(`${pan?.toFixed(2)}p ${tilt?.toFixed(2)}t`);
+      setCoord(pan && tilt ? { pan, tilt } : null);
     };
 
     map.addEventListener("pointermove", handlePointermove);
     return () => {
       map.removeEventListener("pointermove", handlePointermove);
     };
-  }, [map, setCoordDisplay]);
+  }, [map, setCoord]);
 
   return (
     <div
@@ -182,6 +231,9 @@ export const Map = ({ cam }: { cam: CamType }) => {
             fontFamily: `"JetBrains Mono Variable",monospace`,
           }}
         >
+          {hoveredFeatures.map((f) => (
+            <PresetTooltip feature={f} key={f.getId()} />
+          ))}
           {coordDisplay}
         </div>
       )}
