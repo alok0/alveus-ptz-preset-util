@@ -2711,8 +2711,7 @@
         "autoiris": "on"
       },
       "cubbyr": { "pan": 96.3, "tilt": -27.14, "zoom": 561, "focus": 675 },
-      "cubbyl": { "pan": 70.34, "tilt": -30.79, "zoom": 2370, "focus": 4819 },
-      "frank": { "pan": 84.76, "tilt": -46.55, "zoom": 1792, "focus": 3607 }
+      "cubbyl": { "pan": 70.34, "tilt": -30.79, "zoom": 2370, "focus": 4819 }
     },
     "isRoaming": false,
     "speed": "50"
