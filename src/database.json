@@ -874,7 +874,8 @@
       },
       "den1r": { "pan": -82.07, "tilt": -1.15, "zoom": 1335, "focus": 8391 },
       "den1w": { "pan": -87.53, "tilt": -1.33, "zoom": 916, "focus": 8518 },
-      "nearleft": { "pan": -133.81, "tilt": -9.41, "zoom": 1, "focus": 9326 }
+      "nearleft": { "pan": -133.81, "tilt": -9.41, "zoom": 1, "focus": 9326 },
+      "insidecenter": { "pan": 118.72, "tilt": -19.05, "zoom": 1, "focus": 63 }
     },
     "isRoaming": false,
     "roamTime": "10",
