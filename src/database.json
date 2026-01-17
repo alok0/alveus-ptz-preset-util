@@ -866,7 +866,15 @@
         "zoom": 4432,
         "focus": 8170
       },
-      "rightcorner": { "pan": 60.14, "tilt": -4.22, "zoom": 166, "focus": 9999 }
+      "rightcorner": {
+        "pan": 60.14,
+        "tilt": -4.22,
+        "zoom": 166,
+        "focus": 9999
+      },
+      "den1r": { "pan": -82.07, "tilt": -1.15, "zoom": 1335, "focus": 8391 },
+      "den1w": { "pan": -87.53, "tilt": -1.33, "zoom": 916, "focus": 8518 },
+      "nearleft": { "pan": -133.81, "tilt": -9.41, "zoom": 1, "focus": 9326 }
     },
     "isRoaming": false,
     "roamTime": "10",
