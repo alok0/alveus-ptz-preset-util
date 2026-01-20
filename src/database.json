@@ -3606,7 +3606,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "fencer": { "pan": -84.95, "tilt": -11.85, "zoom": 1, "focus": 7006 }
     },
     "isRoaming": false,
     "speed": 60,
