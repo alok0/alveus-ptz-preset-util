@@ -468,7 +468,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "purplebaser": { "pan": 1.22, "tilt": -4.58, "zoom": 1019, "focus": 7014 }
     },
     "isRoaming": false,
     "roamTime": "12",
