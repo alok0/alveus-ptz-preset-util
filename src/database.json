@@ -1676,6 +1676,12 @@
         "focus": 63,
         "brightness": 5000,
         "autofocus": "on"
+      },
+      "farcornerz": {
+        "pan": -76.97,
+        "tilt": -1.02,
+        "zoom": 10090,
+        "focus": 8508
       }
     },
     "isRoaming": false,
