@@ -1678,10 +1678,10 @@
         "autofocus": "on"
       },
       "farcornerz": {
-        "pan": -76.97,
+        "pan": -76.95,
         "tilt": -1.02,
         "zoom": 10090,
-        "focus": 8508
+        "focus": 8444
       }
     },
     "isRoaming": false,
