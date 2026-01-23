@@ -16,32 +16,13 @@ import Style from "ol/style/Style";
 import TextStyle from "ol/style/Text";
 import { useEffect, useMemo, useState } from "react";
 import { useDebounceValue } from "usehooks-ts";
-import { z } from "zod";
 import { Nav } from "./Nav";
 import { CamData } from "./Preset";
+import { PresetTooltip } from "./PresetTooltip";
 import { type CamType } from "./cams";
 import database from "./database";
 import { getImage } from "./images";
 import { multiworldWrap, ObjectWithPixel } from "./openlayerTypeUtils";
-
-const FeatureProperties = z.object({
-  pan: z.number(),
-  tilt: z.number(),
-  zoom: z.number(),
-  name: z.string().nonempty(),
-});
-
-const PresetTooltip = ({ feature }: { feature: FeatureLike }) => {
-  const result = FeatureProperties.safeParse(feature.getProperties());
-  if (!result.success) {
-    return <></>;
-  }
-  const properties = result.data;
-
-  return (
-    <p>{`${properties.name}: ${properties.pan.toFixed(2)}p ${properties.tilt.toFixed(2)}t ${properties.zoom.toFixed(0)}z`}</p>
-  );
-};
 
 export const Map = ({ cam }: { cam: CamType }) => {
   const [ref, setRef] = useState<HTMLElement | null>(null);
@@ -69,6 +50,7 @@ export const Map = ({ cam }: { cam: CamType }) => {
             zoom: data.zoom,
             pan: data.pan,
             tilt: data.tilt,
+            focus: data.focus,
           }),
       );
     features.forEach((f) => f.setId(window.crypto.randomUUID()));
