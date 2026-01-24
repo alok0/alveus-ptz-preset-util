@@ -1321,31 +1321,31 @@
   "roach": {
     "presets": {
       "food": {
-        "pan": 96.45,
-        "tilt": -58.76,
-        "zoom": 1,
-        "focus": 2437,
+        "pan": -135.23,
+        "tilt": -87.33,
+        "zoom": 524,
+        "focus": 381,
         "autofocus": "on"
       },
       "right": {
-        "pan": 150.98,
-        "tilt": -22.04,
-        "zoom": 1,
-        "focus": 5814,
+        "pan": -9.93,
+        "tilt": -29.7,
+        "zoom": 524,
+        "focus": 124,
         "autofocus": "on"
       },
       "down": {
-        "pan": 161.47,
-        "tilt": -86.13,
-        "zoom": 1,
-        "focus": 218,
+        "pan": -53.85,
+        "tilt": -70.61,
+        "zoom": 524,
+        "focus": 124,
         "autofocus": "on"
       },
       "left": {
-        "pan": 87.25,
-        "tilt": -17.88,
-        "zoom": 1,
-        "focus": 3861,
+        "pan": -93.72,
+        "tilt": -46.68,
+        "zoom": 524,
+        "focus": 3049,
         "autofocus": "on"
       },
       "stickr": {
@@ -1355,41 +1355,14 @@
         "focus": 218,
         "autofocus": "on"
       },
-      "stickl": {
-        "pan": 87.37,
-        "tilt": -16.2,
-        "zoom": 1,
-        "focus": 2150,
-        "autofocus": "on"
-      },
-      "sticklt": {
-        "pan": 91.98,
-        "tilt": -8.39,
-        "zoom": 1648,
-        "focus": 1365,
-        "autofocus": "on"
-      },
       "home": {
-        "pan": -68.93,
-        "tilt": -33.67,
-        "zoom": 1,
-        "focus": 218,
-        "autofocus": "on"
-      },
-      "downr": {
-        "pan": -135.23,
-        "tilt": -87.33,
+        "pan": -51.04,
+        "tilt": -37.64,
         "zoom": 524,
-        "focus": 381,
+        "focus": 3049,
         "autofocus": "on"
       },
-      "stickrt": {
-        "pan": 171.55,
-        "tilt": -9.75,
-        "zoom": 1423,
-        "focus": 140,
-        "autofocus": "on"
-      }
+      "stickt": { "pan": -83.03, "tilt": -8.66, "zoom": 524, "focus": 622 }
     },
     "isRoaming": false,
     "speed": "70"
