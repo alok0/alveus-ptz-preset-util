@@ -3614,7 +3614,8 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "fencer": { "pan": -84.95, "tilt": -11.85, "zoom": 1, "focus": 7006 }
+      "fencer": { "pan": -84.95, "tilt": -11.85, "zoom": 1, "focus": 7006 },
+      "staffdoor": { "pan": -71.08, "tilt": -11.32, "zoom": 1, "focus": 1 }
     },
     "isRoaming": false,
     "speed": 60,
