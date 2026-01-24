@@ -2975,6 +2975,12 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
+      },
+      "switchgatel": {
+        "pan": 11.71,
+        "tilt": -16.17,
+        "zoom": 611,
+        "focus": 6238
       }
     },
     "isRoaming": false,
