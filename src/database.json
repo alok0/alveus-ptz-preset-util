@@ -2955,7 +2955,8 @@
         "tilt": -16.17,
         "zoom": 611,
         "focus": 6238
-      }
+      },
+      "awatemp": { "pan": -2.49, "tilt": -21.76, "zoom": 289, "focus": 748 }
     },
     "isRoaming": false,
     "speed": "65",
