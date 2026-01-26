@@ -1655,7 +1655,8 @@
         "tilt": -1.02,
         "zoom": 10090,
         "focus": 8444
-      }
+      },
+      "den2t": { "pan": -4.42, "tilt": 3.69, "zoom": 1035, "focus": 7203 }
     },
     "isRoaming": false,
     "roamTime": "10",
