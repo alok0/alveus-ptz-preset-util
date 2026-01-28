@@ -617,10 +617,10 @@
         "autoiris": "on"
       },
       "awning": {
-        "pan": 165.76,
+        "pan": 169.92,
         "tilt": 0,
         "zoom": 150,
-        "focus": 3754,
+        "focus": 1,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
