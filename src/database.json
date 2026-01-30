@@ -1662,7 +1662,8 @@
         "tilt": -3.66,
         "zoom": 1686,
         "focus": 8511
-      }
+      },
+      "rivert": { "pan": -23.6, "tilt": -0.06, "zoom": 638, "focus": 7856 }
     },
     "isRoaming": false,
     "roamTime": "10",
