@@ -562,15 +562,6 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "sirensleep": {
-        "pan": -177.88,
-        "tilt": -1.6,
-        "zoom": 3261,
-        "focus": 4819,
-        "brightness": 5000,
-        "autofocus": "on",
-        "autoiris": "on"
-      },
       "bowlr": {
         "pan": 150.97,
         "tilt": -4.43,
@@ -687,7 +678,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "abovedoor": { "pan": -179.34, "tilt": -1.91, "zoom": 754, "focus": 3813 }
     },
     "isRoaming": false,
     "speed": "67",
