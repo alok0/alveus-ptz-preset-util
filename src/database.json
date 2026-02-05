@@ -2956,7 +2956,8 @@
         "zoom": 611,
         "focus": 6238
       },
-      "awatemp": { "pan": -2.49, "tilt": -21.76, "zoom": 289, "focus": 748 }
+      "awatemp": { "pan": -2.49, "tilt": -21.76, "zoom": 289, "focus": 748 },
+      "den3": { "pan": 82.23, "tilt": -4.16, "zoom": 674, "focus": 6416 }
     },
     "isRoaming": false,
     "speed": "65",
