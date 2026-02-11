@@ -1655,7 +1655,8 @@
         "zoom": 1686,
         "focus": 8511
       },
-      "rivert": { "pan": -25.21, "tilt": -0.15, "zoom": 638, "focus": 7656 }
+      "rivert": { "pan": -25.21, "tilt": -0.15, "zoom": 638, "focus": 7656 },
+      "den1rampb": { "pan": -94.41, "tilt": -2.39, "zoom": 8834, "focus": 8339 }
     },
     "isRoaming": false,
     "roamTime": "10",
