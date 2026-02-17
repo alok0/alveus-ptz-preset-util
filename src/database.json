@@ -83,10 +83,10 @@
         "autoiris": "on"
       },
       "brush": {
-        "pan": "-7.24",
-        "tilt": "-7.45",
-        "zoom": "1798",
-        "focus": "7321",
+        "pan": -7.23,
+        "tilt": -7.46,
+        "zoom": 1201,
+        "focus": 7554,
         "brightness": "5000",
         "autofocus": "on",
         "autoiris": "on"
@@ -5093,10 +5093,10 @@
         "autoiris": "on"
       },
       "right": {
-        "pan": -146.31,
-        "tilt": -24.14,
+        "pan": -140.85,
+        "tilt": -23.58,
         "zoom": 1,
-        "focus": 8372,
+        "focus": 1,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
