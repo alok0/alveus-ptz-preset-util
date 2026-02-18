@@ -5190,7 +5190,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "leftpole": { "pan": 158.18, "tilt": -40.22, "zoom": 1, "focus": 2503 }
     },
     "isRoaming": false
   }
