@@ -755,10 +755,10 @@
         "autofocus": "on"
       },
       "far": {
-        "pan": 48.62,
-        "tilt": -8.96,
-        "zoom": 10181,
-        "focus": 4814,
+        "pan": 48.57,
+        "tilt": -14.32,
+        "zoom": 11717,
+        "focus": 4326,
         "autofocus": "on"
       }
     },
