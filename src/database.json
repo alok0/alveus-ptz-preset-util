@@ -2037,7 +2037,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "rightcorner": { "pan": 174.68, "tilt": -3.4, "zoom": 462, "focus": 3623 }
     },
     "isRoaming": false,
     "speed": "65"
