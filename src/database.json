@@ -5281,7 +5281,8 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "leftpole": { "pan": 158.18, "tilt": -40.22, "zoom": 1, "focus": 2503 }
+      "leftpole": { "pan": 158.18, "tilt": -40.22, "zoom": 1, "focus": 2503 },
+      "downleft": { "pan": 173.2, "tilt": -48.1, "zoom": 1, "focus": 1 }
     },
     "isRoaming": false
   }
