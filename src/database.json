@@ -1869,9 +1869,9 @@
       },
       "domell": {
         "pan": 126.28,
-        "tilt": -8.91,
+        "tilt": -8.9,
         "zoom": 1718,
-        "focus": 5885,
+        "focus": 5776,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
@@ -2038,7 +2038,18 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "rightcorner": { "pan": 174.68, "tilt": -3.4, "zoom": 462, "focus": 3623 }
+      "rightcorner": {
+        "pan": 174.68,
+        "tilt": -3.4,
+        "zoom": 462,
+        "focus": 3623
+      },
+      "domellshelf": {
+        "pan": 121.34,
+        "tilt": -8.91,
+        "zoom": 898,
+        "focus": 5353
+      }
     },
     "isRoaming": false,
     "speed": "65"
