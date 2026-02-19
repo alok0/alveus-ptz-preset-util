@@ -3020,7 +3020,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "shaftr": { "pan": 118.97, "tilt": -11, "zoom": 649, "focus": 6243 }
     },
     "isRoaming": false,
     "speed": "65",
