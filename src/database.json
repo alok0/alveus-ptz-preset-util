@@ -1679,7 +1679,8 @@
         "focus": 8339,
         "brightness": 5000,
         "autofocus": "on"
-      }
+      },
+      "table": { "pan": 35.11, "tilt": -1.17, "zoom": 2217, "focus": 8275 }
     },
     "isRoaming": false,
     "roamTime": "10",
