@@ -468,7 +468,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "haystacktmp": { "pan": 135.03, "tilt": 8.11, "zoom": 465, "focus": 1507 }
     },
     "isRoaming": false,
     "roamTime": "12",
