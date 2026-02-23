@@ -5144,7 +5144,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "eggtemp": { "pan": -87.82, "tilt": -1.06, "zoom": 1383, "focus": 7030 }
     },
     "isRoaming": false,
     "roamTime": "5",
