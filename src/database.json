@@ -1681,7 +1681,8 @@
         "brightness": 5000,
         "autofocus": "on"
       },
-      "table": { "pan": 35.11, "tilt": -1.17, "zoom": 2217, "focus": 8275 }
+      "table": { "pan": 35.11, "tilt": -1.17, "zoom": 2217, "focus": 8275 },
+      "den2tr": { "pan": -0.23, "tilt": 3.05, "zoom": 7847, "focus": 8212 }
     },
     "isRoaming": false,
     "roamTime": "10",
