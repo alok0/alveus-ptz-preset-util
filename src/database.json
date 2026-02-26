@@ -4253,7 +4253,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "pondt": { "pan": -102.1, "tilt": -10.94, "zoom": 507, "focus": 4624 }
     },
     "isRoaming": false,
     "speed": "50"
