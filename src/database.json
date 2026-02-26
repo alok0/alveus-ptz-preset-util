@@ -2058,6 +2058,12 @@
         "tilt": -8.91,
         "zoom": 898,
         "focus": 5353
+      },
+      "farrightshelf": {
+        "pan": 178.48,
+        "tilt": -7.38,
+        "zoom": 664,
+        "focus": 2603
       }
     },
     "isRoaming": false,
