@@ -1684,10 +1684,10 @@
       "table": { "pan": 35.11, "tilt": -1.17, "zoom": 2217, "focus": 8275 },
       "den2tr": { "pan": -0.23, "tilt": 3.05, "zoom": 7847, "focus": 8212 },
       "leftplatforml": {
-        "pan": -109.39,
-        "tilt": -0.33,
+        "pan": -109.38,
+        "tilt": -0.32,
         "zoom": 2352,
-        "focus": 8163
+        "focus": 8046
       }
     },
     "isRoaming": false,
