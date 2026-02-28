@@ -4526,6 +4526,12 @@
         "zoom": 9083,
         "focus": 6061,
         "autofocus": "on"
+      },
+      "rightcornerzzz": {
+        "pan": 117.63,
+        "tilt": -11.54,
+        "zoom": 10374,
+        "focus": 6122
       }
     },
     "isRoaming": false,
