@@ -1959,10 +1959,10 @@
         "autoiris": "on"
       },
       "nearleftshelf": {
-        "pan": 84.63,
-        "tilt": -0.52,
+        "pan": 84.62,
+        "tilt": -0.5,
         "zoom": 332,
-        "focus": 1860,
+        "focus": 748,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
