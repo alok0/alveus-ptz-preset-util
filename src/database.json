@@ -182,10 +182,10 @@
         "autoiris": "on"
       },
       "water": {
-        "pan": 59.43,
-        "tilt": -2.62,
-        "zoom": 1815,
-        "focus": 7410,
+        "pan": 59.39,
+        "tilt": -4.64,
+        "zoom": 1599,
+        "focus": 7025,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
