@@ -5317,5 +5317,8 @@
       "door": { "pan": -168.21, "tilt": -12.13, "zoom": 1, "focus": 5005 }
     },
     "isRoaming": false
+  },
+  "foxcovered": {
+    "presets": {}
   }
 }
