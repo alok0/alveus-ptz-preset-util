@@ -46,6 +46,7 @@ const images: Record<CamType, string | null> = {
   roach: null,
   marty: null,
   patchy: null,
+  foxcovered: null,
 };
 
 export const getImage = (name: CamType) => {
