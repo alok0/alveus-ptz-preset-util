@@ -5319,6 +5319,8 @@
     "isRoaming": false
   },
   "foxcovered": {
-    "presets": {}
+    "presets": {
+      "home": { "pan": -108.2, "tilt": -8.67, "zoom": 1, "focus": 1 }
+    }
   }
 }
