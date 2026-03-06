@@ -2065,6 +2065,12 @@
         "tilt": -7.38,
         "zoom": 664,
         "focus": 2603
+      },
+      "basket": {
+        "pan": 151.08,
+        "tilt": 4.86,
+        "zoom": 1291,
+        "focus": 6000
       }
     },
     "isRoaming": false,
