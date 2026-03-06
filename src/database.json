@@ -5323,7 +5323,8 @@
       "home": { "pan": -108.2, "tilt": -8.67, "zoom": 1, "focus": 1 },
       "platform": { "pan": -130.47, "tilt": 0, "zoom": 500, "focus": 6374 },
       "left": { "pan": -131.47, "tilt": -4.99, "zoom": 100, "focus": 2865 },
-      "right": { "pan": -59.47, "tilt": -17.34, "zoom": 1, "focus": 5005 }
+      "right": { "pan": -59.47, "tilt": -17.34, "zoom": 1, "focus": 5005 },
+      "rampb": { "pan": -130.21, "tilt": -4.86, "zoom": 2185, "focus": 6999 }
     }
   }
 }
