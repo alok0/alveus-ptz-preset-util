@@ -5,6 +5,7 @@ import crowin_pano from "./crowin_pano.webp";
 import crowout_pano from "./crowout_pano.webp";
 import emu_pano from "./emu_pano.webp";
 import fox_pano from "./fox_pano.webp";
+import foxcovered_pano from "./foxcovered_pano.webp";
 import garden_pano from "./garden_pano.webp";
 import georgie_pano from "./georgie_pano.webp";
 import macaw_pano from "./macaw_pano.webp";
@@ -26,6 +27,7 @@ const images: Record<CamType, string | null> = {
   crow: crowout_pano,
   crowindoor: crowin_pano,
   fox: fox_pano,
+  foxcovered: foxcovered_pano,
   garden: garden_pano,
   georgie: georgie_pano,
   marmoset: marm_pano,
@@ -46,7 +48,6 @@ const images: Record<CamType, string | null> = {
   roach: null,
   marty: null,
   patchy: null,
-  foxcovered: null,
 };
 
 export const getImage = (name: CamType) => {
