@@ -4346,15 +4346,6 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "water": {
-        "pan": -29.08,
-        "tilt": -23.9,
-        "zoom": 15,
-        "focus": 7321,
-        "brightness": 5099,
-        "autofocus": "on",
-        "autoiris": "on"
-      },
       "back": {
         "pan": 14.82,
         "tilt": -4.68,
@@ -4418,7 +4409,21 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "switchgate": { "pan": 29.51, "tilt": -18.58, "zoom": 161, "focus": 7410 }
+      "switchgate": {
+        "pan": 29.51,
+        "tilt": -18.58,
+        "zoom": 161,
+        "focus": 7410
+      },
+      "middleright": {
+        "pan": 25.5,
+        "tilt": -13.02,
+        "zoom": 258,
+        "focus": 7231
+      },
+      "middle": { "pan": 6.96, "tilt": -24.74, "zoom": 1, "focus": 5573 },
+      "nearright": { "pan": 32.67, "tilt": -36.12, "zoom": 1, "focus": 7321 },
+      "nearleft": { "pan": -30.35, "tilt": -25.54, "zoom": 15, "focus": 7321 }
     },
     "isRoaming": false,
     "speed": "60"
