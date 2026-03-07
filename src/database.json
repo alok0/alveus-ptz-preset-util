@@ -2067,7 +2067,13 @@
         "focus": 2603
       },
       "basket": { "pan": 151.08, "tilt": 4.86, "zoom": 1291, "focus": 6000 },
-      "leftshelfr": { "pan": 112.51, "tilt": -4.72, "zoom": 154, "focus": 1676 }
+      "leftshelfr": {
+        "pan": 112.51,
+        "tilt": -4.72,
+        "zoom": 154,
+        "focus": 1676
+      },
+      "leftshelfl": { "pan": 101.2, "tilt": -4.72, "zoom": 154, "focus": 1676 }
     },
     "isRoaming": false,
     "speed": "65"
