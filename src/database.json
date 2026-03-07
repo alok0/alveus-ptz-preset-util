@@ -2073,7 +2073,13 @@
         "zoom": 154,
         "focus": 1676
       },
-      "leftshelfl": { "pan": 101.2, "tilt": -4.72, "zoom": 154, "focus": 1676 }
+      "leftshelfl": { "pan": 101.2, "tilt": -4.72, "zoom": 154, "focus": 1676 },
+      "domelushelfl": {
+        "pan": 121.13,
+        "tilt": -1.64,
+        "zoom": 464,
+        "focus": 4084
+      }
     },
     "isRoaming": false,
     "speed": "65"
