@@ -694,7 +694,8 @@
         "zoom": 468,
         "focus": 3969
       },
-      "acs": { "pan": 159.62, "tilt": -24.06, "zoom": 1, "focus": 1 }
+      "acs": { "pan": 159.62, "tilt": -24.06, "zoom": 1, "focus": 1 },
+      "insidel": { "pan": 171.12, "tilt": -7.97, "zoom": 1900, "focus": 5578 }
     },
     "isRoaming": false,
     "speed": "67",
