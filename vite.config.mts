@@ -10,10 +10,6 @@ export default defineConfig(() => {
     base: "/",
     publicDir: false,
     clearScreen: false,
-    esbuild: {
-      legalComments: "eof",
-      jsx: "automatic",
-    },
     build: {
       outDir: resolve(dirname, "dist"),
       emptyOutDir: true,
@@ -22,17 +18,17 @@ export default defineConfig(() => {
       reportCompressedSize: false,
       chunkSizeWarningLimit: 1024 * 1024,
       modulePreload: { polyfill: false },
-      rollupOptions: {
+      minify: false,
+      rolldownOptions: {
         output: {
-          manualChunks: (f) => {
-            if (f.includes("node_modules")) {
-              return "2";
-            }
-            if (f.includes("/src/")) {
-              return "1";
-            }
-
-            return null;
+          codeSplitting: {
+            minSize: 30000,
+            groups: [
+              {
+                name: "vendor",
+                test: /node_modules/,
+              },
+            ],
           },
           entryFileNames: "[hash].js",
           assetFileNames: "[hash][extname]",
