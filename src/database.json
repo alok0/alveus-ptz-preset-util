@@ -5188,7 +5188,8 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "eggtemp": { "pan": -87.82, "tilt": -1.06, "zoom": 1383, "focus": 7030 }
+      "eggtemp": { "pan": -87.82, "tilt": -1.06, "zoom": 1383, "focus": 7030 },
+      "marmgater": { "pan": 169.4, "tilt": -0.8, "zoom": 210, "focus": 3646 }
     },
     "isRoaming": false,
     "roamTime": "5",
