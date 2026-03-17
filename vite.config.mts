@@ -17,12 +17,15 @@ export default defineConfig(() => {
       assetsInlineLimit: 0,
       reportCompressedSize: false,
       chunkSizeWarningLimit: 1024 * 1024,
-      modulePreload: { polyfill: false },
-      minify: false,
+      modulePreload: false,
       rolldownOptions: {
         output: {
+          comments: {
+            annotation: true,
+            jsdoc: false,
+            legal: false,
+          },
           codeSplitting: {
-            minSize: 30000,
             groups: [
               {
                 name: "vendor",
