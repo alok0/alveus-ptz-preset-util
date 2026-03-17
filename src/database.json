@@ -475,7 +475,8 @@
         "zoom": 465,
         "focus": 1507
       },
-      "farright": { "pan": 58.49, "tilt": -0.5, "zoom": 3211, "focus": 8077 }
+      "farright": { "pan": 58.49, "tilt": -0.5, "zoom": 3211, "focus": 8077 },
+      "barn2l": { "pan": -28.35, "tilt": -6.25, "zoom": 2709, "focus": 8041 }
     },
     "isRoaming": false,
     "roamTime": "12",
