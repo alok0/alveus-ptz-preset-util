@@ -4455,7 +4455,8 @@
       },
       "middle": { "pan": 6.96, "tilt": -24.74, "zoom": 1, "focus": 5573 },
       "nearright": { "pan": 32.67, "tilt": -36.12, "zoom": 1, "focus": 7321 },
-      "nearleft": { "pan": -30.35, "tilt": -25.54, "zoom": 15, "focus": 7321 }
+      "nearleft": { "pan": -30.35, "tilt": -25.54, "zoom": 15, "focus": 7321 },
+      "denz": { "pan": 18.13, "tilt": -6.42, "zoom": 3527, "focus": 6642 }
     },
     "isRoaming": false,
     "speed": "60"
