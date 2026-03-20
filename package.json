@@ -2,7 +2,7 @@
   "name": "alveus-ptz-preset-util",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "yarn@4.12.0",
+  "packageManager": "yarn@4.13.0",
   "engines": {
     "node": "^24.0.0"
   },
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@eslint-react/eslint-plugin": "3.0.0",
     "@eslint/js": "10.0.1",
-    "@tailwindcss/vite": "4.2.1",
+    "@tailwindcss/vite": "4.2.2",
     "@tsconfig/strictest": "2.0.8",
     "@tsconfig/vite-react": "7.0.2",
     "@types/eslint-plugin-jsx-a11y": "6.10.1",
@@ -37,17 +37,17 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "daisyui": "5.5.19",
-    "eslint": "10.0.2",
+    "eslint": "10.1.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "7.0.1",
     "husky": "9.1.7",
-    "lint-staged": "16.3.2",
+    "lint-staged": "16.4.0",
     "prettier": "3.8.1",
-    "tailwindcss": "4.2.1",
+    "tailwindcss": "4.2.2",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.56.1",
-    "vite": "8.0.0"
+    "typescript-eslint": "8.57.1",
+    "vite": "8.0.1"
   }
 }
