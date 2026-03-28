@@ -1704,7 +1704,8 @@
         "tilt": -0.32,
         "zoom": 2352,
         "focus": 8046
-      }
+      },
+      "bedtmp": { "pan": -92.44, "tilt": -5.11, "zoom": 3253, "focus": 7705 }
     },
     "isRoaming": false,
     "roamTime": "10",
