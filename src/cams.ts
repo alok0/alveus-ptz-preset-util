@@ -24,9 +24,18 @@ export const cams = [
   "emu",
   "parrot",
   "macaw",
+  "serval",
+  "event",
 ] as const;
 export type CamType = (typeof cams)[number];
 
-const HiddenCams = new Set(["noodle", "roach", "marty", "patchy"]);
+const HiddenCams = new Set([
+  "noodle",
+  "roach",
+  "marty",
+  "patchy",
+  "serval",
+  "event",
+]);
 
 export const isCamHidden = (v: string) => HiddenCams.has(v);

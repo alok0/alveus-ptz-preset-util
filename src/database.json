@@ -5354,5 +5354,13 @@
       "rampb": { "pan": -130.21, "tilt": -4.86, "zoom": 2185, "focus": 6999 },
       "platformfl": { "pan": -134.58, "tilt": 0, "zoom": 2911, "focus": 6960 }
     }
+  },
+  "serval": {
+    "presets": {
+      "home": { "pan": -88.52, "tilt": -18.06, "zoom": 1, "focus": 9950 }
+    }
+  },
+  "event": {
+    "presets": {}
   }
 }
