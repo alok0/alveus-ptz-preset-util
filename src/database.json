@@ -5363,7 +5363,37 @@
   },
   "serval": {
     "presets": {
-      "home": { "pan": -88.52, "tilt": -18.06, "zoom": 1, "focus": 9950 }
+      "home": { "pan": -88.51, "tilt": -18.05, "zoom": 1, "focus": 9950 },
+      "sand": { "pan": -94.53, "tilt": -19.93, "zoom": 1001, "focus": 8071 },
+      "rightwide": { "pan": -81.23, "tilt": -26.66, "zoom": 1, "focus": 9950 },
+      "leftwide": { "pan": -119.98, "tilt": -27.14, "zoom": 1, "focus": 9950 },
+      "down": { "pan": -100.71, "tilt": -51.55, "zoom": 1, "focus": 9950 },
+      "leftplatform": {
+        "pan": -142.9,
+        "tilt": -21.44,
+        "zoom": 1001,
+        "focus": 6790
+      },
+      "rightplatform": {
+        "pan": -61.93,
+        "tilt": -18.73,
+        "zoom": 1001,
+        "focus": 7067
+      },
+      "left": { "pan": -117.61, "tilt": -37.76, "zoom": 1, "focus": 9950 },
+      "middleplatformt": {
+        "pan": -92.63,
+        "tilt": -8.82,
+        "zoom": 395,
+        "focus": 9301
+      },
+      "middleplatform": {
+        "pan": -100.79,
+        "tilt": -24.79,
+        "zoom": 395,
+        "focus": 9021
+      },
+      "door": { "pan": -110.89, "tilt": -77.69, "zoom": 1, "focus": 9950 }
     }
   },
   "event": { "presets": {} }
