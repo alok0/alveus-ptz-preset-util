@@ -5395,13 +5395,13 @@
       },
       "door": { "pan": -110.89, "tilt": -77.69, "zoom": 1, "focus": 9950 },
       "rightplatformb": {
-        "pan": -58.98,
+        "pan": -59,
         "tilt": -25.22,
         "zoom": 916,
-        "focus": 6994
+        "focus": 7553
       },
-      "log": { "pan": -94.07, "tilt": -45.43, "zoom": 1, "focus": 9950 },
-      "tub": { "pan": -141.54, "tilt": -43.79, "zoom": 90, "focus": 9979 }
+      "log": { "pan": -94.06, "tilt": -45.43, "zoom": 1, "focus": 9950 },
+      "tub": { "pan": -141.53, "tilt": -43.78, "zoom": 89, "focus": 9979 }
     }
   },
   "event": { "presets": {} }
