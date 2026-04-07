@@ -15,6 +15,7 @@ import parrot_pano from "./parrot_pano.webp";
 import pasture_pano from "./pasture_pano.webp";
 import pushin_pano from "./pushin_pano.webp";
 import pushout_pano from "./pushout_pano.webp";
+import serval_pano from "./serval_pano.webp";
 import toast_pano from "./toast_pano.webp";
 import wolf_pano from "./wolf_pano.webp";
 import wolfcorner_pano from "./wolfcorner_pano.webp";
@@ -26,29 +27,29 @@ const images: Record<CamType, string | null> = {
   chickenindoor: chickenin_pano,
   crow: crowout_pano,
   crowindoor: crowin_pano,
+  emu: emu_pano,
   fox: fox_pano,
   foxcovered: foxcovered_pano,
   garden: garden_pano,
   georgie: georgie_pano,
+  macaw: macaw_pano,
   marmoset: marm_pano,
   marmosetindoor: marmin_pano,
+  parrot: parrot_pano,
   pasture: pasture_pano,
   pushpop: pushout_pano,
   pushpopindoor: pushin_pano,
+  serval: serval_pano,
   toast: toast_pano,
   wolf: wolf_pano,
   wolfcorner: wolfcorner_pano,
   wolfindoor: wolfindoor_pano,
   wolfswitch: wolfswitch_pano,
-  emu: emu_pano,
-  parrot: parrot_pano,
-  macaw: macaw_pano,
 
   noodle: null,
   roach: null,
   marty: null,
   patchy: null,
-  serval: null,
   event: null,
 };
 
