@@ -27,7 +27,7 @@
     "zod": "4.3.6"
   },
   "devDependencies": {
-    "@eslint-react/eslint-plugin": "3.0.0",
+    "@eslint-react/eslint-plugin": "4.2.3",
     "@eslint/js": "10.0.1",
     "@tailwindcss/vite": "4.2.2",
     "@tsconfig/strictest": "2.0.8",
