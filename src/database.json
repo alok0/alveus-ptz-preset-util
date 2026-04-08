@@ -5407,6 +5407,12 @@
         "tilt": -31.46,
         "zoom": 1529,
         "focus": 6512
+      },
+      "middleplatformtl": {
+        "pan": -103.13,
+        "tilt": -7.61,
+        "zoom": 395,
+        "focus": 9364
       }
     }
   },
