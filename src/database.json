@@ -5404,9 +5404,9 @@
       "tub": { "pan": -141.53, "tilt": -43.78, "zoom": 89, "focus": 9979 },
       "leftplatformb": {
         "pan": -144.16,
-        "tilt": -31.47,
-        "zoom": 1530,
-        "focus": 6121
+        "tilt": -31.46,
+        "zoom": 1529,
+        "focus": 6512
       }
     }
   },
