@@ -703,7 +703,13 @@
       },
       "acs": { "pan": 159.62, "tilt": -24.06, "zoom": 1, "focus": 1 },
       "insidel": { "pan": 171.1, "tilt": -7.97, "zoom": 4143, "focus": 6319 },
-      "insidet": { "pan": 172.66, "tilt": -7.14, "zoom": 3515, "focus": 6307 }
+      "insidet": { "pan": 172.66, "tilt": -7.14, "zoom": 3515, "focus": 6307 },
+      "abovewindow": {
+        "pan": 172.37,
+        "tilt": -3.31,
+        "zoom": 356,
+        "focus": 4458
+      }
     },
     "isRoaming": false,
     "speed": "67",
