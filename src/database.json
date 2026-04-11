@@ -5428,7 +5428,13 @@
         "zoom": 395,
         "focus": 9364
       },
-      "cratel": { "pan": -78.53, "tilt": -48.16, "zoom": 212, "focus": 9241 }
+      "cratel": { "pan": -78.53, "tilt": -48.16, "zoom": 212, "focus": 9241 },
+      "enrichmenttmp": {
+        "pan": -105.03,
+        "tilt": -72.16,
+        "zoom": 536,
+        "focus": 5682
+      }
     }
   },
   "event": { "presets": {} }
