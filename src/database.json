@@ -3077,7 +3077,8 @@
       },
       "shaftr": { "pan": 118.97, "tilt": -11, "zoom": 649, "focus": 6243 },
       "grassr": { "pan": 150.53, "tilt": -1.48, "zoom": 1224, "focus": 7183 },
-      "tipt": { "pan": 118.81, "tilt": -5.22, "zoom": 819, "focus": 6689 }
+      "tipt": { "pan": 118.81, "tilt": -5.22, "zoom": 819, "focus": 6689 },
+      "den1tr": { "pan": 89.7, "tilt": 1, "zoom": 2099, "focus": 7656 }
     },
     "isRoaming": false,
     "speed": "65",
