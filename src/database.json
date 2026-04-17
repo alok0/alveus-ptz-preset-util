@@ -1488,10 +1488,10 @@
         "autofocus": "off"
       },
       "rightplatform": {
-        "pan": -14.61,
+        "pan": -14.6,
         "tilt": 1.23,
         "zoom": 440,
-        "focus": 6874,
+        "focus": 5916,
         "brightness": 5000,
         "autofocus": "on"
       },
