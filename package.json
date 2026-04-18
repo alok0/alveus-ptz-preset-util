@@ -2,9 +2,9 @@
   "name": "alveus-ptz-preset-util",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "yarn@4.13.0",
+  "packageManager": "yarn@4.14.1",
   "engines": {
-    "node": "24.14.x"
+    "node": "24.15.x"
   },
   "engineStrict": true,
   "scripts": {
@@ -18,7 +18,7 @@
     "@fontsource-variable/jetbrains-mono": "5.2.8",
     "@mdi/js": "7.4.47",
     "clsx": "2.1.1",
-    "ol": "10.8.0",
+    "ol": "10.9.0",
     "react": "19.2.5",
     "react-dom": "19.2.5",
     "react-error-boundary": "6.1.1",
@@ -37,17 +37,17 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "daisyui": "5.5.19",
-    "eslint": "10.2.0",
+    "eslint": "10.2.1",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-react-hooks": "7.0.1",
+    "eslint-plugin-react-hooks": "7.1.1",
     "husky": "9.1.7",
     "lint-staged": "16.4.0",
-    "prettier": "3.8.2",
+    "prettier": "3.8.3",
     "tailwindcss": "4.2.2",
     "typescript": "6.0.2",
-    "typescript-eslint": "8.58.1",
+    "typescript-eslint": "8.58.2",
     "vite": "8.0.8"
   }
 }
