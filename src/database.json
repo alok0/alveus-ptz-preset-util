@@ -5341,12 +5341,45 @@
   },
   "foxcovered": {
     "presets": {
-      "home": { "pan": -108.2, "tilt": -8.67, "zoom": 1, "focus": 1 },
-      "platform": { "pan": -130.47, "tilt": 0, "zoom": 500, "focus": 6374 },
-      "left": { "pan": -131.47, "tilt": -4.99, "zoom": 100, "focus": 2865 },
-      "right": { "pan": -59.47, "tilt": -17.34, "zoom": 1, "focus": 5005 },
-      "rampb": { "pan": -130.21, "tilt": -4.86, "zoom": 2185, "focus": 6999 },
-      "platformfl": { "pan": -134.58, "tilt": 0, "zoom": 2911, "focus": 6960 }
+      "home": { "pan": -130.06, "tilt": -9.96, "zoom": 1, "focus": 1 },
+      "platform": {
+        "pan": -143.87,
+        "tilt": -0.93,
+        "zoom": 1604,
+        "focus": 6882
+      },
+      "left": { "pan": -141.92, "tilt": -9.8, "zoom": 172, "focus": 3011 },
+      "right": { "pan": -72.22, "tilt": -25.62, "zoom": 1, "focus": 1 },
+      "rampb": { "pan": -141.43, "tilt": -6.69, "zoom": 2021, "focus": 6830 },
+      "platformfl": {
+        "pan": -146.25,
+        "tilt": -1.02,
+        "zoom": 4039,
+        "focus": 7003
+      },
+      "platformbr": {
+        "pan": -142.73,
+        "tilt": -1.16,
+        "zoom": 4039,
+        "focus": 7030
+      },
+      "platformfr": {
+        "pan": -140.72,
+        "tilt": -1.11,
+        "zoom": 3601,
+        "focus": 7108
+      },
+      "belowplatforml": {
+        "pan": -147.72,
+        "tilt": -6.81,
+        "zoom": 3202,
+        "focus": 6901
+      },
+      "middle": { "pan": -121.34, "tilt": -21.42, "zoom": 1, "focus": 1 },
+      "downright": { "pan": -45.66, "tilt": -44.94, "zoom": 1, "focus": 1 },
+      "downleft": { "pan": -150.87, "tilt": -42.97, "zoom": 1, "focus": 1 },
+      "farcorner": { "pan": -136.61, "tilt": -5.8, "zoom": 937, "focus": 5545 },
+      "table": { "pan": -95.21, "tilt": -38.31, "zoom": 1, "focus": 1 }
     }
   },
   "serval": {
