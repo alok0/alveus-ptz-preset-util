@@ -1689,7 +1689,13 @@
         "focus": 8237
       },
       "bed": { "pan": -93.43, "tilt": -6.56, "zoom": 1219, "focus": 7927 },
-      "down": { "pan": -57.51, "tilt": -24.04, "zoom": 1, "focus": 9201 }
+      "down": { "pan": -57.51, "tilt": -24.04, "zoom": 1, "focus": 9201 },
+      "fenntree": {
+        "pan": 53.73,
+        "tilt": -5.86,
+        "zoom": 5693,
+        "focus": 5000
+      }
     },
     "isRoaming": false,
     "roamTime": "10",
