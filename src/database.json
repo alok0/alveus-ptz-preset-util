@@ -1568,10 +1568,10 @@
         "autofocus": "on"
       },
       "farfencel": {
-        "pan": -99.71,
-        "tilt": -3.17,
-        "zoom": 166,
-        "focus": 7553,
+        "pan": -102.38,
+        "tilt": -2.94,
+        "zoom": 406,
+        "focus": 6618,
         "brightness": 5000,
         "autofocus": "on"
       },
@@ -1688,7 +1688,6 @@
         "zoom": 5108,
         "focus": 8237
       },
-      "farfencl": { "pan": -102.38, "tilt": -2.95, "zoom": 406, "focus": 7287 },
       "bed": { "pan": -93.43, "tilt": -6.56, "zoom": 1219, "focus": 7927 },
       "down": { "pan": -57.51, "tilt": -24.04, "zoom": 1, "focus": 9201 }
     },
