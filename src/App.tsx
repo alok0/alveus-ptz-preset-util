@@ -5,6 +5,8 @@ import { useHashLocation } from "wouter/use-hash-location";
 import { cams } from "./cams";
 import { Map } from "./Map";
 import { ZoomVisual } from "./ZoomVisual";
+import { ThemeProvider } from "@mui/material";
+import { theme } from "./theme";
 
 export const AppMain = () => {
   const [match, params] = useRoute("/cam/:cam");
@@ -31,10 +33,19 @@ export const AppMain = () => {
 
 const ErrorFallback: React.FC<FallbackProps> = ({ error }) => {
   return (
-    <div className="absolute inset-0 p-8 overflow-scroll bg-error-content text-error">
-      <h1 className="text-2xl my-2">Error occured</h1>
-      <p className="text-sm my-1">{String(error)}</p>
-      <p className="whitespace-pre text-sm">
+    <div
+      style={{
+        position: "absolute",
+        inset: 0,
+        padding: "32px",
+        overflow: "scroll",
+        backgroundColor: "#300",
+        color: "#f00",
+      }}
+    >
+      <h1 style={{ fontSize: "2rem", marginBlock: "16px" }}>Error occured</h1>
+      <p style={{ marginBlock: "8px" }}>{String(error)}</p>
+      <p style={{ whiteSpace: "pre", fontSize: ".75rem" }}>
         {JSON.stringify(error, Object.getOwnPropertyNames(error), 2)}
       </p>
     </div>
@@ -45,14 +56,16 @@ export const App = () => {
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Router hook={useHashLocation}>
-        <Switch>
-          <Route path="/cam" component={AppMain} />
-          <Route path="/zoom-visual" component={ZoomVisual} />
-          <Route>
-            {/* fallback */}
-            <AppMain />
-          </Route>
-        </Switch>
+        <ThemeProvider theme={theme}>
+          <Switch>
+            <Route path="/cam" component={AppMain} />
+            <Route path="/zoom-visual" component={ZoomVisual} />
+            <Route>
+              {/* fallback */}
+              <AppMain />
+            </Route>
+          </Switch>
+        </ThemeProvider>
       </Router>
     </ErrorBoundary>
   );

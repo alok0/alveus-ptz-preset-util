@@ -1,6 +1,5 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
-import tailwindcssPlugin from "@tailwindcss/vite";
 
 const dirname = new URL(".", import.meta.url).pathname;
 
@@ -42,6 +41,5 @@ export default defineConfig(() => {
     server: {
       allowedHosts: true,
     },
-    plugins: [tailwindcssPlugin()],
   });
 });

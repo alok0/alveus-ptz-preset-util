@@ -1,3 +1,4 @@
+import { Paper, Typography } from "@mui/material";
 import { Feature, Graticule } from "ol";
 import type { FeatureLike } from "ol/Feature";
 import olMap from "ol/Map";
@@ -16,7 +17,7 @@ import Style from "ol/style/Style";
 import TextStyle from "ol/style/Text";
 import { useEffect, useMemo, useState } from "react";
 import { useDebounceValue } from "usehooks-ts";
-import { Nav } from "./Nav";
+import { Nav, NavWrapper } from "./Nav";
 import { CamData } from "./Preset";
 import { PresetTooltip } from "./PresetTooltip";
 import { type CamType } from "./cams";
@@ -26,6 +27,7 @@ import { multiworldWrap, ObjectWithPixel } from "./openlayerTypeUtils";
 
 export const Map = ({ cam }: { cam: CamType }) => {
   const [ref, setRef] = useState<HTMLElement | null>(null);
+
   const map = useMemo(
     () =>
       new olMap({
@@ -200,28 +202,33 @@ export const Map = ({ cam }: { cam: CamType }) => {
   }, [map, setCoord]);
 
   return (
-    <div
-      className="absolute inset-0 bg-base-300 text-base-content p-2 md:p-4 grid gap-2"
-      style={{ gridTemplateRows: "auto 1fr" }}
-    >
+    <NavWrapper>
       <Nav />
       {!!coordDisplay && (
-        <div
-          className="absolute z-10 pointer-events-none bottom-2 left-2 md:bottom-4 md:left-4 p-1 rounded-tr-md bg-base-300 text-base-content overflow-hidden"
-          style={{
-            fontSize: "0.75rem",
-            fontFamily: `"JetBrains Mono Variable",monospace`,
+        <Paper
+          square
+          elevation={2}
+          sx={{
+            position: "absolute",
+            zIndex: "modal",
+            pointerEvents: "none",
+            bottom: 0,
+            left: 0,
+            p: 1,
+            overflow: "hidden",
           }}
         >
-          {hoveredFeatures.map((f) => (
-            <PresetTooltip feature={f} key={f.getId()} />
-          ))}
-          {coordDisplay}
-        </div>
+          <Typography variant="body2">
+            {hoveredFeatures.map((f) => (
+              <PresetTooltip feature={f} key={f.getId()} />
+            ))}
+            {coordDisplay}
+          </Typography>
+        </Paper>
       )}
 
-      <div className="bg-base-100 border-base-300" ref={setRef}></div>
-    </div>
+      <Paper square ref={setRef} elevation={1} />
+    </NavWrapper>
   );
 };
 

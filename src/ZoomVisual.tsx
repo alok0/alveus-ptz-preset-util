@@ -1,10 +1,10 @@
-import clsx from "clsx";
-import { Nav } from "./Nav";
+import { Box, Paper, Typography } from "@mui/material";
+import { Nav, NavWrapper } from "./Nav";
 import frame from "./wolfc-frame.webp";
 
-const ZoomLevel: React.FC<{ level: number; rectClasses?: string }> = ({
+const ZoomLevel: React.FC<{ level: number; hideRect?: boolean }> = ({
   level,
-  rectClasses,
+  hideRect,
 }) => {
   const mult = level / 100.0;
 
@@ -16,17 +16,25 @@ const ZoomLevel: React.FC<{ level: number; rectClasses?: string }> = ({
         height={64}
         width={256}
       >
-        <div className="text-base-content text-4xl mx-4 my-1">{level}</div>
+        <Typography component="div" variant="h3">
+          {level}
+        </Typography>
       </foreignObject>
-      <rect
-        width={1920 / mult}
-        height={1080 / mult}
-        rx={8}
-        x={-1920 / mult / 2}
-        y={-1080 / mult / 2}
-        fillOpacity={0}
-        className={clsx("stroke-success stroke-3", rectClasses)}
-      />
+      {!hideRect && (
+        <Box
+          component="rect"
+          width={1920 / mult}
+          height={1080 / mult}
+          rx={8}
+          x={-1920 / mult / 2}
+          y={-1080 / mult / 2}
+          fillOpacity={0}
+          sx={{
+            stroke: (theme) => theme.palette.primary.main,
+            strokeWidth: 3,
+          }}
+        />
+      )}
     </>
   );
 };
@@ -34,15 +42,23 @@ const ZoomLevel: React.FC<{ level: number; rectClasses?: string }> = ({
 export const ZoomVisual: React.FC = () => {
   return (
     <>
-      <div
-        className="absolute inset-0 bg-base-300 text-base-content p-2 md:p-4 grid gap-2"
-        style={{ gridTemplateRows: "auto 1fr" }}
-      >
+      <NavWrapper>
         <Nav />
-        <div className="bg-base-100 border-base-300 grid overflow-hidden">
-          <svg viewBox="-1920 -1080 3840 2160" className="w-full h-full">
+        <Paper
+          square
+          elevation={1}
+          sx={{
+            overflow: "hidden",
+            display: "grid",
+            "& > svg": {
+              width: "100%",
+              height: "100%",
+            },
+          }}
+        >
+          <svg viewBox="-1920 -1080 3840 2160">
             <image href={frame} width={1920} height={1080} x={-960} y={-540} />
-            <ZoomLevel rectClasses="opacity-0" level={100} />
+            <ZoomLevel level={100} hideRect />
 
             <ZoomLevel level={50} />
             <ZoomLevel level={67} />
@@ -53,8 +69,8 @@ export const ZoomVisual: React.FC = () => {
             <ZoomLevel level={400} />
             <ZoomLevel level={800} />
           </svg>
-        </div>
-      </div>
+        </Paper>
+      </NavWrapper>
     </>
   );
 };

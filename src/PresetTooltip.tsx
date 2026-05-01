@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import type { FeatureLike } from "ol/Feature";
 import { z } from "zod";
 
@@ -19,7 +20,10 @@ export const PresetTooltip = ({ feature }: { feature: FeatureLike }) => {
   return (
     <p>
       {`${properties.name}: ${properties.pan.toFixed(2)}p ${properties.tilt.toFixed(2)}t `}
-      <span className="opacity-35">{`${properties.zoom.toFixed(0)}z ${properties.focus.toFixed(0)}f`}</span>
+      <Box
+        component="span"
+        sx={{ color: "text.secondary" }}
+      >{`${properties.zoom.toFixed(0)}z ${properties.focus.toFixed(0)}f`}</Box>
     </p>
   );
 };

@@ -15,8 +15,12 @@
     "update-preset": "yarn node ./scripts/update-preset.mjs"
   },
   "dependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
     "@fontsource-variable/jetbrains-mono": "5.2.8",
     "@mdi/js": "7.4.47",
+    "@mui/icons-material": "9.0.0",
+    "@mui/material": "9.0.0",
     "clsx": "2.1.1",
     "ol": "10.8.0",
     "react": "19.2.5",
@@ -29,7 +33,6 @@
   "devDependencies": {
     "@eslint-react/eslint-plugin": "4.2.3",
     "@eslint/js": "10.0.1",
-    "@tailwindcss/vite": "4.2.2",
     "@tsconfig/strictest": "2.0.8",
     "@tsconfig/vite-react": "7.0.2",
     "@types/eslint-plugin-jsx-a11y": "6.10.1",
@@ -45,7 +48,6 @@
     "husky": "9.1.7",
     "lint-staged": "16.4.0",
     "prettier": "3.8.2",
-    "tailwindcss": "4.2.2",
     "typescript": "6.0.2",
     "typescript-eslint": "8.58.1",
     "vite": "8.0.8"
