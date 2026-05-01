@@ -9,7 +9,7 @@
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "node",
-      "matchPackageNames": ["node", "@types/node"]
+      "matchPackageNames": ["node", "@types/node", "actions/node-versions"]
     },
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
@@ -17,7 +17,8 @@
       "matchPackageNames": [
         "!/^typescript$/",
         "!/^node$/",
-        "!/^@types\\/node$/"
+        "!/^@types\\/node$/",
+        "!/^actions\\/node-versions$/"
       ]
     }
   ]
