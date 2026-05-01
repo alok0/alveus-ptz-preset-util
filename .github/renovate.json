@@ -8,6 +8,11 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "node",
+      "matchPackageNames": ["node", "@types/node"]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "deps",
       "matchPackageNames": ["!/^typescript$/"]
     }
