@@ -221,22 +221,37 @@ export const Map = ({ cam }: { cam: CamType }) => {
               sx={{
                 zIndex: "modal",
                 pointerEvents: "none",
-                p: 2,
+                p: 1,
                 overflow: "hidden",
               }}
             >
-              <Typography variant="body2" sx={{ lineHeight: 0.5 }}>
-                {hoveredFeatures.map((f) => (
-                  <PresetTooltip feature={f} key={f.getId()} />
-                ))}
-                {coordDisplay}
-              </Typography>
+              {hoveredFeatures.map((f) => (
+                <PresetTooltip feature={f} key={f.getId()} />
+              ))}
+              <Typography variant="body2">{coordDisplay}</Typography>
             </Paper>
           </Popper>
         </>
       )}
 
-      <Paper square ref={setRef} elevation={1} sx={{ gridArea: "CONTENT" }} />
+      <Paper
+        square
+        ref={setRef}
+        elevation={1}
+        sx={{
+          gridArea: "CONTENT",
+          "--ol-background-color": (theme) => theme.palette.background.default,
+          "--ol-accent-background-color": (theme) => theme.palette.primary.main,
+          "--ol-subtle-background-color": (theme) =>
+            theme.palette.background.default,
+          "--ol-partial-background-color": (theme) =>
+            theme.palette.background.default,
+          "--ol-foreground-color": (theme) => theme.palette.text.secondary,
+          "--ol-subtle-foreground-color": (theme) =>
+            theme.palette.text.disabled,
+          "--ol-brand-color": (theme) => theme.palette.primary.main,
+        }}
+      />
     </NavWrapper>
   );
 };
