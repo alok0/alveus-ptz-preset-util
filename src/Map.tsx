@@ -17,7 +17,6 @@ import Style from "ol/style/Style";
 import TextStyle from "ol/style/Text";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useDebounceValue } from "usehooks-ts";
-import { Nav, NavWrapper } from "./Nav";
 import { CamData } from "./Preset";
 import { PresetTooltip } from "./PresetTooltip";
 import { type CamType } from "./cams";
@@ -203,8 +202,7 @@ export const Map = ({ cam }: { cam: CamType }) => {
   }, [map, setCoord]);
 
   return (
-    <NavWrapper>
-      <Nav />
+    <>
       <Popper open anchorEl={ref} placement="bottom-start" disablePortal>
         <div ref={anchorRef} />
       </Popper>
@@ -252,7 +250,7 @@ export const Map = ({ cam }: { cam: CamType }) => {
           "--ol-brand-color": (theme) => theme.palette.primary.main,
         }}
       />
-    </NavWrapper>
+    </>
   );
 };
 

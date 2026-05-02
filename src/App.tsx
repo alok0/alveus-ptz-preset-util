@@ -7,6 +7,7 @@ import { Map } from "./Map";
 import { ZoomVisual } from "./ZoomVisual";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "./theme";
+import { NavWrapper } from "./Nav";
 
 export const AppMain = () => {
   const [match, params] = useRoute("/cam/:cam");
@@ -39,8 +40,8 @@ const ErrorFallback: React.FC<FallbackProps> = ({ error }) => {
         inset: 0,
         padding: "32px",
         overflow: "scroll",
-        backgroundColor: "#300",
-        color: "#f00",
+        backgroundColor: "#100",
+        color: "#f007",
       }}
     >
       <h1 style={{ fontSize: "2rem", marginBlock: "16px" }}>Error occured</h1>
@@ -57,14 +58,16 @@ export const App = () => {
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Router hook={useHashLocation}>
         <ThemeProvider theme={theme}>
-          <Switch>
-            <Route path="/cam" component={AppMain} />
-            <Route path="/zoom-visual" component={ZoomVisual} />
-            <Route>
-              {/* fallback */}
-              <AppMain />
-            </Route>
-          </Switch>
+          <NavWrapper>
+            <Switch>
+              <Route path="/cam" component={AppMain} />
+              <Route path="/zoom-visual" component={ZoomVisual} />
+              <Route>
+                {/* fallback */}
+                <AppMain />
+              </Route>
+            </Switch>
+          </NavWrapper>
         </ThemeProvider>
       </Router>
     </ErrorBoundary>

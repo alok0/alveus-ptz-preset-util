@@ -14,7 +14,7 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import { useMemo, useRef, useState, type PropsWithChildren } from "react";
+import { useEffect, useMemo, useState, type PropsWithChildren } from "react";
 import { Link, useRoute } from "wouter";
 import { cams, isCamHidden } from "./cams";
 import { InfoBox } from "./InfoBox";
@@ -33,12 +33,16 @@ export const NavWrapper: React.FC<PropsWithChildren> = ({ children }) => {
         gridTemplateAreas: `"APPBAR APPBAR" "NAV CONTENT"`,
       }}
     >
+      <Nav />
       {children}
     </Box>
   );
 };
 
-const MenuContent: React.FC<{ onClose?: () => unknown }> = ({ onClose }) => {
+const MenuContent: React.FC<{
+  onClose?: () => unknown;
+  showHidden?: boolean;
+}> = ({ onClose, showHidden }) => {
   const [, params] = useRoute("/cam/:cam");
   const cam = useMemo(() => cams.find((c) => c === params?.cam), [params?.cam]);
   const [zoomVisualMatch] = useRoute("/zoom-visual");
@@ -55,7 +59,12 @@ const MenuContent: React.FC<{ onClose?: () => unknown }> = ({ onClose }) => {
         <ListItemText>Zoom</ListItemText>
       </ListItemButton>
       {cams
-        .filter((c) => !(isCamHidden(c) && cam !== c))
+        .filter((c) => {
+          if (showHidden || cam === c) {
+            return true;
+          }
+          return !isCamHidden(c);
+        })
         .map((c) => (
           <ListItemButton
             key={c}
@@ -72,11 +81,16 @@ const MenuContent: React.FC<{ onClose?: () => unknown }> = ({ onClose }) => {
   );
 };
 
-export const Nav: React.FC = () => {
+const Nav: React.FC = () => {
   const theme = useTheme();
   const smallScreen = useMediaQuery(theme.breakpoints.down("lg"));
-  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const [clickCount, setClickCount] = useState(0);
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (!smallScreen) {
+      queueMicrotask(() => setOpen(false));
+    }
+  }, [smallScreen]);
 
   return (
     <>
@@ -84,11 +98,7 @@ export const Nav: React.FC = () => {
         <Toolbar variant="dense" disableGutters>
           {smallScreen && (
             <Tooltip title="Menu">
-              <IconButton
-                sx={{ mx: 1 }}
-                ref={menuButtonRef}
-                onClick={() => setOpen(true)}
-              >
+              <IconButton sx={{ mx: 1 }} onClick={() => setOpen(true)}>
                 <MenuIcon />
               </IconButton>
             </Tooltip>
@@ -96,7 +106,13 @@ export const Nav: React.FC = () => {
           <Typography
             variant="caption"
             component="div"
-            sx={{ flexGrow: 1, mx: 4, textWrap: "nowrap" }}
+            onClick={() => setClickCount((x) => x + 1)}
+            sx={{
+              flexGrow: 1,
+              mx: 4,
+              textWrap: "nowrap",
+              userSelect: "none",
+            }}
           >
             alveus-ptz-preset-util
           </Typography>
@@ -115,13 +131,27 @@ export const Nav: React.FC = () => {
           }}
         >
           <List>
-            <MenuContent onClose={() => setOpen(false)} />
+            <MenuContent
+              onClose={() => setOpen(false)}
+              showHidden={clickCount > 15}
+            />
           </List>
         </Paper>
       )}
       {smallScreen && (
-        <Drawer variant="temporary" open={open} onClose={() => setOpen(false)}>
-          <MenuContent onClose={() => setOpen(false)} />
+        <Drawer
+          variant="temporary"
+          open={open}
+          onClose={() => setOpen(false)}
+          slotProps={{
+            backdrop: { sx: { backdropFilter: "grayscale(100%) blur(3px)" } },
+            paper: { sx: { minWidth: 150 } },
+          }}
+        >
+          <MenuContent
+            onClose={() => setOpen(false)}
+            showHidden={clickCount > 15}
+          />
         </Drawer>
       )}
     </>
