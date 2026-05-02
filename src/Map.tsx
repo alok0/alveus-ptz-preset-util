@@ -1,4 +1,4 @@
-import { Paper, Typography } from "@mui/material";
+import { Paper, Popper, Typography } from "@mui/material";
 import { Feature, Graticule } from "ol";
 import type { FeatureLike } from "ol/Feature";
 import olMap from "ol/Map";
@@ -15,7 +15,7 @@ import Fill from "ol/style/Fill";
 import Stroke from "ol/style/Stroke";
 import Style from "ol/style/Style";
 import TextStyle from "ol/style/Text";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useDebounceValue } from "usehooks-ts";
 import { Nav, NavWrapper } from "./Nav";
 import { CamData } from "./Preset";
@@ -27,6 +27,7 @@ import { multiworldWrap, ObjectWithPixel } from "./openlayerTypeUtils";
 
 export const Map = ({ cam }: { cam: CamType }) => {
   const [ref, setRef] = useState<HTMLElement | null>(null);
+  const anchorRef = useRef<HTMLDivElement>(null);
 
   const map = useMemo(
     () =>
@@ -204,30 +205,38 @@ export const Map = ({ cam }: { cam: CamType }) => {
   return (
     <NavWrapper>
       <Nav />
+      <Popper open anchorEl={ref} placement="bottom-start" disablePortal>
+        <div ref={anchorRef} />
+      </Popper>
       {!!coordDisplay && (
-        <Paper
-          square
-          elevation={2}
-          sx={{
-            position: "absolute",
-            zIndex: "modal",
-            pointerEvents: "none",
-            bottom: 0,
-            left: 0,
-            p: 1,
-            overflow: "hidden",
-          }}
-        >
-          <Typography variant="body2">
-            {hoveredFeatures.map((f) => (
-              <PresetTooltip feature={f} key={f.getId()} />
-            ))}
-            {coordDisplay}
-          </Typography>
-        </Paper>
+        <>
+          <Popper
+            open
+            anchorEl={() => anchorRef.current || document.body}
+            placement="top-start"
+          >
+            <Paper
+              square
+              elevation={2}
+              sx={{
+                zIndex: "modal",
+                pointerEvents: "none",
+                p: 2,
+                overflow: "hidden",
+              }}
+            >
+              <Typography variant="body2" sx={{ lineHeight: 0.5 }}>
+                {hoveredFeatures.map((f) => (
+                  <PresetTooltip feature={f} key={f.getId()} />
+                ))}
+                {coordDisplay}
+              </Typography>
+            </Paper>
+          </Popper>
+        </>
       )}
 
-      <Paper square ref={setRef} elevation={1} />
+      <Paper square ref={setRef} elevation={1} sx={{ gridArea: "CONTENT" }} />
     </NavWrapper>
   );
 };

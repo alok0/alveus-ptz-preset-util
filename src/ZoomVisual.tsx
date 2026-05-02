@@ -48,6 +48,7 @@ export const ZoomVisual: React.FC = () => {
           square
           elevation={1}
           sx={{
+            gridArea: "CONTENT",
             overflow: "hidden",
             display: "grid",
             "& > svg": {
