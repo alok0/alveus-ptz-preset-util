@@ -299,10 +299,10 @@
         "autoiris": "on"
       },
       "feederstatus": {
-        "pan": 74.91,
-        "tilt": -5.02,
-        "zoom": 9392,
-        "focus": 4592,
+        "pan": 75,
+        "tilt": -5.64,
+        "zoom": 9351,
+        "focus": 5413,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
