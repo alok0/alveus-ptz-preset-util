@@ -5459,7 +5459,11 @@
         "tilt": -20.61,
         "zoom": 1255,
         "focus": 6530
-      }
+      },
+      "waterl": { "pan": -112.61, "tilt": -23.28, "zoom": 628, "focus": 7856 },
+      "waterr": { "pan": -73.31, "tilt": -21.83, "zoom": 628, "focus": 7553 },
+      "wide": { "pan": -90.01, "tilt": -32.42, "zoom": 1, "focus": 9950 },
+      "cratef": { "pan": -61.22, "tilt": -38.17, "zoom": 1, "focus": 9950 }
     }
   },
   "event": { "presets": {} }
