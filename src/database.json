@@ -2079,7 +2079,9 @@
         "tilt": -1.64,
         "zoom": 464,
         "focus": 4084
-      }
+      },
+      "redball": { "pan": 90.43, "tilt": -7.74, "zoom": 1017, "focus": 6205 },
+      "blueball": { "pan": 85.66, "tilt": -5.3, "zoom": 1017, "focus": 4800 }
     },
     "isRoaming": false,
     "speed": "65"
