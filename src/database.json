@@ -2082,7 +2082,13 @@
         "focus": 4084
       },
       "redball": { "pan": 90.43, "tilt": -7.74, "zoom": 1017, "focus": 6205 },
-      "blueball": { "pan": 85.66, "tilt": -5.3, "zoom": 1017, "focus": 4800 }
+      "blueball": { "pan": 85.66, "tilt": -5.3, "zoom": 1017, "focus": 4800 },
+      "leftcornershelf": {
+        "pan": 85.13,
+        "tilt": -7.86,
+        "zoom": 1482,
+        "focus": 4838
+      }
     },
     "isRoaming": false,
     "speed": "65"
