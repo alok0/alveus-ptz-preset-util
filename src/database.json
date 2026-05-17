@@ -2056,10 +2056,10 @@
         "autoiris": "on"
       },
       "rightcorner": {
-        "pan": 174.68,
-        "tilt": -3.4,
-        "zoom": 462,
-        "focus": 3623
+        "pan": 172.43,
+        "tilt": 0.39,
+        "zoom": 222,
+        "focus": 1442
       },
       "domellshelf": {
         "pan": 121.34,
@@ -2094,6 +2094,12 @@
         "tilt": -7.86,
         "zoom": 1482,
         "focus": 4838
+      },
+      "leftpostshelf": {
+        "pan": 110.42,
+        "tilt": -15.72,
+        "zoom": 239,
+        "focus": 1491
       }
     },
     "isRoaming": false,
