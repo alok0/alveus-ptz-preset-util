@@ -2942,15 +2942,6 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "tipmo": {
-        "pan": 114.38,
-        "tilt": -7.63,
-        "zoom": 4843,
-        "focus": 7357,
-        "brightness": 5000,
-        "autofocus": "on",
-        "autoiris": "on"
-      },
       "switchramp": {
         "pan": 33.25,
         "tilt": -6.48,
