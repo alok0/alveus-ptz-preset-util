@@ -2100,7 +2100,8 @@
         "tilt": -15.72,
         "zoom": 239,
         "focus": 1491
-      }
+      },
+      "bridgeb": { "pan": 167.22, "tilt": 3.29, "zoom": 332, "focus": 1860 }
     },
     "isRoaming": false,
     "speed": "65"
