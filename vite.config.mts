@@ -12,7 +12,7 @@ export default defineConfig(() => {
     build: {
       outDir: resolve(dirname, "dist"),
       emptyOutDir: true,
-      target: ["chrome111", "firefox128"],
+      target: ["chrome124", "firefox140"],
       assetsInlineLimit: 0,
       reportCompressedSize: false,
       chunkSizeWarningLimit: 1024 * 1024,
