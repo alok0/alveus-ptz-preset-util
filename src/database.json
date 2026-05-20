@@ -5368,10 +5368,10 @@
       "right": { "pan": -72.22, "tilt": -25.62, "zoom": 1, "focus": 1 },
       "rampb": { "pan": -141.43, "tilt": -6.69, "zoom": 2021, "focus": 6830 },
       "platformfl": {
-        "pan": -146.25,
-        "tilt": -1.02,
-        "zoom": 4039,
-        "focus": 7003
+        "pan": -145.14,
+        "tilt": -0.87,
+        "zoom": 3363,
+        "focus": 6854
       },
       "platformbr": {
         "pan": -142.73,
