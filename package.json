@@ -2,7 +2,7 @@
   "name": "alveus-ptz-preset-util",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "yarn@4.14.1",
+  "packageManager": "yarn@4.15.0",
   "engines": {
     "node": "24.16.x"
   },
@@ -27,17 +27,17 @@
     "react-dom": "19.2.6",
     "react-error-boundary": "6.1.1",
     "usehooks-ts": "3.1.1",
-    "wouter": "3.9.0",
+    "wouter": "3.10.0",
     "zod": "4.4.3"
   },
   "devDependencies": {
-    "@eslint-react/eslint-plugin": "5.7.8",
+    "@eslint-react/eslint-plugin": "5.8.4",
     "@eslint/js": "10.0.1",
     "@tsconfig/strictest": "2.0.8",
     "@tsconfig/vite-react": "8.0.6",
     "@types/eslint-plugin-jsx-a11y": "6.10.1",
     "@types/node": "24.12.4",
-    "@types/react": "19.2.14",
+    "@types/react": "19.2.15",
     "@types/react-dom": "19.2.3",
     "eslint": "10.4.0",
     "eslint-config-prettier": "10.1.8",
@@ -45,10 +45,10 @@
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "7.1.1",
     "husky": "9.1.7",
-    "lint-staged": "17.0.4",
+    "lint-staged": "17.0.5",
     "prettier": "3.8.3",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.59.3",
-    "vite": "8.0.13"
+    "typescript-eslint": "8.59.4",
+    "vite": "8.0.14"
   }
 }
