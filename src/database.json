@@ -2101,7 +2101,8 @@
         "zoom": 239,
         "focus": 1491
       },
-      "bridgeb": { "pan": 167.22, "tilt": 3.29, "zoom": 332, "focus": 1860 }
+      "bridgeb": { "pan": 167.22, "tilt": 3.29, "zoom": 332, "focus": 1860 },
+      "bridgem": { "pan": 159.34, "tilt": 7.44, "zoom": 664, "focus": 4496 }
     },
     "isRoaming": false,
     "speed": "65"
