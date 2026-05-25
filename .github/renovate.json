@@ -5,6 +5,9 @@
   "rebaseWhen": "behind-base-branch",
   "timezone": "America/New_York",
   "postUpdateOptions": ["yarnDedupeHighest"],
+  "minimumReleaseAge": "3 days",
+  "internalChecksFilter": "strict",
+  "additionalBranchPrefix": "{{#if (or (equals newVersionAgeInDays '0') (equals newVersionAgeInDays '1') (equals newVersionAgeInDays '2') (equals newVersionAgeInDays '3'))}}new{{/if}}",
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
