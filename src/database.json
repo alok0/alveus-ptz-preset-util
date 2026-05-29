@@ -1696,6 +1696,12 @@
         "tilt": -3.77,
         "zoom": 2673,
         "focus": 8317
+      },
+      "middleplatformb": {
+        "pan": -68.46,
+        "tilt": -3.44,
+        "zoom": 3637,
+        "focus": 8538
       }
     },
     "isRoaming": false,
