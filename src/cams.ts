@@ -22,6 +22,7 @@ export const cams = [
   "marty",
   "patchy",
   "emu",
+  "emucover",
   "parrot",
   "macaw",
   "serval",
@@ -36,6 +37,7 @@ const HiddenCams = new Set([
   "patchy",
   "event",
   "emu",
+  "emucover",
 ]);
 
 export const isCamHidden = (v: string) => HiddenCams.has(v);

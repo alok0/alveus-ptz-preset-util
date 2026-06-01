@@ -27,7 +27,7 @@ const images: Record<CamType, string | null> = {
   chickenindoor: chickenin_pano,
   crow: crowout_pano,
   crowindoor: crowin_pano,
-  emu: emu_pano,
+  emucover: emu_pano,
   fox: fox_pano,
   foxcovered: foxcovered_pano,
   garden: garden_pano,
@@ -51,6 +51,7 @@ const images: Record<CamType, string | null> = {
   marty: null,
   patchy: null,
   event: null,
+  emu: null,
 };
 
 export const getImage = (name: CamType) => {

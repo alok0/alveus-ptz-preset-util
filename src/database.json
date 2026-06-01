@@ -5050,7 +5050,7 @@
     "speed": "30"
   },
   "danintro": { "presets": {}, "isRoaming": false },
-  "emu": {
+  "emucover": {
     "presets": {
       "pen2left": {
         "pan": -18.26,
@@ -5497,5 +5497,12 @@
       "tubr": { "pan": -125.35, "tilt": -48.7, "zoom": 583, "focus": 8046 }
     }
   },
-  "event": { "presets": {} }
+  "event": { "presets": {} },
+  "emu": {
+    "presets": {
+      "pond": { "pan": -98.03, "tilt": -14.03, "zoom": 1, "focus": 7496 },
+      "left": { "pan": -169.48, "tilt": -5.49, "zoom": 1, "focus": 7496 },
+      "leftgate": { "pan": -157.29, "tilt": -0.38, "zoom": 873, "focus": 7300 }
+    }
+  }
 }
