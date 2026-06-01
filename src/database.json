@@ -5051,7 +5051,28 @@
   },
   "danintro": { "presets": {}, "isRoaming": false },
   "emucover": {
-    "presets": {},
+    "presets": {
+      "left": { "pan": -118.85, "tilt": -8.84, "zoom": 1, "focus": 5005 },
+      "leftcorner": {
+        "pan": -130.76,
+        "tilt": -4.1,
+        "zoom": 689,
+        "focus": 7006
+      },
+      "home": { "pan": -95.19, "tilt": -3.7, "zoom": 1, "focus": 2503 },
+      "marmgate": { "pan": -86.62, "tilt": -3.38, "zoom": 345, "focus": 5005 },
+      "marmbubble": { "pan": -84.46, "tilt": 0, "zoom": 5413, "focus": 7484 },
+      "sleep": { "pan": -73.64, "tilt": -4.01, "zoom": 623, "focus": 6807 },
+      "center": { "pan": -36, "tilt": -4.72, "zoom": 1, "focus": 1 },
+      "right": { "pan": 46.68, "tilt": -6.68, "zoom": 1, "focus": 1252 },
+      "rightcorner": { "pan": 57.6, "tilt": -4.06, "zoom": 345, "focus": 5005 },
+      "farcorner": { "pan": 10.35, "tilt": -2.51, "zoom": 345, "focus": 4419 },
+      "rightgrove": { "pan": 28.92, "tilt": -10.3, "zoom": 1, "focus": 1 },
+      "leftgrove": { "pan": -55.44, "tilt": -2.43, "zoom": 172, "focus": 3011 },
+      "downleft": { "pan": -124.9, "tilt": -21.05, "zoom": 1, "focus": 5005 },
+      "shelter": { "pan": -158.8, "tilt": -37.41, "zoom": 1, "focus": 5005 },
+      "downright": { "pan": 61.57, "tilt": -37.86, "zoom": 1, "focus": 5005 }
+    },
     "isRoaming": false,
     "roamTime": "5",
     "roamSpeed": "50",
