@@ -36,7 +36,6 @@ const HiddenCams = new Set([
   "marty",
   "patchy",
   "event",
-  "emu",
   "emucover",
 ]);
 
