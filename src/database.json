@@ -137,10 +137,10 @@
         "autoiris": "on"
       },
       "purplenest": {
-        "pan": -1.58,
-        "tilt": -1.58,
-        "zoom": 8835,
-        "focus": 6769,
+        "pan": -1.17,
+        "tilt": -1.68,
+        "zoom": 7915,
+        "focus": 8033,
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
@@ -2108,7 +2108,13 @@
         "focus": 1491
       },
       "bridgeb": { "pan": 167.22, "tilt": 3.29, "zoom": 332, "focus": 1860 },
-      "bridgem": { "pan": 159.34, "tilt": 7.44, "zoom": 664, "focus": 4496 }
+      "bridgem": { "pan": 159.34, "tilt": 7.44, "zoom": 664, "focus": 4496 },
+      "farcornershelf": {
+        "pan": 135.4,
+        "tilt": -6.07,
+        "zoom": 1659,
+        "focus": 6037
+      }
     },
     "isRoaming": false,
     "speed": "65"
