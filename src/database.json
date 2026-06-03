@@ -5364,7 +5364,13 @@
         "zoom": 2154,
         "focus": 6914
       },
-      "tubr": { "pan": -125.35, "tilt": -48.7, "zoom": 583, "focus": 8046 }
+      "tubr": { "pan": -125.35, "tilt": -48.7, "zoom": 583, "focus": 8046 },
+      "leftrampb": {
+        "pan": -133.04,
+        "tilt": -31.17,
+        "zoom": 1529,
+        "focus": 7402
+      }
     }
   },
   "event": { "presets": {} },
