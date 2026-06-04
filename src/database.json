@@ -4119,6 +4119,12 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
+      },
+      "pasturefarright": {
+        "pan": -41.43,
+        "tilt": -5.58,
+        "zoom": 1145,
+        "focus": 8131
       }
     },
     "isRoaming": false,
