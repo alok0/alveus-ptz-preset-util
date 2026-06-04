@@ -2114,6 +2114,12 @@
         "tilt": -6.07,
         "zoom": 1659,
         "focus": 6037
+      },
+      "leftpostbranch": {
+        "pan": 120.6,
+        "tilt": -11.33,
+        "zoom": 752,
+        "focus": 4485
       }
     },
     "isRoaming": false,
