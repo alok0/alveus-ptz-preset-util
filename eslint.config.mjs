@@ -4,9 +4,11 @@ import eslintReactUnified from "@eslint-react/eslint-plugin";
 import eslint from "@eslint/js";
 import prettierConfigs from "eslint-config-prettier";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
+import promisePlugin from "eslint-plugin-promise";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 import { defineConfig } from "eslint/config";
 import path from "node:path";
+import { URL } from "node:url";
 import tseslint from "typescript-eslint";
 
 const dirname = path.resolve(new URL(".", import.meta.url).pathname);
@@ -15,6 +17,7 @@ const commonConfigs = defineConfig(
   { linterOptions: { reportUnusedDisableDirectives: "off" } },
   eslint.configs.recommended,
   ...tseslint.configs.strict,
+  promisePlugin.configs["flat/recommended"],
   prettierConfigs,
 );
 
