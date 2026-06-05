@@ -40,34 +40,32 @@ const ZoomLevel: React.FC<{ level: number; hideRect?: boolean }> = ({
 
 export const ZoomVisual: React.FC = () => {
   return (
-    <>
-      <Paper
-        square
-        elevation={1}
-        sx={{
-          gridArea: "CONTENT",
-          overflow: "hidden",
-          display: "grid",
-          "& > svg": {
-            width: "100%",
-            height: "100%",
-          },
-        }}
-      >
-        <svg viewBox="-1920 -1080 3840 2160">
-          <image href={frame} width={1920} height={1080} x={-960} y={-540} />
-          <ZoomLevel level={100} hideRect />
+    <Paper
+      square
+      elevation={1}
+      sx={{
+        gridArea: "CONTENT",
+        overflow: "hidden",
+        display: "grid",
+        "& > svg": {
+          width: "100%",
+          height: "100%",
+        },
+      }}
+    >
+      <svg viewBox="-1920 -1080 3840 2160">
+        <image href={frame} width={1920} height={1080} x={-960} y={-540} />
+        <ZoomLevel level={100} hideRect />
 
-          <ZoomLevel level={50} />
-          <ZoomLevel level={67} />
-          <ZoomLevel level={80} />
-          <ZoomLevel level={125} />
-          <ZoomLevel level={150} />
-          <ZoomLevel level={200} />
-          <ZoomLevel level={400} />
-          <ZoomLevel level={800} />
-        </svg>
-      </Paper>
-    </>
+        <ZoomLevel level={50} />
+        <ZoomLevel level={67} />
+        <ZoomLevel level={80} />
+        <ZoomLevel level={125} />
+        <ZoomLevel level={150} />
+        <ZoomLevel level={200} />
+        <ZoomLevel level={400} />
+        <ZoomLevel level={800} />
+      </svg>
+    </Paper>
   );
 };

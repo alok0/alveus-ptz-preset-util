@@ -25,11 +25,7 @@ export const AppMain = () => {
     return null;
   }
 
-  return (
-    <>
-      <Map cam={cam} />
-    </>
-  );
+  return <Map cam={cam} />;
 };
 
 const ErrorFallback: React.FC<FallbackProps> = ({ error }) => {

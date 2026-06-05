@@ -207,29 +207,27 @@ export const Map = ({ cam }: { cam: CamType }) => {
         <div ref={anchorRef} />
       </Popper>
       {!!coordDisplay && (
-        <>
-          <Popper
-            open
-            anchorEl={() => anchorRef.current || document.body}
-            placement="top-start"
+        <Popper
+          open
+          anchorEl={() => anchorRef.current || document.body}
+          placement="top-start"
+        >
+          <Paper
+            square
+            elevation={2}
+            sx={{
+              zIndex: "modal",
+              pointerEvents: "none",
+              p: 1,
+              overflow: "hidden",
+            }}
           >
-            <Paper
-              square
-              elevation={2}
-              sx={{
-                zIndex: "modal",
-                pointerEvents: "none",
-                p: 1,
-                overflow: "hidden",
-              }}
-            >
-              {hoveredFeatures.map((f) => (
-                <PresetTooltip feature={f} key={f.getId()} />
-              ))}
-              <Typography variant="body2">{coordDisplay}</Typography>
-            </Paper>
-          </Popper>
-        </>
+            {hoveredFeatures.map((f) => (
+              <PresetTooltip feature={f} key={f.getId()} />
+            ))}
+            <Typography variant="body2">{coordDisplay}</Typography>
+          </Paper>
+        </Popper>
       )}
 
       <Paper

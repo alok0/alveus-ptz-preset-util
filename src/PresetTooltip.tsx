@@ -10,10 +10,12 @@ const FeatureProperties = z.object({
   name: z.string().nonempty(),
 });
 
-export const PresetTooltip = ({ feature }: { feature: FeatureLike }) => {
+export const PresetTooltip: React.FC<{ feature: FeatureLike }> = ({
+  feature,
+}) => {
   const result = FeatureProperties.safeParse(feature.getProperties());
   if (!result.success) {
-    return <></>;
+    return null;
   }
   const properties = result.data;
 
