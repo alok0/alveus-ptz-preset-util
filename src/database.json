@@ -2120,7 +2120,8 @@
         "tilt": -11.33,
         "zoom": 752,
         "focus": 4285
-      }
+      },
+      "domellt": { "pan": 125.57, "tilt": -5.75, "zoom": 898, "focus": 5033 }
     },
     "isRoaming": false,
     "speed": "65"
