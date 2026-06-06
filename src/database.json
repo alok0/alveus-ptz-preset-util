@@ -5247,32 +5247,27 @@
   "foxcovered": {
     "presets": {
       "home": { "pan": -130.06, "tilt": -9.96, "zoom": 1, "focus": 1 },
-      "platform": {
-        "pan": -143.87,
-        "tilt": -0.93,
-        "zoom": 1604,
-        "focus": 6882
-      },
+      "platform": { "pan": -142.08, "tilt": 0, "zoom": 1604, "focus": 6631 },
       "left": { "pan": -141.92, "tilt": -9.8, "zoom": 172, "focus": 3011 },
       "right": { "pan": -72.22, "tilt": -25.62, "zoom": 1, "focus": 1 },
       "rampb": { "pan": -139.37, "tilt": -8.81, "zoom": 6462, "focus": 6710 },
       "platformfl": {
-        "pan": -145.14,
-        "tilt": -0.87,
-        "zoom": 3363,
-        "focus": 6854
+        "pan": -144.57,
+        "tilt": -0.67,
+        "zoom": 2417,
+        "focus": 6952
       },
       "platformbr": {
-        "pan": -142.73,
-        "tilt": -1.16,
-        "zoom": 4039,
-        "focus": 7030
+        "pan": -141.07,
+        "tilt": -0.19,
+        "zoom": 2417,
+        "focus": 6952
       },
       "platformfr": {
-        "pan": -140.72,
-        "tilt": -1.11,
-        "zoom": 3601,
-        "focus": 7108
+        "pan": -138.66,
+        "tilt": -0.64,
+        "zoom": 1604,
+        "focus": 6882
       },
       "belowplatforml": {
         "pan": -147.72,
@@ -5284,7 +5279,13 @@
       "downright": { "pan": -45.66, "tilt": -44.94, "zoom": 1, "focus": 1 },
       "downleft": { "pan": -150.87, "tilt": -42.97, "zoom": 1, "focus": 1 },
       "farcorner": { "pan": -136.61, "tilt": -5.8, "zoom": 937, "focus": 5545 },
-      "table": { "pan": -95.21, "tilt": -38.31, "zoom": 1, "focus": 1 }
+      "table": { "pan": -95.21, "tilt": -38.31, "zoom": 1, "focus": 1 },
+      "platformbl": {
+        "pan": -144.94,
+        "tilt": -0.13,
+        "zoom": 2417,
+        "focus": 6952
+      }
     }
   },
   "serval": {
