@@ -2121,7 +2121,8 @@
         "zoom": 752,
         "focus": 4285
       },
-      "domellt": { "pan": 125.57, "tilt": -5.75, "zoom": 898, "focus": 5033 }
+      "domellt": { "pan": 125.57, "tilt": -5.75, "zoom": 898, "focus": 5033 },
+      "domellb": { "pan": 126.35, "tilt": -10.89, "zoom": 332, "focus": 2972 }
     },
     "isRoaming": false,
     "speed": "65"
