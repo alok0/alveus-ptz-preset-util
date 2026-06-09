@@ -1481,10 +1481,10 @@
         "autofocus": "off"
       },
       "den2": {
-        "pan": -4.8,
-        "tilt": -3.18,
+        "pan": -4.78,
+        "tilt": -3.17,
         "zoom": 754,
-        "focus": 5682,
+        "focus": 6906,
         "brightness": 5000,
         "autofocus": "off"
       },
@@ -1702,7 +1702,8 @@
         "tilt": -3.44,
         "zoom": 3637,
         "focus": 8538
-      }
+      },
+      "den2b": { "pan": -4.79, "tilt": -3.9, "zoom": 10229, "focus": 8331 }
     },
     "isRoaming": false,
     "roamTime": "10",
