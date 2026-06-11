@@ -5094,7 +5094,8 @@
       "shelter": { "pan": -160.28, "tilt": -30.92, "zoom": 1, "focus": 1 },
       "downright": { "pan": 61.57, "tilt": -37.86, "zoom": 1, "focus": 5005 },
       "mudpit": { "pan": -48.72, "tilt": -8.53, "zoom": 172, "focus": 5005 },
-      "feeder": { "pan": -93.8, "tilt": -3.94, "zoom": 638, "focus": 6131 }
+      "feeder": { "pan": -93.8, "tilt": -3.94, "zoom": 638, "focus": 6131 },
+      "centerr": { "pan": -16.58, "tilt": -3.27, "zoom": 87, "focus": 1 }
     },
     "isRoaming": false,
     "roamTime": "5",
