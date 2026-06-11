@@ -4,6 +4,7 @@ import chickenin_pano from "./chickenin_pano.webp";
 import crowin_pano from "./crowin_pano.webp";
 import crowout_pano from "./crowout_pano.webp";
 import emu_pano from "./emu_pano.webp";
+import emucover_pano from "./emucover_pano.webp";
 import fox_pano from "./fox_pano.webp";
 import foxcovered_pano from "./foxcovered_pano.webp";
 import garden_pano from "./garden_pano.webp";
@@ -45,13 +46,13 @@ const images: Record<CamType, string | null> = {
   wolfindoor: wolfindoor_pano,
   wolfswitch: wolfswitch_pano,
   emu: emu_pano,
+  emucover: emucover_pano,
 
   noodle: null,
   roach: null,
   marty: null,
   patchy: null,
   event: null,
-  emucover: null,
 };
 
 export const getImage = (name: CamType) => {
