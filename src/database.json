@@ -5073,7 +5073,7 @@
   "danintro": { "presets": {}, "isRoaming": false },
   "emucover": {
     "presets": {
-      "left": { "pan": -118.85, "tilt": -8.84, "zoom": 1, "focus": 5005 },
+      "left": { "pan": -118.1, "tilt": -4.45, "zoom": 1, "focus": 5005 },
       "leftcorner": {
         "pan": -130.76,
         "tilt": -4.1,
