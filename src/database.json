@@ -5405,10 +5405,10 @@
       },
       "cratebl": { "pan": -97.43, "tilt": -64.02, "zoom": 1, "focus": 9950 },
       "rightrampr": {
-        "pan": -58.8,
-        "tilt": -32.11,
+        "pan": -58.79,
+        "tilt": -32.1,
         "zoom": 1181,
-        "focus": 6989
+        "focus": 7803
       }
     }
   },
