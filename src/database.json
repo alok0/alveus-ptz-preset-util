@@ -5402,7 +5402,13 @@
         "zoom": 294,
         "focus": 7891
       },
-      "cratebl": { "pan": -97.43, "tilt": -64.02, "zoom": 1, "focus": 9950 }
+      "cratebl": { "pan": -97.43, "tilt": -64.02, "zoom": 1, "focus": 9950 },
+      "rightrampr": {
+        "pan": -58.8,
+        "tilt": -32.11,
+        "zoom": 1181,
+        "focus": 6989
+      }
     }
   },
   "event": { "presets": {} },
