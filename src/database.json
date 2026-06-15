@@ -2129,7 +2129,8 @@
         "tilt": -30.78,
         "zoom": 1,
         "focus": 748
-      }
+      },
+      "hidetmp": { "pan": 112.59, "tilt": -9.06, "zoom": 664, "focus": 4735 }
     },
     "isRoaming": false,
     "speed": "65"
