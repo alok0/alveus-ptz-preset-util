@@ -5438,5 +5438,10 @@
       "pondleft": { "pan": -145.11, "tilt": -2.69, "zoom": 1, "focus": 6906 },
       "home": { "pan": -47.33, "tilt": -8.19, "zoom": 1, "focus": 7496 }
     }
+  },
+  "pasturelower": {
+    "presets": {
+      "home": { "pan": -72.79, "tilt": 1.51, "zoom": 1, "focus": 2505 }
+    }
   }
 }
