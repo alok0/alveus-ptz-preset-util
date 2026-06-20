@@ -14,6 +14,7 @@ import marm_pano from "./marm_pano.webp";
 import marmin_pano from "./marmin_pano.webp";
 import parrot_pano from "./parrot_pano.webp";
 import pasture_pano from "./pasture_pano.webp";
+import pasturelower_pano from "./pasturelower_pano.webp";
 import pushin_pano from "./pushin_pano.webp";
 import pushout_pano from "./pushout_pano.webp";
 import serval_pano from "./serval_pano.webp";
@@ -37,6 +38,7 @@ const images: Record<CamType, string | null> = {
   marmosetindoor: marmin_pano,
   parrot: parrot_pano,
   pasture: pasture_pano,
+  pasturelower: pasturelower_pano,
   pushpop: pushout_pano,
   pushpopindoor: pushin_pano,
   serval: serval_pano,
@@ -53,7 +55,6 @@ const images: Record<CamType, string | null> = {
   marty: null,
   patchy: null,
   event: null,
-  pasturelower: null,
 };
 
 export const getImage = (name: CamType) => {
