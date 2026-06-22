@@ -2130,7 +2130,9 @@
         "zoom": 1,
         "focus": 748
       },
-      "hidetmp": { "pan": 112.55, "tilt": -9.05, "zoom": 664, "focus": 4794 }
+      "hidetmp": { "pan": 112.55, "tilt": -9.05, "zoom": 664, "focus": 4794 },
+      "domerr": { "pan": 151.57, "tilt": -7.67, "zoom": 1662, "focus": 6216 },
+      "domerl": { "pan": 148.54, "tilt": -7.83, "zoom": 1662, "focus": 6216 }
     },
     "isRoaming": false,
     "speed": "65"
@@ -5102,7 +5104,8 @@
       "downright": { "pan": 61.57, "tilt": -37.86, "zoom": 1, "focus": 5005 },
       "mudpit": { "pan": -48.72, "tilt": -8.53, "zoom": 172, "focus": 5005 },
       "feeder": { "pan": -93.8, "tilt": -3.94, "zoom": 638, "focus": 6131 },
-      "centerr": { "pan": -16.58, "tilt": -3.27, "zoom": 87, "focus": 1 }
+      "centerr": { "pan": -16.58, "tilt": -3.27, "zoom": 87, "focus": 1 },
+      "temp1": { "pan": 96.12, "tilt": -4.42, "zoom": 1294, "focus": 6358 }
     },
     "isRoaming": false,
     "roamTime": "5",
