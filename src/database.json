@@ -5412,6 +5412,12 @@
         "tilt": -32.1,
         "zoom": 1181,
         "focus": 7803
+      },
+      "middleplatformbz": {
+        "pan": -88.78,
+        "tilt": -9.2,
+        "zoom": 2408,
+        "focus": 7739
       }
     }
   },
