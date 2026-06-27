@@ -2365,6 +2365,12 @@
         "brightness": 6000,
         "autofocus": "off",
         "autoiris": "on"
+      },
+      "farrightshelfb": {
+        "pan": 179.34,
+        "tilt": -25.19,
+        "zoom": 1210,
+        "focus": 4729
       }
     },
     "isRoaming": false,
