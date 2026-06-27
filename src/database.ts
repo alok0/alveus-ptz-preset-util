@@ -32,7 +32,7 @@ import {
 } from "./database.json";
 import type { CamDataInputType } from "./Preset";
 
-export default {
+const database = {
   chicken,
   chickenindoor,
   crow,
@@ -63,3 +63,5 @@ export default {
   wolfindoor,
   wolfswitch,
 } satisfies Record<CamType, CamDataInputType>;
+
+globalThis.presetdb = database;

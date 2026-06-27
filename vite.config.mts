@@ -24,14 +24,6 @@ export default defineConfig(() => {
             jsdoc: false,
             legal: false,
           },
-          codeSplitting: {
-            groups: [
-              {
-                name: "vendor",
-                test: /node_modules/,
-              },
-            ],
-          },
           entryFileNames: "[hash].js",
           assetFileNames: "[hash][extname]",
           chunkFileNames: "[hash].js",

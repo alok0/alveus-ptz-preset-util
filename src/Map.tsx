@@ -20,7 +20,6 @@ import { useDebounceValue } from "usehooks-ts";
 import { CamData } from "./Preset";
 import { PresetTooltip } from "./PresetTooltip";
 import { type CamType } from "./cams";
-import database from "./database";
 import { getImage } from "./images";
 import { multiworldWrap, ObjectWithPixel } from "./openlayerTypeUtils";
 
@@ -42,7 +41,9 @@ export const Map = ({ cam }: { cam: CamType }) => {
   );
 
   useEffect(() => {
-    const features = Object.entries(CamData.parse(database[cam]).presets)
+    const features = Object.entries(
+      CamData.parse(globalThis.presetdb?.[cam]).presets,
+    )
       .filter(([name]) => name !== "temp" && name !== "tmp")
       .map(
         ([name, data]) =>
