@@ -4456,10 +4456,10 @@
         "autoiris": "on"
       },
       "pasturefarright": {
-        "pan": -41.43,
+        "pan": -41.42,
         "tilt": -5.58,
         "zoom": 1145,
-        "focus": 8131,
+        "focus": 7624,
         "brightness": 5500,
         "autofocus": "on"
       }
@@ -6312,9 +6312,9 @@
       },
       "middleplatformbz": {
         "pan": -88.78,
-        "tilt": -9.2,
+        "tilt": -9.19,
         "zoom": 2408,
-        "focus": 7739,
+        "focus": 7987,
         "brightness": 5000,
         "autofocus": "on"
       }
