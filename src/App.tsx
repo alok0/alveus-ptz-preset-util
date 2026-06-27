@@ -40,7 +40,7 @@ const ErrorFallback: React.FC<FallbackProps> = ({ error }) => {
         color: "#f007",
       }}
     >
-      <h1 style={{ fontSize: "2rem", marginBlock: "16px" }}>Error occured</h1>
+      <h1 style={{ fontSize: "2rem", marginBlock: "16px" }}>Error occurred</h1>
       <p style={{ marginBlock: "8px" }}>{String(error)}</p>
       <p style={{ whiteSpace: "pre", fontSize: ".75rem" }}>
         {JSON.stringify(error, Object.getOwnPropertyNames(error), 2)}
