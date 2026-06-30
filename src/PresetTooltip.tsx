@@ -1,31 +1,21 @@
 import { Box, Typography } from "@mui/material";
-import type { FeatureLike } from "ol/Feature";
-import { z } from "zod";
 
-const FeatureProperties = z.object({
-  pan: z.number(),
-  tilt: z.number(),
-  zoom: z.number(),
-  focus: z.number(),
-  name: z.string().nonempty(),
-});
-
-export const PresetTooltip: React.FC<{ feature: FeatureLike }> = ({
-  feature,
-}) => {
-  const result = FeatureProperties.safeParse(feature.getProperties());
-  if (!result.success) {
-    return null;
-  }
-  const properties = result.data;
-
+export const PresetTooltip: React.FC<{
+  data: {
+    name: string;
+    pan: number;
+    tilt: number;
+    zoom: number;
+    focus: number;
+  };
+}> = ({ data }) => {
   return (
     <Typography variant="body2">
-      {`${properties.name}: ${properties.pan.toFixed(2)}p ${properties.tilt.toFixed(2)}t `}
+      {`${data.name}: ${data.pan.toFixed(2)}p ${data.tilt.toFixed(2)}t `}
       <Box
         component="span"
         sx={{ color: "text.secondary" }}
-      >{`${properties.zoom.toFixed(0)}z ${properties.focus.toFixed(0)}f`}</Box>
+      >{`${data.zoom.toFixed(0)}z ${data.focus.toFixed(0)}f`}</Box>
     </Typography>
   );
 };

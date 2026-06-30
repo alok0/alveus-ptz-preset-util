@@ -1,136 +1,63 @@
 import { Paper, Popper, Typography } from "@mui/material";
-import { Feature, Graticule } from "ol";
-import type { FeatureLike } from "ol/Feature";
-import olMap from "ol/Map";
-import View from "ol/View";
-import type { Listener } from "ol/events";
-import { Point } from "ol/geom";
-import LayerGroup from "ol/layer/Group";
-import ImageLayer from "ol/layer/Image";
-import VectorLayer from "ol/layer/Vector";
-import "ol/ol.css";
-import Static from "ol/source/ImageStatic";
-import VectorSource from "ol/source/Vector";
-import Fill from "ol/style/Fill";
-import Stroke from "ol/style/Stroke";
-import Style from "ol/style/Style";
-import TextStyle from "ol/style/Text";
+import "pannellum";
+import "pannellum/build/pannellum.css";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { useDebounceValue } from "usehooks-ts";
+import { useDebounceValue, useResizeObserver } from "usehooks-ts";
 import { CamData } from "./Preset";
-import { PresetTooltip } from "./PresetTooltip";
 import { type CamType } from "./cams";
 import { getImage } from "./images";
-import { multiworldWrap, ObjectWithPixel } from "./openlayerTypeUtils";
+import { PresetTooltip } from "./PresetTooltip";
+
+const pannellum = window.pannellum;
 
 export const Map = ({ cam }: { cam: CamType }) => {
   const [ref, setRef] = useState<HTMLElement | null>(null);
   const anchorRef = useRef<HTMLDivElement>(null);
-
-  const map = useMemo(
+  const [viewer, setViewer] = useState<Pannellum.Viewer | null>(null);
+  useResizeObserver({
+    ref: useMemo(() => ({ current: ref || document.body }), [ref]),
+    onResize: () => viewer?.resize(),
+  });
+  const hotSpots = useMemo(
     () =>
-      new olMap({
-        view: new View({
-          projection: "EPSG:4326",
-          center: [0, 0],
-          zoom: 2,
-          constrainRotation: 1,
-        }),
-      }),
-    [],
+      Object.entries(CamData.parse(globalThis.presetdb?.[cam]).presets)
+        .filter(([name]) => name !== "temp" && name !== "tmp")
+        .map(
+          ([name, data]) =>
+            ({
+              data: { name, ...data },
+              ...({
+                pitch: data.tilt,
+                yaw: data.pan,
+                text: name,
+                cssClass: "hotspot-custom",
+                createTooltipFunc: (el) => {
+                  el.textContent = name;
+                  el.dataset["name"] = name;
+                  const scaledZoom =
+                    100 - Math.round(data.zoom < 900 ? data.zoom / 10 : 90);
+                  el.style.setProperty("--zoom-scale", String(scaledZoom));
+                  el.style.setProperty("z-index", String(20100 - data.zoom));
+                },
+              } satisfies Pannellum.HotspotOptions),
+            }) as const,
+        ),
+    [cam],
   );
 
   useEffect(() => {
-    const features = Object.entries(
-      CamData.parse(globalThis.presetdb?.[cam]).presets,
-    )
-      .filter(([name]) => name !== "temp" && name !== "tmp")
-      .map(
-        ([name, data]) =>
-          new Feature({
-            geometry: new Point([data.pan, data.tilt]),
-            name,
-            zoom: data.zoom,
-            pan: data.pan,
-            tilt: data.tilt,
-            focus: data.focus,
-          }),
-      );
-    features.forEach((f) => f.setId(window.crypto.randomUUID()));
-
-    const vectorSource = new VectorSource({ features });
-
-    const layerStyle = (f: FeatureLike) => {
-      const zoom: unknown = f.get("zoom");
-      const scaledZoom =
-        100 -
-        Math.round(typeof zoom === "number" && zoom < 900 ? zoom / 10 : 90);
-
-      return new Style({
-        zIndex: scaledZoom,
-        text: new TextStyle({
-          text: String(f.get("name") || ""),
-          font: 'bold 12px "JetBrains Mono Variable",monospace',
-          fill: new Fill({
-            color: "#000",
-          }),
-          stroke: new Stroke({
-            color: `hsl(285 ${scaledZoom}% 80%)`,
-            width: 3 + (3 * scaledZoom) / 100,
-          }),
-        }),
-      });
-    };
-
-    const vectorLayer = new VectorLayer({
-      source: vectorSource,
-      style: layerStyle,
-    });
-
-    const background = new LayerGroup({
-      opacity: 0.7,
-    });
+    if (!ref) {
+      return;
+    }
     const backgroundImage = getImage(cam);
-    if (backgroundImage) {
-      [0, 1, -1, 2, -2, 3, -3].forEach((world) => {
-        const worldOffset = 360 * world;
-        background.getLayers().push(
-          new ImageLayer({
-            source: new Static({
-              url: backgroundImage,
-              imageExtent: [-180 + worldOffset, -80, 180 + worldOffset, 80],
-              interpolate: true,
-            }),
-          }),
-        );
-      });
+    if (!backgroundImage) {
+      return;
     }
 
-    map.setLayers([
-      background,
-      new Graticule({
-        opacity: 0.15,
-        strokeStyle: new Stroke({
-          color: "#fff",
-          width: 2,
-          lineDash: [0.5, 4],
-        }),
-        showLabels: false,
-        wrapX: true,
-      }),
-      vectorLayer,
-    ]);
-
     const findPoint = (name: string) =>
-      vectorSource
-        .getFeatures()
-        .find(
-          (f) =>
-            String(f.get("name")).toLocaleLowerCase() ===
-            name.toLocaleLowerCase(),
-        )
-        ?.getGeometry()
-        ?.getExtent();
+      hotSpots.find(
+        (h) => h.text?.toLocaleLowerCase() === name.toLocaleLowerCase(),
+      );
 
     const home =
       findPoint("home") ||
@@ -138,21 +65,33 @@ export const Map = ({ cam }: { cam: CamType }) => {
       findPoint("middle") ||
       findPoint("left") ||
       findPoint("right") ||
-      vectorSource
-        .getFeatures()
-        .map((f) => f.getGeometry()?.getExtent())
-        .find(Boolean);
+      hotSpots[0];
 
-    if (home) {
-      map.getView().fit(home, { maxZoom: 5 });
-    }
-  }, [cam, map]);
+    const viewer = pannellum.viewer(ref, {
+      type: "equirectangular",
+      autoLoad: true,
+      panorama: backgroundImage,
+      vaov: 160,
+      minPitch: -85,
+      maxPitch: 30,
+      minHfov: 6,
+      maxHfov: 120,
+      hfov: 60,
+      pitch: home?.pitch || -20,
+      yaw: home?.yaw || 0,
+      showFullscreenCtrl: false,
+      hotSpots,
+      friction: 0.35,
+      strings: {
+        bylineLabel: " ",
+      },
+    });
+    queueMicrotask(() => setViewer(viewer));
 
-  useEffect(() => {
-    if (ref) {
-      map.setTarget(ref);
-    }
-  }, [map, ref]);
+    return () => {
+      viewer.destroy();
+    };
+  }, [cam, hotSpots, ref]);
 
   const [coord, setCoord] = useDebounceValue<{
     pan: number;
@@ -165,42 +104,25 @@ export const Map = ({ cam }: { cam: CamType }) => {
     [coord],
   );
 
-  const hoveredFeatures = useMemo(() => {
-    if (!coord) {
+  const hoveredPresets = useMemo(() => {
+    if (!coord || !viewer || !ref) {
       return [];
     }
 
-    return map
-      .getFeaturesAtPixel(map.getPixelFromCoordinate([coord.pan, coord.tilt]), {
-        checkWrapped: true,
-        hitTolerance: 16,
-      })
+    const hfov = viewer.getHfov();
+    const rect = ref.getBoundingClientRect();
+    const degPerPixel = Math.abs(hfov / rect.width);
+    const toleranceDeg = 32 * degPerPixel;
+
+    return hotSpots
       .filter(
-        (f) =>
-          typeof f.get("zoom") === "number" &&
-          typeof f.get("pan") === "number" &&
-          typeof f.get("tilt") === "number" &&
-          typeof f.get("name") === "string",
+        (h) =>
+          Math.abs(h.data.pan - coord.pan) < toleranceDeg &&
+          Math.abs(h.data.tilt - coord.tilt) < toleranceDeg,
       )
-      .toSorted((a, b) => a.get("zoom") - b.get("zoom"))
+      .toSorted((a, b) => a.data.zoom - b.data.zoom)
       .slice(0, 5);
-  }, [coord, map]);
-
-  useEffect(() => {
-    // openlayers typescript support sucks
-    const handlePointermove: Listener = (e) => {
-      const coord = map.getCoordinateFromPixel(ObjectWithPixel.parse(e).pixel);
-      const pan = multiworldWrap(coord[0]);
-      const tilt = coord[1];
-
-      setCoord(pan && tilt ? { pan, tilt } : null);
-    };
-
-    map.addEventListener("pointermove", handlePointermove);
-    return () => {
-      map.removeEventListener("pointermove", handlePointermove);
-    };
-  }, [map, setCoord]);
+  }, [coord, hotSpots, ref, viewer]);
 
   return (
     <>
@@ -223,8 +145,8 @@ export const Map = ({ cam }: { cam: CamType }) => {
               overflow: "hidden",
             }}
           >
-            {hoveredFeatures.map((f) => (
-              <PresetTooltip feature={f} key={f.getId()} />
+            {hoveredPresets.map((h) => (
+              <PresetTooltip data={h.data} key={JSON.stringify(h.data)} />
             ))}
             <Typography variant="body2">{coordDisplay}</Typography>
           </Paper>
@@ -235,19 +157,45 @@ export const Map = ({ cam }: { cam: CamType }) => {
         square
         ref={setRef}
         elevation={1}
-        sx={{
-          gridArea: "CONTENT",
-          "--ol-background-color": (theme) => theme.palette.background.default,
-          "--ol-accent-background-color": (theme) => theme.palette.primary.main,
-          "--ol-subtle-background-color": (theme) =>
-            theme.palette.background.default,
-          "--ol-partial-background-color": (theme) =>
-            theme.palette.background.default,
-          "--ol-foreground-color": (theme) => theme.palette.text.secondary,
-          "--ol-subtle-foreground-color": (theme) =>
-            theme.palette.text.disabled,
-          "--ol-brand-color": (theme) => theme.palette.primary.main,
+        onContextMenuCapture={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
         }}
+        onMouseMove={(e) => {
+          const c = viewer?.mouseEventToCoords(e.nativeEvent);
+
+          if (c) {
+            setCoord({ pan: c[1], tilt: c[0] });
+          } else {
+            setCoord(null);
+          }
+        }}
+        onMouseOut={() => {
+          setCoord(null);
+        }}
+        sx={(theme) => ({
+          gridArea: "CONTENT",
+          "--ol-background-color": theme.palette.background.default,
+          "--ol-accent-background-color": theme.palette.primary.main,
+          "--ol-subtle-background-color": theme.palette.background.default,
+          "--ol-partial-background-color": theme.palette.background.default,
+          "--ol-foreground-color": theme.palette.text.secondary,
+          "--ol-subtle-foreground-color": theme.palette.text.disabled,
+          "--ol-brand-color": theme.palette.primary.main,
+
+          "& .hotspot-custom": {
+            ...theme.typography.body2,
+            fontWeight: 700,
+            textShadow: `1px 1px 1px white`,
+            backgroundColor: "hsl(285 var(--zoom-scale) 80% / 85%)",
+            border: "black 1px solid",
+            p: 0.5,
+            color: "black",
+            pointerEvents: "none",
+            lineHeight: 1,
+            borderRadius: theme.shape.borderRadius,
+          },
+        })}
       />
     </>
   );
