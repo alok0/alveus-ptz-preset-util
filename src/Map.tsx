@@ -50,9 +50,6 @@ export const Map = ({ cam }: { cam: CamType }) => {
       return;
     }
     const backgroundImage = getImage(cam);
-    if (!backgroundImage) {
-      return;
-    }
 
     const findPoint = (name: string) =>
       hotSpots.find(

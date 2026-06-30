@@ -23,6 +23,7 @@ import wolf_pano from "./wolf_pano.webp";
 import wolfcorner_pano from "./wolfcorner_pano.webp";
 import wolfindoor_pano from "./wolfindoor_pano.webp";
 import wolfswitch_pano from "./wolfswitch_pano.webp";
+import fallback_pano from "./blank_pano.webp";
 
 const images: Record<CamType, string | null> = {
   chicken: chicken_pano,
@@ -58,5 +59,5 @@ const images: Record<CamType, string | null> = {
 };
 
 export const getImage = (name: CamType) => {
-  return images[name] || null;
+  return images[name] || fallback_pano;
 };
