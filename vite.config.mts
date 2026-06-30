@@ -32,6 +32,15 @@ export default defineConfig(() => {
     },
     server: {
       allowedHosts: true,
+      headers: {
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy":
+          "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob:",
+        "Cross-Origin-Opener-Policy": "same-origin",
+        "Cross-Origin-Embedder-Policy": "credentialless",
+      },
     },
   });
 });

@@ -80,6 +80,7 @@ export const Map = ({ cam }: { cam: CamType }) => {
       pitch: home?.pitch || -20,
       yaw: home?.yaw || 0,
       showFullscreenCtrl: false,
+      showControls: false,
       hotSpots,
       friction: 0.35,
       strings: {
