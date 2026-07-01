@@ -1,14 +1,12 @@
 import { Paper, Popper, Typography } from "@mui/material";
 import "pannellum";
 import "pannellum/build/pannellum.css";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useDebounceValue, useResizeObserver } from "usehooks-ts";
-import { CamData } from "./Preset";
 import { type CamType } from "./cams";
 import { getImage } from "./images";
+import { CamData } from "./Preset";
 import { PresetTooltip } from "./PresetTooltip";
-
-const pannellum = window.pannellum;
 
 export const Map = ({ cam }: { cam: CamType }) => {
   const [ref, setRef] = useState<HTMLElement | null>(null);
@@ -16,7 +14,7 @@ export const Map = ({ cam }: { cam: CamType }) => {
   const [viewer, setViewer] = useState<Pannellum.Viewer | null>(null);
   useResizeObserver({
     ref: useMemo(() => ({ current: ref || document.body }), [ref]),
-    onResize: () => viewer?.resize(),
+    onResize: useCallback(() => viewer?.resize(), [viewer]),
   });
   const hotSpots = useMemo(
     () =>
@@ -64,7 +62,7 @@ export const Map = ({ cam }: { cam: CamType }) => {
       findPoint("right") ||
       hotSpots[0];
 
-    const viewer = pannellum.viewer(ref, {
+    const viewer = window.pannellum.viewer(ref, {
       type: "equirectangular",
       autoLoad: true,
       panorama: backgroundImage,
@@ -87,6 +85,7 @@ export const Map = ({ cam }: { cam: CamType }) => {
     queueMicrotask(() => setViewer(viewer));
 
     return () => {
+      setViewer(null);
       viewer.destroy();
     };
   }, [cam, hotSpots, ref]);
@@ -110,13 +109,14 @@ export const Map = ({ cam }: { cam: CamType }) => {
     const hfov = viewer.getHfov();
     const rect = ref.getBoundingClientRect();
     const degPerPixel = Math.abs(hfov / rect.width);
-    const toleranceDeg = 32 * degPerPixel;
+    const tolerance = Math.pow(32 * degPerPixel, 2);
 
     return hotSpots
       .filter(
         (h) =>
-          Math.abs(h.data.pan - coord.pan) < toleranceDeg &&
-          Math.abs(h.data.tilt - coord.tilt) < toleranceDeg,
+          Math.pow(h.data.pan - coord.pan, 2) +
+            Math.pow(h.data.tilt - coord.tilt, 2) <
+          tolerance,
       )
       .toSorted((a, b) => a.data.zoom - b.data.zoom)
       .slice(0, 5);
@@ -173,25 +173,21 @@ export const Map = ({ cam }: { cam: CamType }) => {
         }}
         sx={(theme) => ({
           gridArea: "CONTENT",
-          "--ol-background-color": theme.palette.background.default,
-          "--ol-accent-background-color": theme.palette.primary.main,
-          "--ol-subtle-background-color": theme.palette.background.default,
-          "--ol-partial-background-color": theme.palette.background.default,
-          "--ol-foreground-color": theme.palette.text.secondary,
-          "--ol-subtle-foreground-color": theme.palette.text.disabled,
-          "--ol-brand-color": theme.palette.primary.main,
 
           "& .hotspot-custom": {
             ...theme.typography.body2,
             fontWeight: 700,
             textShadow: `1px 1px 1px white`,
-            backgroundColor: "hsl(285 var(--zoom-scale) 80% / 85%)",
+            backgroundColor: "hsl(285 var(--zoom-scale) 80% / 90%)",
             border: "black 1px solid",
             p: 0.5,
             color: "black",
             pointerEvents: "none",
             lineHeight: 1,
             borderRadius: theme.shape.borderRadius,
+          },
+          "& canvas": {
+            opacity: 0.5,
           },
         })}
       />
