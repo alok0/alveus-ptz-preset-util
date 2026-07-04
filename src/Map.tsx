@@ -175,9 +175,8 @@ export const Map = ({ cam }: { cam: CamType }) => {
           gridArea: "CONTENT",
 
           "& .hotspot-custom": {
-            ...theme.typography.body2,
-            fontWeight: 700,
-            textShadow: `1px 1px 1px white`,
+            ...theme.typography.body1,
+            textShadow: `0px 0px 1px #fff7, 0.5px 0.5px 1.5px #fff7, 0.5px 0.5px 2px #fff7`,
             backgroundColor: "hsl(285 var(--zoom-scale) 80% / 90%)",
             border: "black 1px solid",
             p: 0.5,
@@ -186,9 +185,11 @@ export const Map = ({ cam }: { cam: CamType }) => {
             lineHeight: 1,
             borderRadius: theme.shape.borderRadius,
           },
-          "& canvas": {
-            opacity: 0.5,
-          },
+          "& canvas": { filter: "brightness(50%)" },
+          "& .pnlm-about-msg, & .pnlm-controls-container, & .pnlm-controls, & .pnlm-control":
+            { display: "none" },
+          "& .pnlm-grab": { cursor: "grab" },
+          "& .pnlm-grabbing": { cursor: "grabbing" },
         })}
       />
     </>
