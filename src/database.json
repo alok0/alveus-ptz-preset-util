@@ -4462,7 +4462,8 @@
         "focus": 7624,
         "brightness": 5500,
         "autofocus": "on"
-      }
+      },
+      "nest?": { "pan": 126.35, "tilt": -21.08, "zoom": 10685, "focus": 5143 }
     },
     "isRoaming": false,
     "roamTime": "30",
