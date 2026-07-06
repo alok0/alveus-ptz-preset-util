@@ -6318,7 +6318,8 @@
         "focus": 7987,
         "brightness": 5000,
         "autofocus": "on"
-      }
+      },
+      "tubt": { "pan": -144.86, "tilt": -37.51, "zoom": 1819, "focus": 5781 }
     },
     "isRoaming": false,
     "speed": "65"
