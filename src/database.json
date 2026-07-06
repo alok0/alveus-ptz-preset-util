@@ -5980,7 +5980,8 @@
         "brightness": 5000,
         "autofocus": "on",
         "autoiris": "on"
-      }
+      },
+      "insidedoor": { "pan": -68.44, "tilt": -12.26, "zoom": 152, "focus": 1 }
     },
     "isRoaming": false
   },
