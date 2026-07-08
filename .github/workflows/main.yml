@@ -27,7 +27,7 @@ jobs:
           node-version: "24.18"
       - uses: actions/checkout@v7
         with:
-          submodules: recursive
+          submodules: true
       - name: Populate vars
         id: cache-vars
         shell: bash

@@ -26,12 +26,17 @@ export const HotspotTooltip: React.FC<{
         <Fade {...TransitionProps}>
           <Paper
             elevation={16}
-            sx={{
+            sx={(theme) => ({
               overflow: "hidden",
               width: 640,
               height: 360,
               pointerEvents: "none",
-            }}
+
+              [theme.breakpoints.down("lg")]: {
+                width: 240,
+                height: 135,
+              },
+            })}
           >
             {screenshot ? (
               <img
