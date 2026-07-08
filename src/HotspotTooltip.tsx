@@ -1,4 +1,12 @@
-import { Chip, Fade, Paper, Popper, Typography } from "@mui/material";
+import {
+  Chip,
+  Fade,
+  Paper,
+  Popper,
+  Typography,
+  type PopperProps,
+} from "@mui/material";
+import { useEffect, useRef } from "react";
 import type { CamType } from "./cams";
 
 export const HotspotTooltip: React.FC<{
@@ -8,6 +16,18 @@ export const HotspotTooltip: React.FC<{
   parent: HTMLElement | undefined | null;
 }> = ({ open, preset, cam, parent }) => {
   const screenshot = globalThis.presetscreenshots?.[cam][preset];
+  const popperRef: PopperProps["popperRef"] = useRef(null);
+  useEffect(() => {
+    if (open) {
+      const h = setInterval(() => {
+        void popperRef.current?.update();
+      }, 500);
+      return () => {
+        clearInterval(h);
+      };
+    }
+    return () => {};
+  }, [open]);
 
   const el = parent?.querySelector(`[data-name="${preset}"]`);
   if (!el || !preset) {
@@ -16,6 +36,7 @@ export const HotspotTooltip: React.FC<{
 
   return (
     <Popper
+      popperRef={popperRef}
       open={open}
       key={preset}
       anchorEl={el}
