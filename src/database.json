@@ -5501,15 +5501,6 @@
         "autofocus": "on",
         "autoiris": "on"
       },
-      "marmbubble": {
-        "pan": -84.46,
-        "tilt": 0,
-        "zoom": 5413,
-        "focus": 7484,
-        "brightness": 5000,
-        "autofocus": "off",
-        "autoiris": "on"
-      },
       "sleep": {
         "pan": -73.64,
         "tilt": -4.01,
