@@ -1,0 +1,5 @@
+[submodule "alveusgg"]
+	path = alveusgg
+	url = https://github.com/alveusgg/alveusgg.git
+	shallow = true
+	branch = main

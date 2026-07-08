@@ -2,6 +2,7 @@
   "name": "alveus-ptz-preset-util",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "packageManager": "yarn@4.17.0",
   "engines": {
     "node": "24.18.x"
@@ -9,10 +10,12 @@
   "engineStrict": true,
   "scripts": {
     "prepare": "husky",
+    "postinstall": "yarn copy-screenshots",
     "build": "vite build",
     "start": "vite serve",
     "lint": "eslint src",
-    "update-preset": "yarn node ./scripts/update-preset.mjs"
+    "update-preset": "yarn node ./scripts/update-preset.mjs",
+    "copy-screenshots": "yarn node --experimental-strip-types ./scripts/copy-screenshots.ts"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -48,6 +51,7 @@
     "husky": "9.1.7",
     "lint-staged": "17.0.8",
     "prettier": "3.9.4",
+    "sharp": "0.35.3",
     "typescript": "6.0.3",
     "typescript-eslint": "8.62.1",
     "vite": "8.1.2"

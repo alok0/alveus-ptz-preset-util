@@ -7,5 +7,5 @@
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
     "allowJs": true
   },
-  "exclude": ["dist"]
+  "exclude": ["dist", "alveusgg"]
 }

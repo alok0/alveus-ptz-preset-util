@@ -31,6 +31,7 @@ import {
   wolfswitch,
 } from "./database.json";
 import type { CamDataInputType } from "./Preset";
+import "./preset-screenshots/screenshots";
 
 const database = {
   chicken,

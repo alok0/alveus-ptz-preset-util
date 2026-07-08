@@ -4,6 +4,7 @@ import "pannellum/build/pannellum.css";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useDebounceValue, useResizeObserver } from "usehooks-ts";
 import { type CamType } from "./cams";
+import { HotspotTooltip } from "./HotspotTooltip";
 import { getImage } from "./images";
 import { CamData } from "./Preset";
 import { PresetTooltip } from "./PresetTooltip";
@@ -150,7 +151,15 @@ export const Map = ({ cam }: { cam: CamType }) => {
           </Paper>
         </Popper>
       )}
-
+      {hotSpots.map(({ data }) => (
+        <HotspotTooltip
+          open={hoveredPresets[0]?.data.name === data.name}
+          cam={cam}
+          preset={data.name}
+          parent={ref}
+          key={data.name + data.pan + data.tilt}
+        />
+      ))}
       <Paper
         square
         ref={setRef}
