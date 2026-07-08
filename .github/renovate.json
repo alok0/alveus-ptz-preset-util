@@ -28,7 +28,7 @@
     {
       "matchManagers": ["git-submodules"],
       "automerge": true,
-      "stabilityDays": 0
+      "minimumReleaseAge": null
     }
   ]
 }
