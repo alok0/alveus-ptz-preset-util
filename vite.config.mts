@@ -1,3 +1,4 @@
+import { createHash, randomUUID } from "crypto";
 import { readFileSync, writeFileSync } from "fs";
 import path, { resolve } from "path";
 import { defineConfig } from "vite";
@@ -42,20 +43,29 @@ export default defineConfig(() => {
     },
     plugins: [
       {
-        name: "csp workaround",
+        name: "csp allowlist importmap",
         apply: "build",
         buildEnd: () =>
           void setTimeout(() => {
             const filename = path.resolve(dirname, "dist/index.html");
             const indexContent = readFileSync(filename, { encoding: "utf8" });
-
-            // this is not secure, but there are not any real good options in this current tech stack
-            // for this stack an external importmap would be easier to work with
-            const newContent = indexContent.replace(
-              /script type="importmap"/,
-              `script type="importmap" nonce="xx2127103378" `,
+            const m = indexContent.match(
+              /<script type="importmap">(?<content>.+)<\/script>/,
             );
-            writeFileSync(filename, newContent);
+            const importmapcontent = m?.groups?.["content"];
+            if (!importmapcontent) {
+              throw new Error("could not find importmap");
+            }
+            const hasher = createHash("sha256");
+            hasher.update(importmapcontent);
+            const digest = hasher.digest("base64");
+            writeFileSync(
+              path.resolve(dirname, "dist/_headers"),
+              `
+/*
+  Content-Security-Policy: "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; script-src 'self' 'sha256-${digest}'"
+`,
+            );
           }, 300),
       },
     ],
