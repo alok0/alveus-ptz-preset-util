@@ -7,7 +7,7 @@
   "postUpdateOptions": ["yarnDedupeHighest"],
   "minimumReleaseAge": "3 days",
   "internalChecksFilter": "strict",
-  "git-submodules": { "enabled": false },
+  "git-submodules": { "enabled": true },
   "additionalBranchPrefix": "{{#if (or (equals newVersionAgeInDays 0) (equals newVersionAgeInDays 1) (equals newVersionAgeInDays 2) )}}new--{{/if}}",
   "packageRules": [
     {
