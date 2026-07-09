@@ -1,4 +1,5 @@
-import { resolve } from "path";
+import { readFileSync, writeFileSync } from "fs";
+import path, { resolve } from "path";
 import { defineConfig } from "vite";
 
 const dirname = new URL(".", import.meta.url).pathname;
@@ -39,6 +40,25 @@ export default defineConfig(() => {
         { find: "react/jsx-runtime", replacement: "preact/jsx-runtime" },
       ],
     },
+    plugins: [
+      {
+        name: "csp workaround",
+        apply: "build",
+        buildEnd: () =>
+          void setTimeout(() => {
+            const filename = path.resolve(dirname, "dist/index.html");
+            const indexContent = readFileSync(filename, { encoding: "utf8" });
+
+            // this is not secure, but there are not any real good options in this current tech stack
+            // for this stack an external importmap would be easier to work with
+            const newContent = indexContent.replace(
+              /script type="importmap"/,
+              `script type="importmap" nonce="xx2127103378" `,
+            );
+            writeFileSync(filename, newContent);
+          }, 300),
+      },
+    ],
     server: {
       allowedHosts: true,
       headers: {
