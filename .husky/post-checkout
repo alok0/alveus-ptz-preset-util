@@ -1,4 +1,4 @@
 # shellcheck shell=bash
 set -euxo pipefail
 
-yarn lint-staged
+git submodule update --init
