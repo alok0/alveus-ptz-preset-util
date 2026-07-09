@@ -16,6 +16,7 @@
       "matchPackageNames": ["node", "@types/node", "actions/node-versions"]
     },
     {
+      "matchManagers": ["npm"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "deps",
       "matchPackageNames": [
