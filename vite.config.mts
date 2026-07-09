@@ -1,4 +1,4 @@
-import { createHash, randomUUID } from "crypto";
+import { createHash } from "crypto";
 import { readFileSync, writeFileSync } from "fs";
 import path, { resolve } from "path";
 import { defineConfig } from "vite";
