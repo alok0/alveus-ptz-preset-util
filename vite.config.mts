@@ -63,7 +63,7 @@ export default defineConfig(() => {
               path.resolve(dirname, "dist/_headers"),
               `
 /*
-  Content-Security-Policy: "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; script-src 'self' 'sha256-${digest}'"
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; script-src 'self' 'sha256-${digest}';
 `,
             );
           }, 300),
