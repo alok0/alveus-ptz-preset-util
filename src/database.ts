@@ -31,9 +31,8 @@ import {
   wolfswitch,
 } from "./database.json";
 import type { CamDataInputType } from "./Preset";
-import "./preset-screenshots/screenshots";
 
-const database = {
+export const database = {
   chicken,
   chickenindoor,
   crow,
@@ -64,5 +63,3 @@ const database = {
   wolfindoor,
   wolfswitch,
 } satisfies Record<CamType, CamDataInputType>;
-
-globalThis.presetdb = database;

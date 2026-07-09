@@ -16,6 +16,7 @@ export default defineConfig(() => {
       assetsInlineLimit: 0,
       reportCompressedSize: false,
       chunkSizeWarningLimit: 1024 * 1024,
+      chunkImportMap: true,
       modulePreload: false,
       rolldownOptions: {
         output: {

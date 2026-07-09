@@ -74,7 +74,7 @@ await Promise.all(
 );
 
 outputCode += `
-  globalThis.presetscreenshots = {
+  export const screenshots: Record<string,Record<string,string|null>> = {
     ${cams
       .map(
         (cam) =>

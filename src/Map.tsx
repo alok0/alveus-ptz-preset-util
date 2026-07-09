@@ -8,6 +8,7 @@ import { HotspotTooltip } from "./HotspotTooltip";
 import { getImage } from "./images";
 import { CamData } from "./Preset";
 import { PresetTooltip } from "./PresetTooltip";
+const { database } = await import("./database");
 
 export const Map = ({ cam }: { cam: CamType }) => {
   const [ref, setRef] = useState<HTMLElement | null>(null);
@@ -19,7 +20,7 @@ export const Map = ({ cam }: { cam: CamType }) => {
   });
   const hotSpots = useMemo(
     () =>
-      Object.entries(CamData.parse(globalThis.presetdb?.[cam]).presets)
+      Object.entries(CamData.parse(database?.[cam]).presets)
         .filter(([name]) => name !== "temp" && name !== "tmp")
         .map(
           ([name, data]) =>

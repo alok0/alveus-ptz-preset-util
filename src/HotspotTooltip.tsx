@@ -9,13 +9,15 @@ import {
 import { useEffect, useRef } from "react";
 import type { CamType } from "./cams";
 
+const { screenshots } = await import("./preset-screenshots/screenshots");
+
 export const HotspotTooltip: React.FC<{
   open: boolean;
   preset: string;
   cam: CamType;
   parent: HTMLElement | undefined | null;
 }> = ({ open, preset, cam, parent }) => {
-  const screenshot = globalThis.presetscreenshots?.[cam][preset];
+  const screenshot = screenshots[cam]?.[preset];
   const popperRef: PopperProps["popperRef"] = useRef(null);
   useEffect(() => {
     if (open) {
