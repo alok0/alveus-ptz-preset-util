@@ -1607,7 +1607,7 @@ __metadata:
     husky: "npm:9.1.7"
     lint-staged: "npm:17.0.8"
     pannellum: "npm:2.5.7"
-    preact: "npm:10.29.5"
+    preact: "npm:10.29.6"
     prettier: "npm:3.9.4"
     react: "npm:19.2.7"
     react-error-boundary: "npm:6.1.2"
@@ -3982,10 +3982,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact@npm:10.29.5":
-  version: 10.29.5
-  resolution: "preact@npm:10.29.5"
-  checksum: 10c0/1cc6e072af52058d0210aff5fd9d323a23dd1168235e029acddc7f499bde7df95d0e240420b0b1eb6de396d67895c8d8c299a25f3ae70495bb55b017191cb47f
+"preact@npm:10.29.6":
+  version: 10.29.6
+  resolution: "preact@npm:10.29.6"
+  checksum: 10c0/f0434c736f61e781f7ab4e15293b2fc4fa230607dc3652801845c0378d6770ee46497440f7f75ccf4b6a450d7a64e0f22deaa685394e873a04b0d3c889b72ef3
   languageName: node
   linkType: hard
 
