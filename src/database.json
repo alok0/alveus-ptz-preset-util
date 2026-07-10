@@ -755,21 +755,17 @@
   },
   "pushpopindoor": {
     "presets": {
-      "home": { "pan": 74.32, "tilt": -20.43, "zoom": 1, "focus": 8227, "autofocus": "on" },
-      "leftcorner": { "pan": 32.86, "tilt": -9.22, "zoom": 2650, "focus": 6832, "autofocus": "on" },
-      "rightcorner": { "pan": 107.25, "tilt": -7.83, "zoom": 2451, "focus": 7111, "autofocus": "on" },
-      "digbox": { "pan": 79.65, "tilt": -14.17, "zoom": 1249, "focus": 7390, "autofocus": "on" },
-      "downl": { "pan": 55.83, "tilt": -48.78, "zoom": 1, "focus": 7466, "autofocus": "on" },
-      "down": { "pan": 88.57, "tilt": -76.5, "zoom": 1, "focus": 7618, "autofocus": "on" },
-      "downr": { "pan": 104.7, "tilt": -63.63, "zoom": 1, "focus": 8480, "autofocus": "on" },
-      "right": { "pan": 96.31, "tilt": -18.18, "zoom": 1, "focus": 8074, "autofocus": "on" },
-      "left": { "pan": 50.03, "tilt": -19.64, "zoom": 1, "focus": 8151, "autofocus": "on" },
-      "farcorner": { "pan": 69.66, "tilt": -6.18, "zoom": 4934, "focus": 6598, "autofocus": "on" },
-      "heatlamp": { "pan": 115.25, "tilt": -23.66, "zoom": 1, "focus": 7770, "autofocus": "on" },
-      "farcornerz": { "pan": 69.42, "tilt": -5.81, "zoom": 10442, "focus": 6414, "autofocus": "on" },
-      "nearcorner": { "pan": 167.16, "tilt": -72.48, "zoom": 1, "focus": 7897, "autofocus": "on" },
-      "rightcornerz": { "pan": 113.78, "tilt": -10.57, "zoom": 9083, "focus": 6061, "autofocus": "on" },
-      "rightcornerzzz": { "pan": 117.63, "tilt": -11.54, "zoom": 10374, "focus": 6122, "brightness": 5000, "autofocus": "on" }
+      "home": { "pan": -45.91, "tilt": -26.36, "zoom": 1, "focus": 8125, "autofocus": "on" },
+      "leftcorner": { "pan": -85.14, "tilt": -18.37, "zoom": 1501, "focus": 7035, "autofocus": "on" },
+      "rightcorner": { "pan": -16.72, "tilt": -15.18, "zoom": 3601, "focus": 6529, "autofocus": "on" },
+      "down": { "pan": -43.18, "tilt": -68.02, "zoom": 1, "focus": 8531, "autofocus": "on" },
+      "right": { "pan": -29.96, "tilt": -25.64, "zoom": 1, "focus": 7846, "autofocus": "on" },
+      "left": { "pan": -80.56, "tilt": -23.06, "zoom": 1, "focus": 8429, "autofocus": "on" },
+      "farcorner": { "pan": -55.92, "tilt": -13.12, "zoom": 1, "focus": 8201, "autofocus": "on" },
+      "farcornerz": { "pan": -55.14, "tilt": -15.37, "zoom": 2500, "focus": 6933, "autofocus": "on" },
+      "rightcornerz": { "pan": -15.12, "tilt": -15.11, "zoom": 10200, "focus": 6146, "autofocus": "on" },
+      "downleft": { "pan": -72.22, "tilt": -41.96, "zoom": 1, "focus": 8125 },
+      "downright": { "pan": -35.21, "tilt": -41.85, "zoom": 1, "focus": 8455 }
     },
     "isRoaming": false,
     "speed": "60"
