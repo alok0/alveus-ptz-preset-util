@@ -687,7 +687,10 @@
       "sunriser": { "pan": -88.96, "tilt": 1.41, "zoom": 1, "focus": 1480, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "pasturefarright": { "pan": -41.42, "tilt": -5.58, "zoom": 1145, "focus": 7624, "brightness": 5500, "autofocus": "on" },
       "nesttemp": { "pan": 126.6, "tilt": -21.18, "zoom": 10782, "focus": 5015 },
-      "waspnest": { "pan": 126.5, "tilt": -21.26, "zoom": 11107, "focus": 5051 }
+      "waspnest": { "pan": 126.5, "tilt": -21.26, "zoom": 11107, "focus": 5051 },
+      "water": { "pan": 37.83, "tilt": -14.74, "zoom": 406, "focus": 3469 },
+      "butterflyplant": { "pan": 97.41, "tilt": -10.28, "zoom": 721, "focus": 5682 },
+      "hummingbirdtreetmp": { "pan": 147.22, "tilt": -6.72, "zoom": 1356, "focus": 7235 }
     },
     "isRoaming": false,
     "roamTime": "30",
