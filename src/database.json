@@ -690,7 +690,8 @@
       "waspnest": { "pan": 126.5, "tilt": -21.26, "zoom": 11107, "focus": 5051 },
       "water": { "pan": 37.83, "tilt": -14.74, "zoom": 406, "focus": 3469 },
       "butterflyplant": { "pan": 97.41, "tilt": -10.28, "zoom": 721, "focus": 5682 },
-      "hummingbirdtreetmp": { "pan": 147.22, "tilt": -6.72, "zoom": 1356, "focus": 7235 }
+      "hummingbirdtreetmp": { "pan": 147.22, "tilt": -6.72, "zoom": 1356, "focus": 7235 },
+      "hbtemp": { "pan": 144, "tilt": -4.78, "zoom": 10127, "focus": 7818 }
     },
     "isRoaming": false,
     "roamTime": "30",
