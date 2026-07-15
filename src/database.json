@@ -357,7 +357,9 @@
       "hidetmp": { "pan": 112.55, "tilt": -9.05, "zoom": 664, "focus": 4794, "brightness": 6000, "autofocus": "on", "autoiris": "on" },
       "domerr": { "pan": 151.57, "tilt": -7.67, "zoom": 1662, "focus": 6216, "brightness": 6000, "autofocus": "off", "autoiris": "on" },
       "domerl": { "pan": 148.54, "tilt": -7.83, "zoom": 1662, "focus": 6216, "brightness": 6000, "autofocus": "off", "autoiris": "on" },
-      "farrightshelfb": { "pan": 179.34, "tilt": -25.19, "zoom": 1210, "focus": 4729 }
+      "farrightshelfb": { "pan": 179.34, "tilt": -25.19, "zoom": 1210, "focus": 4729 },
+      "flapr": { "pan": 146.98, "tilt": -13.24, "zoom": 997, "focus": 5592 },
+      "flapl": { "pan": 141.28, "tilt": -12.54, "zoom": 997, "focus": 5695 }
     },
     "isRoaming": false,
     "speed": "65"
