@@ -694,7 +694,10 @@
       "butterflyplant": { "pan": 97.41, "tilt": -10.28, "zoom": 721, "focus": 5682 },
       "hummingbirdtreetmp": { "pan": 147.22, "tilt": -6.72, "zoom": 1356, "focus": 7235 },
       "hbtemp": { "pan": 144, "tilt": -4.78, "zoom": 10127, "focus": 7818 },
-      "beetles": { "pan": 20.89, "tilt": -18.32, "zoom": 11830, "focus": 6073 }
+      "beetles": { "pan": 20.89, "tilt": -18.32, "zoom": 11830, "focus": 6073 },
+      "tmp4": { "pan": 141.8, "tilt": -11.94, "zoom": 1831, "focus": 6007 },
+      "tmp5": { "pan": 148, "tilt": -13.13, "zoom": 1831, "focus": 6201 },
+      "tmp6": { "pan": 121.03, "tilt": -17.46, "zoom": 1936, "focus": 4731 }
     },
     "isRoaming": false,
     "roamTime": "30",
