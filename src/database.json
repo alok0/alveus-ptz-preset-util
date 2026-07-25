@@ -308,8 +308,8 @@
   "marmoset": {
     "presets": {
       "table": { "pan": 136.26, "tilt": -21.59, "zoom": 664, "focus": 5522, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "home": { "pan": 135.7, "tilt": -18.09, "zoom": 1, "focus": 1480, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "tablet": { "pan": 164.94, "tilt": -1.91, "zoom": 1537, "focus": 5451, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
+      "home": { "pan": 135.7, "tilt": -18.14, "zoom": 1, "focus": 748, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
+      "tablet": { "pan": 164.95, "tilt": -1.91, "zoom": 1350, "focus": 5282, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "leftposttop": { "pan": 109.56, "tilt": -9.46, "zoom": 664, "focus": 4854, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "flaps": { "pan": 143.73, "tilt": -12.16, "zoom": 997, "focus": 5728, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "right": { "pan": 159.36, "tilt": -17.56, "zoom": 1, "focus": 748, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
@@ -337,7 +337,7 @@
       "uprightbranches": { "pan": 153.83, "tilt": 0.82, "zoom": 174, "focus": 938, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "rightcorner": { "pan": 172.43, "tilt": 0.39, "zoom": 222, "focus": 1442, "brightness": 6000, "autofocus": "on", "autoiris": "on" },
       "domellshelf": { "pan": 121.34, "tilt": -8.91, "zoom": 898, "focus": 5353, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "farrightshelf": { "pan": 178.48, "tilt": -7.38, "zoom": 664, "focus": 2603, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
+      "farrightshelf": { "pan": 178.64, "tilt": -6, "zoom": 664, "focus": 981, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "basket": { "pan": 151.08, "tilt": 4.86, "zoom": 1291, "focus": 5592, "brightness": 6000, "autofocus": "on", "autoiris": "on" },
       "leftshelfr": { "pan": 112.51, "tilt": -4.72, "zoom": 154, "focus": 1676, "brightness": 6000, "autofocus": "on", "autoiris": "on" },
       "leftshelfl": { "pan": 101.2, "tilt": -4.72, "zoom": 154, "focus": 1676, "brightness": 6000, "autofocus": "on", "autoiris": "on" },
