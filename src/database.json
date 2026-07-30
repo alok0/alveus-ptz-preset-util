@@ -363,7 +363,8 @@
       "domerl": { "pan": 148.54, "tilt": -7.83, "zoom": 1662, "focus": 6216, "brightness": 6000, "autofocus": "off", "autoiris": "on" },
       "farrightshelfb": { "pan": 179.34, "tilt": -25.19, "zoom": 1210, "focus": 4729 },
       "flapr": { "pan": 146.98, "tilt": -13.24, "zoom": 997, "focus": 5592 },
-      "flapl": { "pan": 141.28, "tilt": -12.54, "zoom": 997, "focus": 5695 }
+      "flapl": { "pan": 141.28, "tilt": -12.54, "zoom": 997, "focus": 5695 },
+      "appastick": { "pan": 122.85, "tilt": 6.36, "zoom": 1191, "focus": 5440 }
     },
     "isRoaming": false,
     "speed": "65"
