@@ -1071,7 +1071,7 @@
       "bigbushytreer": { "pan": -35.29, "tilt": 0.78, "zoom": 332, "focus": 5331, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "purplebasel": { "pan": -86.32, "tilt": 2.94, "zoom": 665, "focus": 6654, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "rightcorner": { "pan": 12.46, "tilt": -7.76, "zoom": 1, "focus": 2505 },
-      "bugtmp1": { "pan": -46.58, "tilt": 3.68, "zoom": 10749, "focus": 7493 }
+      "bugtmp": { "pan": -46.58, "tilt": 3.68, "zoom": 10749, "focus": 7493 }
     },
     "isRoaming": false
   }
