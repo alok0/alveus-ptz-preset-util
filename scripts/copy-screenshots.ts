@@ -31,8 +31,6 @@ for await (const file of fs.glob([
   await fs.rm(file);
 }
 
-let outputCode = "";
-
 const presetsFlat = cams.flatMap((cam) =>
   Object.keys(database[cam].presets).map((preset) => ({
     cam,
@@ -41,7 +39,7 @@ const presetsFlat = cams.flatMap((cam) =>
   })),
 );
 
-await Promise.all(
+const imports = await Promise.all(
   presetsFlat.map(async ({ cam, preset, fname }) => {
     try {
       const filename = path.resolve(
@@ -59,34 +57,27 @@ await Promise.all(
       await sharp(filename)
         .webp({ quality: 50, effort: 6, preset: "photo" })
         .toFile(path.resolve(outputDir, fname + ".webp"));
-      outputCode += `import ${fname} from "./${fname}.webp"; `;
+
+      return `import ${fname} from "./${fname}.webp";`;
     } catch (e) {
-      console.log(
-        cam,
-        preset,
-        e && typeof e === "object" && "syscall" in e && e.syscall === "stat"
-          ? JSON.stringify(e)
-          : e,
-      );
-      outputCode += `const ${fname} = null; `;
+      console.log(cam, preset, JSON.stringify(e));
+
+      return `const ${fname} = null;`;
     }
   }),
 );
 
-outputCode += `
-  export const screenshots: Record<string,Record<string,string|null>> = {
-    ${cams
-      .map(
-        (cam) =>
-          `"${cam}": {
-            ${presetsFlat
-              .filter((p) => p.cam === cam)
-              .map(({ preset, fname }) => `"${preset}":${fname}`)
-              .join(",\n")}
-          }`,
-      )
-      .join(",\n")}
-  };
-`;
+const outputCode = [
+  ...imports,
+  `export const screenshots: Record<string,Record<string,string|null>> = {`,
+  ...cams.flatMap((cam) => [
+    `  "${cam}": {`,
+    ...presetsFlat
+      .filter((p) => p.cam === cam)
+      .map(({ preset, fname }) => `    "${preset}":${fname},`),
+    `  },`,
+  ]),
+  `};`,
+].join("\n");
 
 await fs.writeFile(path.resolve(outputDir, "screenshots.ts"), outputCode);
