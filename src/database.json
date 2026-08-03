@@ -1033,7 +1033,7 @@
   "emu": {
     "presets": {
       "pond": { "pan": -98.03, "tilt": -14.03, "zoom": 1, "focus": 7496, "brightness": 5000, "autofocus": "on" },
-      "left": { "pan": -172.51, "tilt": -3.18, "zoom": 1, "focus": 6906, "brightness": 5000, "autofocus": "on" },
+      "left": { "pan": -176.89, "tilt": -3.31, "zoom": 1, "focus": 1000, "brightness": 5000, "autofocus": "on" },
       "leftgate": { "pan": -157.29, "tilt": -0.38, "zoom": 873, "focus": 7300, "brightness": 5000, "autofocus": "on" },
       "fargate": { "pan": -96.34, "tilt": -1.68, "zoom": 813, "focus": 7275, "brightness": 5000, "autofocus": "on" },
       "shelter": { "pan": -114.96, "tilt": -1.84, "zoom": 813, "focus": 6837, "brightness": 5000, "autofocus": "on" },
