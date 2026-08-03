@@ -1044,7 +1044,8 @@
       "leftcorner": { "pan": 178.82, "tilt": -0.49, "zoom": 399, "focus": 5666, "brightness": 5000, "autofocus": "on" },
       "pondleft": { "pan": -145.11, "tilt": -2.69, "zoom": 1, "focus": 6906, "brightness": 5000, "autofocus": "on" },
       "home": { "pan": -47.33, "tilt": -8.19, "zoom": 1, "focus": 7496, "brightness": 5000, "autofocus": "on" },
-      "temp": { "pan": -26.43, "tilt": -6.25, "zoom": 6192, "focus": 8773, "brightness": 5000, "autofocus": "off" }
+      "temp": { "pan": -26.43, "tilt": -6.25, "zoom": 6192, "focus": 8773, "brightness": 5000, "autofocus": "off" },
+      "feeder": { "pan": -55.32, "tilt": -3.47, "zoom": 1545, "focus": 7338 }
     },
     "isRoaming": false
   },
