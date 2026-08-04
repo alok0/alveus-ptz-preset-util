@@ -686,7 +686,7 @@
       "poolright": { "pan": -85.45, "tilt": -10.66, "zoom": 664, "focus": 6654, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "roundpen": { "pan": -99.47, "tilt": -9.92, "zoom": 664, "focus": 7005, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "tmp1": { "pan": 136.87, "tilt": -7.73, "zoom": 3118, "focus": 7285, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "tmp2": { "pan": 166.65, "tilt": -19.12, "zoom": 1736, "focus": 6821, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
+      "tmp2": { "pan": 166.67, "tilt": -19.11, "zoom": 4025, "focus": 6428, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "tmp3": { "pan": 121.61, "tilt": -35.23, "zoom": 332, "focus": 2136, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "bughotel2": { "pan": 158.68, "tilt": -9.59, "zoom": 6726, "focus": 8085, "brightness": 5000, "autofocus": "off", "autoiris": "on" },
       "pasturepole": { "pan": -89.59, "tilt": -9.48, "zoom": 591, "focus": 7815, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
@@ -700,9 +700,9 @@
       "hummingbirdtreetmp": { "pan": 147.22, "tilt": -6.72, "zoom": 1356, "focus": 7235 },
       "hbtemp": { "pan": 144, "tilt": -4.78, "zoom": 10127, "focus": 7818 },
       "beetles": { "pan": 20.89, "tilt": -18.32, "zoom": 11830, "focus": 6073 },
-      "tmp4": { "pan": 141.8, "tilt": -11.94, "zoom": 1831, "focus": 6007 },
-      "tmp5": { "pan": 148, "tilt": -13.13, "zoom": 1831, "focus": 6201 },
-      "tmp6": { "pan": 121.03, "tilt": -17.46, "zoom": 1936, "focus": 4731 }
+      "tmp4": { "pan": 141.8, "tilt": -11.54, "zoom": 5447, "focus": 6497 },
+      "tmp5": { "pan": 148, "tilt": -13.07, "zoom": 6389, "focus": 6592 },
+      "tmp6": { "pan": 121, "tilt": -17.46, "zoom": 4395, "focus": 5271 }
     },
     "isRoaming": false,
     "roamTime": "30",
