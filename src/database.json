@@ -56,7 +56,8 @@
       "haystacktmp": { "pan": 135.01, "tilt": 8.11, "zoom": 464, "focus": 1507, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "farright": { "pan": 58.49, "tilt": -0.5, "zoom": 3211, "focus": 8077, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "barn2l": { "pan": -28.35, "tilt": -6.25, "zoom": 2709, "focus": 8041, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "poolpr": { "pan": 47.23, "tilt": -1.64, "zoom": 1154, "focus": 7285, "brightness": 5000, "autofocus": "on", "autoiris": "on" }
+      "poolpr": { "pan": 47.23, "tilt": -1.64, "zoom": 1154, "focus": 7285, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
+      "winnietmp": { "pan": 28.55, "tilt": -5.14, "zoom": 3628, "focus": 7842 }
     },
     "isRoaming": false,
     "roamTime": "12",
@@ -1045,7 +1046,8 @@
       "pondleft": { "pan": -145.11, "tilt": -2.69, "zoom": 1, "focus": 6906, "brightness": 5000, "autofocus": "on" },
       "home": { "pan": -47.33, "tilt": -8.19, "zoom": 1, "focus": 7496, "brightness": 5000, "autofocus": "on" },
       "temp": { "pan": -26.43, "tilt": -6.25, "zoom": 6192, "focus": 8773, "brightness": 5000, "autofocus": "off" },
-      "feeder": { "pan": -55.32, "tilt": -3.47, "zoom": 1545, "focus": 7338 }
+      "feeder": { "pan": -55.32, "tilt": -3.47, "zoom": 1545, "focus": 7338 },
+      "spidertmp": { "pan": -20.64, "tilt": -3.95, "zoom": 6904, "focus": 4823 }
     },
     "isRoaming": false
   },
