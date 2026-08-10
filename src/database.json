@@ -1013,7 +1013,8 @@
       "cratebl": { "pan": -97.43, "tilt": -64.02, "zoom": 1, "focus": 9950, "brightness": 5000, "autofocus": "on" },
       "rightrampr": { "pan": -58.79, "tilt": -32.1, "zoom": 1181, "focus": 7803, "brightness": 5000, "autofocus": "on" },
       "middleplatformbz": { "pan": -88.78, "tilt": -9.19, "zoom": 2408, "focus": 7987, "brightness": 5000, "autofocus": "on" },
-      "tubt": { "pan": -144.86, "tilt": -37.51, "zoom": 1819, "focus": 5781 }
+      "tubt": { "pan": -144.86, "tilt": -37.51, "zoom": 1819, "focus": 5781 },
+      "middleplatformtlz": { "pan": -97.42, "tilt": -8.96, "zoom": 3032, "focus": 7217 }
     },
     "isRoaming": false,
     "speed": "65"
