@@ -707,7 +707,8 @@
       "beetles": { "pan": 20.89, "tilt": -18.32, "zoom": 11830, "focus": 6073 },
       "tmp4": { "pan": 141.8, "tilt": -11.54, "zoom": 5447, "focus": 6497 },
       "tmp5": { "pan": 148, "tilt": -13.07, "zoom": 6389, "focus": 6592 },
-      "tmp6": { "pan": 121, "tilt": -17.46, "zoom": 4395, "focus": 5271 }
+      "tmp6": { "pan": 121, "tilt": -17.46, "zoom": 4395, "focus": 5271 },
+      "haybagtmp": { "pan": -87.03, "tilt": -18.98, "zoom": 31, "focus": 938 }
     },
     "isRoaming": false,
     "roamTime": "30",
