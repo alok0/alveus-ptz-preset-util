@@ -265,7 +265,8 @@
       "farfencelz": { "pan": -98.99, "tilt": -3.77, "zoom": 2673, "focus": 8317, "brightness": 5000, "autofocus": "on" },
       "middleplatformb": { "pan": -68.46, "tilt": -3.44, "zoom": 3637, "focus": 8538, "brightness": 5000, "autofocus": "on" },
       "den2b": { "pan": -4.79, "tilt": -3.9, "zoom": 10229, "focus": 8331, "brightness": 5000, "autofocus": "on" },
-      "rightplatformb": { "pan": -16.15, "tilt": -7.21, "zoom": 3538, "focus": 7246 }
+      "rightplatformb": { "pan": -16.15, "tilt": -7.21, "zoom": 3538, "focus": 7246 },
+      "den1b": { "pan": -88.06, "tilt": -3.01, "zoom": 10297, "focus": 8377 }
     },
     "isRoaming": false,
     "roamTime": "10",
