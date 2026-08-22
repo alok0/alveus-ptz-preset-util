@@ -1076,7 +1076,7 @@
       "down": { "pan": -73.67, "tilt": -22.08, "zoom": 1, "focus": 2505, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "downright": { "pan": 3.42, "tilt": -20.33, "zoom": 1, "focus": 2505, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "grove2": { "pan": -68.42, "tilt": 4.61, "zoom": 465, "focus": 6390, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "grove2l": { "pan": -72.73, "tilt": 4.75, "zoom": 864, "focus": 6992, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
+      "grove2l": { "pan": -72.72, "tilt": 4.09, "zoom": 1103, "focus": 7170, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "grove2r": { "pan": -64.85, "tilt": 4.32, "zoom": 862, "focus": 8332, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "bigbushytree": { "pan": -49.41, "tilt": 1.79, "zoom": 1, "focus": 2213, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "bigbushytreer": { "pan": -35.29, "tilt": 0.78, "zoom": 332, "focus": 5331, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
