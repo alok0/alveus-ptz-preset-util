@@ -594,7 +594,8 @@
       "treesl": { "pan": -24.82, "tilt": -5.32, "zoom": 646, "focus": 6243, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "tmp": { "pan": -5.04, "tilt": -32.94, "zoom": 28, "focus": 2136, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "fo": { "pan": -27.56, "tilt": -3.01, "zoom": 1287, "focus": 7604, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "foodtmp": { "pan": -24.93, "tilt": -4.08, "zoom": 3440, "focus": 7949, "brightness": 5000, "autofocus": "on", "autoiris": "on" }
+      "foodtmp": { "pan": -24.93, "tilt": -4.08, "zoom": 3440, "focus": 7949, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
+      "den2shadeb": { "pan": -1.16, "tilt": -24.62, "zoom": 168, "focus": 2044 }
     },
     "isRoaming": false,
     "speed": "50"
