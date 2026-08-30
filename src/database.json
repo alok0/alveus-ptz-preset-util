@@ -660,11 +660,11 @@
   },
   "toast": {
     "presets": {
-      "home": { "pan": -29.39, "tilt": -47.47, "zoom": 1, "focus": 7314, "autofocus": "on" },
+      "home": { "pan": -29.39, "tilt": -47.47, "zoom": 1, "focus": 7745, "autofocus": "on" },
       "downright": { "pan": 17.05, "tilt": -56.17, "zoom": 1, "focus": 7263, "autofocus": "on" },
       "down": { "pan": 8.94, "tilt": -79.68, "zoom": 1, "focus": 7263, "autofocus": "on" },
-      "log": { "pan": -56.48, "tilt": -46.35, "zoom": 2500, "focus": 5432, "autofocus": "on" },
-      "logz": { "pan": -59.38, "tilt": -41.02, "zoom": 7499, "focus": 4597, "autofocus": "on" },
+      "log": { "pan": -56.48, "tilt": -46.35, "zoom": 2500, "focus": 5785, "autofocus": "on" },
+      "logz": { "pan": -59.38, "tilt": -41.02, "zoom": 7499, "focus": 4478, "autofocus": "on" },
       "far": { "pan": -48.07, "tilt": -19.87, "zoom": 1249, "focus": 3336, "autofocus": "on" },
       "water": { "pan": -58.03, "tilt": -22.76, "zoom": 8748, "focus": 5250, "autofocus": "on" },
       "food": { "pan": -47.36, "tilt": -58.27, "zoom": 2500, "focus": 4788, "autofocus": "on" },
@@ -1073,7 +1073,7 @@
       "owlbox": { "pan": -63.96, "tilt": 6.07, "zoom": 3659, "focus": 7914, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "upperpasture": { "pan": -79.93, "tilt": 5.48, "zoom": 847, "focus": 7073, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "purplenest": { "pan": -83, "tilt": 8.2, "zoom": 3205, "focus": 8018, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "grover": { "pan": -95.47, "tilt": 1.98, "zoom": 166, "focus": 3525, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
+      "grover": { "pan": -95.26, "tilt": 0, "zoom": 166, "focus": 2234, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "grovel": { "pan": -127.42, "tilt": 0.29, "zoom": 166, "focus": 3340, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "downleft": { "pan": -119.1, "tilt": -17.66, "zoom": 1, "focus": 2213, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "down": { "pan": -73.67, "tilt": -22.08, "zoom": 1, "focus": 2505, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
