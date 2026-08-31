@@ -1086,7 +1086,8 @@
       "purplebasel": { "pan": -86.32, "tilt": 2.94, "zoom": 665, "focus": 6654, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "rightcorner": { "pan": 12.46, "tilt": -7.76, "zoom": 1, "focus": 2505 },
       "bugtmp": { "pan": -46.58, "tilt": 3.68, "zoom": 10749, "focus": 7493 },
-      "dragonfly2tmp": { "pan": -49.27, "tilt": 4.55, "zoom": 12190, "focus": 7485 }
+      "dragonfly2tmp": { "pan": -49.27, "tilt": 4.55, "zoom": 12190, "focus": 7485 },
+      "backrightcorner": { "pan": -0.03, "tilt": -1.05, "zoom": 332, "focus": 1030 }
     },
     "isRoaming": false
   }
