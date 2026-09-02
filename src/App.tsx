@@ -8,6 +8,7 @@ import { ZoomVisual } from "./ZoomVisual";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "./theme";
 import { NavWrapper } from "./Nav";
+import { ChinCams } from "./ChinCams";
 
 export const AppMain = () => {
   const [match, params] = useRoute("/cam/:cam");
@@ -58,6 +59,7 @@ export const App = () => {
             <Switch>
               <Route path="/cam" component={AppMain} />
               <Route path="/zoom-visual" component={ZoomVisual} />
+              <Route path="/chin-cams" component={ChinCams} />
               <Route>
                 {/* fallback */}
                 <AppMain />

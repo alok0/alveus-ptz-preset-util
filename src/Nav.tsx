@@ -39,25 +39,37 @@ export const NavWrapper: React.FC<PropsWithChildren> = ({ children }) => {
   );
 };
 
+const CustomNavItem: React.FC<{
+  href: string;
+  title: string;
+  onClose?: undefined | (() => unknown);
+}> = ({ href, title, onClose }) => {
+  const [match] = useRoute(href);
+
+  return (
+    <ListItemButton
+      dense
+      selected={match}
+      LinkComponent={Link}
+      href={href}
+      onClick={onClose}
+    >
+      <ListItemText>{title}</ListItemText>
+    </ListItemButton>
+  );
+};
+
 const MenuContent: React.FC<{
   onClose?: () => unknown;
   showHidden?: boolean;
 }> = ({ onClose, showHidden }) => {
   const [, params] = useRoute("/cam/:cam");
   const cam = useMemo(() => cams.find((c) => c === params?.cam), [params?.cam]);
-  const [zoomVisualMatch] = useRoute("/zoom-visual");
 
   return (
     <>
-      <ListItemButton
-        dense
-        selected={zoomVisualMatch}
-        LinkComponent={Link}
-        href="/zoom-visual"
-        onClick={onClose}
-      >
-        <ListItemText>Zoom</ListItemText>
-      </ListItemButton>
+      <CustomNavItem href="/zoom-visual" title="Zoom" onClose={onClose} />
+      <CustomNavItem href="/chin-cams" title="Chin Cams" onClose={onClose} />
       {cams
         .filter((c) => {
           if (showHidden || cam === c) {
