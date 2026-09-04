@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v7
         with:
-          node-version: "24.19"
+          node-version: "24.20"
       - uses: actions/checkout@v7
         with:
           submodules: true
