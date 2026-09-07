@@ -967,7 +967,8 @@
       "farcorner": { "pan": -136.61, "tilt": -5.8, "zoom": 937, "focus": 5545, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "table": { "pan": -95.21, "tilt": -38.31, "zoom": 1, "focus": 1, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "platformbl": { "pan": -144.94, "tilt": -0.13, "zoom": 2417, "focus": 6952, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "insidedoor": { "pan": -68.44, "tilt": -12.26, "zoom": 152, "focus": 1 }
+      "insidedoor": { "pan": -68.44, "tilt": -12.26, "zoom": 152, "focus": 1 },
+      "tmp1": { "pan": -104.89, "tilt": -14.09, "zoom": 2756, "focus": 6154 }
     },
     "isRoaming": false
   },
