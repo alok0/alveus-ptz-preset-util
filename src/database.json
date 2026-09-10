@@ -1101,7 +1101,8 @@
       "cubby": { "pan": -106.81, "tilt": -21.01, "zoom": 619, "focus": 6542 },
       "leftplatform": { "pan": -164.83, "tilt": -18.69, "zoom": 388, "focus": 6506 },
       "cubbyt": { "pan": -104.95, "tilt": -12.58, "zoom": 689, "focus": 6342 },
-      "down": { "pan": -130.45, "tilt": -76.26, "zoom": 1, "focus": 8122 }
+      "down": { "pan": -130.45, "tilt": -76.26, "zoom": 1, "focus": 8122 },
+      "leftcorner": { "pan": 169.7, "tilt": -30.23, "zoom": 1, "focus": 8122 }
     },
     "isRoaming": false
   }
