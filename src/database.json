@@ -1095,9 +1095,9 @@
   },
   "servalindoor": {
     "presets": {
-      "home": { "pan": -129, "tilt": -25.42, "zoom": 1, "focus": 7006 },
+      "home": { "pan": -129, "tilt": -25.41, "zoom": 1, "focus": 7006 },
       "left": { "pan": -165.29, "tilt": -26.01, "zoom": 1, "focus": 7006 },
-      "cubby": { "pan": -106.81, "tilt": -21.02, "zoom": 620, "focus": 6006 }
+      "cubby": { "pan": -106.81, "tilt": -21.01, "zoom": 619, "focus": 6542 }
     },
     "isRoaming": false
   }
