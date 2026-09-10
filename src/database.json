@@ -671,7 +671,8 @@
       "rocksandwich": { "pan": -41.38, "tilt": -13.95, "zoom": 6727, "focus": 4940, "autofocus": "on" },
       "closerock": { "pan": -11.5, "tilt": -23.13, "zoom": 1, "focus": 7060, "autofocus": "on" },
       "tunnel": { "pan": -58.16, "tilt": -31.64, "zoom": 2897, "focus": 5595, "autofocus": "on" },
-      "toastsleep": { "pan": -38.22, "tilt": -51.11, "zoom": 1, "focus": 7542, "autofocus": "on" }
+      "toastsleep": { "pan": -38.22, "tilt": -51.11, "zoom": 1, "focus": 7542, "autofocus": "on" },
+      "rocksandwicht": { "pan": -42.13, "tilt": -7.08, "zoom": 10021, "focus": 5169 }
     },
     "isRoaming": false,
     "speed": "50"
