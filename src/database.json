@@ -1092,5 +1092,13 @@
       "backrightcorner": { "pan": -0.03, "tilt": -1.05, "zoom": 332, "focus": 1030 }
     },
     "isRoaming": false
+  },
+  "servalindoor": {
+    "presets": {
+      "home": { "pan": -129, "tilt": -25.42, "zoom": 1, "focus": 7006 },
+      "left": { "pan": -165.29, "tilt": -26.01, "zoom": 1, "focus": 7006 },
+      "cubby": { "pan": -106.81, "tilt": -21.02, "zoom": 620, "focus": 6006 }
+    },
+    "isRoaming": false
   }
 }
