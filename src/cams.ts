@@ -39,7 +39,6 @@ const HiddenCams = new Set([
   "patchy",
   "event",
   "serval",
-  "servalindoor",
 ]);
 
 export const isCamHidden = (v: string) => HiddenCams.has(v);
