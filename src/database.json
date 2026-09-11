@@ -960,7 +960,7 @@
       "right": { "pan": -72.22, "tilt": -25.62, "zoom": 1, "focus": 1, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "rampb": { "pan": -139.37, "tilt": -8.81, "zoom": 6462, "focus": 6710, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "platformfl": { "pan": -144.57, "tilt": -0.67, "zoom": 2417, "focus": 6952, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "platformbr": { "pan": -141.07, "tilt": -0.19, "zoom": 2417, "focus": 6952, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
+      "platformbr": { "pan": -141.12, "tilt": -0.9, "zoom": 2803, "focus": 7003, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "platformfr": { "pan": -138.66, "tilt": -0.64, "zoom": 1604, "focus": 6882, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "belowplatforml": { "pan": -147.72, "tilt": -6.81, "zoom": 3202, "focus": 6901, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "middle": { "pan": -121.34, "tilt": -21.42, "zoom": 1, "focus": 1, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
