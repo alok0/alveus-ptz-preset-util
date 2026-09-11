@@ -1103,7 +1103,8 @@
       "cubbyt": { "pan": -104.95, "tilt": -12.58, "zoom": 689, "focus": 6342 },
       "down": { "pan": -130.45, "tilt": -76.26, "zoom": 1, "focus": 8122 },
       "leftcorner": { "pan": 169.7, "tilt": -30.23, "zoom": 1, "focus": 8122 },
-      "middle": { "pan": -136.67, "tilt": -43.28, "zoom": 1, "focus": 8372 }
+      "middle": { "pan": -136.67, "tilt": -43.28, "zoom": 1, "focus": 8372 },
+      "leftdoor": { "pan": -168.41, "tilt": -48.93, "zoom": 1, "focus": 8122 }
     },
     "isRoaming": false
   }
