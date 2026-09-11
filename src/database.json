@@ -369,7 +369,8 @@
       "farrightshelfb": { "pan": 179.34, "tilt": -25.19, "zoom": 1210, "focus": 4729 },
       "flapr": { "pan": 146.98, "tilt": -13.24, "zoom": 997, "focus": 5592 },
       "flapl": { "pan": 141.28, "tilt": -12.54, "zoom": 997, "focus": 5695 },
-      "appastick": { "pan": 122.85, "tilt": 6.36, "zoom": 1191, "focus": 5440 }
+      "appastick": { "pan": 122.85, "tilt": 6.36, "zoom": 1191, "focus": 5440 },
+      "door": { "pan": 166.51, "tilt": -18.64, "zoom": 464, "focus": 1763 }
     },
     "isRoaming": false,
     "speed": "65"
