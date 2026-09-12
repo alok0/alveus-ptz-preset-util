@@ -371,6 +371,7 @@
       "flapr": { "pan": 146.98, "tilt": -13.24, "zoom": 997, "focus": 5592 },
       "flapl": { "pan": 141.28, "tilt": -12.54, "zoom": 997, "focus": 5695 },
       "appastick": { "pan": 122.85, "tilt": 6.36, "zoom": 1191, "focus": 5440 },
+      "leftpostshelfb": { "pan": 107.05, "tilt": -24.5, "zoom": 1, "focus": 1 },
       "door": { "pan": 166.51, "tilt": -18.64, "zoom": 464, "focus": 1763 }
     },
     "isRoaming": false,
@@ -1093,6 +1094,7 @@
       "bugtmp": { "pan": -46.58, "tilt": 3.68, "zoom": 10749, "focus": 7493 },
       "dragonfly2tmp": { "pan": -49.27, "tilt": 4.55, "zoom": 12190, "focus": 7485 },
       "backrightcorner": { "pan": -0.03, "tilt": -1.05, "zoom": 332, "focus": 1030 },
+      "sunset": { "pan": -78.36, "tilt": 11.78, "zoom": 199, "focus": 1 },
       "saltlicktmp": { "pan": 4.78, "tilt": -0.42, "zoom": 6617, "focus": 7869 }
     },
     "isRoaming": false
