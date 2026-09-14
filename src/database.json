@@ -1057,7 +1057,7 @@
       "food": { "pan": -50.91, "tilt": -3.84, "zoom": 1545, "focus": 7923, "brightness": 5000, "autofocus": "on" },
       "right": { "pan": -41.62, "tilt": -6.09, "zoom": 1, "focus": 7496, "brightness": 5000, "autofocus": "on" },
       "maingate": { "pan": -22.76, "tilt": -6.83, "zoom": 813, "focus": 6978, "brightness": 5000, "autofocus": "on" },
-      "rightcorner": { "pan": -26.16, "tilt": -5.17, "zoom": 1422, "focus": 7840, "brightness": 5000, "autofocus": "on" },
+      "rightcorner": { "pan": -31.8, "tilt": -5.37, "zoom": 1422, "focus": 7360, "brightness": 5000, "autofocus": "on" },
       "leftcorner": { "pan": 178.82, "tilt": -0.49, "zoom": 399, "focus": 5666, "brightness": 5000, "autofocus": "on" },
       "pondleft": { "pan": -145.11, "tilt": -2.69, "zoom": 1, "focus": 6906, "brightness": 5000, "autofocus": "on" },
       "home": { "pan": -47.33, "tilt": -8.19, "zoom": 1, "focus": 7496, "brightness": 5000, "autofocus": "on" },
