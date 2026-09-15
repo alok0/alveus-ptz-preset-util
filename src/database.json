@@ -1114,7 +1114,8 @@
       "enrichmenttmp": { "pan": -108.63, "tilt": -42.81, "zoom": 1, "focus": 8122 },
       "crate": { "pan": -107.05, "tilt": -12.61, "zoom": 2596, "focus": 6327 },
       "leftplatformb": { "pan": -164.46, "tilt": -30.87, "zoom": 172, "focus": 5506 },
-      "cratetop": { "pan": -106.47, "tilt": -6.27, "zoom": 1702, "focus": 6346 }
+      "cratetop": { "pan": -106.47, "tilt": -6.27, "zoom": 1702, "focus": 6346 },
+      "doortmp": { "pan": -130.07, "tilt": -17.09, "zoom": 493, "focus": 4614 }
     },
     "isRoaming": false
   }
