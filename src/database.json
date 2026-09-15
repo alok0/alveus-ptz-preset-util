@@ -408,7 +408,8 @@
       "domell": { "pan": 83.95, "tilt": -14.73, "zoom": 689, "focus": 1877, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "flapr": { "pan": 60.21, "tilt": -34.66, "zoom": 172, "focus": 2503 },
       "flapl": { "pan": 45.9, "tilt": -44.44, "zoom": 172, "focus": 509 },
-      "abovedoor": { "pan": -158.55, "tilt": -38.38, "zoom": 1, "focus": 1 }
+      "abovedoor": { "pan": -158.55, "tilt": -38.38, "zoom": 1, "focus": 1 },
+      "tablel": { "pan": 71.25, "tilt": -62.19, "zoom": 1, "focus": 5005 }
     },
     "isRoaming": false,
     "speed": "70",
