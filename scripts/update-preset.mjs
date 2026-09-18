@@ -1,10 +1,11 @@
-import readline from "node:readline/promises";
-import process from "node:process";
+import { execFileSync } from "node:child_process";
 import { readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
+import process from "node:process";
+import readline from "node:readline/promises";
 import { URL } from "node:url";
-import { z } from "zod/v4";
 import * as prettier from "prettier";
+import { z } from "zod/v4";
 
 const root = new URL("..", import.meta.url).pathname;
 const databasePath = resolve(root, "src/database.json");
@@ -17,7 +18,21 @@ const matchType = z.object({
   focus: z.coerce.number(),
 });
 
+const checkGitClean = () => {
+  const status = execFileSync("git", ["status", "--porcelain"], {
+    encoding: "utf-8",
+    cwd: root,
+  });
+  if (status.trim()) {
+    throw new Error(
+      "git working tree is not clean; commit or stash changes before running",
+    );
+  }
+};
+
 void (async () => {
+  checkGitClean();
+
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -48,12 +63,20 @@ void (async () => {
   data[cam].presets[preset].zoom = zoom;
   data[cam].presets[preset].focus = focus;
 
+  checkGitClean();
   await writeFile(
     databasePath,
     await prettier.format(JSON.stringify(data), {
       ...(await prettier.resolveConfig(databasePath)),
       filepath: databasePath,
     }),
+  );
+
+  execFileSync("git", ["add", databasePath], { stdio: "inherit", cwd: root });
+  execFileSync(
+    "git",
+    ["commit", "-m", `manually update data for preset ${cam}/${preset}`],
+    { stdio: "inherit", cwd: root },
   );
 
   process.exit(0);
