@@ -1118,7 +1118,7 @@
       "leftplatformb": { "pan": -164.46, "tilt": -30.86, "zoom": 172, "focus": 1 },
       "cratetop": { "pan": -106.47, "tilt": -6.27, "zoom": 1702, "focus": 6346 },
       "doortmp": { "pan": -130.07, "tilt": -17.09, "zoom": 493, "focus": 4614 },
-      "topleft": { "pan": 167.08, "tilt": 0, "zoom": 1, "focus": 1 }
+      "topleft": { "pan": 167.07, "tilt": 0, "zoom": 1, "focus": 1 }
     },
     "isRoaming": false
   }
