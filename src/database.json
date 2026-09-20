@@ -1120,7 +1120,8 @@
       "cratetop": { "pan": -106.47, "tilt": -6.27, "zoom": 1702, "focus": 6346 },
       "doortmp": { "pan": -130.07, "tilt": -17.09, "zoom": 493, "focus": 4614 },
       "topleft": { "pan": 167.07, "tilt": 0, "zoom": 1, "focus": 1 },
-      "windowr": { "pan": -94.95, "tilt": -23.34, "zoom": 201, "focus": 1 }
+      "windowr": { "pan": -94.95, "tilt": -23.34, "zoom": 201, "focus": 1 },
+      "pit1": { "pan": -144.09, "tilt": -50.69, "zoom": 1, "focus": 1 }
     },
     "isRoaming": false
   }
