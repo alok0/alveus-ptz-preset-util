@@ -1283,6 +1283,48 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/hotkeys@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@tanstack/hotkeys@npm:0.8.0"
+  dependencies:
+    "@tanstack/store": "npm:^0.11.0"
+  checksum: 10c0/75ea0abf3f88ef05325dcbb6e683c7e99fe94caaad0a16334768dd2ce5896b4e87d1ad45d742de84d58db18fe2f09118f534ee94684735bf1b31b64c195bf3af
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-hotkeys@npm:0.10.0":
+  version: 0.10.0
+  resolution: "@tanstack/react-hotkeys@npm:0.10.0"
+  dependencies:
+    "@tanstack/hotkeys": "npm:0.8.0"
+    "@tanstack/react-store": "npm:^0.11.0"
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: 10c0/5bc4643e2c9f12e801389ffa738618561e24f90f71bd63055b22f639b0037d16bfb2050477269dc9280a433fa61af74428a9923ba42c12c87313709b37c6b1a1
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-store@npm:^0.11.0":
+  version: 0.11.1
+  resolution: "@tanstack/react-store@npm:0.11.1"
+  dependencies:
+    "@tanstack/store": "npm:0.11.1"
+    use-sync-external-store: "npm:^1.6.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 10c0/9b43ea1b07cfed9100b9d037a339e6dbef17ff8e7fd4b8968ef76b75c97a20ec3627345adca94135664d6fccd88f48622e1e871c64738ff2f0b0ce24ce365dfd
+  languageName: node
+  linkType: hard
+
+"@tanstack/store@npm:0.11.1, @tanstack/store@npm:^0.11.0":
+  version: 0.11.1
+  resolution: "@tanstack/store@npm:0.11.1"
+  checksum: 10c0/36e308f3a5037a4d79e2b2ea9f6f4015a617fcd7cb8ff541fe50869b015fb8753b267a8c24709ad197c4c3b5fd85207edc4f71eccaf9b0d311f62336a9cf7764
+  languageName: node
+  linkType: hard
+
 "@tsconfig/strictest@npm:2.0.8":
   version: 2.0.8
   resolution: "@tsconfig/strictest@npm:2.0.8"
@@ -1578,6 +1620,7 @@ __metadata:
     "@mdi/js": "npm:7.4.47"
     "@mui/icons-material": "npm:9.4.0"
     "@mui/material": "npm:9.4.0"
+    "@tanstack/react-hotkeys": "npm:0.10.0"
     "@tsconfig/strictest": "npm:2.0.8"
     "@tsconfig/vite-react": "npm:8.1.1"
     "@types/eslint-plugin-jsx-a11y": "npm:6.10.1"
@@ -4707,12 +4750,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-sync-external-store@npm:^1.0.0":
-  version: 1.6.0
-  resolution: "use-sync-external-store@npm:1.6.0"
+"use-sync-external-store@npm:^1.0.0, use-sync-external-store@npm:^1.6.0":
+  version: 1.7.0
+  resolution: "use-sync-external-store@npm:1.7.0"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/35e1179f872a53227bdf8a827f7911da4c37c0f4091c29b76b1e32473d1670ebe7bcd880b808b7549ba9a5605c233350f800ffab963ee4a4ee346ee983b6019b
+  checksum: 10c0/6bae7cb778ce611131ec830c4e469fbc2872acefc25d2e4cf1c28b8628690689770742a9f2f0642c95134f9c77041fee60f0352f81ca43f96643b0ed01774726
   languageName: node
   linkType: hard
 

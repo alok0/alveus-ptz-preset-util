@@ -8,6 +8,7 @@ import {
   Tooltip,
 } from "@mui/material";
 import { useState } from "react";
+import { DevModeHotkey } from "./dev-mode";
 
 export const InfoBox: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -34,6 +35,7 @@ export const InfoBox: React.FC = () => {
         }}
         slotProps={{ backdrop: { sx: { backdropFilter: "blur(3px)" } } }}
       >
+        <DevModeHotkey />
         <DialogTitle>alveus-ptz-preset-util</DialogTitle>
         <DialogContent>
           <DialogContentText>

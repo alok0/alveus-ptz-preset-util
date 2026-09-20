@@ -18,6 +18,7 @@ import { useEffect, useMemo, useState, type PropsWithChildren } from "react";
 import { Link, useRoute } from "wouter";
 import { cams, isCamHidden } from "./cams";
 import { InfoBox } from "./InfoBox";
+import { useDevModeState } from "./dev-mode";
 
 export const NavWrapper: React.FC<PropsWithChildren> = ({ children }) => {
   return (
@@ -86,7 +87,16 @@ const MenuContent: React.FC<{
             href={`/cam/${c}`}
             onClick={onClose}
           >
-            <ListItemText>{c}</ListItemText>
+            <ListItemText
+              sx={{
+                opacity: (theme) =>
+                  isCamHidden(c)
+                    ? theme.palette.action.disabledOpacity
+                    : undefined,
+              }}
+            >
+              {c}
+            </ListItemText>
           </ListItemButton>
         ))}
     </>
@@ -96,7 +106,7 @@ const MenuContent: React.FC<{
 const Nav: React.FC = () => {
   const theme = useTheme();
   const smallScreen = useMediaQuery(theme.breakpoints.down("lg"));
-  const [clickCount, setClickCount] = useState(0);
+  const [devMode] = useDevModeState();
   const [open, setOpen] = useState(false);
   useEffect(() => {
     if (!smallScreen) {
@@ -118,12 +128,15 @@ const Nav: React.FC = () => {
           <Typography
             variant="caption"
             component="div"
-            onClick={() => setClickCount((x) => x + 1)}
             sx={{
               flexGrow: 1,
               mx: 4,
               textWrap: "nowrap",
               userSelect: "none",
+              color: (theme) =>
+                devMode
+                  ? theme.palette.success.light
+                  : theme.palette.text.primary,
             }}
           >
             alveus-ptz-preset-util
@@ -143,10 +156,7 @@ const Nav: React.FC = () => {
           }}
         >
           <List>
-            <MenuContent
-              onClose={() => setOpen(false)}
-              showHidden={clickCount > 15}
-            />
+            <MenuContent onClose={() => setOpen(false)} showHidden={devMode} />
           </List>
         </Paper>
       )}
@@ -160,10 +170,7 @@ const Nav: React.FC = () => {
             paper: { sx: { minWidth: 150 } },
           }}
         >
-          <MenuContent
-            onClose={() => setOpen(false)}
-            showHidden={clickCount > 15}
-          />
+          <MenuContent onClose={() => setOpen(false)} showHidden={devMode} />
         </Drawer>
       )}
     </>
