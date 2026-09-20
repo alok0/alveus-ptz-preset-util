@@ -1098,7 +1098,8 @@
       "dragonfly2tmp": { "pan": -49.27, "tilt": 4.55, "zoom": 12190, "focus": 7485 },
       "backrightcorner": { "pan": -0.03, "tilt": -1.05, "zoom": 332, "focus": 1030 },
       "sunset": { "pan": -78.36, "tilt": 11.78, "zoom": 199, "focus": 1 },
-      "saltlicktmp": { "pan": 4.78, "tilt": -0.42, "zoom": 6617, "focus": 7869 }
+      "saltlicktmp": { "pan": 4.78, "tilt": -0.42, "zoom": 6617, "focus": 7869 },
+      "purplemartins": { "pan": -83.02, "tilt": 8.16, "zoom": 4308, "focus": 7943 }
     },
     "isRoaming": false
   },
