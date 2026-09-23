@@ -10,12 +10,13 @@
   "engineStrict": true,
   "scripts": {
     "prepare": "husky",
-    "postinstall": "yarn copy-screenshots",
+    "postinstall": "yarn copy-screenshots && yarn create-completion-data",
     "build": "vite build",
     "start": "vite serve",
     "lint": "eslint src",
     "update-preset": "yarn node ./scripts/update-preset.mjs",
-    "copy-screenshots": "yarn node --experimental-strip-types ./scripts/copy-screenshots.ts"
+    "copy-screenshots": "yarn node --experimental-strip-types ./scripts/copy-screenshots.ts",
+    "create-completion-data": "yarn node --experimental-strip-types ./scripts/create-completion-data.ts"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -25,7 +26,11 @@
     "@mui/icons-material": "9.4.0",
     "@mui/material": "9.4.0",
     "@tanstack/react-hotkeys": "0.10.0",
+    "@twurple/api": "8.2.0",
+    "@twurple/auth": "8.2.0",
+    "@twurple/eventsub-ws": "8.2.0",
     "clsx": "2.1.1",
+    "fuse.js": "7.5.0",
     "pannellum": "2.5.7",
     "preact": "10.29.8",
     "react": "19.3.0",

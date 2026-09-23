@@ -33,7 +33,6 @@ export const InfoBox: React.FC = () => {
         onClick={() => {
           setOpen(false);
         }}
-        slotProps={{ backdrop: { sx: { backdropFilter: "blur(3px)" } } }}
       >
         <DevModeHotkey />
         <DialogTitle>alveus-ptz-preset-util</DialogTitle>

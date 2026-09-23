@@ -71,6 +71,13 @@ const MenuContent: React.FC<{
     <>
       <CustomNavItem href="/zoom-visual" title="Zoom" onClose={onClose} />
       <CustomNavItem href="/chin-cams" title="Chin Cams" onClose={onClose} />
+      {showHidden && (
+        <CustomNavItem
+          href="/chat-control"
+          title="Chat Control"
+          onClose={onClose}
+        />
+      )}
       {cams
         .filter((c) => {
           if (showHidden || cam === c) {

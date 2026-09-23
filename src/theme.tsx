@@ -7,5 +7,12 @@ export const theme = createTheme({
   typography: {
     fontFamily: `"JetBrains Mono Variable",sans-serif`,
     fontSize: 12,
+    allVariants: {
+      fontVariantLigatures: "none",
+    },
+  },
+  components: {
+    // MuiBackdrop: { styleOverrides: { root: { backdropFilter: "blur(3px)" } } },
+    MuiInputLabel: { defaultProps: { shrink: true } },
   },
 });

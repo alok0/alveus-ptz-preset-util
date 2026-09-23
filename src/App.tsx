@@ -1,14 +1,19 @@
-import { useEffect, useMemo } from "react";
+import { ThemeProvider } from "@mui/material";
+import React, { useEffect, useMemo } from "react";
 import { ErrorBoundary, type FallbackProps } from "react-error-boundary";
 import { Route, Router, Switch, useLocation, useRoute } from "wouter";
 import { useHashLocation } from "wouter/use-hash-location";
 import { cams } from "./cams";
-import { Map } from "./Map";
-import { ZoomVisual } from "./ZoomVisual";
-import { ThemeProvider } from "@mui/material";
-import { theme } from "./theme";
-import { NavWrapper } from "./Nav";
 import { ChinCams } from "./ChinCams";
+import { Map } from "./Map";
+import { NavWrapper } from "./Nav";
+import { theme } from "./theme";
+import "./twitch-control/incoming-auth";
+import { ZoomVisual } from "./ZoomVisual";
+
+const ControlChatMain = React.lazy(
+  () => import("./twitch-control/ControlChatMain"),
+);
 
 export const AppMain = () => {
   const [match, params] = useRoute("/cam/:cam");
@@ -56,15 +61,18 @@ export const App = () => {
       <Router hook={useHashLocation}>
         <ThemeProvider theme={theme}>
           <NavWrapper>
-            <Switch>
-              <Route path="/cam" component={AppMain} />
-              <Route path="/zoom-visual" component={ZoomVisual} />
-              <Route path="/chin-cams" component={ChinCams} />
-              <Route>
-                {/* fallback */}
-                <AppMain />
-              </Route>
-            </Switch>
+            <React.Suspense>
+              <Switch>
+                <Route path="/cam" component={AppMain} />
+                <Route path="/zoom-visual" component={ZoomVisual} />
+                <Route path="/chin-cams" component={ChinCams} />
+                <Route path="/chat-control" component={ControlChatMain} />
+                <Route>
+                  {/* fallback */}
+                  <AppMain />
+                </Route>
+              </Switch>
+            </React.Suspense>
           </NavWrapper>
         </ThemeProvider>
       </Router>
