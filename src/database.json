@@ -869,7 +869,7 @@
     "isRoaming": false
   },
   "toastcrunch": {
-    "presets": { "home": { "pan": 0, "tilt": 0, "zoom": 1 }, "right": { "pan": 76.03, "tilt": 47.33, "zoom": 6336 }, "log": { "pan": -42, "tilt": 21, "zoom": 9999 } },
+    "presets": { "home": { "pan": 0, "tilt": 0, "zoom": 1 }, "right": { "pan": 76.03, "tilt": 47.33, "zoom": 6336 }, "log": { "pan": -42, "tilt": 21, "zoom": 9999 }, "lurkk": {} },
     "isRoaming": false,
     "speed": "70"
   },
@@ -1046,7 +1046,10 @@
       "leftcorner": { "pan": -87.37, "tilt": -103.33, "zoom": 6000 },
       "ramp": { "pan": 87.38, "tilt": 73.42, "zoom": 7000 },
       "home": { "pan": 0, "tilt": 0, "zoom": 1 },
-      "window": { "pan": 24.8, "tilt": 121.33, "zoom": 7731 }
+      "window": { "pan": 24.8, "tilt": 121.33, "zoom": 7731 },
+      "bedltmp": {},
+      "bedtemp": {},
+      "cubbyz": {}
     },
     "isRoaming": false
   },
@@ -1067,7 +1070,6 @@
       "home": { "pan": -47.33, "tilt": -8.19, "zoom": 1, "focus": 7496, "brightness": 5000, "autofocus": "on" },
       "temp": { "pan": -26.43, "tilt": -6.25, "zoom": 6192, "focus": 8773, "brightness": 5000, "autofocus": "off" },
       "feeder": { "pan": -55.32, "tilt": -3.47, "zoom": 1545, "focus": 7338 },
-      "spidertmp": { "pan": -20.64, "tilt": -3.95, "zoom": 6904, "focus": 4823 },
       "pedro": { "pan": -55.5, "tilt": -4.33, "zoom": 2559, "focus": 8349 }
     },
     "isRoaming": false
