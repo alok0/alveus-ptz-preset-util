@@ -1111,7 +1111,6 @@
       "leftcorner": { "pan": 169.7, "tilt": -30.23, "zoom": 1, "focus": 8122 },
       "middle": { "pan": -136.67, "tilt": -43.28, "zoom": 1, "focus": 8372 },
       "leftdoor": { "pan": -168.41, "tilt": -48.93, "zoom": 1, "focus": 8122 },
-      "enrichmenttmp": { "pan": -108.63, "tilt": -42.81, "zoom": 1, "focus": 8122 },
       "crate": { "pan": -107.05, "tilt": -12.61, "zoom": 2596, "focus": 6327 },
       "leftplatformb": { "pan": -164.46, "tilt": -30.86, "zoom": 172, "focus": 1 },
       "cratetop": { "pan": -106.47, "tilt": -6.27, "zoom": 1702, "focus": 6346 },
@@ -1120,7 +1119,8 @@
       "windowr": { "pan": -94.95, "tilt": -23.34, "zoom": 201, "focus": 1 },
       "pit1": { "pan": -144.09, "tilt": -50.69, "zoom": 1, "focus": 6006 },
       "pit2": { "pan": -139.58, "tilt": -30.23, "zoom": 87, "focus": 3343 },
-      "pit3": { "pan": -116.84, "tilt": -31.28, "zoom": 87, "focus": 3343 }
+      "pit3": { "pan": -116.84, "tilt": -31.28, "zoom": 87, "focus": 3343 },
+      "floorr": { "pan": -108.63, "tilt": -42.8, "zoom": 1, "focus": 5005 }
     },
     "isRoaming": false
   }
