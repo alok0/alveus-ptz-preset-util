@@ -1119,7 +1119,7 @@
       "topleft": { "pan": 167.07, "tilt": 0, "zoom": 1, "focus": 1 },
       "windowr": { "pan": -94.95, "tilt": -23.34, "zoom": 201, "focus": 1 },
       "pit1": { "pan": -144.09, "tilt": -50.69, "zoom": 1, "focus": 6006 },
-      "pit2": { "pan": -139.58, "tilt": -30.23, "zoom": 87, "focus": 1 },
+      "pit2": { "pan": -139.58, "tilt": -30.23, "zoom": 87, "focus": 3343 },
       "pit3": { "pan": -116.84, "tilt": -31.28, "zoom": 87, "focus": 1 }
     },
     "isRoaming": false
