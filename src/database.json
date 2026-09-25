@@ -334,7 +334,6 @@
       "downleft": { "pan": 98.98, "tilt": -47.83, "zoom": 1, "focus": 2213, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "downright": { "pan": 164.44, "tilt": -54.07, "zoom": 1, "focus": 748, "brightness": 6000, "autofocus": "on", "autoiris": "on" },
       "ground": { "pan": 133.79, "tilt": -36.41, "zoom": 1, "focus": 2213, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "leftcornerhideb": { "pan": 87.49, "tilt": -16.48, "zoom": 998, "focus": 5001, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "nearlefttop": { "pan": 84.43, "tilt": 20, "zoom": 332, "focus": 2972, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "nearleftshelf": { "pan": 84.62, "tilt": -0.5, "zoom": 332, "focus": 748, "brightness": 6000, "autofocus": "off", "autoiris": "on" },
       "nearrightshelves": { "pan": 178.45, "tilt": -10.16, "zoom": 332, "focus": 1860, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
@@ -374,7 +373,8 @@
       "leftpostshelfb": { "pan": 107.05, "tilt": -24.5, "zoom": 1, "focus": 1 },
       "door": { "pan": 166.51, "tilt": -18.64, "zoom": 464, "focus": 1763 },
       "tableropes": { "pan": 124.75, "tilt": -24.5, "zoom": 593, "focus": 5820 },
-      "brownball": { "pan": 86.75, "tilt": -18.08, "zoom": 997, "focus": 5120 }
+      "brownball": { "pan": 86.75, "tilt": -18.08, "zoom": 997, "focus": 5120 },
+      "brownballtop": { "pan": 86.74, "tilt": -16.44, "zoom": 997, "focus": 5120 }
     },
     "isRoaming": false,
     "speed": "65"
