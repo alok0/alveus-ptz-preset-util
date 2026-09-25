@@ -947,10 +947,10 @@
       "leftpole": { "pan": 158.18, "tilt": -40.22, "zoom": 1, "focus": 2503, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "downleft": { "pan": 173.2, "tilt": -48.1, "zoom": 1, "focus": 1, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "door": { "pan": -168.21, "tilt": -12.13, "zoom": 1, "focus": 5005, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "painttmp": { "pan": -156.41, "tilt": -33.63, "zoom": 814, "focus": 4712, "brightness": 5000, "autofocus": "off", "autoiris": "on" },
       "windowz": { "pan": 171.52, "tilt": -11.18, "zoom": 1111, "focus": 6065, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "doorz": { "pan": -173.32, "tilt": -11.46, "zoom": 1005, "focus": 6342, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "postmbb": { "pan": 165.95, "tilt": -26.02, "zoom": 963, "focus": 5578, "brightness": 5000, "autofocus": "on", "autoiris": "on" }
+      "postmbb": { "pan": 165.95, "tilt": -26.02, "zoom": 963, "focus": 5578, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
+      "table": { "pan": -157.2, "tilt": -33.18, "zoom": 211, "focus": 1 }
     },
     "isRoaming": false
   },
