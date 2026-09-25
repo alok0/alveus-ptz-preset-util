@@ -1042,8 +1042,8 @@
       "ramp": { "pan": 87.38, "tilt": 73.42, "zoom": 7000 },
       "home": { "pan": 0, "tilt": 0, "zoom": 1 },
       "window": { "pan": 24.8, "tilt": 121.33, "zoom": 7731 },
-      "bedltmp": {},
-      "bedtemp": {},
+      "bedl": {},
+      "bedr": {},
       "cubbyz": {}
     },
     "isRoaming": false
