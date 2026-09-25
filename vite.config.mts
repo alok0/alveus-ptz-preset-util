@@ -71,7 +71,7 @@ export default defineConfig(() => {
 
           const generatedHeaders = {
             ...headers,
-            "Content-Security-Policy": `default-src 'self'; connect-src 'self' https://id.twitch.tv https://eventsub.wss.twitch.tv https://api.twitch.tv; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; script-src 'self' 'sha256-${digest}';`,
+            "Content-Security-Policy": `default-src 'self'; connect-src 'self' https://id.twitch.tv wss://eventsub.wss.twitch.tv https://api.twitch.tv; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; script-src 'self' 'sha256-${digest}';`,
           };
           const headerContent =
             "/*\n" +
