@@ -60,7 +60,8 @@
       "winnetmp": { "pan": 28.55, "tilt": -5.14, "zoom": 3628, "focus": 7842 },
       "chandlertemp": { "pan": 21.49, "tilt": -4.69, "zoom": 1662, "focus": 7524 },
       "dragonflytmp": { "pan": -0.8, "tilt": -1.16, "zoom": 3823, "focus": 7507 },
-      "haystack": { "pan": 135, "tilt": 8.1, "zoom": 464, "focus": 2266 }
+      "haystack": { "pan": 135, "tilt": 8.1, "zoom": 464, "focus": 2266 },
+      "penb": { "pan": 21.49, "tilt": -4.68, "zoom": 1662, "focus": 7524 }
     },
     "isRoaming": false,
     "roamTime": "12",
