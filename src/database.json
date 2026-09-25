@@ -365,7 +365,6 @@
       "domellb": { "pan": 126.97, "tilt": -10.69, "zoom": 390, "focus": 3525, "brightness": 6000, "autofocus": "on", "autoiris": "on" },
       "downrightbranch": { "pan": 172.08, "tilt": -30.78, "zoom": 1, "focus": 748, "brightness": 6000, "autofocus": "on", "autoiris": "on" },
       "hose": { "pan": 90.46, "tilt": -53.02, "zoom": 166, "focus": 1491, "brightness": 6000, "autofocus": "on", "autoiris": "on" },
-      "hidetmp": { "pan": 112.55, "tilt": -9.05, "zoom": 664, "focus": 4794, "brightness": 6000, "autofocus": "on", "autoiris": "on" },
       "domerr": { "pan": 151.57, "tilt": -7.67, "zoom": 1662, "focus": 6216, "brightness": 6000, "autofocus": "off", "autoiris": "on" },
       "domerl": { "pan": 148.54, "tilt": -7.83, "zoom": 1662, "focus": 6216, "brightness": 6000, "autofocus": "off", "autoiris": "on" },
       "farrightshelfb": { "pan": 179.34, "tilt": -25.19, "zoom": 1210, "focus": 4729 },
