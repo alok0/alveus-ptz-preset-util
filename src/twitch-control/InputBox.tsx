@@ -176,14 +176,28 @@ export const InputBox: React.FC = () => {
               e.preventDefault();
               e.stopPropagation();
 
-              const newIndex =
-                compIndexRef.current === null ? 0 : compIndexRef.current + 1;
-              const newComp = completions[newIndex];
-              if (newComp) {
-                setDisplayValue(newComp);
-                setCompletionTooltip("");
-                compIndexRef.current = newIndex;
+              if (e.shiftKey) {
+                const newIndex =
+                  compIndexRef.current === null || compIndexRef.current <= 0
+                    ? 0
+                    : compIndexRef.current - 1;
+                const newComp = completions[newIndex];
+                if (newComp) {
+                  setDisplayValue(newComp);
+                  setCompletionTooltip("");
+                  compIndexRef.current = newIndex;
+                }
+              } else {
+                const newIndex =
+                  compIndexRef.current === null ? 0 : compIndexRef.current + 1;
+                const newComp = completions[newIndex];
+                if (newComp) {
+                  setDisplayValue(newComp);
+                  setCompletionTooltip("");
+                  compIndexRef.current = newIndex;
+                }
               }
+
               return;
             } else if (e.key === "ArrowUp") {
               e.preventDefault();
