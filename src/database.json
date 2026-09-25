@@ -373,7 +373,8 @@
       "appastick": { "pan": 122.85, "tilt": 6.36, "zoom": 1191, "focus": 5440 },
       "leftpostshelfb": { "pan": 107.05, "tilt": -24.5, "zoom": 1, "focus": 1 },
       "door": { "pan": 166.51, "tilt": -18.64, "zoom": 464, "focus": 1763 },
-      "tableropes": { "pan": 124.75, "tilt": -24.5, "zoom": 593, "focus": 5820 }
+      "tableropes": { "pan": 124.75, "tilt": -24.5, "zoom": 593, "focus": 5820 },
+      "brownball": { "pan": 86.75, "tilt": -18.08, "zoom": 997, "focus": 5120 }
     },
     "isRoaming": false,
     "speed": "65"
