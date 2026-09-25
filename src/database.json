@@ -53,12 +53,9 @@
       "brushl": { "pan": -15.36, "tilt": -7.34, "zoom": 530, "focus": 5896, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "grover": { "pan": -11.95, "tilt": -5.48, "zoom": 1851, "focus": 7729, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "purplebaser": { "pan": 1.22, "tilt": -4.58, "zoom": 1019, "focus": 7014, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "haystacktmp": { "pan": 135.01, "tilt": 8.11, "zoom": 464, "focus": 1507, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "farright": { "pan": 58.49, "tilt": -0.5, "zoom": 3211, "focus": 8077, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "barn2l": { "pan": -28.35, "tilt": -6.25, "zoom": 2709, "focus": 8041, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "poolpr": { "pan": 47.23, "tilt": -1.64, "zoom": 1154, "focus": 7285, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "winnetmp": { "pan": 28.55, "tilt": -5.14, "zoom": 3628, "focus": 7842 },
-      "chandlertemp": { "pan": 21.49, "tilt": -4.69, "zoom": 1662, "focus": 7524 },
       "dragonflytmp": { "pan": -0.8, "tilt": -1.16, "zoom": 3823, "focus": 7507 },
       "haystack": { "pan": 135, "tilt": 8.1, "zoom": 464, "focus": 2266 },
       "penb": { "pan": 21.49, "tilt": -4.68, "zoom": 1662, "focus": 7524 },
@@ -711,18 +708,14 @@
       "sunrise": { "pan": -150.16, "tilt": 1.03, "zoom": 1, "focus": 2945, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "sunriser": { "pan": -88.96, "tilt": 1.41, "zoom": 1, "focus": 1480, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "pasturefarright": { "pan": -41.42, "tilt": -5.58, "zoom": 1145, "focus": 7624, "brightness": 5500, "autofocus": "on" },
-      "nesttemp": { "pan": 126.6, "tilt": -21.18, "zoom": 10782, "focus": 5015 },
-      "waspnest": { "pan": 126.5, "tilt": -21.26, "zoom": 11107, "focus": 5051 },
       "water": { "pan": 37.83, "tilt": -14.74, "zoom": 406, "focus": 3469 },
       "butterflyplant": { "pan": 97.41, "tilt": -10.28, "zoom": 721, "focus": 5682 },
       "hummingbirdtreetmp": { "pan": 147.22, "tilt": -6.72, "zoom": 1356, "focus": 7235 },
       "hbtemp": { "pan": 144, "tilt": -4.78, "zoom": 10127, "focus": 7818 },
-      "beetles": { "pan": 20.88, "tilt": -18.31, "zoom": 11830, "focus": 6073 },
       "tmp4": { "pan": 141.8, "tilt": -11.54, "zoom": 5447, "focus": 6497 },
       "tmp5": { "pan": 148, "tilt": -13.07, "zoom": 6389, "focus": 6592 },
       "tmp6": { "pan": 121, "tilt": -17.46, "zoom": 4395, "focus": 5271 },
       "haybagtmp": { "pan": -87.03, "tilt": -18.98, "zoom": 31, "focus": 938 },
-      "orbweb": { "pan": 82.1, "tilt": -5.18, "zoom": 2421, "focus": 6662 },
       "milkweed": { "pan": 79.23, "tilt": -14.6, "zoom": 1610, "focus": 6091 },
       "milkweedtop": { "pan": 79.38, "tilt": -13.42, "zoom": 4425, "focus": 6300 }
     },
@@ -1072,7 +1065,6 @@
       "pondleft": { "pan": -145.11, "tilt": -2.69, "zoom": 1, "focus": 6906, "brightness": 5000, "autofocus": "on" },
       "home": { "pan": -47.33, "tilt": -8.19, "zoom": 1, "focus": 7496, "brightness": 5000, "autofocus": "on" },
       "temp": { "pan": -26.43, "tilt": -6.25, "zoom": 6192, "focus": 8773, "brightness": 5000, "autofocus": "off" },
-      "feeder": { "pan": -55.32, "tilt": -3.47, "zoom": 1545, "focus": 7338 },
       "pedro": { "pan": -55.5, "tilt": -4.33, "zoom": 2559, "focus": 8349 }
     },
     "isRoaming": false
@@ -1104,8 +1096,7 @@
       "dragonfly2tmp": { "pan": -49.27, "tilt": 4.55, "zoom": 12190, "focus": 7485 },
       "backrightcorner": { "pan": -0.03, "tilt": -1.05, "zoom": 332, "focus": 1030 },
       "sunset": { "pan": -78.36, "tilt": 11.78, "zoom": 199, "focus": 1 },
-      "saltlicktmp": { "pan": 4.78, "tilt": -0.42, "zoom": 6617, "focus": 7869 },
-      "purplemartins": { "pan": -83.02, "tilt": 8.16, "zoom": 4308, "focus": 7943 }
+      "saltlicktmp": { "pan": 4.78, "tilt": -0.42, "zoom": 6617, "focus": 7869 }
     },
     "isRoaming": false
   },
