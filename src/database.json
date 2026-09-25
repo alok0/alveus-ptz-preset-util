@@ -260,7 +260,7 @@
       "den2tr": { "pan": -0.88, "tilt": 0.52, "zoom": 8878, "focus": 8036, "brightness": 5000, "autofocus": "on" },
       "rightplatform": { "pan": -15.87, "tilt": -1.38, "zoom": 691, "focus": 6980, "brightness": 5000, "autofocus": "on" },
       "leftplatformtl": { "pan": -110.01, "tilt": -0.65, "zoom": 5108, "focus": 8237, "brightness": 5000, "autofocus": "on" },
-      "bed": { "pan": -93.43, "tilt": -6.56, "zoom": 1219, "focus": 7927, "brightness": 5000, "autofocus": "on" },
+      "bed": { "pan": 26.61, "tilt": -5.89, "zoom": 3185, "focus": 7243, "brightness": 5000, "autofocus": "on" },
       "down": { "pan": -57.51, "tilt": -24.04, "zoom": 1, "focus": 9201, "brightness": 5000, "autofocus": "on" },
       "fenntree": { "pan": 53.73, "tilt": -5.86, "zoom": 5693, "focus": 7810, "brightness": 5000, "autofocus": "on" },
       "farfencelz": { "pan": -98.99, "tilt": -3.77, "zoom": 2673, "focus": 8317, "brightness": 5000, "autofocus": "on" },
@@ -269,7 +269,6 @@
       "rightplatformb": { "pan": -16.15, "tilt": -7.21, "zoom": 3538, "focus": 7246 },
       "den1b": { "pan": -88.06, "tilt": -3.01, "zoom": 10297, "focus": 8377 },
       "den3temp": { "pan": 15.05, "tilt": -2.91, "zoom": 10368, "focus": 8265 },
-      "bedtmp": { "pan": 26.61, "tilt": -5.9, "zoom": 3185, "focus": 7228 },
       "reednaptmp": { "pan": -0.92, "tilt": -4.42, "zoom": 10087, "focus": 7810 }
     },
     "isRoaming": false,
