@@ -16,6 +16,7 @@ const commands = new Fuse([
   "!scenecams",
   "!wolftext off",
   "!wolftext on",
+  "!ptzautofocus",
   "!getvolume",
   "!setvolume",
   "!resetcam",
