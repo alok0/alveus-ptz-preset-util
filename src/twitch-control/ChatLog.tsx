@@ -21,12 +21,56 @@ interface LogEntry {
   time: Date;
 }
 
+const ChatLogLine: React.FC<{ entry: LogEntry }> = ({ entry }) => {
+  const { message, time } = entry;
+  const color = message.color || "#000";
+
+  return (
+    <React.Fragment>
+      {time.toLocaleTimeString(undefined, { hour12: false })}{" "}
+      <span
+        style={{
+          display: "inline grid",
+          paddingInline: "1ch",
+          width: "18ch",
+          background: `radial-gradient(at right, ${color}, transparent 50%)`,
+          backgroundPosition: "center",
+          backgroundSize: "100% 300%",
+        }}
+      >
+        <div
+          style={{
+            overflow: "hidden",
+            whiteSpace: "nowrap",
+            textOverflow: "ellipsis",
+          }}
+        >
+          {message.badges["moderator"] || message.badges["lead_moderator"]
+            ? "@"
+            : message.badges["staff"]
+              ? "~"
+              : message.badges["vip"]
+                ? "+"
+                : " "}
+          {message.chatterName.toLocaleLowerCase() ===
+          message.chatterDisplayName.toLocaleLowerCase()
+            ? message.chatterDisplayName
+            : message.chatterName}
+        </div>
+      </span>{" "}
+      {message.messageText}
+      {"\n"}
+    </React.Fragment>
+  );
+};
+
 export const ChatLog: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { eventSubListener, self } = useTwitch();
   const [logs, setLogs] = useState<LogEntry[]>([]);
 
   useEffect(() => {
+    let handle: number;
     if (!eventSubListener || !self) {
       return;
     }
@@ -36,9 +80,9 @@ export const ChatLog: React.FC = () => {
       self,
       (data) => {
         setLogs((logs) => {
-          queueMicrotask(() => {
+          handle = window.setTimeout(() => {
             ref.current?.scrollIntoView({ behavior: "smooth" });
-          });
+          }, 0);
           return [...logs, { message: data, time: new Date() }].slice(-500);
         });
       },
@@ -46,6 +90,9 @@ export const ChatLog: React.FC = () => {
 
     return () => {
       subscription.stop();
+      if (handle) {
+        clearTimeout(handle);
+      }
     };
   }, [eventSubListener, self]);
 
@@ -72,30 +119,8 @@ export const ChatLog: React.FC = () => {
         color="textPrimary"
         sx={{ whiteSpace: "pre-wrap", wordBreak: "break-word" }}
       >
-        {logs.map(({ message, time }) => (
-          <React.Fragment key={message.messageId}>
-            {time.toLocaleTimeString(undefined, { hour12: false })}{" "}
-            <span
-              style={{
-                textDecorationColor: message.color || "transparent",
-                textDecorationLine: "underline",
-                textDecorationStyle:
-                  message.badges["moderator"] ||
-                  message.badges["lead_moderator"]
-                    ? "double"
-                    : message.badges["staff"] || message.badges["vip"]
-                      ? "solid"
-                      : "dotted",
-              }}
-            >
-              {message.chatterName.toLocaleLowerCase() ===
-              message.chatterDisplayName.toLocaleLowerCase()
-                ? message.chatterDisplayName
-                : message.chatterName}
-            </span>
-            : {message.messageText}
-            {"\n"}
-          </React.Fragment>
+        {logs.map((entry) => (
+          <ChatLogLine entry={entry} key={entry.message.messageId} />
         ))}
       </Typography>
       <div ref={ref} />
