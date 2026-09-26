@@ -124,10 +124,18 @@ const Nav: React.FC = () => {
   return (
     <>
       <AppBar position="static" sx={{ gridArea: "APPBAR" }}>
-        <Toolbar variant="dense" disableGutters>
+        <Toolbar
+          variant="dense"
+          disableGutters
+          sx={{ minHeight: smallScreen ? 0 : undefined }}
+        >
           {smallScreen && (
             <Tooltip title="Menu">
-              <IconButton sx={{ mx: 1 }} onClick={() => setOpen(true)}>
+              <IconButton
+                sx={{ mx: 1 }}
+                onClick={() => setOpen(true)}
+                size="small"
+              >
                 <MenuIcon />
               </IconButton>
             </Tooltip>

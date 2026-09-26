@@ -17,6 +17,7 @@ export const InfoBox: React.FC = () => {
     <>
       <Tooltip title="Info">
         <IconButton
+          size="small"
           sx={{ mx: 1 }}
           onClick={() => {
             setOpen(true);
