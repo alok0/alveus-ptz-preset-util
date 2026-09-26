@@ -79,7 +79,9 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
     };
   }, [authProvider, userId]);
 
-  const [websocketFailure, setWebsocketFailure] = useState("");
+  const [websocketFailure, setWebsocketFailure] = useState(
+    "websocket initializing...",
+  );
   const [eventSubListener, setEventSubListener] =
     useState<EventSubWsListener | null>(null);
   useEffect(() => {
@@ -87,14 +89,27 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
       return;
     }
 
-    const listener = new EventSubWsListener({ apiClient });
+    const listener = new EventSubWsListener({
+      apiClient,
+      logger: {
+        name: "eventsub",
+        minLevel: "INFO",
+        colors: true,
+        emoji: true,
+        timestamps: true,
+      },
+    });
     listener.onUserSocketConnect((userId) => {
-      console.log(`websocket connected ${userId}`);
+      console.info(`websocket connected ${userId}`);
       queueMicrotask(() => setWebsocketFailure(""));
     });
     listener.onUserSocketDisconnect((userId, err) => {
-      console.log(`websocket disconnected ${userId} ${err}`, err);
-      queueMicrotask(() => setWebsocketFailure(String(err)));
+      console.info(`websocket disconnected ${userId} ${err}`, err);
+      queueMicrotask(() => {
+        if (!listener.isActive) {
+          setWebsocketFailure(String(err || "unknown websocket error"));
+        }
+      });
     });
     listener.start();
     queueMicrotask(() => setEventSubListener(listener));
