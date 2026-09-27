@@ -1,5 +1,5 @@
 import { Box, TextField, Typography } from "@mui/material";
-import Fuse from "fuse.js";
+import Fuse, { type FuseResult } from "fuse.js";
 import { useCallback, useRef, useState } from "react";
 import { channel } from "./constants";
 import { fullCamList, fullPresetLists } from "./data/data";
@@ -23,7 +23,26 @@ const commands = new Fuse([
   "!resetlivecams",
 ]);
 
-const cams = new Fuse(fullCamList);
+const cams = new Fuse(fullCamList, { includeScore: true });
+
+const camSearch = (q: string) => {
+  const r = cams.search(q);
+  const getNewScore = (i: FuseResult<string>): number => {
+    const s = i.score || 1;
+    if (i.item.slice(0, 3) === q.slice(0, 3)) {
+      return s / 3;
+    }
+    if (i.item.slice(0, 2) === q.slice(0, 2)) {
+      return s / 2.5;
+    }
+    if (i.item.slice(0, 1) === q.slice(0, 1)) {
+      return s / 2;
+    }
+    return s;
+  };
+
+  return r.toSorted((a, b) => getNewScore(a) - getNewScore(b));
+};
 
 const presetMatchers = Object.fromEntries(
   Object.entries(fullPresetLists).map(([k, v]) => [k, new Fuse(v)] as const),
@@ -66,7 +85,7 @@ export const InputBox: React.FC = () => {
     }
 
     if (tokens.length === 2 && tokens[1]) {
-      return cams.search(tokens[1]).map((r) => tokens[0] + " " + r.item + " ");
+      return camSearch(tokens[1]).map((r) => tokens[0] + " " + r.item + " ");
     }
 
     if (
@@ -93,8 +112,7 @@ export const InputBox: React.FC = () => {
     }
 
     if (tokens.length === 3 && tokens[2] && tokens[0] === "!swap") {
-      return cams
-        .search(tokens[2])
+      return camSearch(tokens[2])
         .filter((r) => r.item !== tokens[1])
         .map((r) => tokens[0] + " " + tokens[1] + " " + r.item + " ");
     }
