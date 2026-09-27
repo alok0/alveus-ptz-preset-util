@@ -33,9 +33,9 @@ const ChatLogLine: React.FC<{ entry: LogEntry }> = ({ entry }) => {
           display: "inline grid",
           paddingInline: "1ch",
           width: "18ch",
-          background: `radial-gradient(at right, ${color}, transparent 50%)`,
+          background: `radial-gradient(at right, lab(from ${color} max(l / 2, 20) a b), transparent 50%)`,
           backgroundPosition: "center",
-          backgroundSize: "100% 300%",
+          backgroundSize: "100% 600%",
         }}
       >
         <div
