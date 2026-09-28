@@ -1085,5 +1085,5 @@
     },
     "isRoaming": false
   },
-  "servalcorner": { "presets": {} }
+  "servalcorner": { "presets": { "home": { "pan": 39.61, "tilt": -6.82, "zoom": 1, "focus": 7006 } } }
 }
