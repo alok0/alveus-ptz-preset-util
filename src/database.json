@@ -991,7 +991,7 @@
   },
   "serval": {
     "presets": {
-      "home": { "pan": -35.3, "tilt": -7.68, "zoom": 1, "focus": 9700 },
+      "home": { "pan": -35.29, "tilt": -7.68, "zoom": 1, "focus": 9450 },
       "leftfar": { "pan": -50.42, "tilt": -3.81, "zoom": 813, "focus": 7224 },
       "ball": { "pan": -44.68, "tilt": -7.35, "zoom": 1096, "focus": 7772 }
     },
