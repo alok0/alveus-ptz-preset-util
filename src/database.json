@@ -1106,7 +1106,8 @@
     "presets": {
       "home": { "pan": 39.6, "tilt": -6.81, "zoom": 1, "focus": 3754 },
       "left": { "pan": 24.31, "tilt": -6.07, "zoom": 1, "focus": 3754 },
-      "right": { "pan": 78.69, "tilt": -14.76, "zoom": 1, "focus": 3754 }
+      "right": { "pan": 78.69, "tilt": -14.76, "zoom": 1, "focus": 3754 },
+      "farleftcorner": { "pan": 5.53, "tilt": -2.76, "zoom": 2412, "focus": 7503 }
     }
   }
 }
