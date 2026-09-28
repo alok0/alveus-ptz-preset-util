@@ -1,3 +1,4 @@
+import fallback_pano from "./blank_pano.webp";
 import type { CamType } from "./cams";
 import chicken_pano from "./chicken_pano.webp";
 import chickenin_pano from "./chickenin_pano.webp";
@@ -5,7 +6,6 @@ import crowin_pano from "./crowin_pano.webp";
 import crowout_pano from "./crowout_pano.webp";
 import emu_pano from "./emu_pano.webp";
 import emucover_pano from "./emucover_pano.webp";
-import fallback_pano from "./blank_pano.webp";
 import fox_pano from "./fox_pano.webp";
 import foxcovered_pano from "./foxcovered_pano.webp";
 import garden_pano from "./garden_pano.webp";
@@ -18,7 +18,6 @@ import pasture_pano from "./pasture_pano.webp";
 import pasturelower_pano from "./pasturelower_pano.webp";
 import pushin_pano from "./pushin_pano.webp";
 import pushout_pano from "./pushout_pano.webp";
-import serval_pano from "./serval_pano.webp";
 import servalindoor_pano from "./servalindoor_pano.webp";
 import toast_pano from "./toast_pano.webp";
 import wolf_pano from "./wolf_pano.webp";
@@ -43,7 +42,6 @@ const images: Record<CamType, string | null> = {
   pasturelower: pasturelower_pano,
   pushpop: pushout_pano,
   pushpopindoor: pushin_pano,
-  serval: serval_pano,
   servalindoor: servalindoor_pano,
   toast: toast_pano,
   wolf: wolf_pano,
@@ -58,6 +56,8 @@ const images: Record<CamType, string | null> = {
   marty: null,
   patchy: null,
   event: null,
+  serval: null,
+  servalcorner: null,
 };
 
 export const getImage = (name: CamType) => {
