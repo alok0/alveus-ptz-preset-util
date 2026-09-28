@@ -996,7 +996,8 @@
       "ball": { "pan": -44.68, "tilt": -7.34, "zoom": 1096, "focus": 7987 },
       "down": { "pan": -33.76, "tilt": -37.33, "zoom": 1, "focus": 9825 },
       "below": { "pan": -47.75, "tilt": -78.21, "zoom": 1, "focus": 9950 },
-      "downleft": { "pan": -73.38, "tilt": -44.94, "zoom": 1, "focus": 9825 }
+      "downleft": { "pan": -73.38, "tilt": -44.94, "zoom": 1, "focus": 9825 },
+      "downright": { "pan": 8.47, "tilt": -42.01, "zoom": 1, "focus": 9888 }
     },
     "isRoaming": false,
     "speed": "65"
