@@ -989,7 +989,7 @@
     },
     "isRoaming": false
   },
-  "serval": { "presets": {}, "isRoaming": false, "speed": "65" },
+  "serval": { "presets": { "home": { "pan": -35.3, "tilt": -7.68, "zoom": 1, "focus": 9700 } }, "isRoaming": false, "speed": "65" },
   "event": { "presets": {}, "isRoaming": false },
   "foxindoor": {
     "presets": {
