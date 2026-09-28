@@ -1041,7 +1041,8 @@
       "pondleft": { "pan": -145.11, "tilt": -2.69, "zoom": 1, "focus": 6906, "brightness": 5000, "autofocus": "on" },
       "home": { "pan": -47.33, "tilt": -8.19, "zoom": 1, "focus": 7496, "brightness": 5000, "autofocus": "on" },
       "temp": { "pan": -26.43, "tilt": -6.25, "zoom": 6192, "focus": 8773, "brightness": 5000, "autofocus": "off" },
-      "pedro": { "pan": -55.5, "tilt": -4.33, "zoom": 2559, "focus": 8349 }
+      "pedro": { "pan": -55.5, "tilt": -4.33, "zoom": 2559, "focus": 8349 },
+      "trees": { "pan": -71.6, "tilt": -5.59, "zoom": 1, "focus": 1000 }
     },
     "isRoaming": false
   },
