@@ -1085,5 +1085,11 @@
     },
     "isRoaming": false
   },
-  "servalcorner": { "presets": { "home": { "pan": 39.61, "tilt": -6.82, "zoom": 1, "focus": 7006 }, "left": { "pan": 24.32, "tilt": -6.08, "zoom": 1, "focus": 7006 } } }
+  "servalcorner": {
+    "presets": {
+      "home": { "pan": 39.61, "tilt": -6.82, "zoom": 1, "focus": 7006 },
+      "left": { "pan": 24.32, "tilt": -6.08, "zoom": 1, "focus": 7006 },
+      "right": { "pan": 78.7, "tilt": -14.76, "zoom": 1, "focus": 7006 }
+    }
+  }
 }
