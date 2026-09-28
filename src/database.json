@@ -993,7 +993,8 @@
     "presets": {
       "home": { "pan": -35.29, "tilt": -7.68, "zoom": 1, "focus": 9450 },
       "leftfar": { "pan": -50.42, "tilt": -3.81, "zoom": 813, "focus": 7224 },
-      "ball": { "pan": -44.68, "tilt": -7.35, "zoom": 1096, "focus": 7772 }
+      "ball": { "pan": -44.68, "tilt": -7.35, "zoom": 1096, "focus": 7772 },
+      "down": { "pan": -33.76, "tilt": -37.33, "zoom": 1, "focus": 9825 }
     },
     "isRoaming": false,
     "speed": "65"
