@@ -994,14 +994,14 @@
       "home": { "pan": -35.29, "tilt": -7.68, "zoom": 1, "focus": 9450 },
       "leftfar": { "pan": -51.1, "tilt": -3.4, "zoom": 813, "focus": 7444 },
       "ball": { "pan": -44.68, "tilt": -7.34, "zoom": 1096, "focus": 7987 },
+      "pond": { "pan": 7.23, "tilt": -21.12, "zoom": 117, "focus": 9999 },
+      "trainingplatform": { "pan": -59.76, "tilt": -8.77, "zoom": 813, "focus": 6896 },
       "downleft": { "pan": -73.38, "tilt": -44.94, "zoom": 1, "focus": 9825 },
       "downright": { "pan": 8.47, "tilt": -42.01, "zoom": 1, "focus": 9888 },
       "down": { "pan": -33.76, "tilt": -37.33, "zoom": 1, "focus": 9825 },
       "below": { "pan": -47.75, "tilt": -78.21, "zoom": 1, "focus": 9950 },
       "middleplatforms": { "pan": -33.53, "tilt": -4.23, "zoom": 325, "focus": 6932 },
-      "pond": { "pan": 7.23, "tilt": -21.12, "zoom": 117, "focus": 9999 },
-      "right": { "pan": 7.23, "tilt": -21.12, "zoom": 1, "focus": 9450 },
-      "trainingplatform": { "pan": -59.76, "tilt": -8.77, "zoom": 813, "focus": 6896 }
+      "right": { "pan": 7.23, "tilt": -21.12, "zoom": 1, "focus": 9450 }
     },
     "isRoaming": false,
     "speed": "65"
