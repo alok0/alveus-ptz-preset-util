@@ -999,7 +999,8 @@
       "down": { "pan": -33.76, "tilt": -37.33, "zoom": 1, "focus": 9825 },
       "below": { "pan": -47.75, "tilt": -78.21, "zoom": 1, "focus": 9950 },
       "middleplatforms": { "pan": -33.53, "tilt": -4.23, "zoom": 325, "focus": 6932 },
-      "pond": { "pan": 7.23, "tilt": -21.12, "zoom": 117, "focus": 9999 }
+      "pond": { "pan": 7.23, "tilt": -21.12, "zoom": 117, "focus": 9999 },
+      "right": { "pan": 7.23, "tilt": -21.12, "zoom": 1, "focus": 9450 }
     },
     "isRoaming": false,
     "speed": "65"
