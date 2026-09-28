@@ -18,6 +18,8 @@ import pasture_pano from "./pasture_pano.webp";
 import pasturelower_pano from "./pasturelower_pano.webp";
 import pushin_pano from "./pushin_pano.webp";
 import pushout_pano from "./pushout_pano.webp";
+import serval_pano from "./serval_pano.webp";
+import servalcorner_pano from "./servalcorner_pano.webp";
 import servalindoor_pano from "./servalindoor_pano.webp";
 import toast_pano from "./toast_pano.webp";
 import wolf_pano from "./wolf_pano.webp";
@@ -43,6 +45,8 @@ const images: Record<CamType, string | null> = {
   pushpop: pushout_pano,
   pushpopindoor: pushin_pano,
   servalindoor: servalindoor_pano,
+  servalcorner: servalcorner_pano,
+  serval: serval_pano,
   toast: toast_pano,
   wolf: wolf_pano,
   wolfcorner: wolfcorner_pano,
@@ -56,8 +60,6 @@ const images: Record<CamType, string | null> = {
   marty: null,
   patchy: null,
   event: null,
-  serval: null,
-  servalcorner: null,
 };
 
 export const getImage = (name: CamType) => {
