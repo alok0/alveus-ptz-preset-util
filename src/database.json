@@ -992,7 +992,7 @@
   "serval": {
     "presets": {
       "home": { "pan": -35.29, "tilt": -7.68, "zoom": 1, "focus": 9450 },
-      "leftfar": { "pan": -50.42, "tilt": -3.81, "zoom": 813, "focus": 7224 },
+      "leftfar": { "pan": -51.1, "tilt": -3.4, "zoom": 813, "focus": 7444 },
       "ball": { "pan": -44.68, "tilt": -7.34, "zoom": 1096, "focus": 7987 },
       "downleft": { "pan": -73.38, "tilt": -44.94, "zoom": 1, "focus": 9825 },
       "downright": { "pan": 8.47, "tilt": -42.01, "zoom": 1, "focus": 9888 },
