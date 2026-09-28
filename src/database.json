@@ -1109,7 +1109,8 @@
       "right": { "pan": 78.69, "tilt": -14.76, "zoom": 1, "focus": 3754 },
       "farleftcorner": { "pan": 5.53, "tilt": -2.76, "zoom": 2412, "focus": 7503 },
       "downleft": { "pan": 33.61, "tilt": -39.6, "zoom": 1, "focus": 1 },
-      "down": { "pan": 77.16, "tilt": -35.45, "zoom": 1, "focus": 1 }
+      "down": { "pan": 77.16, "tilt": -35.45, "zoom": 1, "focus": 1 },
+      "downright": { "pan": 152.89, "tilt": -38.88, "zoom": 1, "focus": 1 }
     }
   }
 }
