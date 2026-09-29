@@ -1119,7 +1119,8 @@
       "glasswall": { "pan": 39.5, "tilt": -2.24, "zoom": 1458, "focus": 7331 },
       "trainingplatform": { "pan": 31.81, "tilt": -1.36, "zoom": 2359, "focus": 7726 },
       "pond": { "pan": 31.82, "tilt": -2.82, "zoom": 2359, "focus": 7578 },
-      "leftmiddle": { "pan": 7.56, "tilt": -5.71, "zoom": 1140, "focus": 6710 }
+      "leftmiddle": { "pan": 7.56, "tilt": -5.71, "zoom": 1140, "focus": 6710 },
+      "fenceright": { "pan": 125.34, "tilt": -22.75, "zoom": 1, "focus": 1 }
     }
   }
 }
