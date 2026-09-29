@@ -39,6 +39,22 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
     "a-ot-tokendata",
     null,
   );
+  const [initialTokenData, setInitialTokenData] = useState<AccessToken | null>(
+    null,
+  );
+  useEffect(() => {
+    queueMicrotask(() =>
+      setInitialTokenData((prev) => {
+        if (prev) {
+          return prev;
+        }
+        if (tokenData) {
+          return tokenData;
+        }
+        return null;
+      }),
+    );
+  }, [tokenData]);
   const [userId, setUserId] = useState<string | null>(null);
   const [failure, setFailure] = useState("");
 
@@ -51,17 +67,17 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
       setTokenData(newTokenData);
       setFailure("");
     });
-    if (!tokenData) {
+    if (!initialTokenData) {
       queueMicrotask(() => setFailure("missing token"));
       return null;
     }
     void p
-      .addUserForToken(tokenData, ["chat"])
+      .addUserForToken(initialTokenData, ["chat"])
       .then((userId) => setUserId(userId));
 
     queueMicrotask(() => setFailure(""));
     return p;
-  }, [clientId, clientSecret, setTokenData, tokenData]);
+  }, [clientId, clientSecret, setTokenData, initialTokenData]);
 
   const [apiClient, setApiClient] = useState<ApiClient | null>(null);
   const [self, setSelf] = useState<HelixUser | null>(null);
@@ -85,6 +101,7 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
   const [chatConnected, setChatConnected] = useState(false);
   const [chatClient, setChatClient] = useState<ChatClient | null>(null);
   useEffect(() => {
+    let cancelled = false;
     if (!authProvider || !apiClient || !self) {
       return;
     }
@@ -107,9 +124,20 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
         return [channelInfo.name];
       },
     });
-    c.onConnect(() => console.log("chat connected"));
+    c.onConnect(() => {
+      console.log("chat connected");
+      if (cancelled) {
+        c.quit();
+        return;
+      }
+    });
     c.onAuthenticationSuccess(() => {
       console.log("chat authenticated");
+      if (cancelled) {
+        c.quit();
+        return;
+      }
+      setChatClient(c);
     });
     c.onAuthenticationFailure((text) => {
       console.log("chat auth failed", text);
@@ -118,18 +146,27 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
       console.log("chat disconnected", manually, err);
     });
     c.connect();
-    queueMicrotask(() => setChatClient(c));
 
     const handle = setInterval(() => {
       setChatConnected(c.isConnected);
     }, 1000);
 
     return () => {
+      cancelled = true;
       clearInterval(handle);
-      c.quit();
-      setChatClient(null);
+      setChatConnected(false);
     };
   }, [apiClient, authProvider, self]);
+
+  useEffect(() => {
+    // disconnect chat client only after it has been replaced
+    if (!chatClient) {
+      return;
+    }
+    return () => {
+      chatClient.quit();
+    };
+  }, [chatClient]);
 
   const value = useMemo(() => {
     return {
@@ -183,6 +220,7 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
         );
 
         setTokenData(tokenData);
+        setInitialTokenData(tokenData);
       }
     })();
   }, [clientId, clientSecret, setTokenData]);
