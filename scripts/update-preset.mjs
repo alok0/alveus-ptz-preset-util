@@ -79,5 +79,10 @@ void (async () => {
     { stdio: "inherit", cwd: root },
   );
 
+  execFileSync("yarn", ["run", "create-completion-data"], {
+    stdio: "inherit",
+    cwd: root,
+  });
+
   process.exit(0);
 })();
