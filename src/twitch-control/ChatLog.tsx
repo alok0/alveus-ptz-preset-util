@@ -1,21 +1,7 @@
 import { Box, Typography } from "@mui/material";
+import { ChatMessage } from "@twurple/chat";
 import React, { useEffect, useRef, useState } from "react";
 import { useTwitch } from "./TwitchApiContext";
-import { channel } from "./constants";
-
-interface ChatMessage {
-  messageType: string;
-  broadcasterId: string;
-  broadcasterName: string;
-  broadcasterDisplayName: string;
-  chatterId: string;
-  chatterName: string;
-  chatterDisplayName: string;
-  color: string | null;
-  messageId: string;
-  messageText: string;
-  badges: Record<string, string>;
-}
 interface LogEntry {
   message: ChatMessage;
   time: Date;
@@ -23,7 +9,7 @@ interface LogEntry {
 
 const ChatLogLine: React.FC<{ entry: LogEntry }> = ({ entry }) => {
   const { message, time } = entry;
-  const color = message.color || "#000";
+  const color = message.userInfo.color || "#000";
 
   return (
     <React.Fragment>
@@ -45,20 +31,18 @@ const ChatLogLine: React.FC<{ entry: LogEntry }> = ({ entry }) => {
             textOverflow: "ellipsis",
           }}
         >
-          {message.badges["moderator"] || message.badges["lead_moderator"]
+          {message.userInfo.isMod || message.userInfo.isLeadMod
             ? "@"
-            : message.badges["staff"]
-              ? "~"
-              : message.badges["vip"]
-                ? "+"
-                : " "}
-          {message.chatterName.toLocaleLowerCase() ===
-          message.chatterDisplayName.toLocaleLowerCase()
-            ? message.chatterDisplayName
-            : message.chatterName}
+            : message.userInfo.isVip
+              ? "+"
+              : " "}
+          {message.userInfo.userName.toLocaleLowerCase() ===
+          message.userInfo.displayName.toLocaleLowerCase()
+            ? message.userInfo.displayName
+            : message.userInfo.userName}
         </div>
       </span>{" "}
-      {message.messageText}
+      {message.text}
       {"\n"}
     </React.Fragment>
   );
@@ -66,35 +50,30 @@ const ChatLogLine: React.FC<{ entry: LogEntry }> = ({ entry }) => {
 
 export const ChatLog: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
-  const { eventSubListener, self } = useTwitch();
+  const { chatClient } = useTwitch();
   const [logs, setLogs] = useState<LogEntry[]>([]);
 
   useEffect(() => {
     let handle: number;
-    if (!eventSubListener || !self) {
+    if (!chatClient) {
       return;
     }
 
-    const subscription = eventSubListener.onChannelChatMessage(
-      channel,
-      self,
-      (data) => {
-        setLogs((logs) => {
-          handle = window.setTimeout(() => {
-            ref.current?.scrollIntoView({ behavior: "smooth" });
-          }, 0);
-          return [...logs, { message: data, time: new Date() }].slice(-500);
-        });
-      },
-    );
+    chatClient.onMessage((_channel, _user, _text, message) => {
+      setLogs((logs) => {
+        handle = window.setTimeout(() => {
+          ref.current?.scrollIntoView({ behavior: "smooth" });
+        }, 0);
+        return [...logs, { message, time: new Date() }].slice(-500);
+      });
+    });
 
     return () => {
-      subscription.stop();
       if (handle) {
         clearTimeout(handle);
       }
     };
-  }, [eventSubListener, self]);
+  }, [chatClient]);
 
   useEffect(() => {
     // scroll log to bottom when page comes back into the foreground
@@ -120,7 +99,7 @@ export const ChatLog: React.FC = () => {
         sx={{ whiteSpace: "pre-wrap", wordBreak: "break-word" }}
       >
         {logs.map((entry) => (
-          <ChatLogLine entry={entry} key={entry.message.messageId} />
+          <ChatLogLine entry={entry} key={entry.message.id} />
         ))}
       </Typography>
       <div ref={ref} />

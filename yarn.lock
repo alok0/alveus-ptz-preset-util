@@ -235,10 +235,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@d-fischer/deprecate@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@d-fischer/deprecate@npm:2.0.2"
+  checksum: 10c0/1ebcce7e167e8f251fc31833d8b15f581dde6286c6e4095f049fceab9017130496fe5830b75d44e682e37d469df73d6e10e24ae035755a74b8d5dbcfcd793b66
+  languageName: node
+  linkType: hard
+
 "@d-fischer/detect-node@npm:^3.0.1":
   version: 3.0.1
   resolution: "@d-fischer/detect-node@npm:3.0.1"
   checksum: 10c0/5d318300fa893e86f8df733e2a74a54ba584d491eda2a9db31eccd399bbec13b65823f5392f1015ce4c84e7803152a5f93a9e3e737cf272be6eadb3aa6bd32e0
+  languageName: node
+  linkType: hard
+
+"@d-fischer/escape-string-regexp@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@d-fischer/escape-string-regexp@npm:5.0.0"
+  checksum: 10c0/c8314dd69acec464951572b2e7e85f3a3d64a7f2f57b757638a8b541daad07ad59bf2724505d99476611ba540c80ac120df3a974b8c50e4d5025c717f7add556
   languageName: node
   linkType: hard
 
@@ -1466,6 +1480,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@twurple/chat@npm:8.2.0":
+  version: 8.2.0
+  resolution: "@twurple/chat@npm:8.2.0"
+  dependencies:
+    "@d-fischer/cache-decorators": "npm:^4.0.0"
+    "@d-fischer/deprecate": "npm:^2.0.2"
+    "@d-fischer/logger": "npm:^4.2.1"
+    "@d-fischer/rate-limiter": "npm:^1.1.0"
+    "@d-fischer/shared-utils": "npm:^3.6.1"
+    "@d-fischer/typed-event-emitter": "npm:^3.3.3"
+    "@twurple/common": "npm:8.2.0"
+    ircv3: "npm:^0.33.0"
+    tslib: "npm:^2.0.3"
+  peerDependencies:
+    "@twurple/auth": 8.2.0
+  checksum: 10c0/bf73124aecd20d74776b087abdc760fe6061813fee680b7254ab6e006371f89cdbae31a1bd626ae7f1337a46346d1806a0aac8e383b88bf1b5c816e6fece1337
+  languageName: node
+  linkType: hard
+
 "@twurple/common@npm:8.2.0":
   version: 8.2.0
   resolution: "@twurple/common@npm:8.2.0"
@@ -1823,6 +1856,7 @@ __metadata:
     "@tsconfig/vite-react": "npm:8.1.1"
     "@twurple/api": "npm:8.2.0"
     "@twurple/auth": "npm:8.2.0"
+    "@twurple/chat": "npm:8.2.0"
     "@twurple/eventsub-ws": "npm:8.2.0"
     "@types/eslint-plugin-jsx-a11y": "npm:6.10.1"
     "@types/eslint-plugin-promise": "npm:7.3.0"
@@ -3290,6 +3324,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ircv3@npm:^0.33.0":
+  version: 0.33.1
+  resolution: "ircv3@npm:0.33.1"
+  dependencies:
+    "@d-fischer/connection": "npm:^10.0.1"
+    "@d-fischer/escape-string-regexp": "npm:^5.0.0"
+    "@d-fischer/logger": "npm:^4.2.1"
+    "@d-fischer/shared-utils": "npm:^3.5.0"
+    "@d-fischer/typed-event-emitter": "npm:^3.3.0"
+    klona: "npm:^2.0.5"
+    tslib: "npm:^2.4.1"
+  checksum: 10c0/cada929536a3d4f9a5bd6ef8a35353425a8baa4a62bb25a019395087a2679afa2c1b67e04bec0508698326194e0847c2883d434e8de3586d27aecc49da1b2c44
+  languageName: node
+  linkType: hard
+
 "is-array-buffer@npm:^3.0.4, is-array-buffer@npm:^3.0.5":
   version: 3.0.5
   resolution: "is-array-buffer@npm:3.0.5"
@@ -3647,7 +3696,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"klona@npm:^2.0.4":
+"klona@npm:^2.0.4, klona@npm:^2.0.5":
   version: 2.0.6
   resolution: "klona@npm:2.0.6"
   checksum: 10c0/94eed2c6c2ce99f409df9186a96340558897b3e62a85afdc1ee39103954d2ebe1c1c4e9fe2b0952771771fa96d70055ede8b27962a7021406374fdb695fd4d01

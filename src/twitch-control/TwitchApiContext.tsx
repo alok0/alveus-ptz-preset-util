@@ -4,9 +4,10 @@ import {
   RefreshingAuthProvider,
   type AccessToken,
 } from "@twurple/auth";
-import { EventSubWsListener } from "@twurple/eventsub-ws";
+import { ChatClient } from "@twurple/chat";
 import React, { useContext, useEffect, useMemo, useState } from "react";
 import { useLocalStorage } from "usehooks-ts";
+import { channel } from "./constants";
 
 const TwitchApiContext = React.createContext<{
   clientId: string;
@@ -14,10 +15,10 @@ const TwitchApiContext = React.createContext<{
   clientSecret: string;
   setClientSecret: React.Dispatch<React.SetStateAction<string>>;
   failure: string;
-  websocketFailure: string;
   authProvider: RefreshingAuthProvider | null;
   apiClient: ApiClient | null;
-  eventSubListener: EventSubWsListener | null;
+  chatClient: ChatClient | null;
+  chatConnected: boolean;
   self: HelixUser | null;
 } | null>(null);
 
@@ -54,7 +55,9 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
       queueMicrotask(() => setFailure("missing token"));
       return null;
     }
-    void p.addUserForToken(tokenData).then((userId) => setUserId(userId));
+    void p
+      .addUserForToken(tokenData, ["chat"])
+      .then((userId) => setUserId(userId));
 
     queueMicrotask(() => setFailure(""));
     return p;
@@ -79,46 +82,54 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
     };
   }, [authProvider, userId]);
 
-  const [websocketFailure, setWebsocketFailure] = useState(
-    "websocket initializing...",
-  );
-  const [eventSubListener, setEventSubListener] =
-    useState<EventSubWsListener | null>(null);
+  const [chatConnected, setChatConnected] = useState(false);
+  const [chatClient, setChatClient] = useState<ChatClient | null>(null);
   useEffect(() => {
-    if (!apiClient) {
+    if (!authProvider || !apiClient || !self) {
       return;
     }
-
-    const listener = new EventSubWsListener({
-      apiClient,
+    const c = new ChatClient({
+      authProvider,
       logger: {
-        name: "eventsub",
+        name: "chat",
         minLevel: "INFO",
         colors: true,
         emoji: true,
-        timestamps: true,
+      },
+      rejoinChannelsOnReconnect: true,
+      requestMembershipEvents: false,
+      webSocket: true,
+      channels: async () => {
+        const channelInfo = await apiClient.users.getUserById(channel);
+        if (!channelInfo) {
+          throw new Error("unable to find user " + channel);
+        }
+        return [channelInfo.name];
       },
     });
-    listener.onUserSocketConnect((userId) => {
-      console.info(`websocket connected ${userId}`);
-      queueMicrotask(() => setWebsocketFailure(""));
+    c.onConnect(() => console.log("chat connected"));
+    c.onAuthenticationSuccess(() => {
+      console.log("chat authenticated");
     });
-    listener.onUserSocketDisconnect((userId, err) => {
-      console.info(`websocket disconnected ${userId} ${err}`, err);
-      queueMicrotask(() => {
-        if (!listener.isActive) {
-          setWebsocketFailure(String(err || "unknown websocket error"));
-        }
-      });
+    c.onAuthenticationFailure((text) => {
+      console.log("chat auth failed", text);
     });
-    listener.start();
-    queueMicrotask(() => setEventSubListener(listener));
+    c.onDisconnect((manually, err) => {
+      console.log("chat disconnected", manually, err);
+    });
+    c.connect();
+    queueMicrotask(() => setChatClient(c));
+
+    const handle = setInterval(() => {
+      setChatConnected(c.isConnected);
+    }, 1000);
 
     return () => {
-      setEventSubListener(null);
-      listener.stop();
+      clearInterval(handle);
+      c.quit();
+      setChatClient(null);
     };
-  }, [apiClient]);
+  }, [apiClient, authProvider, self]);
 
   const value = useMemo(() => {
     return {
@@ -127,10 +138,10 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
       clientSecret,
       setClientSecret,
       failure,
-      websocketFailure,
       authProvider,
       apiClient,
-      eventSubListener,
+      chatClient,
+      chatConnected,
       self,
     };
   }, [
@@ -139,10 +150,10 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
     clientSecret,
     setClientSecret,
     failure,
-    websocketFailure,
     authProvider,
     apiClient,
-    eventSubListener,
+    chatClient,
+    chatConnected,
     self,
   ]);
 

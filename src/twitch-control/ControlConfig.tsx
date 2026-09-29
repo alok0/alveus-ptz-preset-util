@@ -106,20 +106,22 @@ const ControlConfigDialogContent: React.FC<{ onClose: () => unknown }> = ({
 
 export const ControlConfig: React.FC = () => {
   const [open, setOpen] = useState(false);
-  const { failure, websocketFailure, self } = useTwitch();
+  const { failure, chatConnected, self } = useTwitch();
 
   return (
     <>
       <Tooltip
         title={
-          failure ||
-          websocketFailure ||
-          (self ? `Logged in (${self.name})` : undefined)
+          failure || !chatConnected
+            ? "Chat not connected"
+            : self
+              ? `Logged in (${self.name})`
+              : undefined
         }
       >
         <IconButton
           size="small"
-          color={failure || websocketFailure ? "warning" : undefined}
+          color={failure || !chatConnected ? "warning" : undefined}
           onClick={() => setOpen(true)}
         >
           <AccountBoxIcon />
