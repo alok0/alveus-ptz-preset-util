@@ -1,3 +1,4 @@
+import { useQuery } from "@tanstack/react-query";
 import { ApiClient, HelixUser } from "@twurple/api";
 import {
   exchangeCode,
@@ -19,7 +20,7 @@ const TwitchApiContext = React.createContext<{
   apiClient: ApiClient | null;
   chatClient: ChatClient | null;
   chatConnected: boolean;
-  self: HelixUser | null;
+  self: HelixUser | null | undefined;
 } | null>(null);
 
 export const useTwitch = () => {
@@ -55,54 +56,72 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
       }),
     );
   }, [tokenData]);
-  const [userId, setUserId] = useState<string | null>(null);
   const [failure, setFailure] = useState("");
 
-  const authProvider = useMemo(() => {
-    const p = new RefreshingAuthProvider({ clientId, clientSecret });
-    p.onRefreshFailure((_, err) => {
-      setFailure(String(err));
-    });
-    p.onRefresh((_, newTokenData) => {
-      setTokenData(newTokenData);
+  const {
+    data: [authProvider, userId, apiClient],
+  } = useQuery({
+    queryKey: ["api-client-stack", initialTokenData],
+    retry: 100,
+    retryDelay: 3_000,
+    staleTime: (q) => {
+      if (!q.state.data?.[0] || !q.state.data?.[1] || !q.state.data?.[2]) {
+        return 0;
+      }
+      return Infinity;
+    },
+    gcTime: 1000,
+    initialData: [null, null, null] as const,
+    queryFn: async (): Promise<
+      [RefreshingAuthProvider | null, string | null, ApiClient | null]
+    > => {
+      const p = new RefreshingAuthProvider({ clientId, clientSecret });
+      p.onRefreshFailure((_, err) => {
+        setFailure(String(err));
+      });
+      p.onRefresh((_, newTokenData) => {
+        setTokenData(newTokenData);
+        setFailure("");
+      });
+      if (!initialTokenData) {
+        setFailure("missing token");
+        throw new Error("missing token");
+      }
+      const userId = await p.addUserForToken(initialTokenData, ["chat"]);
       setFailure("");
-    });
-    if (!initialTokenData) {
-      queueMicrotask(() => setFailure("missing token"));
-      return null;
-    }
-    void p
-      .addUserForToken(initialTokenData, ["chat"])
-      .then((userId) => setUserId(userId));
 
-    queueMicrotask(() => setFailure(""));
-    return p;
-  }, [clientId, clientSecret, setTokenData, initialTokenData]);
+      const client = new ApiClient({ authProvider: p });
 
-  const [apiClient, setApiClient] = useState<ApiClient | null>(null);
-  const [self, setSelf] = useState<HelixUser | null>(null);
-  useEffect(() => {
-    if (!authProvider || !userId) {
-      return;
-    }
-    void (async () => {
-      const client = new ApiClient({ authProvider });
-      setApiClient(client);
+      return [p, userId, client] as const;
+    },
+  });
 
-      const userInfo = await client.users.getUserById(userId);
-      setSelf(userInfo);
-    })();
-    return () => {
-      setSelf(null);
-      setApiClient(null);
-    };
-  }, [authProvider, userId]);
+  const { data: self } = useQuery({
+    queryKey: ["self", userId],
+    enabled: !!(apiClient && userId),
+    staleTime: 60_000,
+    gcTime: 60_000,
+    refetchInterval: 60_000,
+    refetchIntervalInBackground: false,
+    refetchOnMount: true,
+    refetchOnReconnect: true,
+    refetchOnWindowFocus: true,
+    queryFn: async () => {
+      if (!apiClient) {
+        throw new Error("missing api client");
+      }
+      if (!userId) {
+        throw new Error("missing user id");
+      }
+      return apiClient.users.getUserById(userId);
+    },
+  });
 
   const [chatConnected, setChatConnected] = useState(false);
   const [chatClient, setChatClient] = useState<ChatClient | null>(null);
   useEffect(() => {
     let cancelled = false;
-    if (!authProvider || !apiClient || !self) {
+    if (!authProvider || !apiClient) {
       return;
     }
     const c = new ChatClient({
@@ -156,7 +175,7 @@ export const TwitchApiContextProvider: React.FC<React.PropsWithChildren> = ({
       clearInterval(handle);
       setChatConnected(false);
     };
-  }, [apiClient, authProvider, self]);
+  }, [apiClient, authProvider]);
 
   useEffect(() => {
     // disconnect chat client only after it has been replaced
