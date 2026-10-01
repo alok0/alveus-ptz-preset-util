@@ -10,6 +10,7 @@ import { NavWrapper } from "./Nav";
 import { theme } from "./theme";
 import "./twitch-control/incoming-auth";
 import { ZoomVisual } from "./ZoomVisual";
+import { useDevModeState } from "./dev-mode";
 
 const ControlChatMain = React.lazy(
   () => import("./twitch-control/ControlChatMain"),
@@ -56,6 +57,7 @@ const ErrorFallback: React.FC<FallbackProps> = ({ error }) => {
 };
 
 export const App = () => {
+  const [devMode] = useDevModeState();
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Router hook={useHashLocation}>
@@ -66,7 +68,9 @@ export const App = () => {
                 <Route path="/cam" component={AppMain} />
                 <Route path="/zoom-visual" component={ZoomVisual} />
                 <Route path="/chin-cams" component={ChinCams} />
-                <Route path="/chat-control" component={ControlChatMain} />
+                {devMode && (
+                  <Route path="/chat-control" component={ControlChatMain} />
+                )}
                 <Route>
                   {/* fallback */}
                   <AppMain />
