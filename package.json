@@ -25,7 +25,6 @@
     "@mdi/js": "7.4.47",
     "@mui/icons-material": "9.4.0",
     "@mui/material": "9.4.0",
-    "@tanstack/react-hotkeys": "0.11.0",
     "@tanstack/react-query": "5.104.0",
     "@twurple/api": "8.2.0",
     "@twurple/auth": "8.2.0",

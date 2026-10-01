@@ -1,6 +1,8 @@
 import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 import {
+  Box,
   Dialog,
+  DialogActions,
   DialogContent,
   DialogContentText,
   DialogTitle,
@@ -8,7 +10,7 @@ import {
   Tooltip,
 } from "@mui/material";
 import { useState } from "react";
-import { DevModeHotkey } from "./dev-mode";
+import { ChallengeLogin } from "./ChallengeLogin";
 
 export const InfoBox: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -35,7 +37,6 @@ export const InfoBox: React.FC = () => {
           setOpen(false);
         }}
       >
-        <DevModeHotkey />
         <DialogTitle>alveus-ptz-preset-util</DialogTitle>
         <DialogContent>
           <DialogContentText>
@@ -50,14 +51,19 @@ export const InfoBox: React.FC = () => {
         <DialogTitle>Caveats</DialogTitle>
         <DialogContent>
           <DialogContentText component="ul">
-            <li>The preset data is out of date</li>
-            <li>The images suck</li>
+            <li>The preset data might be out of date</li>
+            <li>The images are not great</li>
             <li>
               Zoom diagram is not "to scale" because zoom appears to vary
               depending on camera model and current zoom level
             </li>
           </DialogContentText>
         </DialogContent>
+
+        <DialogActions>
+          <ChallengeLogin />
+          <Box sx={{ flexGrow: 1 }} />
+        </DialogActions>
       </Dialog>
     </>
   );

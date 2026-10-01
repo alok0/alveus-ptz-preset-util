@@ -1379,32 +1379,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/hotkeys@npm:0.9.0":
-  version: 0.9.0
-  resolution: "@tanstack/hotkeys@npm:0.9.0"
-  dependencies:
-    "@tanstack/store": "npm:^0.11.0"
-  checksum: 10c0/9131cef20887362a90803cfa620e8c8d12fe5b9a198aa39591253277a65142bb412b6e8c66b5270cb2330cdbde7704ec10d147b2acb2136e64153b70e0997e69
-  languageName: node
-  linkType: hard
-
 "@tanstack/query-core@npm:5.104.0":
   version: 5.104.0
   resolution: "@tanstack/query-core@npm:5.104.0"
   checksum: 10c0/e080454f308dc41bf0e52e46aac455af3112f454519d369740aacaec4d260a3bfddde569204908ff7a6e1b1b84f8e065e0ac1375555e2bc1b023d398c0b44f96
-  languageName: node
-  linkType: hard
-
-"@tanstack/react-hotkeys@npm:0.11.0":
-  version: 0.11.0
-  resolution: "@tanstack/react-hotkeys@npm:0.11.0"
-  dependencies:
-    "@tanstack/hotkeys": "npm:0.9.0"
-    "@tanstack/react-store": "npm:^0.11.0"
-  peerDependencies:
-    react: ">=16.8"
-    react-dom: ">=16.8"
-  checksum: 10c0/d196698cbbcd11969ac61dbe5e41b0d9fea098237805367ebe8dfda51e060887e5ec1a26ba4d4e0e290e1d6e96ba255c847bf40a7f652e0e206ffc605f3c07ca
   languageName: node
   linkType: hard
 
@@ -1416,26 +1394,6 @@ __metadata:
   peerDependencies:
     react: ^18 || ^19
   checksum: 10c0/efcf6328c95847c99e4b41c6e68f74d303b8e9eef673473648643dd2fcc8d9d3368223f27a4e510526f3fa3fd5508554e804141a67a9cf37c90842f8639cb430
-  languageName: node
-  linkType: hard
-
-"@tanstack/react-store@npm:^0.11.0":
-  version: 0.11.1
-  resolution: "@tanstack/react-store@npm:0.11.1"
-  dependencies:
-    "@tanstack/store": "npm:0.11.1"
-    use-sync-external-store: "npm:^1.6.0"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/9b43ea1b07cfed9100b9d037a339e6dbef17ff8e7fd4b8968ef76b75c97a20ec3627345adca94135664d6fccd88f48622e1e871c64738ff2f0b0ce24ce365dfd
-  languageName: node
-  linkType: hard
-
-"@tanstack/store@npm:0.11.1, @tanstack/store@npm:^0.11.0":
-  version: 0.11.1
-  resolution: "@tanstack/store@npm:0.11.1"
-  checksum: 10c0/36e308f3a5037a4d79e2b2ea9f6f4015a617fcd7cb8ff541fe50869b015fb8753b267a8c24709ad197c4c3b5fd85207edc4f71eccaf9b0d311f62336a9cf7764
   languageName: node
   linkType: hard
 
@@ -1869,7 +1827,6 @@ __metadata:
     "@mdi/js": "npm:7.4.47"
     "@mui/icons-material": "npm:9.4.0"
     "@mui/material": "npm:9.4.0"
-    "@tanstack/react-hotkeys": "npm:0.11.0"
     "@tanstack/react-query": "npm:5.104.0"
     "@tsconfig/strictest": "npm:2.0.8"
     "@tsconfig/vite-react": "npm:8.1.1"
@@ -5049,7 +5006,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-sync-external-store@npm:^1.0.0, use-sync-external-store@npm:^1.6.0":
+"use-sync-external-store@npm:^1.0.0":
   version: 1.7.0
   resolution: "use-sync-external-store@npm:1.7.0"
   peerDependencies:

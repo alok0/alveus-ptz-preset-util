@@ -42,7 +42,7 @@ export const NavWrapper: React.FC<PropsWithChildren> = ({ children }) => {
 
 const CustomNavItem: React.FC<{
   href: string;
-  title: string;
+  title: React.ReactNode;
   onClose?: undefined | (() => unknown);
 }> = ({ href, title, onClose }) => {
   const [match] = useRoute(href);
@@ -74,7 +74,7 @@ const MenuContent: React.FC<{
       {showHidden && (
         <CustomNavItem
           href="/chat-control"
-          title="Chat Control"
+          title="Control (beta)"
           onClose={onClose}
         />
       )}
