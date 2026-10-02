@@ -1006,7 +1006,8 @@
       "nearplatform": { "pan": -11, "tilt": -9.76, "zoom": 356, "focus": 4685 },
       "scratchpost": { "pan": -10.39, "tilt": -18.42, "zoom": 736, "focus": 6753 },
       "vestibule": { "pan": -53.64, "tilt": -2.94, "zoom": 2030, "focus": 8325 },
-      "belowtrainingplatform": { "pan": -60.76, "tilt": -11.92, "zoom": 1878, "focus": 8036 }
+      "belowtrainingplatform": { "pan": -60.76, "tilt": -11.92, "zoom": 1878, "focus": 8036 },
+      "closecorner": { "pan": -134.59, "tilt": -57.15, "zoom": 1, "focus": 9950 }
     },
     "isRoaming": false,
     "speed": "65"
