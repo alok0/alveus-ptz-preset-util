@@ -1,12 +1,15 @@
 import {
   Box,
   Button,
+  Checkbox,
   CircularProgress,
   Dialog,
+  FormControlLabel,
   Modal,
   Paper,
   TextField,
 } from "@mui/material";
+import LensBlurIcon from "@mui/icons-material/LensBlur";
 import challange_image from "./challenge.svg";
 import { useRef, useState } from "react";
 import { useDevModeState } from "./dev-mode";
@@ -16,6 +19,9 @@ export const ChallengeLogin: React.FC = () => {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const [loading, setLoading] = useState(false);
+  const [checked, setChecked] = useState(false);
+  const [submitDisabled, setSubmitDisabled] = useState(true);
+
   return (
     <>
       <Button
@@ -132,9 +138,59 @@ export const ChallengeLogin: React.FC = () => {
                 sx={{ width: "30ch" }}
                 className="ina"
               />
+              <Paper
+                variant="outlined"
+                sx={{
+                  position: "relative",
+                  width: 300,
+                  height: 65,
+                  px: 1,
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+              >
+                <FormControlLabel
+                  control={<Checkbox size="large" />}
+                  onChange={() =>
+                    setChecked((v) => {
+                      const newValue = !v;
+                      if (newValue) {
+                        setTimeout(() => {
+                          setSubmitDisabled(false);
+                        }, 5_000);
+                      }
+                      return newValue;
+                    })
+                  }
+                  checked={checked}
+                  disabled={checked}
+                  label="Verify you are a cam op"
+                  slotProps={{
+                    typography: { sx: { fontFamily: "sans-serif" } },
+                  }}
+                />
+                <Box sx={{ flexGrow: 1 }} />
+                <LensBlurIcon fontSize="large" />
+                {checked && submitDisabled && (
+                  <Box
+                    sx={{
+                      backgroundColor: "#0007",
+                      position: "absolute",
+                      inset: 0,
+                      display: "grid",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <CircularProgress />
+                  </Box>
+                )}
+              </Paper>
               <Button
                 variant="contained"
                 sx={{ maxWidth: "30ch" }}
+                disabled={submitDisabled}
                 onClick={() => {
                   setLoading(true);
                   const result = JSON.stringify(
