@@ -60,7 +60,7 @@ export const InputBox: React.FC = () => {
       }),
     [],
   );
-  const lastMessageRef = useRef("");
+  const lastMessageRef = useRef({ text: "", time: 0 });
   const { apiClient, self } = useTwitch();
   const [displayValue, setDisplayValue] = useState("");
   const typedInputRef = useRef("");
@@ -154,8 +154,11 @@ export const InputBox: React.FC = () => {
             return;
           }
           appendHistory(newMessage);
-          if (lastMessageRef.current === newMessage) {
-            newMessage += "  .";
+          if (
+            lastMessageRef.current.text === newMessage &&
+            Date.now() - lastMessageRef.current.time < 32_000
+          ) {
+            newMessage += "  \u{2027}";
           }
           const result = await apiClient.asUser(self, (c) =>
             c.chat.sendChatMessage(channel, newMessage),
@@ -163,7 +166,7 @@ export const InputBox: React.FC = () => {
           if (!result.isSent) {
             throw new Error(`error sending message: ${JSON.stringify(result)}`);
           }
-          lastMessageRef.current = newMessage;
+          lastMessageRef.current = { text: newMessage, time: Date.now() };
         })();
       }}
     >
