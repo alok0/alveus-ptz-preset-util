@@ -1,16 +1,17 @@
-import { ThemeProvider } from "@mui/material";
+import { GlobalStyles, ThemeProvider } from "@mui/material";
+import { SnackbarProvider } from "notistack";
 import React, { useEffect, useMemo } from "react";
 import { ErrorBoundary, type FallbackProps } from "react-error-boundary";
 import { Route, Router, Switch, useLocation, useRoute } from "wouter";
 import { useHashLocation } from "wouter/use-hash-location";
 import { cams } from "./cams";
 import { ChinCams } from "./ChinCams";
+import { useDevModeState } from "./dev-mode";
 import { Map } from "./Map";
 import { NavWrapper } from "./Nav";
 import { theme } from "./theme";
 import "./twitch-control/incoming-auth";
 import { ZoomVisual } from "./ZoomVisual";
-import { useDevModeState } from "./dev-mode";
 
 const ControlChatMain = React.lazy(
   () => import("./twitch-control/ControlChatMain"),
@@ -62,22 +63,38 @@ export const App = () => {
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <Router hook={useHashLocation}>
         <ThemeProvider theme={theme}>
-          <NavWrapper>
-            <React.Suspense>
-              <Switch>
-                <Route path="/cam" component={AppMain} />
-                <Route path="/zoom-visual" component={ZoomVisual} />
-                <Route path="/chin-cams" component={ChinCams} />
-                {devMode && (
-                  <Route path="/chat-control" component={ControlChatMain} />
-                )}
-                <Route>
-                  {/* fallback */}
-                  <AppMain />
-                </Route>
-              </Switch>
-            </React.Suspense>
-          </NavWrapper>
+          <GlobalStyles
+            styles={(theme) => ({
+              ".containerRoot-noti": {
+                "& .notistack-MuiContent": {
+                  ...theme.typography.body1,
+                },
+              },
+            })}
+          />
+          <SnackbarProvider
+            classes={{ containerRoot: "containerRoot-noti" }}
+            anchorOrigin={{ vertical: "top", horizontal: "center" }}
+            maxSnack={1}
+            hideIconVariant
+          >
+            <NavWrapper>
+              <React.Suspense>
+                <Switch>
+                  <Route path="/cam" component={AppMain} />
+                  <Route path="/zoom-visual" component={ZoomVisual} />
+                  <Route path="/chin-cams" component={ChinCams} />
+                  {devMode && (
+                    <Route path="/chat-control" component={ControlChatMain} />
+                  )}
+                  <Route>
+                    {/* fallback */}
+                    <AppMain />
+                  </Route>
+                </Switch>
+              </React.Suspense>
+            </NavWrapper>
+          </SnackbarProvider>
         </ThemeProvider>
       </Router>
     </ErrorBoundary>

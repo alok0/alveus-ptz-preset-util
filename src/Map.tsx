@@ -1,4 +1,5 @@
 import { Paper, Popper, Typography } from "@mui/material";
+import { useSnackbar } from "notistack";
 import "pannellum";
 import "pannellum/build/pannellum.css";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -18,6 +19,8 @@ export const Map = ({ cam }: { cam: CamType }) => {
     ref: useMemo(() => ({ current: ref || document.body }), [ref]),
     onResize: useCallback(() => viewer?.resize(), [viewer]),
   });
+  const { enqueueSnackbar } = useSnackbar();
+
   const hotSpots = useMemo(
     () =>
       Object.entries(CamData.parse(database?.[cam]).presets)
@@ -180,6 +183,18 @@ export const Map = ({ cam }: { cam: CamType }) => {
         }}
         onMouseOut={() => {
           setCoord(null);
+        }}
+        onClick={() => {
+          void (async () => {
+            const hoveredData = hoveredPresets[0]?.data;
+            if (hoveredData) {
+              const cmdText = `!ptzload ${cam} ${hoveredData.name}`;
+              await window.navigator.clipboard.writeText(cmdText);
+              enqueueSnackbar(`Copied to clipboard: "${cmdText}"`, {
+                autoHideDuration: 2000,
+              });
+            }
+          })();
         }}
         sx={(theme) => ({
           gridArea: "CONTENT",
