@@ -720,7 +720,8 @@
       "milkweed": { "pan": 79.23, "tilt": -14.6, "zoom": 1610, "focus": 6091 },
       "milkweedtop": { "pan": 79.38, "tilt": -13.42, "zoom": 4425, "focus": 6300 },
       "stmp1": { "pan": -32.98, "tilt": -4.43, "zoom": 1318, "focus": 6508 },
-      "stmp2": { "pan": -26.97, "tilt": -3.78, "zoom": 1318, "focus": 6563 }
+      "stmp2": { "pan": -26.97, "tilt": -3.78, "zoom": 1318, "focus": 6563 },
+      "stmp3": { "pan": -18.93, "tilt": -2.94, "zoom": 1318, "focus": 6676 }
     },
     "isRoaming": false,
     "roamTime": "30",
