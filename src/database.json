@@ -723,7 +723,8 @@
       "stmp2": { "pan": -26.97, "tilt": -3.78, "zoom": 1318, "focus": 6563 },
       "stmp3": { "pan": -18.93, "tilt": -2.94, "zoom": 1318, "focus": 6676 },
       "stmp4": { "pan": -33.26, "tilt": -9.47, "zoom": 799, "focus": 5563 },
-      "stmp5": { "pan": -25.92, "tilt": -9, "zoom": 799, "focus": 5444 }
+      "stmp5": { "pan": -25.92, "tilt": -9, "zoom": 799, "focus": 5444 },
+      "stmp6": { "pan": -17.27, "tilt": -8.54, "zoom": 799, "focus": 6150 }
     },
     "isRoaming": false,
     "roamTime": "30",
