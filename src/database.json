@@ -718,7 +718,8 @@
       "tmp6": { "pan": 121, "tilt": -17.46, "zoom": 4395, "focus": 5271 },
       "haybagtmp": { "pan": -87.03, "tilt": -18.98, "zoom": 31, "focus": 938 },
       "milkweed": { "pan": 79.23, "tilt": -14.6, "zoom": 1610, "focus": 6091 },
-      "milkweedtop": { "pan": 79.38, "tilt": -13.42, "zoom": 4425, "focus": 6300 }
+      "milkweedtop": { "pan": 79.38, "tilt": -13.42, "zoom": 4425, "focus": 6300 },
+      "stmp1": { "pan": -32.98, "tilt": -4.43, "zoom": 1318, "focus": 6508 }
     },
     "isRoaming": false,
     "roamTime": "30",
