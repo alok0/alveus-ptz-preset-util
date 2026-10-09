@@ -6,7 +6,7 @@ import {
   type AccessToken,
 } from "@twurple/auth";
 import { ChatClient } from "@twurple/chat";
-import React, { useContext, useEffect, useMemo, useState } from "react";
+import React, { use, useEffect, useMemo, useState } from "react";
 import { useLocalStorage } from "usehooks-ts";
 import { channel } from "./constants";
 
@@ -24,7 +24,7 @@ const TwitchApiContext = React.createContext<{
 } | null>(null);
 
 export const useTwitch = () => {
-  const value = useContext(TwitchApiContext);
+  const value = use(TwitchApiContext);
   if (!value) {
     throw new Error("missing context");
   }

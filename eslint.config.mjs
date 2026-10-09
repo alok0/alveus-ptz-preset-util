@@ -52,7 +52,6 @@ export default defineConfig(
           "@typescript-eslint/no-unsafe-unary-minus": "warn",
 
           "react-hooks/preserve-manual-memoization": "off",
-          "@eslint-react/no-use-context": "off",
         },
       },
     ],
