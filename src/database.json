@@ -1016,7 +1016,8 @@
       "belowtrainingplatform": { "pan": -60.76, "tilt": -11.92, "zoom": 1878, "focus": 8036 },
       "closecorner": { "pan": -134.59, "tilt": -57.15, "zoom": 1, "focus": 9950 },
       "leftplatformz": { "pan": -45.81, "tilt": -0.83, "zoom": 10051, "focus": 8567 },
-      "left": { "pan": -51.09, "tilt": -3.4, "zoom": 150, "focus": 4749 }
+      "left": { "pan": -51.09, "tilt": -3.4, "zoom": 150, "focus": 4749 },
+      "belowshortplatform": { "pan": -49.24, "tilt": -5.31, "zoom": 4576, "focus": 8603 }
     },
     "isRoaming": false,
     "speed": "65"
