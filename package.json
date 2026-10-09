@@ -34,7 +34,7 @@
     "fuse.js": "7.5.0",
     "notistack": "3.0.2",
     "pannellum": "2.5.7",
-    "preact": "10.29.8",
+    "preact": "11.0.0",
     "react": "19.3.0",
     "react-error-boundary": "6.1.6",
     "usehooks-ts": "3.1.1",
