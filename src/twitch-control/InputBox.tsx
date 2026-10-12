@@ -1,9 +1,18 @@
-import { Box, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  InputAdornment,
+  TextField,
+  Tooltip,
+  Typography,
+} from "@mui/material";
 import Fuse, { type FuseResult } from "fuse.js";
 import { useCallback, useRef, useState } from "react";
 import { channel } from "./constants";
 import { fullCamList, fullPresetLists } from "./data/data";
 import { useTwitch } from "./TwitchApiContext";
+import { useCamsState } from "./useCamsState";
+import LinkedCameraIcon from "@mui/icons-material/LinkedCamera";
+import SyncProblemIcon from "@mui/icons-material/SyncProblem";
 
 const commands = new Fuse([
   "!ptzload",
@@ -25,10 +34,14 @@ const commands = new Fuse([
 
 const cams = new Fuse(fullCamList, { includeScore: true });
 
-const camSearch = (q: string) => {
+const camSearch = (q: string, promoteList?: (string | null | undefined)[]) => {
   const r = cams.search(q);
   const getNewScore = (i: FuseResult<string>): number => {
     const s = i.score || 1;
+    if (promoteList?.some((p) => p === i.item)) {
+      return s / 10;
+    }
+
     if (i.item.slice(0, 3) === q.slice(0, 3)) {
       return s / 3;
     }
@@ -48,6 +61,63 @@ const presetMatchers = Object.fromEntries(
   Object.entries(fullPresetLists).map(([k, v]) => [k, new Fuse(v)] as const),
 );
 
+const getCompletions = (
+  searchValue: string,
+  promoteList?: (string | null | undefined)[],
+) => {
+  if (!searchValue) {
+    return [];
+  }
+  const tokens = searchValue.trim().split(/\s+/);
+  if (tokens.length === 1) {
+    return commands.search(searchValue).map((r) => r.item + " ");
+  }
+
+  if (tokens[1]?.match(/^\d+$/) && tokens[0] === "!swap") {
+    return [1, 2, 3, 4, 5, 6]
+      .map((v) => String(v))
+      .filter((v) => v !== tokens[1])
+      .map((v) => tokens[0] + " " + tokens[1] + " " + v);
+  }
+
+  if (tokens.length === 2 && tokens[1]) {
+    return camSearch(tokens[1], promoteList).map(
+      (r) => tokens[0] + " " + r.item + " ",
+    );
+  }
+
+  if (
+    tokens.length === 3 &&
+    tokens[0] === "!ptzload" &&
+    tokens[1] &&
+    tokens[2]
+  ) {
+    const matcher = presetMatchers[tokens[1]];
+    if (matcher) {
+      return matcher
+        .search(tokens[2])
+        .map((r) => tokens[0] + " " + tokens[1] + " " + r.item + " ");
+    }
+  }
+
+  if (
+    tokens.length >= 3 &&
+    tokens[0] === "!ptzzoom" &&
+    tokens[1] &&
+    tokens[2]?.match(/^\d+$/)
+  ) {
+    return [tokens.slice(0, 3).join(" ") + " off "];
+  }
+
+  if (tokens.length === 3 && tokens[2] && tokens[0] === "!swap") {
+    return camSearch(tokens[2])
+      .filter((r) => r.item !== tokens[1])
+      .map((r) => tokens[0] + " " + tokens[1] + " " + r.item + " ");
+  }
+
+  return [];
+};
+
 export const InputBox: React.FC = () => {
   const [history, setHistory] = useState<string[]>([]);
   const appendHistory = useCallback(
@@ -66,67 +136,21 @@ export const InputBox: React.FC = () => {
   const typedInputRef = useRef("");
   const historyIndexRef = useRef<null | number>(null);
   const compIndexRef = useRef<null | number>(null);
+  const { sceneCamsRef } = useCamsState();
   const [completionTooltip, setCompletionTooltip] = useState("");
   const [completions, setCompletions] = useState<string[]>([]);
-  const getCompletions = useCallback((searchValue: string) => {
-    if (!searchValue) {
-      return [];
-    }
-    const tokens = searchValue.trim().split(/\s+/);
-    if (tokens.length === 1) {
-      return commands.search(searchValue).map((r) => r.item + " ");
-    }
+  const [camState, setCamState] = useState("");
 
-    if (tokens[1]?.match(/^\d+$/) && tokens[0] === "!swap") {
-      return [1, 2, 3, 4, 5, 6]
-        .map((v) => String(v))
-        .filter((v) => v !== tokens[1])
-        .map((v) => tokens[0] + " " + tokens[1] + " " + v);
-    }
-
-    if (tokens.length === 2 && tokens[1]) {
-      return camSearch(tokens[1]).map((r) => tokens[0] + " " + r.item + " ");
-    }
-
-    if (
-      tokens.length === 3 &&
-      tokens[0] === "!ptzload" &&
-      tokens[1] &&
-      tokens[2]
-    ) {
-      const matcher = presetMatchers[tokens[1]];
-      if (matcher) {
-        return matcher
-          .search(tokens[2])
-          .map((r) => tokens[0] + " " + tokens[1] + " " + r.item + " ");
-      }
-    }
-
-    if (
-      tokens.length >= 3 &&
-      tokens[0] === "!ptzzoom" &&
-      tokens[1] &&
-      tokens[2]?.match(/^\d+$/)
-    ) {
-      return [tokens.slice(0, 3).join(" ") + " off "];
-    }
-
-    if (tokens.length === 3 && tokens[2] && tokens[0] === "!swap") {
-      return camSearch(tokens[2])
-        .filter((r) => r.item !== tokens[1])
-        .map((r) => tokens[0] + " " + tokens[1] + " " + r.item + " ");
-    }
-
-    return [];
-  }, []);
   const updateCompletions = useCallback(
     (searchValue: string) => {
-      const newCompletions = getCompletions(searchValue);
+      const newCompletions = getCompletions(searchValue, sceneCamsRef.current);
       compIndexRef.current = null;
       setCompletions(newCompletions);
       setCompletionTooltip(newCompletions[0] || "");
+
+      setCamState(() => sceneCamsRef.current.join(" ").trim());
     },
-    [getCompletions],
+    [sceneCamsRef],
   );
 
   return (
@@ -185,6 +209,23 @@ export const InputBox: React.FC = () => {
           size="small"
           value={displayValue}
           margin="none"
+          slotProps={{
+            input: {
+              startAdornment: (
+                <InputAdornment position="start">
+                  {camState ? (
+                    <Tooltip title={camState}>
+                      <LinkedCameraIcon sx={{ color: "text.secondary" }} />
+                    </Tooltip>
+                  ) : (
+                    <Tooltip title="< missing cam state >">
+                      <SyncProblemIcon sx={{ color: "warning.main" }} />
+                    </Tooltip>
+                  )}
+                </InputAdornment>
+              ),
+            },
+          }}
           onKeyDown={(e) => {
             if (e.altKey || e.ctrlKey || e.metaKey) {
               return;
