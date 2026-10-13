@@ -140,6 +140,9 @@ export const InputBox: React.FC = () => {
   const [completionTooltip, setCompletionTooltip] = useState("");
   const [completions, setCompletions] = useState<string[]>([]);
   const [camState, setCamState] = useState("");
+  const updateCamStateTooltip = useCallback(() => {
+    setCamState(sceneCamsRef.current.join(" ").trim());
+  }, [sceneCamsRef]);
 
   const updateCompletions = useCallback(
     (searchValue: string) => {
@@ -148,9 +151,9 @@ export const InputBox: React.FC = () => {
       setCompletions(newCompletions);
       setCompletionTooltip(newCompletions[0] || "");
 
-      setCamState(() => sceneCamsRef.current.join(" ").trim());
+      updateCamStateTooltip();
     },
-    [sceneCamsRef],
+    [sceneCamsRef, updateCamStateTooltip],
   );
 
   return (
@@ -214,11 +217,17 @@ export const InputBox: React.FC = () => {
               startAdornment: (
                 <InputAdornment position="start">
                   {camState ? (
-                    <Tooltip title={camState}>
+                    <Tooltip
+                      title={camState}
+                      onOpen={() => updateCamStateTooltip()}
+                    >
                       <LinkedCameraIcon sx={{ color: "text.secondary" }} />
                     </Tooltip>
                   ) : (
-                    <Tooltip title="< missing cam state >">
+                    <Tooltip
+                      title="<missing cam state>"
+                      onOpen={() => updateCamStateTooltip()}
+                    >
                       <SyncProblemIcon sx={{ color: "warning.main" }} />
                     </Tooltip>
                   )}
