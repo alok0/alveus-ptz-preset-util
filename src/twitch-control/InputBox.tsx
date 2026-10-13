@@ -37,7 +37,7 @@ const cams = new Fuse(fullCamList, { includeScore: true });
 const camSearch = (q: string, promoteList?: (string | null | undefined)[]) => {
   const r = cams.search(q);
   const getNewScore = (i: FuseResult<string>): number => {
-    const s = i.score ?? 1;
+    const s = 0.5 + (i.score ?? 1);
     if (promoteList?.some((p) => p === i.item)) {
       return s / 10;
     }
