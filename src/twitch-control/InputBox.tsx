@@ -215,10 +215,11 @@ export const InputBox: React.FC = () => {
           slotProps={{
             input: {
               startAdornment: (
-                <InputAdornment position="start">
+                <InputAdornment position="start" sx={{ cursor: "default" }}>
                   {camState ? (
                     <Tooltip
                       title={camState}
+                      placement="top"
                       onOpen={() => updateCamStateTooltip()}
                     >
                       <LinkedCameraIcon sx={{ color: "text.secondary" }} />
