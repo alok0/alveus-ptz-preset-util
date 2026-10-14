@@ -958,7 +958,8 @@
       "windowz": { "pan": 171.52, "tilt": -11.18, "zoom": 1111, "focus": 6065, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "doorz": { "pan": -173.32, "tilt": -11.46, "zoom": 1005, "focus": 6342, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "postmbb": { "pan": 165.95, "tilt": -26.02, "zoom": 963, "focus": 5578, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "table": { "pan": -157.2, "tilt": -33.18, "zoom": 211, "focus": 1 }
+      "table": { "pan": -157.2, "tilt": -33.18, "zoom": 211, "focus": 1 },
+      "farbranches": { "pan": -166.4, "tilt": -21.14, "zoom": 1, "focus": 6006 }
     },
     "isRoaming": false
   },
