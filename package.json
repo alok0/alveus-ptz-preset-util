@@ -23,9 +23,9 @@
     "@emotion/styled": "11.14.1",
     "@fontsource-variable/jetbrains-mono": "5.3.0",
     "@mdi/js": "7.4.47",
-    "@mui/icons-material": "9.4.0",
-    "@mui/material": "9.4.0",
-    "@tanstack/react-query": "5.104.1",
+    "@mui/icons-material": "9.5.0",
+    "@mui/material": "9.5.0",
+    "@tanstack/react-query": "5.104.2",
     "@twurple/api": "8.2.0",
     "@twurple/auth": "8.2.0",
     "@twurple/chat": "8.2.0",
@@ -34,15 +34,15 @@
     "fuse.js": "7.5.0",
     "notistack": "3.0.2",
     "pannellum": "2.5.7",
-    "preact": "11.0.0",
+    "preact": "11.0.1",
     "react": "19.3.0",
     "react-error-boundary": "6.1.6",
     "usehooks-ts": "3.1.1",
     "wouter": "3.13.0",
-    "zod": "4.6.5"
+    "zod": "4.6.7"
   },
   "devDependencies": {
-    "@eslint-react/eslint-plugin": "5.24.6",
+    "@eslint-react/eslint-plugin": "5.26.5",
     "@eslint/js": "10.0.1",
     "@tsconfig/strictest": "2.0.8",
     "@tsconfig/vite-react": "8.1.1",
@@ -58,10 +58,10 @@
     "eslint-plugin-react-hooks": "7.1.1",
     "husky": "9.1.7",
     "lint-staged": "17.6.0",
-    "prettier": "3.9.9",
+    "prettier": "3.9.10",
     "sharp": "0.35.5",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.71.1",
-    "vite": "8.3.3"
+    "typescript-eslint": "8.71.2",
+    "vite": "8.3.4"
   }
 }
