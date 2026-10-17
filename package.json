@@ -35,14 +35,14 @@
     "notistack": "3.0.2",
     "pannellum": "2.5.7",
     "preact": "11.0.1",
-    "react": "19.3.0",
+    "react": "19.3.1",
     "react-error-boundary": "6.1.6",
     "usehooks-ts": "3.1.1",
     "wouter": "3.13.0",
     "zod": "4.6.7"
   },
   "devDependencies": {
-    "@eslint-react/eslint-plugin": "5.26.5",
+    "@eslint-react/eslint-plugin": "5.26.7",
     "@eslint/js": "10.0.1",
     "@tsconfig/strictest": "2.0.8",
     "@tsconfig/vite-react": "8.1.1",
