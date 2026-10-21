@@ -32,7 +32,11 @@ const commands = new Fuse([
   "!resetlivecams",
 ]);
 
-const cams = new Fuse(fullCamList, { includeScore: true });
+const camNameReplacements = new Map<string, string>([["pasture", "pasturE"]]);
+const cams = new Fuse(
+  fullCamList.map((n) => camNameReplacements.get(n) || n),
+  { includeScore: true },
+);
 
 const camSearch = (q: string, promoteList?: (string | null | undefined)[]) => {
   const r = cams.search(q);
@@ -57,8 +61,17 @@ const camSearch = (q: string, promoteList?: (string | null | undefined)[]) => {
   return r.toSorted((a, b) => getNewScore(a) - getNewScore(b));
 };
 
+const presetNameReplacements = new Map<string, string>([
+  ["saltlick", "saltLick"],
+]);
 const presetMatchers = Object.fromEntries(
-  Object.entries(fullPresetLists).map(([k, v]) => [k, new Fuse(v)] as const),
+  Object.entries(fullPresetLists).map(
+    ([k, v]) =>
+      [
+        k.toLocaleLowerCase(),
+        new Fuse(v.map((n) => presetNameReplacements.get(n) || n)),
+      ] as const,
+  ),
 );
 
 const getCompletions = (
@@ -92,7 +105,7 @@ const getCompletions = (
     tokens[1] &&
     tokens[2]
   ) {
-    const matcher = presetMatchers[tokens[1]];
+    const matcher = presetMatchers[tokens[1].toLocaleLowerCase()];
     if (matcher) {
       return matcher
         .search(tokens[2])
