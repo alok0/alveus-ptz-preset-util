@@ -33,10 +33,7 @@ const commands = new Fuse([
 ]);
 
 const camNameReplacements = new Map<string, string>([["pasture", "pasturE"]]);
-const cams = new Fuse(
-  fullCamList.map((n) => camNameReplacements.get(n) || n),
-  { includeScore: true, isCaseSensitive: false },
-);
+const cams = new Fuse(fullCamList, { includeScore: true });
 
 const camSearch = (q: string, promoteList?: (string | null | undefined)[]) => {
   const r = cams.search(q);
@@ -58,7 +55,9 @@ const camSearch = (q: string, promoteList?: (string | null | undefined)[]) => {
     return s;
   };
 
-  return r.toSorted((a, b) => getNewScore(a) - getNewScore(b));
+  return r
+    .toSorted((a, b) => getNewScore(a) - getNewScore(b))
+    .map((r) => ({ ...r, item: camNameReplacements.get(r.item) || r.item }));
 };
 
 const presetNameReplacements = new Map<string, string>([
@@ -66,16 +65,18 @@ const presetNameReplacements = new Map<string, string>([
 ]);
 const presetMatchers = Object.fromEntries(
   Object.entries(fullPresetLists).map(
-    ([k, v]) =>
-      [
-        k.toLocaleLowerCase(),
-        new Fuse(
-          v.map((n) => presetNameReplacements.get(n) || n),
-          { isCaseSensitive: false },
-        ),
-      ] as const,
+    ([k, v]) => [k.toLocaleLowerCase(), new Fuse(v)] as const,
   ),
 );
+const presetSearch = (cam: string, q: string) => {
+  const matcher = presetMatchers[cam.toLocaleLowerCase()];
+  if (!matcher) {
+    return null;
+  }
+  return matcher
+    .search(q)
+    .map((r) => ({ ...r, item: presetNameReplacements.get(r.item) || r.item }));
+};
 
 const getCompletions = (
   searchValue: string,
@@ -108,11 +109,11 @@ const getCompletions = (
     tokens[1] &&
     tokens[2]
   ) {
-    const matcher = presetMatchers[tokens[1].toLocaleLowerCase()];
-    if (matcher) {
-      return matcher
-        .search(tokens[2])
-        .map((r) => tokens[0] + " " + tokens[1] + " " + r.item + " ");
+    const result = presetSearch(tokens[1], tokens[2]);
+    if (result) {
+      return result.map(
+        (r) => tokens[0] + " " + tokens[1] + " " + r.item + " ",
+      );
     }
   }
 
