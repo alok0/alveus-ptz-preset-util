@@ -35,7 +35,7 @@ const commands = new Fuse([
 const camNameReplacements = new Map<string, string>([["pasture", "pasturE"]]);
 const cams = new Fuse(
   fullCamList.map((n) => camNameReplacements.get(n) || n),
-  { includeScore: true },
+  { includeScore: true, isCaseSensitive: false },
 );
 
 const camSearch = (q: string, promoteList?: (string | null | undefined)[]) => {
@@ -69,7 +69,10 @@ const presetMatchers = Object.fromEntries(
     ([k, v]) =>
       [
         k.toLocaleLowerCase(),
-        new Fuse(v.map((n) => presetNameReplacements.get(n) || n)),
+        new Fuse(
+          v.map((n) => presetNameReplacements.get(n) || n),
+          { isCaseSensitive: false },
+        ),
       ] as const,
   ),
 );
