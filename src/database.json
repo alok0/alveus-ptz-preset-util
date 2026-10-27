@@ -99,7 +99,8 @@
       "insidel": { "pan": 171.05, "tilt": -8.34, "zoom": 4143, "focus": 6319, "brightness": 5000, "autofocus": "off", "autoiris": "on" },
       "insidet": { "pan": 172.66, "tilt": -7.14, "zoom": 3515, "focus": 6307, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "abovewindow": { "pan": 172.37, "tilt": -3.31, "zoom": 356, "focus": 4458, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "leftcornerb": { "pan": 108.2, "tilt": -11.29, "zoom": 934, "focus": 6452 }
+      "leftcornerb": { "pan": 108.2, "tilt": -11.29, "zoom": 934, "focus": 6452 },
+      "winr": { "pan": 173.86, "tilt": -9.5, "zoom": 1152, "focus": 5785 }
     },
     "isRoaming": false,
     "speed": "67",
