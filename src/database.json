@@ -376,7 +376,8 @@
       "tableropes": { "pan": 124.75, "tilt": -24.5, "zoom": 593, "focus": 5820 },
       "brownball": { "pan": 86.75, "tilt": -18.08, "zoom": 997, "focus": 5120 },
       "brownballtop": { "pan": 86.74, "tilt": -16.44, "zoom": 997, "focus": 5120 },
-      "swing": { "pan": 161.91, "tilt": -36.59, "zoom": 1, "focus": 748 }
+      "swing": { "pan": 161.91, "tilt": -36.59, "zoom": 1, "focus": 748 },
+      "basketl": { "pan": 138.22, "tilt": 3.84, "zoom": 1161, "focus": 5755 }
     },
     "isRoaming": false,
     "speed": "65"
