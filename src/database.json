@@ -167,7 +167,8 @@
       "down2": { "pan": 71.34, "tilt": -84.95, "zoom": 1, "focus": 9998, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "entry": { "pan": 136.31, "tilt": -75.06, "zoom": 1488, "focus": 9404, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "topl": { "pan": 29.56, "tilt": -13.17, "zoom": 1, "focus": 9928 },
-      "topr": { "pan": 65.07, "tilt": -10.93, "zoom": 1, "focus": 9928 }
+      "topr": { "pan": 65.07, "tilt": -10.93, "zoom": 1, "focus": 9928 },
+      "sleeptmp": { "pan": 24.93, "tilt": -13.42, "zoom": 5553, "focus": 7935 }
     },
     "isRoaming": false,
     "speed": "60"
