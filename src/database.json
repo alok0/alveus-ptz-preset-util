@@ -932,7 +932,8 @@
       "mudpit": { "pan": -48.72, "tilt": -8.53, "zoom": 172, "focus": 5005, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "feeder": { "pan": -93.8, "tilt": -3.94, "zoom": 638, "focus": 6131, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "centerr": { "pan": -16.58, "tilt": -3.27, "zoom": 87, "focus": 1, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
-      "temp1": { "pan": 96.12, "tilt": -4.42, "zoom": 1294, "focus": 6358, "brightness": 5000, "autofocus": "on", "autoiris": "on" }
+      "temp1": { "pan": 96.12, "tilt": -4.42, "zoom": 1294, "focus": 6358, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
+      "marmcorner": { "pan": -70.74, "tilt": -1.02, "zoom": 172, "focus": 5005 }
     },
     "isRoaming": false,
     "roamTime": "5",
