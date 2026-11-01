@@ -378,7 +378,8 @@
       "brownballtop": { "pan": 86.74, "tilt": -16.44, "zoom": 997, "focus": 5120 },
       "swing": { "pan": 161.91, "tilt": -36.59, "zoom": 1, "focus": 748 },
       "basketl": { "pan": 138.22, "tilt": 3.84, "zoom": 1161, "focus": 5755 },
-      "basketr": { "pan": 151.09, "tilt": 7.79, "zoom": 994, "focus": 5445 }
+      "basketr": { "pan": 151.09, "tilt": 7.79, "zoom": 994, "focus": 5445 },
+      "lefttable": { "pan": 93.77, "tilt": -29.96, "zoom": 433, "focus": 3731 }
     },
     "isRoaming": false,
     "speed": "65"
