@@ -797,7 +797,8 @@
       "nearleft": { "pan": -30.35, "tilt": -25.54, "zoom": 15, "focus": 7321, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "denz": { "pan": 18.13, "tilt": -6.42, "zoom": 3527, "focus": 6642, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "den2t": { "pan": -29.21, "tilt": -14.83, "zoom": 1, "focus": 7410 },
-      "training": { "pan": -11.29, "tilt": -13.85, "zoom": 967, "focus": 6882 }
+      "training": { "pan": -11.29, "tilt": -13.85, "zoom": 967, "focus": 6882 },
+      "tub": { "pan": -0.72, "tilt": -9.79, "zoom": 967, "focus": 6764 }
     },
     "isRoaming": false,
     "speed": "60"
