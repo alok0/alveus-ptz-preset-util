@@ -380,7 +380,8 @@
       "basketl": { "pan": 138.22, "tilt": 3.84, "zoom": 1161, "focus": 5755 },
       "basketr": { "pan": 151.09, "tilt": 7.79, "zoom": 994, "focus": 5445 },
       "lefttable": { "pan": 93.77, "tilt": -29.96, "zoom": 433, "focus": 3731 },
-      "cammirror": { "pan": 175.33, "tilt": 4.93, "zoom": 1995, "focus": 6457 }
+      "cammirror": { "pan": 175.33, "tilt": 4.93, "zoom": 1995, "focus": 6457 },
+      "basketlshelf": { "pan": 141.91, "tilt": 5.71, "zoom": 563, "focus": 4279 }
     },
     "isRoaming": false,
     "speed": "65"
