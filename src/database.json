@@ -1037,7 +1037,8 @@
       "nearplatformr": { "pan": -4.93, "tilt": -9.66, "zoom": 356, "focus": 6307 },
       "rightcorner": { "pan": 25.59, "tilt": -15.72, "zoom": 1221, "focus": 7367 },
       "middletemp": { "pan": -38.96, "tilt": -8.2, "zoom": 2442, "focus": 8131 },
-      "midlefttop": { "pan": -44.15, "tilt": -2, "zoom": 2230, "focus": 8046 }
+      "midlefttop": { "pan": -44.15, "tilt": -2, "zoom": 2230, "focus": 8046 },
+      "shortplatform": { "pan": -50.88, "tilt": -3.28, "zoom": 9779, "focus": 8497 }
     },
     "isRoaming": false,
     "speed": "65"
