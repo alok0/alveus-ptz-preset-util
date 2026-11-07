@@ -800,7 +800,8 @@
       "den2t": { "pan": -29.21, "tilt": -14.83, "zoom": 1, "focus": 7410 },
       "training": { "pan": -11.29, "tilt": -13.85, "zoom": 967, "focus": 6882 },
       "tub": { "pan": -0.72, "tilt": -9.79, "zoom": 967, "focus": 6764 },
-      "dentopl": { "pan": 15.32, "tilt": -0.23, "zoom": 1862, "focus": 6985 }
+      "dentopl": { "pan": 15.32, "tilt": -0.23, "zoom": 1862, "focus": 6985 },
+      "homew": { "pan": -1.74, "tilt": -14.25, "zoom": 1, "focus": 5573 }
     },
     "isRoaming": false,
     "speed": "60"
