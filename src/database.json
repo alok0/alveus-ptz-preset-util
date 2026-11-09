@@ -1043,7 +1043,7 @@
       "midlefttop": { "pan": -44.15, "tilt": -2, "zoom": 2230, "focus": 8046 },
       "shortplatform": { "pan": -50.88, "tilt": -3.28, "zoom": 9779, "focus": 8497 },
       "trainplatformb": { "pan": -59.63, "tilt": -7.33, "zoom": 1071, "focus": 6881 },
-      "nearplatformt": { "pan": -10.61, "tilt": -3.63, "zoom": 963, "focus": 6705 }
+      "nearplatformt": { "pan": -10.61, "tilt": -3.63, "zoom": 797, "focus": 6618 }
     },
     "isRoaming": false,
     "speed": "65"
