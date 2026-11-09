@@ -1042,7 +1042,8 @@
       "middletemp": { "pan": -38.96, "tilt": -8.2, "zoom": 2442, "focus": 8131 },
       "midlefttop": { "pan": -44.15, "tilt": -2, "zoom": 2230, "focus": 8046 },
       "shortplatform": { "pan": -50.88, "tilt": -3.28, "zoom": 9779, "focus": 8497 },
-      "trainplatformb": { "pan": -59.63, "tilt": -7.33, "zoom": 1071, "focus": 6881 }
+      "trainplatformb": { "pan": -59.63, "tilt": -7.33, "zoom": 1071, "focus": 6881 },
+      "nearplatformt": { "pan": -10.61, "tilt": -3.63, "zoom": 963, "focus": 6705 }
     },
     "isRoaming": false,
     "speed": "65"
