@@ -1163,7 +1163,8 @@
       "doornap": { "pan": 69.15, "tilt": -4.24, "zoom": 783, "focus": 6104 },
       "belowshortplatform": { "pan": 43.15, "tilt": -2.47, "zoom": 3964, "focus": 7257 },
       "trainingplatformr": { "pan": 31.44, "tilt": -0.02, "zoom": 2359, "focus": 7492 },
-      "shortplatform": { "pan": 43.33, "tilt": 0, "zoom": 3901, "focus": 7363 }
+      "shortplatform": { "pan": 43.33, "tilt": 0, "zoom": 3901, "focus": 7363 },
+      "leftnear": { "pan": 8.2, "tilt": -21.63, "zoom": 1, "focus": 1 }
     }
   }
 }
