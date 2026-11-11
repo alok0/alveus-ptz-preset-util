@@ -915,7 +915,8 @@
       "home": { "pan": -89.1, "tilt": -64.91, "zoom": 1, "focus": 218, "autofocus": "on" },
       "kiwitmp": { "pan": -132.02, "tilt": -63, "zoom": 8860, "focus": 1, "autofocus": "on" },
       "evatmp": { "pan": 5.96, "tilt": -64.27, "zoom": 10191, "focus": 41, "autofocus": "on" },
-      "tmp": { "pan": 15.41, "tilt": -69.45, "zoom": 10041, "focus": 618, "autofocus": "on" }
+      "tmp": { "pan": 15.41, "tilt": -69.45, "zoom": 10041, "focus": 618, "autofocus": "on" },
+      "kiwitmp2": {}
     },
     "isRoaming": false,
     "speed": "30"
