@@ -609,7 +609,8 @@
       "fo": { "pan": -27.56, "tilt": -3.01, "zoom": 1287, "focus": 7604, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "foodtmp": { "pan": -24.93, "tilt": -4.08, "zoom": 3440, "focus": 7949, "brightness": 5000, "autofocus": "on", "autoiris": "on" },
       "den2shadeb": { "pan": -1.16, "tilt": -24.62, "zoom": 168, "focus": 2044 },
-      "den2insidet": { "pan": 19.3, "tilt": -29.7, "zoom": 664, "focus": 5038 }
+      "den2insidet": { "pan": 19.3, "tilt": -29.7, "zoom": 664, "focus": 5038 },
+      "feeddoor": { "pan": -34.1, "tilt": -5.75, "zoom": 4902, "focus": 7930 }
     },
     "isRoaming": false,
     "speed": "50"
