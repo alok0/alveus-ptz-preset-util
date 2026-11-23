@@ -1001,7 +1001,8 @@
       "insidedoor": { "pan": -68.44, "tilt": -12.26, "zoom": 152, "focus": 1 },
       "middler": { "pan": -109.48, "tilt": -11.06, "zoom": 155, "focus": 1 },
       "rampbz": { "pan": -139.68, "tilt": -9.88, "zoom": 3732, "focus": 6596 },
-      "leftpipe": { "pan": -161.33, "tilt": -16.77, "zoom": 1381, "focus": 5165 }
+      "leftpipe": { "pan": -161.33, "tilt": -16.77, "zoom": 1381, "focus": 5165 },
+      "boxtmp": { "pan": -96.34, "tilt": -16.48, "zoom": 689, "focus": 5562 }
     },
     "isRoaming": false
   },
