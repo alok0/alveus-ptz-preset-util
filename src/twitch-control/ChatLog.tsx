@@ -35,7 +35,7 @@ const RenderTextWithEmotes: React.FC<{ text: string }> = ({ text }) => {
                 height: 0,
                 width: 0,
                 paddingInline: `${(1.25 * 0.5 * e.width) / e.height}lh`,
-                baselineShift: "center",
+                verticalAlign: "middle",
                 wordBreak: "normal",
               }}
             >
