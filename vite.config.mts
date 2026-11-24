@@ -8,7 +8,7 @@ const dirname = new URL(".", import.meta.url).pathname;
 export default defineConfig(() => {
   const headers = {
     "Content-Security-Policy":
-      "default-src 'self'; connect-src 'self' https://id.twitch.tv wss://*.chat.twitch.tv https://api.twitch.tv; style-src 'self' 'unsafe-inline'; img-src 'self' blob:",
+      "default-src 'self'; connect-src 'self' https://id.twitch.tv wss://*.chat.twitch.tv https://api.twitch.tv https://7tv.io; style-src 'self' 'unsafe-inline'; img-src 'self' cdn.7tv.app blob:",
     "X-Frame-Options": "DENY",
     "X-XSS-Protection": "1; mode=block",
     "X-Content-Type-Options": "nosniff",
@@ -71,7 +71,7 @@ export default defineConfig(() => {
 
           const generatedHeaders = {
             ...headers,
-            "Content-Security-Policy": `default-src 'self'; connect-src 'self' https://id.twitch.tv wss://*.chat.twitch.tv https://api.twitch.tv; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; script-src 'self' 'sha256-${digest}';`,
+            "Content-Security-Policy": `default-src 'self'; connect-src 'self' https://id.twitch.tv wss://*.chat.twitch.tv https://api.twitch.tv https://7tv.io; style-src 'self' 'unsafe-inline'; img-src 'self' cdn.7tv.app blob:; script-src 'self' 'sha256-${digest}';`,
           };
           const headerContent =
             "/*\n" +

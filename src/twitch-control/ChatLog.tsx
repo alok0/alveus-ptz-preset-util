@@ -2,10 +2,55 @@ import { Box, Typography } from "@mui/material";
 import { ChatMessage } from "@twurple/chat";
 import React, { useEffect, useRef, useState } from "react";
 import { useTwitch } from "./TwitchApiContext";
+import { use7TV } from "./seven-tv-data";
 interface LogEntry {
   message: ChatMessage;
   time: Date;
 }
+
+const RenderTextWithEmotes: React.FC<{ text: string }> = ({ text }) => {
+  const emotes = use7TV();
+
+  return (
+    <>
+      {text.split(/\s/).map((t, index) => {
+        if (!t) {
+          return " ";
+        }
+        const e = emotes?.get(t.toLocaleLowerCase());
+        if (t !== e?.name) {
+          return t + " ";
+        }
+
+        return (
+          <React.Fragment
+            key={
+              index /* eslint-disable-line @eslint-react/no-array-index-key */
+            }
+          >
+            <div
+              title={t}
+              style={{
+                display: "inline-block",
+                height: 0,
+                width: 0,
+                paddingInline: `${(1.25 * 0.5 * e.width) / e.height}lh`,
+                baselineShift: "center",
+                wordBreak: "normal",
+              }}
+            >
+              <img
+                src={e.src}
+                alt={t}
+                style={{ height: "1.25lh", transform: "translate(-50%,-50%)" }}
+              />
+            </div>{" "}
+          </React.Fragment>
+        );
+      })}
+    </>
+  );
+};
 
 const ChatLogLine: React.FC<{ entry: LogEntry }> = ({ entry }) => {
   const { message, time } = entry;
@@ -42,7 +87,7 @@ const ChatLogLine: React.FC<{ entry: LogEntry }> = ({ entry }) => {
             : message.userInfo.userName}
         </div>
       </span>{" "}
-      {message.text}
+      <RenderTextWithEmotes text={message.text} />
       {"\n"}
     </React.Fragment>
   );

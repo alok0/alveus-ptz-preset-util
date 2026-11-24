@@ -13,6 +13,7 @@ import { useTwitch } from "./TwitchApiContext";
 import { useCamsState } from "./useCamsState";
 import LinkedCameraIcon from "@mui/icons-material/LinkedCamera";
 import SyncProblemIcon from "@mui/icons-material/SyncProblem";
+import { use7TV } from "./seven-tv-data";
 
 const commands = new Fuse([
   "!ptzload",
@@ -32,10 +33,18 @@ const commands = new Fuse([
   "!resetlivecams",
 ]);
 
-const camNameReplacements = new Map<string, string>([["pasture", "pasturE"]]);
 const cams = new Fuse(fullCamList, { includeScore: true });
 
-const camSearch = (q: string, promoteList?: (string | null | undefined)[]) => {
+const camSearch = (
+  q: string,
+  {
+    promoteList,
+    nameReplacer,
+  }: {
+    promoteList?: undefined | (string | null | undefined)[];
+    nameReplacer?: undefined | ((n: string) => string);
+  } = {},
+) => {
   const r = cams.search(q);
   const getNewScore = (i: FuseResult<string>): number => {
     const s = 0.5 + (i.score ?? 1);
@@ -57,31 +66,36 @@ const camSearch = (q: string, promoteList?: (string | null | undefined)[]) => {
 
   return r
     .toSorted((a, b) => getNewScore(a) - getNewScore(b))
-    .map((r) => ({ ...r, item: camNameReplacements.get(r.item) || r.item }));
+    .map((r) => ({ ...r, item: nameReplacer?.(r.item) || r.item }));
 };
 
-const presetNameReplacements = new Map<string, string>([
-  ["saltlick", "saltLick"],
-  ["appastick", "appaStick"],
-]);
 const presetMatchers = Object.fromEntries(
   Object.entries(fullPresetLists).map(
     ([k, v]) => [k.toLocaleLowerCase(), new Fuse(v)] as const,
   ),
 );
-const presetSearch = (cam: string, q: string) => {
+const presetSearch = (
+  cam: string,
+  q: string,
+  {
+    nameReplacer,
+  }: {
+    nameReplacer?: undefined | ((n: string) => string);
+  } = {},
+) => {
   const matcher = presetMatchers[cam.toLocaleLowerCase()];
   if (!matcher) {
     return null;
   }
   return matcher
     .search(q)
-    .map((r) => ({ ...r, item: presetNameReplacements.get(r.item) || r.item }));
+    .map((r) => ({ ...r, item: nameReplacer?.(r.item) || r.item }));
 };
 
 const getCompletions = (
   searchValue: string,
   promoteList?: (string | null | undefined)[],
+  nameReplacer?: (n: string) => string,
 ) => {
   if (!searchValue) {
     return [];
@@ -99,7 +113,7 @@ const getCompletions = (
   }
 
   if (tokens.length === 2 && tokens[1]) {
-    return camSearch(tokens[1], promoteList).map(
+    return camSearch(tokens[1], { promoteList, nameReplacer }).map(
       (r) => tokens[0] + " " + r.item + " ",
     );
   }
@@ -110,7 +124,7 @@ const getCompletions = (
     tokens[1] &&
     tokens[2]
   ) {
-    const result = presetSearch(tokens[1], tokens[2]);
+    const result = presetSearch(tokens[1], tokens[2], { nameReplacer });
     if (result) {
       return result.map(
         (r) => tokens[0] + " " + tokens[1] + " " + r.item + " ",
@@ -128,7 +142,7 @@ const getCompletions = (
   }
 
   if (tokens.length === 3 && tokens[2] && tokens[0] === "!swap") {
-    return camSearch(tokens[2])
+    return camSearch(tokens[2], { nameReplacer })
       .filter((r) => r.item !== tokens[1])
       .map((r) => tokens[0] + " " + tokens[1] + " " + r.item + " ");
   }
@@ -158,20 +172,33 @@ export const InputBox: React.FC = () => {
   const [completionTooltip, setCompletionTooltip] = useState("");
   const [completions, setCompletions] = useState<string[]>([]);
   const [camState, setCamState] = useState("");
+  const sevenTvEmotes = use7TV();
+  const nameReplacer = useCallback(
+    (input: string) => {
+      const e = sevenTvEmotes?.get(input.toLocaleLowerCase());
+      return e?.name || input;
+    },
+    [sevenTvEmotes],
+  );
+
   const updateCamStateTooltip = useCallback(() => {
     setCamState(sceneCamsRef.current.join(" ").trim());
   }, [sceneCamsRef]);
 
   const updateCompletions = useCallback(
     (searchValue: string) => {
-      const newCompletions = getCompletions(searchValue, sceneCamsRef.current);
+      const newCompletions = getCompletions(
+        searchValue,
+        sceneCamsRef.current,
+        nameReplacer,
+      );
       compIndexRef.current = null;
       setCompletions(newCompletions);
       setCompletionTooltip(newCompletions[0] || "");
 
       updateCamStateTooltip();
     },
-    [sceneCamsRef, updateCamStateTooltip],
+    [nameReplacer, sceneCamsRef, updateCamStateTooltip],
   );
 
   return (
