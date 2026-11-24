@@ -62,6 +62,7 @@ const camSearch = (q: string, promoteList?: (string | null | undefined)[]) => {
 
 const presetNameReplacements = new Map<string, string>([
   ["saltlick", "saltLick"],
+  ["appastick", "appaStick"],
 ]);
 const presetMatchers = Object.fromEntries(
   Object.entries(fullPresetLists).map(
