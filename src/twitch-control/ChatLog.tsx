@@ -18,7 +18,7 @@ const RenderTextWithEmotes: React.FC<{ text: string }> = ({ text }) => {
         if (!text) {
           return " ";
         }
-        const e = emotes?.get(text.toLocaleLowerCase());
+        const e = emotes?.get(text);
         if (text !== e?.name) {
           return t + " ";
         }

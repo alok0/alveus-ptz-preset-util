@@ -6,7 +6,7 @@ import {
   Typography,
 } from "@mui/material";
 import Fuse, { type FuseResult } from "fuse.js";
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import { channel } from "./constants";
 import { fullCamList, fullPresetLists } from "./data/data";
 import { useTwitch } from "./TwitchApiContext";
@@ -173,13 +173,33 @@ export const InputBox: React.FC = () => {
   const [completions, setCompletions] = useState<string[]>([]);
   const [camState, setCamState] = useState("");
   const sevenTvEmotes = use7TV();
-  const nameReplacer = useCallback(
-    (input: string) => {
-      const e = sevenTvEmotes?.get(input.toLocaleLowerCase());
-      return e?.name || input;
-    },
-    [sevenTvEmotes],
-  );
+  const nameReplacer: (input: string) => string = useMemo(() => {
+    const emoteNames = [...(sevenTvEmotes?.keys() || [])];
+    if (!emoteNames.length) {
+      return (i) => i;
+    }
+    const keys = new Set(emoteNames.map((k) => k.toLocaleLowerCase()));
+
+    const map = new Map(
+      [...keys.keys()].map(
+        (k) =>
+          [
+            k,
+            emoteNames.filter(
+              (e) => k.toLocaleLowerCase() === e.toLocaleLowerCase(),
+            ),
+          ] as const,
+      ),
+    );
+
+    return (input) => {
+      const e = map.get(input.toLocaleLowerCase());
+      if (!e?.length) {
+        return input;
+      }
+      return e[Date.now() % e.length] || input;
+    };
+  }, [sevenTvEmotes]);
 
   const updateCamStateTooltip = useCallback(() => {
     setCamState(sceneCamsRef.current.join(" ").trim());

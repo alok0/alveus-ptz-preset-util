@@ -6,9 +6,9 @@ const sevenTvResponseSchema = z.object({
   emote_set: z.object({
     emotes: z.array(
       z.object({
+        name: z.string(),
+        flags: z.number(),
         data: z.object({
-          name: z.string(),
-          flags: z.number(),
           host: z.object({
             url: z.string(),
             files: z.array(
@@ -26,7 +26,7 @@ const sevenTvResponseSchema = z.object({
   }),
 });
 const FLAGS_NORMAL = 0;
-const FLAGS_OVERLAYING = 256;
+const FLAGS_OVERLAYING = 1;
 
 export type EmoteData = {
   name: string;
@@ -53,9 +53,7 @@ export const use7TV = () => {
         const result = new Map<string, EmoteData>(
           data.emote_set.emotes
             .filter(
-              (o) =>
-                o.data.flags === FLAGS_NORMAL ||
-                o.data.flags === FLAGS_OVERLAYING,
+              (o) => o.flags === FLAGS_NORMAL || o.flags === FLAGS_OVERLAYING,
             )
             .map((o) => {
               const smallestFile = o.data.host.files.toSorted(
@@ -65,10 +63,10 @@ export const use7TV = () => {
                 return null;
               }
               return [
-                o.data.name.toLocaleLowerCase(),
+                o.name,
                 {
-                  name: o.data.name,
-                  overlaying: o.data.flags === FLAGS_OVERLAYING,
+                  name: o.name,
+                  overlaying: o.flags === FLAGS_OVERLAYING,
                   src: `${encodeURI(o.data.host.url)}/${encodeURIComponent(smallestFile.name)}`,
                   width: smallestFile.width,
                   height: smallestFile.height,
@@ -77,8 +75,6 @@ export const use7TV = () => {
             })
             .filter((t) => !!t),
         );
-
-        console.info([...result.entries()]);
 
         return result;
       } catch (e) {
