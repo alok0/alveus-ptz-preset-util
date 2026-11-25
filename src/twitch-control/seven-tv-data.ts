@@ -50,7 +50,7 @@ export const use7TV = () => {
         const resp = await fetch(endpoint);
         const data = await sevenTvResponseSchema.parseAsync(await resp.json());
 
-        return new Map<string, EmoteData>(
+        const result = new Map<string, EmoteData>(
           data.emote_set.emotes
             .filter(
               (o) =>
@@ -77,6 +77,10 @@ export const use7TV = () => {
             })
             .filter((t) => !!t),
         );
+
+        console.info([...result.entries()]);
+
+        return result;
       } catch (e) {
         console.error(e);
         throw e;

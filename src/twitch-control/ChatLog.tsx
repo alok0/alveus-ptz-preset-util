@@ -14,11 +14,12 @@ const RenderTextWithEmotes: React.FC<{ text: string }> = ({ text }) => {
   return (
     <>
       {text.split(/\s/).map((t, index) => {
-        if (!t) {
+        const text = t.trim();
+        if (!text) {
           return " ";
         }
-        const e = emotes?.get(t.toLocaleLowerCase());
-        if (t !== e?.name) {
+        const e = emotes?.get(text.toLocaleLowerCase());
+        if (text !== e?.name) {
           return t + " ";
         }
 
