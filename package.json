@@ -48,7 +48,7 @@
     "@tsconfig/vite-react": "8.1.2",
     "@types/eslint-plugin-jsx-a11y": "6.10.1",
     "@types/eslint-plugin-promise": "7.3.0",
-    "@types/node": "26.6.6",
+    "@types/node": "26.6.10",
     "@types/pannellum": "2.5.2",
     "@types/react": "19.3.1",
     "eslint": "10.15.0",
