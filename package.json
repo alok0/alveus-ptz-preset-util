@@ -50,7 +50,7 @@
     "@types/eslint-plugin-promise": "7.3.0",
     "@types/node": "26.6.6",
     "@types/pannellum": "2.5.2",
-    "@types/react": "19.3.1",
+    "@types/react": "19.3.3",
     "eslint": "10.15.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-jsx-a11y": "6.10.2",
